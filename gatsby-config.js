@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-source-strapi`,
       options: {
@@ -15,7 +16,6 @@ module.exports = {
         singleTypes: [`homepage`],
       },
     },
-    `gatsby-plugin-netlify`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,

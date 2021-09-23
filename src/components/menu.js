@@ -18,7 +18,7 @@ const Menu = ({style}) => {
               
               top: "35%", 
               left: "44%",
-              scale: 0
+              scale: 0,
           }}
           
           stagger={0.2}

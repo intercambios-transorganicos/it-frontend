@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+$azul:#2e6ca1;
+@import "~bulma/bulma.sass";
+
+
+//Header
+
+header{
+    position: absolute;
+    //background-color:yellow;
+    width: 100vw;
+    height: 10vh;
+    padding: 3em  2em 2em 2em;
+    z-index: 20;
+}
+
+
+//Menu
+/* TAB */
+
+.tab{
+    top:-20%;
+    background-color:#400101;
+    cursor: pointer;
+    position:absolute;
+    width:200px;
+    height:200px;
+    display:flex;
+    place-content:center;
+    align-items:center;
+    transition: all 3s ;
+}
+
+.tab:hover{
+    background-color:#f2561d;
+
+}
+/*44/35*/
+.tab:nth-of-type(1){
+    left:52%;
+    top: 10%;
+    border-radius:50%;
+}
+
+.tab:nth-of-type(2){
+    right:52%;
+    top: 42%;
+    border-radius:50%;
+}
+
+.tab:nth-of-type(3){
+    left:52%;
+    top: 42%;
+    
+}
+
+.tab:nth-of-type(4){
+    right:52%;
+    top: 10%;
+    
+}
+
+
+.tab h1{
+    font-size: 1em;
+    font-family: 'Jura', sans-serif;
+}
+.menuit{
+    cursor:pointer;
+    width:60px;
+    height:60px;
+}
+
+
+.menu_container{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    position: absolute;
+    //background-color:yellow;
+    filter:url(#goo);
+}
+
+.menu_container h1{
+   // font-size:1em;
+    color:#eeeeee;
+}
+
+.menuicon{
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+.logosvg{
+    width:80px;
+    
+}
+
+.module{
+    stroke: transparent;
+}
+
+.module:hover{
+    fill:pink;
+}
+
+
+//main
+main{
+    height:auto;
+    width:100vw;
+}
+
+//Homepage
+
+.homepage{
+    width:100vw;
+    height:100vh;
+    padding: 6em;
+    //background-color:blue;
+}
+
+.raiz{
+    stroke-dasharray:3000;
+    stroke-dashoffset:3000;
+    animation: dash 10s linear forwards;
+}
+
+.on{
+    animation-play-state: running;
+}
+
+.off{
+    animation-play-state: paused;
+}
+
+@keyframes dash{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+//Homepage2
+
+.homepage2{
+    width:100vw;
+    height:100vh;
+    //background-color:green;
+}
+
+
+//About1
+
+.about1{
+   //background-color:rgb(200, 255, 0);
+   width:100vw;
+   height:120vh; 
+   display :grid;
+   grid-template-rows: 5fr 3fr ;
+   grid-template-columns: 6fr 4fr 1fr;
+   grid-template-areas: "a1 a2 a3"
+                        "a4 a5 a6";
+
+}
+
+.a1{
+    grid-area : a1;
+    background-color:blue
+}
+
+.a2{
+    grid-area : a2;
+    background-color:rgb(23, 23, 202)
+}
+
+.a3{
+    grid-area : a3;
+    background-color:rgb(127, 127, 228)
+}
+
+.a4{
+    grid-area : a4;
+    background-color:rgb(55, 55, 112)
+}
+
+.a5{
+    grid-area : a5;
+    background-color:rgb(134, 15, 163)
+}
+
+.a6{
+    grid-area : a6;
+    background-color:rgb(17, 187, 17)
+}
+
+//About2
+
+.about2{
+    background-color:rgb(200, 255, 0);
+    width:100vw;
+    height:120vh; 
+    display :grid;
+    grid-template-rows: 6fr 3fr ;
+    grid-template-columns: 4fr 6fr 1fr;
+    //grid-gap:2em;
+    grid-template-areas: "b1 b2 b3"
+                         "b4 b5 b6";
+ 
+ }
+ 
+ .b1{
+     grid-area : b1;
+     background-color:blue
+ }
+ 
+ .b2{
+     grid-area : b2;
+     background-color:rgb(23, 23, 202)
+ }
+ 
+ .b3{
+     grid-area : b3;
+     background-color:rgb(127, 127, 228)
+ }
+ 
+ .b4{
+     grid-area : b4;
+     background-color:rgb(55, 55, 112)
+ }
+ 
+ .b5{
+     grid-area : b5;
+     background-color:rgb(134, 15, 163)
+ }
+ 
+ .b6{
+     grid-area : b6;
+     background-color:rgb(17, 187, 17)
+ }
+
+
+ //About3
+
+.about3{
+    background-color:rgb(200, 255, 0);
+    width:100vw;
+    height:120vh; 
+    display :grid;
+    grid-template-rows: 8fr 4fr ;
+    grid-template-columns: 1fr 4fr 4fr;
+    grid-template-areas: "c1 c2 c3"
+                         "c4 c5 c6";
+ 
+ }
+ 
+ .c1{
+     grid-area : c1;
+     background-color:blue
+ }
+ 
+ .c2{
+     grid-area : c2;
+     background-color:rgb(23, 23, 202)
+ }
+ 
+ .c3{
+     grid-area : c3;
+     background-color:rgb(127, 127, 228)
+ }
+ 
+ .c4{
+     grid-area : b4;
+     background-color:rgb(55, 55, 112)
+ }
+ 
+ .c5{
+     grid-area : c5;
+     background-color:rgb(134, 15, 163)
+ }
+ 
+ .c6{
+     grid-area : c6;
+     background-color:rgb(17, 187, 17)
+ }

@@ -1,43 +1,38 @@
 import React, {useState, useEffect,useRef} from "react"
-import {Tween, Timeline} from 'react-gsap'
+import {gsap} from 'gsap'
 
-const Menu = ({style}) => {
-    var [playstate, setPlaystate] = useState(false)
-  
+const Menu = ({click}) => {
+    var tabs = useRef([]);
+    var cont = useRef();
 
     useEffect(() =>{
-        setPlaystate(style);
-        console.log(playstate);
-    },[style])
+
+        
+    var tl = gsap.timeline({});
+    tl.from(cont.current, {scale: 0, duration: 1})
+      .from(tabs.current[0], {top: "35%", left: "44%", duration: 0.5}, "-=0.3")
+      .from(tabs.current[1], {top: "35%", left: "44%", duration: 0.5}, "-=0.3")
+      .from(tabs.current[2], {top: "35%", left: "44%", duration: 0.5}, "-=0.3")
+      .from(tabs.current[3], {top: "35%", left: "44%", duration: 0.5}, "-=0.3")
+      
+        
+    },[click])
 
     return (
-    <div className="menu_container">
-    
-        <Tween
-          from={{
-              
-              top: "35%", 
-              left: "44%",
-              scale: 0,
-          }}
-          
-          stagger={0.2}
-          ease =" expo.out"
-          playState={playstate? "play" : "reverse"}
-        > 
-            <div className="tab">
+    <div ref={elem => {cont.current = elem}} className="menu_container">
+            <div ref={elem => {tabs.current[0] = elem}} className="tab">
             <h1>Nosotros</h1>
             </div>
-            <div  className="tab">
+            <div ref={elem => {tabs.current[1] = elem}}  className="tab">
                 <h1>Proyectos</h1>
             </div>
-            <div className="tab">
+            <div ref={elem => {tabs.current[2] = elem}} className="tab">
                 <h1>Novedades</h1>
             </div>
-            <div className="tab">
+            <div ref={elem => {tabs.current[3] = elem}} className="tab">
                 <h1>Agenda</h1>
             </div>
-        </Tween>
+
         <svg>
         <defs>
             <filter id="goo">

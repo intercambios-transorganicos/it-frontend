@@ -13,7 +13,7 @@ module.exports = {
         apiURL: process.env.DEPLOY_URL ? "https://intercambios-transorganicos.herokuapp.com" : "http://localhost:1337",
         queryLimit: 1000, // Defaults to 100
         collectionTypes: [`articulos`],
-        singleTypes: [`homepage`],
+        singleTypes: [`homepage`, `background-video`],
       },
     },
     `gatsby-plugin-fontawesome-css`,
@@ -25,10 +25,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Pridi\:200, 400, 600`,
-          `Jura\:200, 400, 600`,
-          `Gaegu\:200, 400, 600`,
-          `Gugi\:200, 400, 600`,       
+          `B612\:400, 700`,
+          `B612\:400, 700`,      
         ],
         display: 'swap'
       }

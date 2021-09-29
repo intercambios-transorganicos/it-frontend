@@ -1,49 +1,46 @@
-// import React from 'react'
-// import { useStaticQuery , graphql } from "gatsby";
-// import {GatsbyImage, getImage} from 'gatsby-plugin-image'
+ import React from 'react'
+ import { useStaticQuery , graphql } from "gatsby";
+ import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 
-// export default function Homepage() {
-//     const data = useStaticQuery(graphql`
-//       {
-//       allStrapiHomepage {
-//         edges {
-//           node {
-//             id
-//             titulo
-//             descripcion
-//             Imagen {
-//               id
-//               localFile {
-//                 childImageSharp {
-//                   id
-//                   gatsbyImageData(layout: CONSTRAINED)
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   `)
+ export default function Homepage() {
+     const data = useStaticQuery(graphql`
+         {
+    allStrapiHomepage {
+      edges {
+        node {
+          id
+          titulo
+          descripcion
+          Portada {
+            localFile {
+              childImageSharp {
+                gatsbyImageData(layout: CONSTRAINED)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+   `)
 
-//   const nodo = data.allStrapiHomepage.edges[0].node;
-//   const nodoImagen = data.allStrapiHomepage.edges[0].node.Imagen[0].localFile;
-//   const id = nodo.id;
-//   const titulo = data.allStrapiHomepage.edges[0].node.titulo;
-//   const descript = data.allStrapiHomepage.edges[0].node.descripcion;
-//   const imagen = getImage(nodoImagen);
-//   console.log(nodo, id);
-//   console.log(imagen);
+var nodo = data.allStrapiHomepage.edges[0].node;
+var nodoid = nodo.id; 
+var titulo = nodo.titulo ;
+var des = nodo.descripcion; 
+var nodo_img = nodo.Portada.localFile;
+var imagen = getImage(nodo_img);
+console.log(nodoid, titulo, des)
 
-//     return (
-//         <div className="homepage">
-//             <h1>{titulo}</h1>
-//             <GatsbyImage className="homepageimage" 
-//                             key={id} 
-//                             image={imagen} 
-//                             alt={id}
-//                              />
-//             <p>{descript}</p>
-//         </div>
-//     )
-// }
+     return (
+         <div className="homepage">
+             <h1>{titulo}</h1>
+             <GatsbyImage className="homepageimage" 
+                             key={nodoid} 
+                             image={imagen} 
+                             alt={titulo}
+                              />
+             <p>{des}</p>
+         </div>
+     )
+ }

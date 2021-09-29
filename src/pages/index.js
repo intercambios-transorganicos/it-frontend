@@ -13,8 +13,8 @@ import About3 from "../components/about3"
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <Homepage/>
     <Homepage2/>
+    <Homepage/>
     <About1/>
     <About2/>
     <About3/>

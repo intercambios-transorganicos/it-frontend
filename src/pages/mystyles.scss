@@ -6,8 +6,17 @@ $azul:#2e6ca1;
 
 //Header
 
+h1{
+   
+    font-family: 'B612', sans-serif;
+}
+
+p{
+    font-family: 'Rubik', sans-serif;
+}
+
 header{
-    position: absolute;
+    position: fixed;
     //background-color:yellow;
     width: 100vw;
     height: 10vh;
@@ -76,8 +85,7 @@ header{
     width:100vw;
     height:100vh;
     overflow: hidden;
-    position: absolute;
-    //background-color:yellow;
+    position: fixed;
     filter:url(#goo);
 }
 
@@ -94,7 +102,7 @@ header{
 
 .logosvg{
     width:80px;
-    
+    cursor:pointer;    
 }
 
 .module{
@@ -119,6 +127,16 @@ main{
     height:100vh;
     padding: 6em;
     //background-color:blue;
+}
+
+.homepage2{
+    width:100vw;
+    background-color:rgb(0, 0, 0);
+}
+
+.videoReel{
+    width: 100vw;
+    height:100vh;
 }
 
 .raiz{
@@ -149,7 +167,7 @@ main{
 }
 
 
-//About1
+//About-layout
 
 .about1{
    //background-color:rgb(200, 255, 0);
@@ -165,38 +183,44 @@ main{
 
 .a1{
     grid-area : a1;
-    background-color:blue
+    //background-color:blue
+    border-style: solid;
 }
 
 .a2{
     grid-area : a2;
-    background-color:rgb(23, 23, 202)
+    //background-color:rgb(23, 23, 202)
+    border-style: solid;
 }
 
 .a3{
     grid-area : a3;
-    background-color:rgb(127, 127, 228)
+    //background-color:rgb(127, 127, 228)
+    border-style: solid;
 }
 
 .a4{
     grid-area : a4;
-    background-color:rgb(55, 55, 112)
+    //background-color:rgb(55, 55, 112)
+    border-style: solid;
 }
 
 .a5{
     grid-area : a5;
-    background-color:rgb(134, 15, 163)
+    //background-color:rgb(134, 15, 163)
+    border-style: solid;
 }
 
 .a6{
     grid-area : a6;
-    background-color:rgb(17, 187, 17)
+    //background-color:rgb(17, 187, 17)
+    border-style: solid;
 }
 
 //About2
 
 .about2{
-    background-color:rgb(200, 255, 0);
+    //background-color:rgb(200, 255, 0);
     width:100vw;
     height:120vh; 
     display :grid;
@@ -210,39 +234,48 @@ main{
  
  .b1{
      grid-area : b1;
-     background-color:blue
+     //background-color:blue
+     border-style: solid;
  }
  
  .b2{
      grid-area : b2;
-     background-color:rgb(23, 23, 202)
+     //background-color:rgb(23, 23, 202)
+     border-style: solid;
+     display:grid;
+     align-content: end;
+
  }
  
  .b3{
      grid-area : b3;
-     background-color:rgb(127, 127, 228)
+     //background-color:rgb(127, 127, 228)
+     border-style: solid;
  }
  
  .b4{
      grid-area : b4;
-     background-color:rgb(55, 55, 112)
+     //background-color:rgb(55, 55, 112)
+     border-style: solid;
  }
  
  .b5{
      grid-area : b5;
-     background-color:rgb(134, 15, 163)
+     //background-color:rgb(134, 15, 163)
+     border-style: solid;
  }
  
  .b6{
      grid-area : b6;
-     background-color:rgb(17, 187, 17)
+     //background-color:rgb(17, 187, 17)
+     border-style: solid;
  }
 
 
  //About3
 
 .about3{
-    background-color:rgb(200, 255, 0);
+    //background-color:rgb(200, 255, 0);
     width:100vw;
     height:120vh; 
     display :grid;
@@ -255,30 +288,84 @@ main{
  
  .c1{
      grid-area : c1;
-     background-color:blue
+     //background-color:blue
+     border-style: solid;
  }
  
  .c2{
      grid-area : c2;
-     background-color:rgb(23, 23, 202)
+     //background-color:rgb(23, 23, 202)
+     border-style: solid;
  }
  
  .c3{
      grid-area : c3;
-     background-color:rgb(127, 127, 228)
+     //background-color:rgb(127, 127, 228)
+     border-style: solid;
  }
  
  .c4{
      grid-area : b4;
-     background-color:rgb(55, 55, 112)
+     //background-color:rgb(55, 55, 112)
+     border-style: solid;
  }
  
  .c5{
      grid-area : c5;
-     background-color:rgb(134, 15, 163)
+     //background-color:rgb(134, 15, 163)
+     border-style: solid;
  }
  
  .c6{
      grid-area : c6;
-     background-color:rgb(17, 187, 17)
+     //background-color:rgb(17, 187, 17)
+     border-style: solid;
  }
+
+ //About-elements
+//About1
+ .info_{
+     padding: 2em;
+     width:100%;
+     height:100%;
+     background-color:yellow;
+    
+ }
+
+ .info_ h1{
+    
+    font-family: 'B612', sans-serif;
+     font-size: 3em;
+ }
+
+ .info_ .expandIconContainer{
+    display:grid;
+    justify-items: end;
+    right:4%;
+ }
+
+ .info_ .expandIcon{
+     cursor:pointer;
+ }
+
+ //about2
+.about2_content{
+    padding:2em;
+}
+
+.about2_tituloUp{
+    font-family: 'B612', sans-serif;
+    font-size: 2em;
+    line-height: 0.5em;
+
+}
+
+.about2_tituloDw{
+    font-family: 'B612', sans-serif;
+    font-size: 4em;
+    line-height: 0.5em;
+
+}
+
+
+

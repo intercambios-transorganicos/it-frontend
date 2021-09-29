@@ -1,5 +1,5 @@
 import React from 'react';
-import InfoExpandedx2 from './InfoExpandedx2'
+import InfoExpandedx2 from './infoExpandedx2'
 
 const About2 = () => {
     return (

@@ -26,6 +26,7 @@ const Header = () => {
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 929.92 464.96">
                 <circle  cx="232.48" cy="232.48" r="232.48" fill="#4ca899"/>
                 <rect x="464.96" width="464.96" height="464.96" fill="#4ca899"/>
+                
               </svg>
               </div>
             </div>

@@ -1,10 +1,15 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+
 
 const Homepage2 = () => {
 
-    var video_src = "https://res.cloudinary.com/intercambios-transorganicos/video/upload/v1632864852/teaser_2017_web_5b9e997ee7.mp4";
+    var video_src = "https://res.cloudinary.com/intercambios-transorganicos/video/upload/v1633028911/teaser_edit_8a6dad6fd4.mp4";
     return (
         <div className="homepage2">
+          <FontAwesomeIcon className="downIcon" icon={faArrowDown} size="2x"  />
+        
                 <video
                   className="videoReel"
                   height="100%"

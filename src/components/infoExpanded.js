@@ -1,18 +1,26 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExpandArrowsAlt } from '@fortawesome/free-solid-svg-icons'
 
 
-const InfoExpanded = () => {
+const InfoExpanded = (props) => {
+
+    var[titulo, setTitulo] = useState(null);
+    var[desc, setDesc] =useState(null);
+    
+    useEffect(() =>{
+        setTitulo(props.titulo);
+        setDesc(props.descripcion);
+    },[props])
+
     return (
         <div className="info_">
                     <div className="expandIconContainer">
                     <FontAwesomeIcon className="expandIcon" icon={faExpandArrowsAlt} size="2x"  />
                     </div>
                     <div className="content ">
-                    <h1>Somos un equipo ...</h1>
-                    <p>Desarrollamos interfaces interactivas que permitan incorporar nuevos medios y tecnologías al ámbito de la salud y la educación por medio de estrategias inclusivas. . .</p>
-                    
+                    <h1>{titulo}</h1>
+                    <p>{desc}</p>                    
                     </div>
                 </div>
     );

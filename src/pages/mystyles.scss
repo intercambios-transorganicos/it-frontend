@@ -21,7 +21,7 @@ header{
     width: 100vw;
     height: 10vh;
     padding: 3em  2em 2em 2em;
-    z-index: 20;
+    z-index: 200;
 }
 
 
@@ -76,8 +76,8 @@ header{
 }
 .menuit{
     cursor:pointer;
-    width:60px;
-    height:60px;
+    width:40px;
+    height:40px;
 }
 
 
@@ -87,6 +87,7 @@ header{
     overflow: hidden;
     position: fixed;
     filter:url(#goo);
+    z-index:100;
 }
 
 .menu_container h1{
@@ -101,7 +102,7 @@ header{
 
 
 .logosvg{
-    width:80px;
+    width:60px;
     cursor:pointer;    
 }
 
@@ -132,11 +133,29 @@ main{
 .homepage2{
     width:100vw;
     background-color:rgb(0, 0, 0);
+    position: relative;
+}
+
+.apple_svg_container{
+    height:100%;    
+}
+
+.apple_c{
+    mix-blend-mode: exclusion;
 }
 
 .videoReel{
     width: 100vw;
     height:100vh;
+}
+
+.downIcon{
+    color: #f2561d;
+    position:absolute;
+    bottom: 10%;
+    right:50%;
+    cursor: pointer;
+
 }
 
 .raiz{
@@ -302,6 +321,8 @@ main{
      grid-area : c3;
      //background-color:rgb(127, 127, 228)
      border-style: solid;
+     display:grid;
+     align-content: end;
  }
  
  .c4{
@@ -365,6 +386,14 @@ main{
     font-size: 4em;
     line-height: 0.5em;
 
+}
+
+//about3_content
+
+.about3_content h1{
+    font-family: 'B612', sans-serif;
+    font-size: 4em;
+    line-height: 0.8em;
 }
 
 

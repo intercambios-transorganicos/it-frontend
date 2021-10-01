@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, {useEffect, useState} from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import "./mystyles.scss"
@@ -11,6 +11,7 @@ import About2 from "../components/about2"
 import About3 from "../components/about3"
 
 const IndexPage = () => (
+  
   <Layout>
     <Seo title="Home" />
     <Homepage2/>

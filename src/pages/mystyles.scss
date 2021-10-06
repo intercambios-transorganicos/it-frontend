@@ -144,6 +144,7 @@ main{
     mix-blend-mode: exclusion;
 }
 
+
 .videoReel{
     width: 100vw;
     height:100vh;
@@ -189,26 +190,26 @@ main{
 //About-layout
 
 .about1{
-   //background-color:rgb(200, 255, 0);
+   background-color:rgb(224, 224, 224);
    width:100vw;
    height:120vh; 
    display :grid;
    grid-template-rows: 5fr 3fr ;
    grid-template-columns: 6fr 4fr 1fr;
-   grid-template-areas: "a1 a2 a3"
-                        "a4 a5 a6";
+   grid-template-areas: "a1 a2 a5"
+                        "a3 a4 a5";
 
 }
 
 .a1{
     grid-area : a1;
-    //background-color:blue
+    //background-color:blue;
     border-style: solid;
 }
 
 .a2{
     grid-area : a2;
-    //background-color:rgb(23, 23, 202)
+    background-color:#f7e3c4;
     border-style: solid;
 }
 
@@ -226,15 +227,10 @@ main{
 
 .a5{
     grid-area : a5;
-    //background-color:rgb(134, 15, 163)
+    background-color:#7fbf7f;
     border-style: solid;
 }
 
-.a6{
-    grid-area : a6;
-    //background-color:rgb(17, 187, 17)
-    border-style: solid;
-}
 
 //About2
 
@@ -368,6 +364,27 @@ main{
  .info_ .expandIcon{
      cursor:pointer;
  }
+
+
+ #svgA1{
+     width:100%;
+     height:100%;
+ }
+
+ .svgA1_rect{
+     opacity: 50%;
+     mix-blend-mode: difference;
+ }
+
+ .svgA1_cuad{
+    opacity: 50%;
+    mix-blend-mode: exclusion;
+}
+
+.svgA3_circle{
+    opacity: 50%;
+    mix-blend-mode:difference;
+}
 
  //about2
 .about2_content{

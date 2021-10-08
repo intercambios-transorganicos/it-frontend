@@ -4,22 +4,25 @@ import gsap from "gsap"
 const A1 = (props) => {
     var[active, isActive] = useState(null);
     var actors = useRef([]);
+    var tl = useRef();
+
+    useEffect(()=>{
+        tl.current = gsap.timeline({});
+        tl.current.from(actors.current[0], {r:0, duration: 1})
+          .from(actors.current[1], {x:-200, duration: 1},"-=0.5")
+          .from(actors.current[2], {width: "0%", height:"0%", duration: 1},"-=0.5")
+
+    },[]);
 
     useEffect(()=>{
         isActive(props.action);
-            
-                if(active = true){
-                    console.log("action");
-                    var tl = gsap.timeline({});
-                    tl.from(actors.current[0], {r:0, duration: 1})
-                    .from(actors.current[1], {x:-200, duration: 1},"-=0.5")
-                    .from(actors.current[2], {width: "0%", height:"0%", duration: 1},"-=0.5")
+        console.log(props.action);
+    },[props]);
 
-                    //tl.play();
-                }else{
-                    //console.log("no action");
-                }
-    },[props])
+    useEffect(()=>{
+        console.log(active)
+        tl.current.reversed(active);
+    },[active])
 
     
     return (

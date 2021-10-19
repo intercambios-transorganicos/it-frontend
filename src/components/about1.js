@@ -15,8 +15,8 @@ const About1 = () => {
         setHover(false);
     }
 
-    var titulo = "Somos un equipo ...";
-    var descripcion ="Desarrollamos interfaces interactivas que permitan incorporar nuevos medios y tecnologías al ámbito de la salud y la educación por medio de estrategias inclusivas. . ."
+    var titulo = "¿Que hay “más allá” de la divulgación científico-técnica?";
+    var descripcion ="Debemos generar una ampliación en la cultura del desarrollo de conocimiento apuntando hacia la producción de nuevos métodos, ideas y formas de pensar y expresar narrativas sobre el mundo. "
     return (
         <div className="about1">
             <div className="a_boxes a1" onMouseEnter={handleHover} onMouseLeave={handleLeave}>

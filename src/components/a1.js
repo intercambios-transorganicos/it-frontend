@@ -27,9 +27,21 @@ const A1 = (props) => {
     
     return (
             <svg id="svgA1">
+                <defs>
+                    <pattern id="gal_pattern" x="0" y="0" patternUnits="userSpaceOnUse" height="800" width="800">
+                        <image id="gal" x="20" y="-50"  href="/static/d8672d05088af1469044682e63174c7b/gal.jpg"></image>
+                    </pattern>
+                </defs>
+                <circle id='top' cx={"50%"} cy={"50%"} r="50%" fill="url(#gal_pattern)"/>
                 <circle ref={elem => {actors.current[0] = elem}} cx={"50%"} cy={"50%"} r="50%" fill={"pink"} />
-                <rect ref={elem => {actors.current[1] = elem}} className="svgA1_rect" width={"30%"} height={"100%"} fill={"blue"}/>
+                <rect ref={elem => {actors.current[1] = elem}} className="svgA1_rect" width={"50%"} height={"100%"} fill={"blue"}/>
                 <rect ref={elem => {actors.current[2] = elem}} className="svgA1_cuad" x={"65%"} y={"25%"} width={"50%"} height={"50%"} fill={"green"}/>
+                <text id="gal_g" x={"0%"} y={"100%"} fill={"#eeeeee"}>
+                   G
+                </text>
+                <text id="gal_nombre" x={"15%"} y={"100%"} fill={"#eeeeee"}>
+                   ala Lucia Gonzalez.
+                </text>
             </svg>
 
 

@@ -16,11 +16,11 @@ const A1 = (props) => {
 
     useEffect(()=>{
         isActive(props.action);
-        console.log(props.action);
+        //console.log(props.action);
     },[props]);
 
     useEffect(()=>{
-        console.log(active)
+        //console.log(active)
         tl.current.reversed(active);
     },[active])
 

@@ -233,6 +233,10 @@ main{
     border-style: solid;
 }
 
+.modal{
+    z-index:500;
+}
+
 
 //About2
 
@@ -404,6 +408,18 @@ main{
      cursor:pointer;
  }
 
+ .content_container{
+     background-color:rgb(36, 36, 36);
+     padding:4em;
+ }
+
+ .content_container h1{
+     color:#eeeeee;
+ }
+
+ .content_container p{
+    line-height:1em;
+}
 
  #svgA1{
      width:100%;

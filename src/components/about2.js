@@ -13,6 +13,9 @@ const About2 = () => {
     var pregunta4 = "¿Cómo trascender la obra, el museo, el sistema del arte?";
     var pregunta5 = "¿Por qué es importante el arte para el futuro de la humanidad?";
     var pregunta6 = "¿Existen otras topologías que doten a las disciplinas artísticas de nuevas posibilidades de acción y producción?";
+
+    var modalT = "";
+    var modalP = "";
     return (
         <div className="about2">
             <div className="b_boxes b1">
@@ -32,7 +35,7 @@ const About2 = () => {
             <div className="b_boxes b3"></div>
             <div className="b_boxes b4"></div>
             <div className="b_boxes b5">
-                <InfoExpanded titulo={titulo} descripcion={sub}  />
+                <InfoExpanded titulo={titulo} descripcion={sub} modalT={modalT} modalP={modalP}  />
             </div>
             <div className="b_boxes b6"></div>
             

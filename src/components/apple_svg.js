@@ -26,7 +26,7 @@ const Apple_svg = (props) => {
                  
                 <circle ref={elem => {actors.current[0] = elem}} className="apple_c" cx="38%" cy="50%" r="232.48" fill="#bc0012"/>
                 <circle ref={elem => {actors.current[1] = elem}} className="apple_c" cx="62%" cy="50%" r="232.48" fill="#bc0012"/>
-                <ellipse ref={elem => {actors.current[2] = elem}} className="apple_o" cx="50%" cy="95%" rx="100" ry="50" stroke="yellow" fill-opacity="0" stroke-width="8"/>
+                <ellipse ref={elem => {actors.current[2] = elem}} className="apple_o" cx="50%" cy="95%" rx="100" ry="50" stroke="yellow" fillOpacity="0" strokeWidth="8"/>
               </svg>
         </div>
     );

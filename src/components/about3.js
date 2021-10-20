@@ -1,6 +1,6 @@
-import React, {UseEffect, useStare} from 'react';
+import React from 'react';
 import InfoExpandedx2 from './infoExpandedx2'
-import Animrandompath from './animrandompath'
+import Animrandompath from './animRandomPath'
 
 const About3 = () => {
 

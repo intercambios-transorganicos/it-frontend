@@ -19,7 +19,6 @@ const Preguntas = (props) => {
         
         fill();
 
-        console.log(cCaption);
         
     },[])
 

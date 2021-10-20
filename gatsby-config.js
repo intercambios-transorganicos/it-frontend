@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Intercambios Transorganicos`,
     description: `Investigacion Transdisciplinaria`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    author: ``,
+    siteUrl: `https://intercambios-transorganicos.netlify.app`,
   },
   plugins: [
     `gatsby-plugin-netlify`,
@@ -49,7 +49,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icono_it.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,

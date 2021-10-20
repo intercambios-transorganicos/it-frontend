@@ -1,9 +1,9 @@
 {
   "name": "intercambios-transorganicos",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Proyecto de investigacion transdisciplinaria",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",

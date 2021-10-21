@@ -1,6 +1,7 @@
 import React from 'react';
 import InfoExpandedx2 from './infoExpandedx2'
 import Animrandompath from './animRandomPath'
+import ItIso from './it_iso'
 
 const About3 = () => {
 
@@ -22,7 +23,9 @@ const About3 = () => {
                 </div>
             </div>
             <div className="c_boxes c4"></div>
-            <div className="c_boxes c5"></div>
+            <div className="c_boxes c5">
+                <ItIso/>
+            </div>
             <div className="c_boxes c6">
                 <InfoExpandedx2 desc={descripcion} desc2={descripcion2} modalT={modalT} modalP={modalP}  />
             </div>

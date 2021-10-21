@@ -39,7 +39,7 @@ const About1 = () => {
             </div>
 
             <div className="a_boxes a3">
-            <InfoExpanded titulo={titulo} descripcion={descripcion}  modalT={modalT} modalP={modalP}  />
+            <InfoExpanded titulo={titulo} descripcion={descripcion} bgColor={"#eeeeee"}  modalT={modalT} modalP={modalP}  />
             </div>
 
             <div className="a_boxes a4">

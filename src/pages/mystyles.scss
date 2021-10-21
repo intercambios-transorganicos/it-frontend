@@ -27,6 +27,30 @@ header{
     z-index: 200;
 }
 
+.main_wrapper{
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+//LOADER
+
+.loader_container{
+    width: 100vw;
+    height:100vh;
+    background-color: #4ca899;
+    display:flex;
+    place-items:center;
+    place-content:center;
+}
+
+.itLoader{
+    width:200px;
+    height:200px;
+}
+
 
 //Menu
 /* TAB */
@@ -113,6 +137,7 @@ header{
 
 .module{
     stroke: transparent;
+    fill:#242424;
 }
 
 .module:hover{
@@ -130,25 +155,35 @@ main{
 
 .homepage{
     width:100vw;
-    height:100vh;
-    padding: 6em;
+    padding: 15em;
     //background-color:blue;
 }
+
+//HEROTITLE
+
+.hero_container{
+    width:100vw;
+    height:30vh;
+    background-color:rgb(0, 0, 0);
+    display:flex;
+    place-content:center;
+    place-items:end;
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.hero_title{
+    font-family: 'B612', sans-serif;
+    font-size:5em;
+}
+
+//Homepage2
 
 .homepage2{
     width:100vw;
     background-color:rgb(0, 0, 0);
     position: relative;
 }
-
-.apple_svg_container{
-    height:100%;    
-}
-
-.apple_c{
-    mix-blend-mode: exclusion;
-}
-
 
 .videoReel{
     width: 100vw;
@@ -183,19 +218,11 @@ main{
         stroke-dashoffset: 0;
     }
 }
-//Homepage2
-
-.homepage2{
-    width:100vw;
-    height:100vh;
-    //background-color:green;
-}
-
 
 //About-layout
 
 .about1{
-   background-color:rgb(233, 233, 233);
+  // background-color:rgb(233, 233, 233);
    width:100vw;
    min-height:100vh; 
    display :grid;
@@ -231,13 +258,25 @@ main{
 
 .a5{
     grid-area : a5;
-    background-color:#7fbf7f;
+    background-color:#ffae00b0;
     border-style: solid;
 }
 
 .modal{
     z-index:500;
 }
+
+
+.apple_svg_container{
+    height:100%;    
+}
+
+.apple_c{
+    mix-blend-mode: exclusion;
+    opacity:0.5;
+}
+
+
 
 
 //About2
@@ -275,7 +314,7 @@ main{
  
  .b3{
      grid-area : b3;
-     background-color:#7fbf7f;
+     background-color:#ffae00b0;
      border-style: solid;
  }
  
@@ -355,7 +394,8 @@ main{
  
  .c3{
      grid-area : c3;
-     background: rgb(238,238,238);
+     background: rgb(31,31,31);
+background: radial-gradient(circle, rgba(31,31,31,1) 32%, rgba(255,255,255,1) 48%);
      border-style: solid;
      display:grid;
      align-content: end;
@@ -363,8 +403,9 @@ main{
  
  .c4{
      grid-area : b4;
-     //background-color:rgb(55, 55, 112)
+     background-color:rgb(255, 255, 255);
      border-style: solid;
+     mix-blend-mode: exclusion;
  }
  
  .c5{
@@ -385,7 +426,6 @@ main{
      padding: 2em;
      width:100%;
      height:100%;
-     background-color:yellow;
     
  }
 
@@ -502,7 +542,12 @@ main{
     color:rgb(27, 27, 27);
 }
 
+.cls-1{fill:#54b2a1;}.cls-2{fill:#3a8476;}.cls-3{fill:#4ba899;}
 
+.it_iso{
+    width:100%;
+    height:100%;
+}
 
 @media (max-width: 600px){
     #gal{

@@ -8,7 +8,6 @@ import About1 from "../components/about1"
 import About2 from "../components/about2"
 import About3 from "../components/about3"
 import Loader from "../components/itLoader"
-import HeroTitle from '../components/heroTitle'
 
 const IndexPage = () => (
   
@@ -16,7 +15,6 @@ const IndexPage = () => (
     <Seo title="Home" />
     <Loader/>
     <Homepage2/>
-    <HeroTitle/>
     <Homepage/>
     <About1/>
     <About2/>

@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-$azul:#2e6ca1;
+$lila:#7c428c;
+$acua: #4ca899;
 @import "~bulma/bulma.sass";
 
 
@@ -28,7 +29,7 @@ header{
 }
 
 .main_wrapper{
-    
+    background-color:#242424;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,7 +58,7 @@ header{
 
 .tab{
     top:-20%;
-    background-color:#400101;
+    background-color:$lila;
     cursor: pointer;
     position:absolute;
     width:200px;
@@ -68,7 +69,7 @@ header{
 }
 
 .tab:hover{
-    background-color:#f2561d;
+    background-color:$acua;
 
 }
 /*44/35*/
@@ -138,10 +139,12 @@ header{
 .module{
     stroke: transparent;
     fill:#242424;
+    stroke: $lila;
+    stroke-width: 4px;
 }
 
 .module:hover{
-    fill:pink;
+    fill:$lila;
 }
 
 
@@ -191,7 +194,7 @@ main{
 }
 
 .downIcon{
-    color: #f2561d;
+    color: $lila;
     position:absolute;
     bottom: 10%;
     right:50%;
@@ -236,11 +239,12 @@ main{
 .a1{
     grid-area : a1;
     border-style: solid;
+    background-color:$acua;
 }
 
 .a2{
     grid-area : a2;
-    //background-color:#f7e3c4;
+    background-color:#eeeeee;
     border-style: solid;
 }
 
@@ -471,17 +475,17 @@ background: radial-gradient(circle, rgba(31,31,31,1) 32%, rgba(255,255,255,1) 48
 
  .svgA1_rect{
      opacity: 70%;
-     mix-blend-mode: difference;
+     mix-blend-mode: multiply;
  }
 
  .svgA1_cuad{
     opacity: 50%;
-    mix-blend-mode: exclusion;
+    mix-blend-mode: difference;
 }
 
 .svgA3_circle{
     opacity: 70%;
-    mix-blend-mode:difference;
+    mix-blend-mode:multiply;
 }
 
 #top{

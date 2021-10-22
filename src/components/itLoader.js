@@ -11,7 +11,6 @@ const Itloader = () => {
     },[]);
 
     var[press, setPress] = useState(false);
-
      useEffect(()=>{
         if(press){
             console.log('start');
@@ -20,7 +19,7 @@ const Itloader = () => {
                       .to(actor.current, {display:"none", duration: 0.5});
 
         document.querySelector('html').style.overflow = 'visible'
-    
+        
         }else{
             console.log('pause');
         }
@@ -28,12 +27,14 @@ const Itloader = () => {
     },[press]);
 
     useEffect(()=>{
+       
         document.addEventListener('keydown', logKey);
         function logKey(e) {
             setPress(true);
             console.log(` ${e.code}`);
           }
-    })
+      
+    },[])
 
   
 
@@ -42,7 +43,7 @@ const Itloader = () => {
             <svg className="itLoader">
             
             <g transform="translate(0, 0) scale(1.5)" >
-                      <path fill="#e3651b">
+                      <path fill="#7c428c">
                       <animate 
                         attributeName="d" 
                         dur="2000ms" 

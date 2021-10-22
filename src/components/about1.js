@@ -44,8 +44,8 @@ const About1 = () => {
 
             <div className="a_boxes a4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-                    <rect width={"600%"} height={"600%"} fill="blue" transform="rotate(-45)"/>
-                    <circle className="svgA3_circle" cx={"50%"} cy={"50%"} r="50%" fill={"orange"} />
+                    <rect width={"600%"} height={"600%"} fill="#7c428c" transform="rotate(-45)"/>
+                    <circle className="svgA3_circle" cx={"50%"} cy={"50%"} r="50%" fill={"#4ca899"} />
 
 
                 </svg>

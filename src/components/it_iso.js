@@ -1,14 +1,14 @@
 import React, {useState, useEffect, useRef} from 'react';
 import gsap from 'gsap';
 
-const ItIso = () => {
-
+const ItIso = (props) => {
+    var[active, isActive] = useState(null);
     var actors = useRef([]);
     var tl = useRef();
 
     useEffect(()=>{
-        tl.current = gsap.timeline({repeat:4, yoyo: true, repeatDelay: 5});
-        tl.current.to(actors.current, {
+        tl.current = gsap.timeline({repeat:1, yoyo: true});
+        tl.current.from(actors.current, {
         scale: 0, 
         duration: 2, 
         ease: "power1.inOut",
@@ -17,7 +17,18 @@ const ItIso = () => {
           amount: 1.5
         }
     })
-    },[])
+    },[]);
+
+      useEffect(()=>{
+        isActive(props.action);
+        //console.log(props.action);
+    },[props]);
+
+    useEffect(()=>{
+        //console.log(active)
+        tl.current.reversed(active);
+    },[active])
+
 
 
     return (

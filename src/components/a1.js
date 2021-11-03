@@ -18,6 +18,9 @@ const A1 = (props) => {
     useEffect(()=>{
         isActive(props.action);
         //console.log(props.action);
+        function average(a, b){
+            return a + b / 2
+        }
     },[props]);
 
     useEffect(()=>{

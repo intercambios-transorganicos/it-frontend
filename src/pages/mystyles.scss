@@ -103,6 +103,7 @@ header{
 .tab h1{
     font-size: 1em;
     font-family: 'Jura', sans-serif;
+    padding-top: 1em;
 }
 .menuit{
     cursor:pointer;
@@ -199,6 +200,55 @@ main{
     bottom: 10%;
     right:50%;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding:0.2em;
+    border-radius:100px;
+}
+
+.downIcon:hover{
+    color: $acua;
+}
+
+.vControls{
+    cursor:pointer;
+    position:absolute;
+    background-color:$lila;
+    bottom: 40%;
+    left:0%;
+    display:grid;
+    grid-gap:2em;
+    padding:0.5em;
+    color:#4ca899b0;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: #7c428c8a;
+    border-style: inset;
+    margin: 10px;
+
+}
+
+.vControls .controlIcon:hover{
+    color:#edaffe;
+    font-size:1.9em;
+}
+
+.timecode{
+    position:absolute;
+    background-color:$lila;
+    top: 0%;
+    left:45%;
+    color:#4ca899b0;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: #7c428c8a;
+    border-style: inset;
+    margin: 10px;
+    min-width:100px;
+    text-align:center;
+}
+.timecode h1 {
+    font-size: 0.9em;
+    margin-bottom: 0;;
 
 }
 
@@ -354,19 +404,16 @@ main{
 
  
  .complejo{
-    width:100%;
-    height:100%;
+    max-width:400px;
+    max-height:400px;
 }
 
-#prefix_a{
-    color:#f2561d;
-}
 
 #complejidad{
     font-family: 'B612', sans-serif;
     font-weight: 600;
     font-size:1.5em;
-    fill:#242424;
+    fill:#eeeeee;
     font-weight:600;
 }
 
@@ -394,6 +441,9 @@ main{
      grid-area : c2;
      background-color:#252525;
      border-style: solid;
+     display:flex;
+     justify-content: center;
+     align-items:center;
  }
  
  .c3{
@@ -416,6 +466,8 @@ background: radial-gradient(circle, rgba(31,31,31,1) 32%, rgba(255,255,255,1) 48
      grid-area : c5;
      //background-color:rgb(134, 15, 163)
      border-style: solid;
+     display:flex;
+     justify-content:center;
  }
  
  .c6{
@@ -549,8 +601,7 @@ background: radial-gradient(circle, rgba(31,31,31,1) 32%, rgba(255,255,255,1) 48
 .cls-1{fill:#54b2a1;}.cls-2{fill:#3a8476;}.cls-3{fill:#4ba899;}
 
 .it_iso{
-    width:100%;
-    height:100%;
+    max-width:400px;
 }
 
 @media (max-width: 600px){

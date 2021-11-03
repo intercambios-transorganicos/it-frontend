@@ -7,10 +7,10 @@ const ItIso = (props) => {
     var tl = useRef();
 
     useEffect(()=>{
-        tl.current = gsap.timeline({repeat:1, yoyo: true});
+        tl.current = gsap.timeline();
         tl.current.from(actors.current, {
         scale: 0, 
-        duration: 2, 
+        duration: 1, 
         ease: "power1.inOut",
         stagger: {
           from: "center",
@@ -26,13 +26,13 @@ const ItIso = (props) => {
 
     useEffect(()=>{
         //console.log(active)
-        tl.current.reversed(active);
+            tl.current.reversed(active);
     },[active])
 
 
 
     return (
-        <svg className="it_iso" viewBox="-60 0 600 600">
+        <svg className="it_iso" viewBox="-300 -200 1000 1000">
             <polygon ref={elem => {actors.current[0] = elem}} className="cls-1" points="0 202.43 0 557.28 74.48 599.7 74.48 244.85 0 202.43"/>
             <polygon ref={elem => {actors.current[1] = elem}} className="cls-2" points="0 202.43 73.48 160 146.97 202.43 74.22 245.59 0 202.43"/>
             <polygon ref={elem => {actors.current[2] = elem}} className="cls-2" points="74.22 245.59 146.97 202.43 146.97 557.28 74.22 599.28 74.22 245.59"/>

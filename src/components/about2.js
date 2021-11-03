@@ -25,7 +25,7 @@ const About2 = () => {
                 <Preguntas dur={"20s"} fSize={100} cCaption={pregunta2} bgColor={""} txColor={"#3B3B3B"}/>
                 <Preguntas dur={"30s"} fSize={110} cCaption={pregunta3} bgColor={""} txColor={"#EDEDED"}/>
                 <Preguntas dur={"20s"} fSize={60} cCaption={pregunta4} bgColor={""} txColor={"#FAFAFA"}/>
-                <Preguntas dur={"10s"} fSize={120} cCaption={pregunta5} bgColor={""} txColor={"#D4D4D4"}/>
+                <Preguntas dur={"10s"} fSize={100} cCaption={pregunta5} bgColor={""} txColor={"#D4D4D4"}/>
                 <Preguntas dur={"30s"} fSize={40} cCaption={pregunta6} bgColor={""} txColor={"#ADADAD"}/>
                 {/* <div className="about2_content">
                     <h1 className="about2_tituloUp">NUESTRO</h1>

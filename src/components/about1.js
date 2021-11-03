@@ -27,7 +27,7 @@ const About1 = () => {
 
 
     return (
-        <div className="about1">
+        <div id="about-1" className="about1">
             
 
             <div className="a_boxes a1" onMouseEnter={handleHover} onMouseLeave={handleLeave}>

@@ -21,7 +21,7 @@ const Menu = ({click}) => {
     return (
     <div ref={elem => {cont.current = elem}} className="menu_container">
             <div ref={elem => {tabs.current[0] = elem}} className="tab">
-            <h1>Nosotros</h1>
+            <h1>Nosotres</h1>
             </div>
             <div ref={elem => {tabs.current[1] = elem}}  className="tab">
                 <h1>Proyectos</h1>
@@ -30,7 +30,7 @@ const Menu = ({click}) => {
                 <h1>Novedades</h1>
             </div>
             <div ref={elem => {tabs.current[3] = elem}} className="tab">
-                <h1>Agenda</h1>
+                <h1>Home</h1>
             </div>
 
         <svg>

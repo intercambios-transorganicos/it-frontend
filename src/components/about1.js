@@ -16,11 +16,11 @@ const About1 = () => {
     }
 
    //AMARILLO
-    var titulo = "Un eje puesto en la posibilidad cyborg post-humanista";
-    var descripcion ="Aquí, el trabajo transdisciplinario, se suma al objetivo de optimizar y mejorar aspectos funcionales de ciertas tecnologías, un trabajo de posicionamiento filosófico respecto del cuerpo";
+    var titulo = "Nuevas formas de producción de conocimiento “más allá” del desarrollo de obra!";
+    var descripcion ="“Debemos generar una ampliación en la cultura del desarrollo de conocimiento hacia la producción de nuevos métodos, ideas y formas de pensar y expresar narrativas sobre el mundo.” ";
 
     //ModalT
-    var modalP = "Nuestra motivacion es generar nuevas formas de producción de conocimiento “más allá” del desarrollo de obra. Mediante el estudio riguroso de las perspectivas particulares de diferentes disciplinas y con la participación de profesionales que se comprometen con su formación y actualización constante. Aquí, el trabajo transdisciplinario, se suma al objetivo de optimizar y mejorar aspectos funcionales de ciertas tecnologías, un trabajo de posicionamiento filosófico respecto del cuerpo, el empoderamiento, la diversidad, la noción de cuerpo expandido y, en el caso de Intercambios Transorgánicos, un eje puesto en la posibilidad cyborg post-humanista IT se erige sobre la formación híbrida de Gala lucia Gonzalez Barrios entre un entrenamiento formal en Música, Arteterapia, Neurorrehabilitación Transdisciplinaria y Artes Electrónicas";
+    var modalP = "Nuestra motivacion es generar nuevas formas de producción de conocimiento “más allá” del desarrollo de obra. Mediante el estudio riguroso de las perspectivas particulares de diferentes disciplinas y con la participación de profesionales que se comprometen con su formación y actualización constante. Aquí, el trabajo transdisciplinario, se suma al objetivo de optimizar y mejorar aspectos funcionales de ciertas tecnologías, un trabajo de posicionamiento filosófico respecto del cuerpo, el empoderamiento, la diversidad, la noción de cuerpo expandido y, en el caso de Intercambios Transorgánicos, un eje puesto en la posibilidad cyborg post-humanista IT se erige sobre la formación híbrida de Gala lucia Gonzalez Barrios entre un entrenamiento formal en Música, Arteterapia, Neurorrehabilitación Transdisciplinaria y Artes Electrónicas.";
     var modalT = "¿Que hay “más allá” de la divulgación científico-técnica?";
 
 

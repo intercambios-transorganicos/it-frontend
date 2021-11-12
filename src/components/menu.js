@@ -1,4 +1,5 @@
 import React, { useEffect,useRef} from "react"
+import {Link} from "gatsby"
 import {gsap} from 'gsap'
 
 const Menu = ({click}) => {
@@ -27,10 +28,10 @@ const Menu = ({click}) => {
                 <h1>Proyectos</h1>
             </div>
             <div ref={elem => {tabs.current[2] = elem}} className="tab">
-                <h1>Novedades</h1>
+                <Link to="/publicaciones" > <h1>Publicaciones</h1> </Link>
             </div>
             <div ref={elem => {tabs.current[3] = elem}} className="tab">
-                <h1>Home</h1>
+                <Link to="/" ><h1>Home</h1></Link>
             </div>
 
         <svg>

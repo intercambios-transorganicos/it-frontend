@@ -2,14 +2,22 @@ import React, {useState, useEffect, useRef} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
 import { faPauseCircle } from '@fortawesome/free-solid-svg-icons'
-import ReactPlayer from 'react-player'
+import useVideoquery from '../hooks/useVideoQuery'
+//import ReactPlayer from 'react-player'
 
 const Videowcontrols = (props) => {
 
     const[play, setPlay] = useState(null);
-    var[timer, setTimer] = useState(0)
+    var[timer, setTimer] = useState(0);
+    var[stop, setStop] = useState(null);
+    var[urlNum, defineUrlNum ] = useState(null);
+    var[urlObj, defineUrlobj] = useState(props.url);
+    const {playlist} = useVideoquery();
+
+
     var video_src = "https://res.cloudinary.com/intercambios-transorganicos/video/upload/v1635455684/portada_it_2021_5d6d2493d2.mp4";
     var videoRef = useRef(null);
+
     function handlePause(){
       setPlay(false);
       console.log('pause');
@@ -30,6 +38,15 @@ const Videowcontrols = (props) => {
       
     },[play]);
 
+    useEffect(() =>{
+      if(stop === true){
+        videoRef.current.pause();
+        videoRef.current.currentTime = 0;
+      }
+
+    },[stop])
+
+    //TIMER
     useEffect(()=>{ 
       var timerx = setInterval(() =>setTimer(videoRef.current.currentTime), 10)
       return function cleanup(){
@@ -38,10 +55,35 @@ const Videowcontrols = (props) => {
       }
     })
 
+    //PROPRS
+
     useEffect(()=>{
       setPlay(props._play);
-      console.log(props._play);
-    },[props._play])
+    },[props._play]);
+    
+    useEffect(()=> {
+      setStop(props._stop);
+      console.log(props._stop);
+
+    }, [props._stop]);
+
+    useEffect(() =>{
+
+      defineUrlNum(props.url);
+      console.log(urlNum);
+      console.log(typeof urlNum);
+     
+    },[props.url]);
+
+    
+    //URL
+
+    useEffect(() =>{ 
+      defineUrlobj(playlist[urlNum]);
+      console.log(playlist);
+      console.log(urlObj)
+    },[urlNum])
+
                       
     return (
         <div>

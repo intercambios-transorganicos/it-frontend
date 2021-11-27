@@ -12,11 +12,12 @@ var clase = open ? "modalVideos modal is-active" : "modalVideos modal";
 function handleClose(){
   props.modal(false);
   setStop(true);
+  //console.log(stop);
 }
 
 useEffect(()=>{
   setOpen(props.isActive);
-  console.log(props.isActive)
+  //console.log(props.isActive);
 },[props.isActive])
 
     
@@ -25,7 +26,7 @@ useEffect(()=>{
           <div className="modal-background"></div>
           <div className="videoModalContent modal-content">
           
-          <VideoWControls  _play={open} />
+          <VideoWControls  _play={open} _stop={stop} url={props.url} />
                 
             
           </div>

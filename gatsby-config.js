@@ -12,7 +12,7 @@ module.exports = {
       options: {
         apiURL: process.env.DEPLOY_URL ? "https://intercambios-transorganicos.herokuapp.com" : "http://localhost:1337",
         queryLimit: 1000, // Defaults to 100
-        collectionTypes: [`articulos`, `video-playlists`],
+        collectionTypes: [`articulos`, `playlists`],
         singleTypes: [`homepage`],
       },
     },

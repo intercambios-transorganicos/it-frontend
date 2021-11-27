@@ -10,27 +10,25 @@ const Publicaciones = () => {
 
 
                 <div className="tile is-ancestor">
+                    <div className="tile is-vertical ">
+                        <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
+                        <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
+                    </div>
+                    <div className="tile is-vertical is-8">
+                        <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
+                        <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
+                    </div>
 
-                   <div className="tile is-vertical ">
-                        <div className="tile is-parent is-vertical">                        
-                            <ChildBox autor="Autor" titulo="Arte" subtitulo="elsubtitulo"  id="articuloA"/>                   
-                        
-                            <ChildBox autor="Autor" titulo="Ciencia" subtitulo="elsubtitulo" id="articuloA" />
-                        </div>
-                   
-                        <div className="tile is-parent">
-                           <ChildBox autor="Autor" titulo="Ciencia" subtitulo="elsubtitulo"  id="articuloA"/>
-                        </div>
+                </div>
 
-                   </div>
-
+                <div className="tile is-ancestor">
+                    <div className="tile is-vertical is-8">
+                        <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
+                        <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
+                    </div>
                     <div className="tile is-vertical">
-                        <div className="tile is-parent ">
-                            <ChildBox autor="Autor" titulo="Tecnologia" subtitulo="elsubtitulo"  id="articuloA"/>
-                        </div>
-                        <div className="tile is-parent ">
-                            <ChildBox autor="Autor" titulo="Otros" subtitulo="elsubtitulo"  id="articuloA"/>
-                        </div>
+                        <ChildBox autor="jane doe" titulo="Ciencia"  id="articuloA"/>
+                        <ChildBox autor="jane doe" titulo="Ciencia"  id="articuloA"/>
                     </div>
 
                 </div>

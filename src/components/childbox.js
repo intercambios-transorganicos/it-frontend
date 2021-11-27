@@ -20,16 +20,18 @@ const Childbox = (props) => {
     
 
     return (
-        <Link className="aArticle" to={`/${id}`} >
+        <Link className="aArticle" to={`../../${id}`} >
+            <div className="tile is-parent">
             <article
             onMouseEnter={handleEnter}
             onMouseLeave={handleLeave}
-            className="itArticle tile is-child box">
+            className="article_box tile is-child box">
                 <div className="textcontent">
                     <h1>{titulo}</h1>          
                     <h1>{autor}</h1>
                 </div>
             </article>
+            </div>
         </Link> 
     );
 }

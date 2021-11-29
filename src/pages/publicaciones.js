@@ -2,9 +2,14 @@ import React from 'react';
 import {Link} from "gatsby"
 import Layout from "../components/layout"
 import ChildBox from "../components/childBox"
+import CirclePath from "../components/circlePath"
+
 const Publicaciones = () => {
     return (
         <Layout>
+            <div className="circlePathContainer" >
+                <CirclePath/>
+            </div>
             <div className="publicaciones">
                 <div className="publicaciones_content">
 

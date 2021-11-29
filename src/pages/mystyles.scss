@@ -740,6 +740,7 @@ main{
     transform-origin:center;
     display: grid;
     place-content: end;
+    transition:all 0.3s ease-in-out;
 
 }
 
@@ -750,6 +751,19 @@ main{
     box-shadow: 7px 7px 7px #4ca899, -7px -7px 7px #fff;
 
 }
+
+ // circlepath
+
+ .circlePathContainer{
+     display:flex;
+     justify-content:center;
+     background-color: $bgclaro;
+ }
+
+ .circlePath{
+     width:200px;
+     height:200px;
+ }
 
 @media (max-width: 600px){
     #gal{

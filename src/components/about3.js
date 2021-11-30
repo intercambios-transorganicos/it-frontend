@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import InfoExpandedx2 from './infoExpandedx2'
-import Animrandompath from './animRandomPath'
 import ItIso from './it_iso'
 
 const About3 = () => {
 
-    var descripcion2 ="Se plantea como una superación del paradigma positivista y su tendencia a la fragmentación y el aislamiento para el estudio de un problema."
-    var descripcion ="El paradigma de la complejidad implica hacer una identificación integral del problema, para luego componer estrategias en equipo hacia el abordaje de diferentes preguntas y experimentos asi como un diseño pertinente a cada proyecto, propuesta, equipo, y procesos."
-    var modalP = "La hiperespecialización disciplinar que describe Edgar Morin en Introducción al pensamiento complejo (1990) refleja cómo los problemas holísticos han tendido a ser compartimentados y fragmentados a los fines de hacer aportes precisos y pertinentes. Pero lo que no ha resultado sencillo, incluso hasta hoy, es la reintegración de los saberes en pos del holos al que pertenecen. Incluso se puede percibir un alejamiento del “mundo” del desarrollo de conocimiento, respecto del “mundo” social. La aspiración máxima de los proyectos que se realizan en Intercambios Transorgánicos no se trata del arte por el arte en sí mismo, sino de la circulación de obras, ideas, productos, procesos y el diseño de estrategias que buscan encontrar suelo en problemáticas sociales específicas." ;
-    var modalT = "El Metodo VS la Estrategia.";
-
+    var descripcion ="La aspiración máxima de los proyectos que se realizan en Intercambios Transorgánicos no se trata del arte por el arte en sí mismo, sino de la circulación de obras, ideas, productos, procesos y el diseño de estrategias que buscan encontrar suelo en problemáticas sociales específicas" ;
+    var descripcion2 ="Todo esto lo hacemos vinculando al MUNTreF con instituciones interesadas en integrar diversos medios y tecnologías a sus estrategias de trabajo."
+    var modalT = "Porque queremos que el diálogo entre arte y ciencia sea realmente tangible.";
+    var modalP = "Activamos conversaciones transdisciplinarias y exploraciones de campo que nos ofrezcan la matriz de datos que sustenta nuestra investigación. Así es como guiamos, reformulamos y expandimos continuamente nuestra perspectiva crítica sobre el uso validado de la tecnología en salud y educación.";
+    var modalP2 = "Representamos a nuestra universidad y además consolidamos nuevos lazos con pares y organizaciones a través de conferencias, encuentros, exposiciones y workshops que nos llevaron a recorrer diversas ciudades e instituciones de América Latina y Europa.  "
+    var modalP3 = "Nuestra misión es tan ambiciosa como inquietante. Nos interesa generar mayor empoderamiento de las personas con una discapacidad, colaborar en comprender la dimensión cultural de la salud. Aportar a las transformaciones sociales contemporáneas en torno a la valoración y conceptos de salud, alimentación, independencia personal, comunidad, soberanía tecnológica, soberanía sanitaria. ";
     var[icohovered, seticoHovered] = useState(false);
     function handleHover(){
         seticoHovered(true);
@@ -27,7 +27,7 @@ const About3 = () => {
             </div>
             <div className="c_boxes c3">
                 <div className="about3_content">
-                    <h1>El Paradigma de la complejidad</h1>
+                    <h1>Nuestro Aporte:</h1>
                 </div>
             </div>
             <div className="c_boxes c4"></div>
@@ -35,7 +35,7 @@ const About3 = () => {
                 
             </div>
             <div className="c_boxes c6">
-                <InfoExpandedx2 desc={descripcion} desc2={descripcion2} bgColor="#4ca899" modalT={modalT} modalP={modalP}  />
+                <InfoExpandedx2 desc={descripcion} desc2={descripcion2} bgColor="#4ca899" modalT={modalT} modalP={modalP} modalP2={modalP2} modalP3={modalP3}/>
             </div>
             
         </div>

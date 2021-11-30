@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Circlepath = () => {
+const Circlepath = (props) => {
     return (
        <svg viewBox="0 0 500 500" className="circlePath" >
            <defs>
@@ -20,7 +20,7 @@ const Circlepath = () => {
            </defs>
            <text dy="70" textLength="1220" font-size="4em">
                <textPath href="#textcircle" >
-               Publicaciones•
+               {props.text}
                </textPath>
            </text>
        </svg>

@@ -33,7 +33,7 @@ const A1 = (props) => {
             <svg id="svgA1">
                 <defs>
                     <pattern id="gal_pattern" x="0" y="0" patternUnits="userSpaceOnUse" height="800" width="800">
-                        <image id="gal" x="20" y="-50"  href={gal}></image>
+                        <image id="gal" x="60" y="-40" transform="scale(0.9)"  href={gal}></image>
                     </pattern>
                 </defs>
                 <circle id='top' cx={"50%"} cy={"50%"} r="50%" fill="url(#gal_pattern)"/>

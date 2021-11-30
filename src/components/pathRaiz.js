@@ -12,7 +12,7 @@ function handleClick(e){
 }
 
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="-200 -50 1500 900">
+        <svg className="pathRaiz" xmlns="http://www.w3.org/2000/svg" viewBox="-200 -200 1500 900">
 
           {JSONdata.content.map((e, i) =>{
             var current = e;

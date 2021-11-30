@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react"
 import PropTypes from "prop-types"
+import {Link} from "gatsby"
 import Menu from "./menu"
 import { StaticImage } from "gatsby-plugin-image"
 const Header = () => {
@@ -36,12 +37,15 @@ const Header = () => {
             <div className="level-item">
             {/* <FontAwesomeIcon className="menuicon" icon={faEllipsisH} onClick={handleclick} /> */}
            <div className="menuit" onClick={handleclick}>
-            <StaticImage
+             <Link to="/" >
+             <StaticImage
               src="../images/menuit.svg"
               alt="LogoIt"
               placeholder="tracedSVG"
               
-            /></div>
+            />
+            </Link>
+           </div>
             </div>
           </div>
         </header>

@@ -16,12 +16,12 @@ const About1 = () => {
     }
 
    //AMARILLO
-    var titulo = "Nuevas formas de producción de conocimiento “más allá” del desarrollo de obra!";
-    var descripcion ="“Debemos generar una ampliación en la cultura del desarrollo de conocimiento hacia la producción de nuevos métodos, ideas y formas de pensar y expresar narrativas sobre el mundo.” ";
+    var titulo = "Somos un programa de investigacion dedicado al desarrollo de interfaces interactivas !";
+    var descripcion =" IT se erige sobre el perfíl híbrido de Gala Lucía González Barrios, que es licenciada en Artes Electrónicas (Universidad Nacional de Tres de Febrero) y se ha formado en Neurorrehabilitación Transdisciplinaria (Universidad del Museo Social Argentino), Música (Colegio Juan Pedro Esnaola) y Arteterapia (Primera Escuela Argentina de Arteterapia).";
 
     //ModalT
-    var modalP = "Nuestra motivacion es generar nuevas formas de producción de conocimiento “más allá” del desarrollo de obra. Mediante el estudio riguroso de las perspectivas particulares de diferentes disciplinas y con la participación de profesionales que se comprometen con su formación y actualización constante. Aquí, el trabajo transdisciplinario, se suma al objetivo de optimizar y mejorar aspectos funcionales de ciertas tecnologías, un trabajo de posicionamiento filosófico respecto del cuerpo, el empoderamiento, la diversidad, la noción de cuerpo expandido y, en el caso de Intercambios Transorgánicos, un eje puesto en la posibilidad cyborg post-humanista IT se erige sobre la formación híbrida de Gala lucia Gonzalez Barrios entre un entrenamiento formal en Música, Arteterapia, Neurorrehabilitación Transdisciplinaria y Artes Electrónicas.";
-    var modalT = "¿Que hay “más allá” de la divulgación científico-técnica?";
+    var modalT = "Nos interesa la colaboración interdisciplinar y el estudio riguroso de las perspectivas particulares de cada disciplina interviniente!";
+    var modalP = "Creemos que debemos entrenar una mirada integral sobre lo que estudiamos y sobre lo que queremos operar, y esto implica también, aproximarnos con nuestra humanidad y subjetividad. A lo largo del tiempo, muchas personas especialistas en distintas áreas del campo de la salud, de la tecnología, la ciencia y el arte, se han sumado al objetivo de optimizar y mejorar aspectos funcionales de ciertas tecnologías teniendo en común, un trabajo de posicionamiento filosófico respecto del cuerpo que implica siempre el empoderamiento de las personas cuyos derechos han sido vulnerados o que poseen algún tipo de discapacidad, promoviendo la diversidad, la noción de cuerpo expandido y, en el caso de quienes integramos Intercambios Transorgánicos,  la posibilidad cyborg post-humanista.";
 
 
 

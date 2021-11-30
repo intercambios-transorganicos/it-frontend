@@ -26,6 +26,8 @@ const InfoExpandedx2 = (props) => {
                 <div className="content_container">
                 <h1 className="title">{props.modalT}</h1>
                 <p>{props.modalP}</p>
+                <p>{props.modalP2}</p>
+                <p>{props.modalP3}</p>
                 </div>
             </div>
             <button onClick={handleClose} className="modal-close is-large" aria-label="close"></button>

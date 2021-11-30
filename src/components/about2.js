@@ -5,8 +5,8 @@ import Bgimg from  '../images/Asset.png'
 
 const About2 = () => {
 
-    var titulo = "El eje temático que atraviesa todo lo que hacemos";
-    var sub = "es el campo de la salud, entendido como un campo complejo nos permite observar los distintos niveles de la cultura, para proponer operaciones sobre ellos."
+    var titulo = "Nuestras preguntas de investigacion...";
+    var sub = "Dedicamos un proceso de investigación transdisciplinaria a la comprensión del problema. Sobre la dimensión adquirida, imaginamos y a veces realizamos estrategias tecno-culturales para descubrir nuevas soluciones."
 
     var pregunta1 = "¿Cómo potenciar y expandir la transferencia de conocimientos a la población?";
     var pregunta2 = "¿¿Qué futuros imaginamos??";
@@ -15,8 +15,8 @@ const About2 = () => {
     var pregunta5 = "¿Por qué es importante el arte para el futuro de la humanidad?";
     var pregunta6 = "¿Existen otras topologías que doten a las disciplinas artísticas de nuevas posibilidades de acción y producción?";
 
-    var modalT = "";
-    var modalP = "";
+    var modalT = "Métodología";
+    var modalP = "Nuestro enfoque crítico sobre los avances y las limitaciones de la tecnología funcional nos llevó a plantear la necesidad de producir dispositivos/interfaces que estimulen, por medio del lenguaje simbólico del arte electrónico, aspectos creativos, sensoriales, adaptativos y exploratorios de quienes son parte de las experiencias que llevamos adelante.  Trabajamos con las comunidades que viven diferentes problemáticas o con problemas específicos que identificamos o que plantea una institución, colega, cliente. ";
     return (
         <div className="about2">
             <div style={{
@@ -27,11 +27,11 @@ const About2 = () => {
                 className="b_boxes b1">
             </div>
             <div className="b_boxes b2">
-                <Preguntas dur={"40s"} fSize={80} cCaption={pregunta1} bgColor={""} txColor={"#ADADAD"}/>
-                <Preguntas dur={"20s"} fSize={100} cCaption={pregunta2} bgColor={""} txColor={"#3B3B3B"}/>
-                <Preguntas dur={"30s"} fSize={110} cCaption={pregunta3} bgColor={""} txColor={"#EDEDED"}/>
-                <Preguntas dur={"20s"} fSize={60} cCaption={pregunta4} bgColor={""} txColor={"#FAFAFA"}/>
-                <Preguntas dur={"10s"} fSize={100} cCaption={pregunta5} bgColor={""} txColor={"#D4D4D4"}/>
+                <Preguntas dur={"40s"} fSize={50} cCaption={pregunta1} bgColor={""} txColor={"#ADADAD"}/>
+                <Preguntas dur={"20s"} fSize={80} cCaption={pregunta2} bgColor={""} txColor={"#3B3B3B"}/>
+                <Preguntas dur={"30s"} fSize={60} cCaption={pregunta3} bgColor={""} txColor={"#EDEDED"}/>
+                <Preguntas dur={"20s"} fSize={40} cCaption={pregunta4} bgColor={""} txColor={"#FAFAFA"}/>
+                <Preguntas dur={"15s"} fSize={30} cCaption={pregunta5} bgColor={""} txColor={"#D4D4D4"}/>
                 <Preguntas dur={"30s"} fSize={40} cCaption={pregunta6} bgColor={""} txColor={"#ADADAD"}/>
                 {/* <div className="about2_content">
                     <h1 className="about2_tituloUp">NUESTRO</h1>

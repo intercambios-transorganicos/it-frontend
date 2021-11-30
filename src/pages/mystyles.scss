@@ -2,8 +2,8 @@
 
 $lila:#7c428c;
 $acua: #4ca899;
-$bgclaro:#DEFCF0;
 $bgGreen:#DEFCF0;
+$negro:#242424;
 @import "~bulma/bulma.sass";
 
 
@@ -164,9 +164,15 @@ main{
 
 .homepage{
     width:100vw;
-    padding: 5em;
-    max-height:100vh;
+    height:100vh;
     //background-color:blue;
+}
+
+//PATH RAIZ
+
+.pathRaiz{
+    width:100%;
+    height:100%;
 }
 
 //HEROTITLE
@@ -203,7 +209,7 @@ main{
     color: $lila;
     position:absolute;
     bottom: 10%;
-    right:49%;
+    right:48.5%;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.459);
     padding:0.2em;
@@ -282,7 +288,7 @@ main{
 .about1{
   // background-color:rgb(233, 233, 233);
    width:100vw;
-   min-height:100vh; 
+   height:100vh; 
    display :grid;
    grid-template-rows: 5fr 3fr ;
    grid-template-columns:6fr 4fr 1fr; 
@@ -343,12 +349,12 @@ main{
 .about2{
     //background-color:rgb(200, 255, 0);
     width:100vw;
-    min-height:100vh; 
+    height:100vh; 
     display :grid;
     grid-template-rows: 6fr 3fr ;
     grid-template-columns: 4fr 6fr 1fr;
     //grid-gap:2em;
-    grid-template-areas: "b1 b2 b3"
+    grid-template-areas: "b2 b2 b3"
                          "b4 b5 b6";
  
  }
@@ -371,7 +377,8 @@ main{
      //background-color:rgb(23, 23, 202)
      border-style: solid;
      display:grid;
-     background-color:rgb(39, 39, 39)
+     background-color:rgb(39, 39, 39);
+     padding-bottom: 60px;
 
  }
 
@@ -451,7 +458,7 @@ main{
 .publicaciones{
     width:100vw;
     height:auto;
-    background-color:$bgclaro;
+    background-color:$bgGreen;
     padding:2em;
 }
 
@@ -530,16 +537,13 @@ main{
     background-color:#ffffff;
 }
 
-.b_section{
-   // background-color:yellow;
-}
 
  //About3
 
 .about3{
     //background-color:rgb(200, 255, 0);
     width:100vw;
-    min-height:100vh; 
+    height:100vh; 
     display :grid;
     grid-template-rows: 8fr 4fr ;
     grid-template-columns: 1fr 4fr 4fr;
@@ -604,11 +608,12 @@ main{
  .info_ h1{
     
     font-family: 'B612', sans-serif;
-     font-size: 2.5em;
-     line-height: 0.8em;
+     font-size: 1.5em;
+     line-height: 0.9em;
  }
 
  .info_ p{
+    font-size: 0.9em;
      line-height: 1em;
  }
 
@@ -629,11 +634,13 @@ main{
  }
 
  .content_container h1{
-     color:#eeeeee;
+     color:$acua;
+     font-size: 1.5em;
  }
 
  .content_container p{
     line-height:1em;
+    color:#eeeeee;
 }
 
  #svgA1{
@@ -726,11 +733,20 @@ main{
     background-color:$bgGreen;
     height:100vh;
     padding: 2em;
+    padding-top:10em;
+    
 }
 
 .member-cards{
     height:100%;
     margin-top:1em;
+    overflow-x:scroll;
+    padding:4em;
+}
+
+.member-card{
+    width: 20vw;
+    min-width: 20vw;
 }
 
 .member-content{
@@ -739,8 +755,9 @@ main{
     height:100%;
     transform-origin:center;
     display: grid;
-    place-content: end;
+    align-items: flex-end;
     transition:all 0.3s ease-in-out;
+    text-align:center;
 
 }
 
@@ -752,18 +769,78 @@ main{
 
 }
 
+.member-content h1{
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.member-content h2{
+    font-size: 0.7em;
+    margin-bottom: 0.5em;
+}
+
+.teamText{
+    position:absolute;
+    left:42%;
+}
+
  // circlepath
 
  .circlePathContainer{
      display:flex;
      justify-content:center;
-     background-color: $bgclaro;
+     background-color: $bgGreen;
  }
 
  .circlePath{
      width:200px;
      height:200px;
  }
+
+
+ .footer{
+     background-color:$negro;
+
+ }
+
+ .footer .footer-image-content{
+      padding:8em;
+      height:100%;
+      text-align: center;
+    
+ }
+
+ .footer .footer-image-content h1{
+    padding-top: 2em;
+    color: #eee;
+ }
+
+ .icons-column{
+    display: flex;
+    place-content: center;
+    align-items: center;
+ }
+
+ .footer .footer-icons-content{
+     width: 50%;
+     height: 50%;
+     display:grid;
+     grid-template-columns: 1fr 1fr ;
+     grid-template-rows: 1fr 1fr;
+     place-items:center
+ }
+
+ .footer-icons{
+     cursor:pointer;
+     color:$lila;
+     transition:all 0.2s ease-in-out;
+ }
+
+ .footer-icons:hover{
+    color:$acua;
+    transform:scale(1.5);
+}
+
 
 @media (max-width: 600px){
     #gal{

@@ -6,10 +6,15 @@ import { StaticImage } from "gatsby-plugin-image"
 const Header = () => {
 
   const [click, isClick] = useState(false);
- 
+  const miClase = click? "modal is-active" : "modal"; 
   
   function handleclick(){
-    isClick(!click)
+    isClick(true)
+  }
+  
+
+  function handleClose(){
+    isClick(false);
   }
 
 
@@ -17,76 +22,60 @@ const Header = () => {
       console.log(click);
   },[click])
 
-   if(click){
-    return (
-      <div>
-        <header className="level">
-          <div className="level-left">
-            <div className="level-item">
-              <div className="logosvg">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 929.92 464.96">
-                <circle  cx="232.48" cy="232.48" r="232.48" fill="#4ca899"/>
-                <rect x="464.96" width="464.96" height="464.96" fill="#4ca899"/>
-                
-              </svg>
-              </div>
-            </div>
-          </div>
   
-          <div className="level-right">
-            <div className="level-item">
-            {/* <FontAwesomeIcon className="menuicon" icon={faEllipsisH} onClick={handleclick} /> */}
-           <div className="menuit" onClick={handleclick}>
-             <Link to="/" >
-             <StaticImage
-              src="../images/menuit.svg"
-              alt="LogoIt"
-              placeholder="tracedSVG"
-              
-            />
-            </Link>
-           </div>
-            </div>
-          </div>
-        </header>
-  
-        <Menu click={click} />
+ 
+  return(
+    <div>
+    <div className={miClase}>
+      <div className="modal-background"></div>
+      <div className="modal-content menuModalContent">
+        <div className="">
+          <Menu click={click} /> 
+        </div>
       </div>
-    );
-   }else{
-    return (
-      <div>
-        <header className="level">
-          <div className="level-left">
-            <div className="level-item">
-              <div className="logosvg">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 929.92 464.96">
-                <circle  cx="232.48" cy="232.48" r="232.48" fill="#4ca899"/>
-                <rect x="464.96" width="464.96" height="464.96" fill="#4ca899"/>
-              </svg>
-              </div>
-            </div>
+      <button onClick={handleClose} className="modal-close is-large menuClose" aria-label="close" ></button>
+    </div>
+    <header className="level is-mobile">
+      <div className="level-left">
+        <div className="level-item">
+          <div className="logosvg">
+          <Link to="/" >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 929.92 464.96">
+              <circle  cx="232.48" cy="232.48" r="232.48" fill="#4ca899"/>
+              <rect x="464.96" width="464.96" height="464.96" fill="#4ca899"/>
+            </svg>
+          </Link>
           </div>
-  
-          <div className="level-right">
-            <div className="level-item">
-            {/* <FontAwesomeIcon className="menuicon" icon={faEllipsisH} onClick={handleclick} /> */}
-           <div className="menuit" onClick={handleclick}>
-            <StaticImage
-              src="../images/menuit.svg"
-              alt="LogoIt"
-              placeholder="tracedSVG"
-              
-            /></div>
-            </div>
+        </div>
+        <div className="level-item">
+          <div className="itTitulo">
+            <h1 className="title">Intercambios Transorganicos.</h1>
           </div>
-        </header>
-  
-        
+        </div>
       </div>
-    );
-   }
 
+      <div className="level-right">
+        <div className="level-item">
+        {/* <FontAwesomeIcon className="menuicon" icon={faEllipsisH} onClick={handleclick} /> */}
+       <div className="menuit" onClick={handleclick}>
+        
+         <StaticImage
+          src="../images/menuit.svg"
+          alt="LogoIt"
+          placeholder="tracedSVG"
+          layout = "CONSTRAINED"
+          className="menuImgWrapper"
+          
+          
+        />
+       </div>
+        </div>
+      </div>
+    </header>
+
+    
+  </div>
+  );
   
 }
 

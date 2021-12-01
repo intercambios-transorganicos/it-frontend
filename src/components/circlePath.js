@@ -18,7 +18,7 @@ const Circlepath = (props) => {
                     />
                </path>
            </defs>
-           <text dy="70" textLength="1220" font-size="4em">
+           <text dy="70" textLength="1220" fill={props.textColor} font-size="4em">
                <textPath href="#textcircle" >
                {props.text}
                </textPath>

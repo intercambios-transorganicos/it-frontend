@@ -23,7 +23,7 @@ const InfoExpanded = (props) => {
         <div className={clase}>
             <div className="modal-background"></div>
             <div className="modal-content">
-                <div className="content_container">
+                <div className="infoExpandedContent">
                 <h1 className="title">{props.modalT}</h1>
                 <p>{props.modalP}</p>
                 </div>

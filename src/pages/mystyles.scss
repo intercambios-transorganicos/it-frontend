@@ -23,11 +23,18 @@ p{
 
 header{
     position: fixed;
-    //background-color:yellow;
+    
     width: 100vw;
-    height: 10vh;
+    height: 1vh;
     padding: 2em  2em 2em 2em;
     z-index: 200;
+    border-bottom: solid purple;
+    background-color: #242424;
+}
+
+.itTitulo h1{
+    font-size:1em;
+    color:$bgGreen;
 }
 
 .main_wrapper{
@@ -71,6 +78,7 @@ header{
     display:flex;
     place-content:center;
     align-items:center;
+
 }
 
 .tab:hover{
@@ -112,9 +120,9 @@ header{
 }
 .menuit{
     cursor:pointer;
-    width:40px;
-    height:40px;
+    width:50px
 }
+
 
 
 .menu_container{
@@ -136,9 +144,26 @@ header{
     cursor: pointer;
 }
 
+//MENU MODAL  
+
+.menuModalContent{
+    width:100%;
+    height:100%;
+}
+
+.simulador{
+    background-color:blue;
+    width:100vw;
+    height:100vh;
+}
+
+.menuClose{
+    z-index:500;
+}
+
 
 .logosvg{
-    width:60px;
+    width:40px;
     cursor:pointer;    
 }
 
@@ -214,6 +239,7 @@ main{
     background-color: rgba(0, 0, 0, 0.459);
     padding:0.2em;
     border-radius:100px;
+    border:solid 1px;
 }
 
 .downIcon:hover{
@@ -297,34 +323,46 @@ main{
 
 }
 
+// .about1 > .a_boxes{
+//     border: solid #7c428c 2px;
+// }
+
+// .about2 > .b_boxes{
+//     border: solid #7c428c 2px;
+// }
+
+// .about3 > .c_boxes{
+//     border: solid #7c428c 2px;
+// }
+
 .a1{
     grid-area : a1;
-    border-style: solid;
-    background-color:$acua;
+    
+    background-color:$negro;
 }
 
 .a2{
     grid-area : a2;
-    background-color:#eeeeee;
-    border-style: solid;
+    background-color:#1b1b1b;
+    
 }
 
 .a3{
     grid-area : a3;
     //background-color:rgb(127, 127, 228)
-    border-style: solid;
+    
 }
 
 .a4{
     grid-area : a4;
     //background-color:rgb(55, 55, 112)
-    border-style: solid;
+    
 }
 
 .a5{
     grid-area : a5;
     background-color:$acua;
-    border-style: solid;
+    
 }
 
 .modal{
@@ -362,7 +400,7 @@ main{
  .b1{
      grid-area : b1;
      //background-color:blue
-     border-style: solid;
+     
      background: rgb(0,0,0);
      background: linear-gradient(90deg, rgba(0,0,0,1) 26%, rgba(40,40,40,1) 100%);
      
@@ -375,7 +413,7 @@ main{
  .b2{
      grid-area : b2;
      //background-color:rgb(23, 23, 202)
-     border-style: solid;
+     
      display:grid;
      background-color:rgb(39, 39, 39);
      padding-bottom: 60px;
@@ -385,26 +423,26 @@ main{
  
  .b3{
      grid-area : b3;
-     background-color:#000000;
-     border-style: solid;
+     background:linear-gradient(270deg, rgb(0, 0, 0) 20%, rgb(36, 36, 36) 71%);
+     
  }
  
  .b4{
      grid-area : b4;
-     //background-color:rgb(55, 55, 112)
-     border-style: solid;
+     background-color:#1a1a1a;
+     
  }
  
  .b5{
      grid-area : b5;
      //background-color:rgb(134, 15, 163)
-     border-style: solid;
+     
  }
  
  .b6{
      grid-area : b6;
      //background-color:rgb(17, 187, 17)
-     border-style: solid;
+     
  }
 
  .b1 circle{
@@ -412,13 +450,13 @@ main{
      mix-blend-mode:exclusion;
  }
 
- .b4 rect{
+ .rectPattern{
     transform-origin:center;
      mix-blend-mode:difference;
      transition: all 1.5s;
  }
 
- .b4 rect:hover{
+ .rectPattern:hover{
      
      filter:hue-rotate(360deg);
      transform: scale(2);
@@ -526,9 +564,16 @@ main{
 }
 .articuloA .titulo{
     color:$acua;
+    font-size: 3em;
 }
 .articuloA .subTitulo{
     color:$acua;
+    font-size: 2em;
+
+}
+
+.articuloA p{
+    font-size:2em;
 }
 
 .a_section{
@@ -554,13 +599,13 @@ main{
  
  .c1{
      grid-area : c1;
-     border-style: solid;
+     background-color:#000;
+     
  }
  
  .c2{
      grid-area : c2;
-     background-color:#252525;
-     border-style: solid;
+     background-color:#0e0e0e;
      display:flex;
      justify-content: center;
      align-items:center;
@@ -570,30 +615,25 @@ main{
      grid-area : c3;
      background: rgb(31,31,31);
      background: radial-gradient(circle, rgba(31,31,31,1) 32%, rgba(255,255,255,1) 48%);
-     border-style: solid;
      display:grid;
      align-content: flex-end;
+     padding:1em;
  }
  
  .c4{
      grid-area : c4;
      background-color:rgb(255, 255, 255);
-     border-style: solid;
-     mix-blend-mode: exclusion;
  }
  
  .c5{
      grid-area : c5;
-     //background-color:rgb(134, 15, 163)
-     border-style: solid;
      display:flex;
      justify-content:center;
- }
+     background-color: black;
+     }
  
  .c6{
      grid-area : c6;
-     //background-color:rgb(17, 187, 17)
-     border-style: solid;
  }
 
  //About-elements
@@ -608,12 +648,12 @@ main{
  .info_ h1{
     
     font-family: 'B612', sans-serif;
-     font-size: 1.5em;
+     font-size: 2em;
      line-height: 0.9em;
  }
 
  .info_ p{
-    font-size: 0.9em;
+    font-size: 1.2em;
      line-height: 1em;
  }
 
@@ -626,19 +666,28 @@ main{
 
  .info_ .expandIcon{
      cursor:pointer;
+     transition:all 0.5s ease-in-out;
+     
  }
 
- .content_container{
+ .info_ .expandIcon:hover{
+     color:#eeeeee;
+     background-color:$negro;
+    transform:scale(1.2);
+    padding:3px;
+}
+
+ .infoExpandedContent{
      background-color:rgb(36, 36, 36);
      padding:4em;
  }
 
- .content_container h1{
+ .infoExpandedContent h1{
      color:$acua;
      font-size: 1.5em;
  }
 
- .content_container p{
+ .infoExpandedContent p{
     line-height:1em;
     color:#eeeeee;
 }
@@ -665,9 +714,9 @@ main{
 
 #top{
     filter:hue-rotate(330deg);
-    transition: filter 2s;
     stroke: rgb(255, 190, 201);
     stroke-width: 10px;
+    transition:filter 0.5s ease-in-out;
 }
 
 #top:hover{
@@ -730,7 +779,7 @@ main{
 //NOSOTRSES
 
 .nosotres{
-    background-color:$bgGreen;
+    background-color:$negro;
     height:100vh;
     padding: 2em;
     padding-top:10em;
@@ -762,10 +811,10 @@ main{
 }
 
 .member-content:hover{
-    transform:skewY(-20deg);
+    transform:skewY(-8deg);
     background-color:$lila;
     background: #defcf0;
-    box-shadow: 7px 7px 7px #4ca899, -7px -7px 7px #fff;
+    box-shadow: 3px  3px  3px #2424, -6px -6px 6px #4ca899;
 
 }
 
@@ -793,6 +842,7 @@ main{
  }
 
  .circlePath{
+     margin-top:4em;
      width:200px;
      height:200px;
  }
@@ -800,40 +850,53 @@ main{
 
  .footer{
      background-color:$negro;
-
+     border: solid #7c428c 2px;
+     margin-top:0px;
+     padding-top: 25em;
  }
 
  .footer .footer-image-content{
-      padding:8em;
-      height:100%;
+      padding:2em;
       text-align: center;
-    
+      
  }
 
- .footer .footer-image-content h1{
+ .footer .icons-column h1{
     padding-top: 2em;
     color: #eee;
  }
 
+ .footerImgWrapper{
+    width:200px
+ }
+
+
  .icons-column{
     display: flex;
+    flex-direction:column;
+    text-align: center;
     place-content: center;
     align-items: center;
  }
 
  .footer .footer-icons-content{
      width: 50%;
-     height: 50%;
-     display:grid;
-     grid-template-columns: 1fr 1fr ;
-     grid-template-rows: 1fr 1fr;
-     place-items:center
+    //  height: 100%;
+    //  display:grid;
+    //  grid-template-columns: 1fr 1fr ;
+    //  grid-template-rows: 1fr 1fr;
+    //  place-items:center;
+    //  margin: 2rem;
+    display: flex;
+    place-content:center;
+    place-items: center;
  }
 
  .footer-icons{
      cursor:pointer;
      color:$lila;
      transition:all 0.2s ease-in-out;
+     margin:1rem;
  }
 
  .footer-icons:hover{

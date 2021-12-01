@@ -13,7 +13,6 @@ module.exports = {
         apiURL: process.env.DEPLOY_URL ? "https://intercambios-transorganicos.herokuapp.com" : "http://localhost:1337",
         queryLimit: 1000, // Defaults to 100
         collectionTypes: [`articulos`, `playlists`, `members`],
-        singleTypes: [`homepage`],
       },
     },
     `gatsby-plugin-fontawesome-css`,

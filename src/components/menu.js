@@ -5,18 +5,22 @@ import {gsap} from 'gsap'
 const Menu = ({click}) => {
     var tabs = useRef([]);
     var cont = useRef();
+    var tl = useRef();
 
     useEffect(() =>{
+        
+        tl.current = gsap.timeline({});
+        tl.current.from(cont.current, {scale: 0, duration: 1})
+        .from(tabs.current[0], {top: "35%", left: "44%", duration: 0.5}, "-=0.3")
+        .from(tabs.current[1], {top: "35%", right: "44%", duration: 0.5}, "-=0.3")
+        .from(tabs.current[2], {top: "35%", left: "44%", duration: 0.5}, "-=0.3")
+        .from(tabs.current[3], {top: "35%", right: "44%", duration: 0.5}, "-=0.3")
+        console.log("clickfrommenuuu")
+        
+    },[]);
 
-        
-    var tl = gsap.timeline({});
-    tl.from(cont.current, {scale: 0, duration: 1})
-      .from(tabs.current[0], {top: "35%", left: "44%", duration: 0.5}, "-=0.3")
-      .from(tabs.current[1], {top: "35%", left: "44%", duration: 0.5}, "-=0.3")
-      .from(tabs.current[2], {top: "35%", left: "44%", duration: 0.5}, "-=0.3")
-      .from(tabs.current[3], {top: "35%", left: "44%", duration: 0.5}, "-=0.3")
-      
-        
+    useEffect(() =>{
+        tl.current.reversed(!click);
     },[click])
 
     return (

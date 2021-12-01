@@ -10,17 +10,14 @@ const A1 = (props) => {
     useEffect(()=>{
         tl.current = gsap.timeline({});
         tl.current.from(actors.current[0], {r:0, duration: 1})
-          .from(actors.current[1], {x:-200, duration: 1},"-=0.5")
+          .from(actors.current[1], {x:-400, duration: 1},"-=0.5")
           .from(actors.current[2], {width: "0%", height:"0%", duration: 1},"-=0.5")
 
     },[]);
 
     useEffect(()=>{
         isActive(props.action);
-        //console.log(props.action);
-        function average(a, b){
-            return a + b / 2
-        }
+       
     },[props]);
 
     useEffect(()=>{

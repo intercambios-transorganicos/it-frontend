@@ -22,11 +22,11 @@ const Apple_svg = (props) => {
 
     return (
         <div className="apple_svg_container">
-             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 929.92 464.96">
+             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1220 120">
                  
-                <circle ref={elem => {actors.current[0] = elem}} className="apple_c" cx="38%" cy="50%" r="232.48" fill="#bc0012"/>
-                <circle ref={elem => {actors.current[1] = elem}} className="apple_c" cx="62%" cy="50%" r="232.48" fill="#bc0012"/>
-                <ellipse ref={elem => {actors.current[2] = elem}} className="apple_o" cx="50%" cy="95%" rx="100" ry="50" stroke="yellow" fillOpacity="0" strokeWidth="8"/>
+                <circle ref={elem => {actors.current[0] = elem}} className="apple_c" cx="38%" cy="50%" r="232.48" fill="#7c428c"/>
+                <circle ref={elem => {actors.current[1] = elem}} className="apple_c" cx="62%" cy="50%" r="232.48" fill="#7c428c"/>
+                <ellipse ref={elem => {actors.current[2] = elem}} className="apple_o" cx="50%" cy="220%" rx="100" ry="50" stroke="yellow" fillOpacity="0" strokeWidth="8"/>
               </svg>
         </div>
     );

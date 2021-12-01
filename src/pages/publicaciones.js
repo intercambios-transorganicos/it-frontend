@@ -8,7 +8,7 @@ const Publicaciones = () => {
     return (
         <Layout>
             <div className="circlePathContainer" >
-                <CirclePath text="Publicaciones•" />
+                <CirclePath text="Publicaciones•" textColor="#000000" />
             </div>
             <div className="publicaciones">
                 <div className="publicaciones_content">

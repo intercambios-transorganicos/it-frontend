@@ -35,20 +35,21 @@ const About1 = () => {
             </div>
             
             <div className="a_boxes a2">
-                <AppleSvg action="true" />
+                
             </div>
 
             <div className="a_boxes a3">
-            <InfoExpanded titulo={titulo} descripcion={descripcion} bgColor={"#eeeeee"}  modalT={modalT} modalP={modalP}  />
+               <InfoExpanded titulo={titulo} descripcion={descripcion} bgColor={"#eeeeee"}  modalT={modalT} modalP={modalP}  />
             </div>
 
             <div className="a_boxes a4">
-                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+               <AppleSvg action="true" />
+                {/* <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
                     <rect width={"600%"} height={"600%"} fill="#7c428c" transform="rotate(-45)"/>
                     <circle className="svgA3_circle" cx={"50%"} cy={"50%"} r="50%" fill={"#4ca899"} />
 
 
-                </svg>
+                </svg> */}
             </div>
 
             <div className="a_boxes a5"></div>

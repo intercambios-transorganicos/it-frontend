@@ -6,23 +6,26 @@ import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
     return (
-        <div class="columns footer" >
-            <div className="column">
+        <div class=" footer" >
+            <div className="">
                 <div className="footer-image-content">
                    <StaticImage 
                    src= "../images/logoit_it.png" 
                    alt="A dinosaur"
+                   layout = "CONSTRAINED"
+                   className="footerImgWrapper"
                    />
-                   <h1>Es un proyecto de Gala Lucia Gonzalez Barrios</h1>
+                   
                 </div>
             </div>
-            <div className="column icons-column">
+            <div className=" icons-column">
                 <div className="footer-icons-content">
                 <FontAwesomeIcon  size="3x" className="footer-icons" icon={faFacebook} />
                 <FontAwesomeIcon  size="3x" className="footer-icons" icon={faInstagram} />
                 <FontAwesomeIcon  size="3x" className="footer-icons" icon={faPhone} />
                 <FontAwesomeIcon  size="3x" className="footer-icons" icon={faMap} />
                 </div>
+                <h1>Es un proyecto de Gala Lucia Gonzalez Barrios.</h1>
             </div>
             
         </div>

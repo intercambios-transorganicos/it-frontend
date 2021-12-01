@@ -9,7 +9,7 @@ const Publicaciones = () => {
     return (
         <Layout>
             <div className="teamText" >
-                 <CirclePath text="Nuestro • Equipo • " />
+                 <CirclePath text="Nuestro • Equipo • " textColor="#eeeeee" />
             </div>
             <div className="nosotres">
               <TeamCarousel/>

@@ -1,0 +1,126 @@
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: same-origin
+/styles.bde8ca0647c5f0d4b849.css
+  Cache-Control: public, max-age=31536000, immutable
+/cb1608f2-cc12f6e1b43353c691a1.js
+  Cache-Control: public, max-age=31536000, immutable
+/a9a7754c-65ced6534d0b429b1152.js
+  Cache-Control: public, max-age=31536000, immutable
+/commons-abfb915980d8e8696bdb.js
+  Cache-Control: public, max-age=31536000, immutable
+/11a94a3e73140724a8de4b52d94986fe0f3aacd5-91301b22dd8e4c7b9e4b.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-404-js-f756e66537292eb692b2.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-articulo-a-js-ef996fbcbeec11d92d48.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-index-js-f8cfd4d40cc2dbfd9703.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-nosotres-js-761dc1512aad9c93ea16.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-page-2-js-88a9f5c879133b486ba5.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-publicaciones-js-960471d7ff4f9e560c4f.js
+  Cache-Control: public, max-age=31536000, immutable
+/component---src-pages-using-typescript-tsx-76ac6780e7b83ea5b8bc.js
+  Cache-Control: public, max-age=31536000, immutable
+/webpack-runtime-79da75890d17767960fb.js
+  Cache-Control: public, max-age=31536000, immutable
+/framework-0e025b74e97e392fc0b7.js
+  Cache-Control: public, max-age=31536000, immutable
+/app-ed4be18b1268dfebb8be.js
+  Cache-Control: public, max-age=31536000, immutable
+/static/*
+  Cache-Control: public, max-age=31536000, immutable
+/sw.js
+  Cache-Control: no-cache
+/IT-Gatsby/404/
+  Link: </IT-Gatsby/webpack-runtime-79da75890d17767960fb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/framework-0e025b74e97e392fc0b7.js>; rel=preload; as=script
+  Link: </IT-Gatsby/app-ed4be18b1268dfebb8be.js>; rel=preload; as=script
+  Link: </IT-Gatsby/cb1608f2-cc12f6e1b43353c691a1.js>; rel=preload; as=script
+  Link: </IT-Gatsby/a9a7754c-65ced6534d0b429b1152.js>; rel=preload; as=script
+  Link: </IT-Gatsby/commons-abfb915980d8e8696bdb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/11a94a3e73140724a8de4b52d94986fe0f3aacd5-91301b22dd8e4c7b9e4b.js>; rel=preload; as=script
+  Link: </IT-Gatsby/component---src-pages-404-js-f756e66537292eb692b2.js>; rel=preload; as=script
+  Link: </IT-Gatsby/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </IT-Gatsby/page-data/404/page-data.json>; rel=preload; as=fetch; crossorigin
+/IT-Gatsby/404.html
+  Link: </IT-Gatsby/webpack-runtime-79da75890d17767960fb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/framework-0e025b74e97e392fc0b7.js>; rel=preload; as=script
+  Link: </IT-Gatsby/app-ed4be18b1268dfebb8be.js>; rel=preload; as=script
+  Link: </IT-Gatsby/cb1608f2-cc12f6e1b43353c691a1.js>; rel=preload; as=script
+  Link: </IT-Gatsby/a9a7754c-65ced6534d0b429b1152.js>; rel=preload; as=script
+  Link: </IT-Gatsby/commons-abfb915980d8e8696bdb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/11a94a3e73140724a8de4b52d94986fe0f3aacd5-91301b22dd8e4c7b9e4b.js>; rel=preload; as=script
+  Link: </IT-Gatsby/component---src-pages-404-js-f756e66537292eb692b2.js>; rel=preload; as=script
+  Link: </IT-Gatsby/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </IT-Gatsby/page-data/404.html/page-data.json>; rel=preload; as=fetch; crossorigin
+/IT-Gatsby/articuloA/
+  Link: </IT-Gatsby/webpack-runtime-79da75890d17767960fb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/framework-0e025b74e97e392fc0b7.js>; rel=preload; as=script
+  Link: </IT-Gatsby/app-ed4be18b1268dfebb8be.js>; rel=preload; as=script
+  Link: </IT-Gatsby/cb1608f2-cc12f6e1b43353c691a1.js>; rel=preload; as=script
+  Link: </IT-Gatsby/a9a7754c-65ced6534d0b429b1152.js>; rel=preload; as=script
+  Link: </IT-Gatsby/commons-abfb915980d8e8696bdb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/component---src-pages-articulo-a-js-ef996fbcbeec11d92d48.js>; rel=preload; as=script
+  Link: </IT-Gatsby/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </IT-Gatsby/page-data/articuloA/page-data.json>; rel=preload; as=fetch; crossorigin
+/IT-Gatsby/
+  Link: </IT-Gatsby/webpack-runtime-79da75890d17767960fb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/framework-0e025b74e97e392fc0b7.js>; rel=preload; as=script
+  Link: </IT-Gatsby/app-ed4be18b1268dfebb8be.js>; rel=preload; as=script
+  Link: </IT-Gatsby/cb1608f2-cc12f6e1b43353c691a1.js>; rel=preload; as=script
+  Link: </IT-Gatsby/a9a7754c-65ced6534d0b429b1152.js>; rel=preload; as=script
+  Link: </IT-Gatsby/commons-abfb915980d8e8696bdb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/11a94a3e73140724a8de4b52d94986fe0f3aacd5-91301b22dd8e4c7b9e4b.js>; rel=preload; as=script
+  Link: </IT-Gatsby/component---src-pages-index-js-f8cfd4d40cc2dbfd9703.js>; rel=preload; as=script
+  Link: </IT-Gatsby/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </IT-Gatsby/page-data/index/page-data.json>; rel=preload; as=fetch; crossorigin
+/IT-Gatsby/nosotres/
+  Link: </IT-Gatsby/webpack-runtime-79da75890d17767960fb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/framework-0e025b74e97e392fc0b7.js>; rel=preload; as=script
+  Link: </IT-Gatsby/app-ed4be18b1268dfebb8be.js>; rel=preload; as=script
+  Link: </IT-Gatsby/cb1608f2-cc12f6e1b43353c691a1.js>; rel=preload; as=script
+  Link: </IT-Gatsby/a9a7754c-65ced6534d0b429b1152.js>; rel=preload; as=script
+  Link: </IT-Gatsby/commons-abfb915980d8e8696bdb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/component---src-pages-nosotres-js-761dc1512aad9c93ea16.js>; rel=preload; as=script
+  Link: </IT-Gatsby/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </IT-Gatsby/page-data/nosotres/page-data.json>; rel=preload; as=fetch; crossorigin
+/IT-Gatsby/page-2/
+  Link: </IT-Gatsby/webpack-runtime-79da75890d17767960fb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/framework-0e025b74e97e392fc0b7.js>; rel=preload; as=script
+  Link: </IT-Gatsby/app-ed4be18b1268dfebb8be.js>; rel=preload; as=script
+  Link: </IT-Gatsby/cb1608f2-cc12f6e1b43353c691a1.js>; rel=preload; as=script
+  Link: </IT-Gatsby/a9a7754c-65ced6534d0b429b1152.js>; rel=preload; as=script
+  Link: </IT-Gatsby/commons-abfb915980d8e8696bdb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/11a94a3e73140724a8de4b52d94986fe0f3aacd5-91301b22dd8e4c7b9e4b.js>; rel=preload; as=script
+  Link: </IT-Gatsby/component---src-pages-page-2-js-88a9f5c879133b486ba5.js>; rel=preload; as=script
+  Link: </IT-Gatsby/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </IT-Gatsby/page-data/page-2/page-data.json>; rel=preload; as=fetch; crossorigin
+/IT-Gatsby/publicaciones/
+  Link: </IT-Gatsby/webpack-runtime-79da75890d17767960fb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/framework-0e025b74e97e392fc0b7.js>; rel=preload; as=script
+  Link: </IT-Gatsby/app-ed4be18b1268dfebb8be.js>; rel=preload; as=script
+  Link: </IT-Gatsby/cb1608f2-cc12f6e1b43353c691a1.js>; rel=preload; as=script
+  Link: </IT-Gatsby/a9a7754c-65ced6534d0b429b1152.js>; rel=preload; as=script
+  Link: </IT-Gatsby/commons-abfb915980d8e8696bdb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/component---src-pages-publicaciones-js-960471d7ff4f9e560c4f.js>; rel=preload; as=script
+  Link: </IT-Gatsby/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </IT-Gatsby/page-data/publicaciones/page-data.json>; rel=preload; as=fetch; crossorigin
+/IT-Gatsby/using-typescript/
+  Link: </IT-Gatsby/webpack-runtime-79da75890d17767960fb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/framework-0e025b74e97e392fc0b7.js>; rel=preload; as=script
+  Link: </IT-Gatsby/app-ed4be18b1268dfebb8be.js>; rel=preload; as=script
+  Link: </IT-Gatsby/cb1608f2-cc12f6e1b43353c691a1.js>; rel=preload; as=script
+  Link: </IT-Gatsby/a9a7754c-65ced6534d0b429b1152.js>; rel=preload; as=script
+  Link: </IT-Gatsby/commons-abfb915980d8e8696bdb.js>; rel=preload; as=script
+  Link: </IT-Gatsby/11a94a3e73140724a8de4b52d94986fe0f3aacd5-91301b22dd8e4c7b9e4b.js>; rel=preload; as=script
+  Link: </IT-Gatsby/component---src-pages-using-typescript-tsx-76ac6780e7b83ea5b8bc.js>; rel=preload; as=script
+  Link: </IT-Gatsby/page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </IT-Gatsby/page-data/using-typescript/page-data.json>; rel=preload; as=fetch; crossorigin

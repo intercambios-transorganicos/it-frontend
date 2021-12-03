@@ -28,6 +28,7 @@ const Preguntas = (props) => {
           
           <svg className="svg_caption">
             <text
+            y="-40"
             style={{fill : txColor, fontSize: fSize }}
             >
                 {cCaption.map(elem => elem)}

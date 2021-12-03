@@ -33,16 +33,16 @@ const A1 = (props) => {
                         <image id="gal" x="60" y="-40" transform="scale(0.9)"  href={gal}></image>
                     </pattern>
                 </defs>
-                <circle id='top' cx={"50%"} cy={"50%"} r="50%" fill="url(#gal_pattern)"/>
-                <circle ref={elem => {actors.current[0] = elem}} cx={"50%"} cy={"50%"} r="50%" fill={"pink"} />
+                <circle id='top' cx={"50%"} cy={"50%"} r="0%" fill="url(#gal_pattern)"/>
+                <circle ref={elem => {actors.current[0] = elem}} cx={"50%"} cy={"50%"} r="18%" fill={"pink"} />
                 <rect ref={elem => {actors.current[1] = elem}} className="svgA1_rect" width={"50%"} height={"100%"} fill={"#7c428c"}/>
                 <rect ref={elem => {actors.current[2] = elem}} className="svgA1_cuad" x={"65%"} y={"25%"} width={"50%"} height={"50%"} fill={"#04bf9d"}/>
-                <text id="gal_g" x={"0%"} y={"100%"} fill={"#eeeeee"}>
+                {/* <text id="gal_g" x={"0%"} y={"100%"} fill={"#eeeeee"}>
                    G
                 </text>
                 <text id="gal_nombre" x={"15%"} y={"100%"} fill={"#eeeeee"}>
                    ala Lucia Gonzalez Barrios.
-                </text>
+                </text> */}
             </svg>
 
 

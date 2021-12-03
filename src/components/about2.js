@@ -20,12 +20,12 @@ const About2 = () => {
     return (
         <div className="about2">
             <div className="b_boxes b2">
-                <Preguntas dur={"40s"} fSize={50} cCaption={pregunta1} bgColor={""} txColor={"#ADADAD"}/>
-                <Preguntas dur={"20s"} fSize={80} cCaption={pregunta2} bgColor={""} txColor={"#3B3B3B"}/>
-                <Preguntas dur={"30s"} fSize={60} cCaption={pregunta3} bgColor={""} txColor={"#EDEDED"}/>
-                <Preguntas dur={"20s"} fSize={40} cCaption={pregunta4} bgColor={""} txColor={"#FAFAFA"}/>
-                <Preguntas dur={"15s"} fSize={30} cCaption={pregunta5} bgColor={""} txColor={"#D4D4D4"}/>
-                <Preguntas dur={"30s"} fSize={40} cCaption={pregunta6} bgColor={""} txColor={"#ADADAD"}/>
+                <Preguntas dur={"40s"} fSize={"7vh"} cCaption={pregunta1} bgColor={""} txColor={"#ADADAD"}/>
+                <Preguntas dur={"20s"} fSize={"4vh"} cCaption={pregunta2} bgColor={""} txColor={"#3B3B3B"}/>
+                <Preguntas dur={"30s"} fSize={"6vh"} cCaption={pregunta3} bgColor={""} txColor={"#EDEDED"}/>
+                <Preguntas dur={"20s"} fSize={"3vh"} cCaption={pregunta4} bgColor={""} txColor={"#FAFAFA"}/>
+                <Preguntas dur={"15s"} fSize={"4vh"} cCaption={pregunta5} bgColor={""} txColor={"#D4D4D4"}/>
+                <Preguntas dur={"30s"} fSize={"5vh"} cCaption={pregunta6} bgColor={""} txColor={"#ADADAD"}/>
                
             </div>
             <div className="b_boxes b3"></div>

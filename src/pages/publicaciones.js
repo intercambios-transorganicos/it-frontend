@@ -19,24 +19,21 @@ const Publicaciones = () => {
                         <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
                         <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
                     </div>
-                    <div className="tile is-vertical is-8">
-                        <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
-                        <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
-                    </div>
-
-                </div>
-
-                <div className="tile is-ancestor">
-                    <div className="tile is-vertical is-8">
+                    <div className="tile is-vertical">
                         <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
                         <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
                     </div>
                     <div className="tile is-vertical">
-                        <ChildBox autor="jane doe" titulo="Ciencia"  id="articuloA"/>
-                        <ChildBox autor="jane doe" titulo="Ciencia"  id="articuloA"/>
+                        <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
+                        <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
+                    </div>
+                    <div className="tile is-vertical">
+                        <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
+                        <ChildBox autor="jane doe" titulo="Ciencia" id="articuloA" />
                     </div>
 
                 </div>
+
 
 
                 </div>

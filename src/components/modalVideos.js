@@ -20,6 +20,10 @@ useEffect(()=>{
   //console.log(props.isActive);
 },[props.isActive])
 
+useEffect(() =>{
+  console.log("cambio props.url");
+},[props.url])
+
     
     return (
         <div className={clase}>

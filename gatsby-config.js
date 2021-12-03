@@ -5,6 +5,7 @@ module.exports = {
     author: ``,
     siteUrl: `https://intercambios-transorganicos.netlify.app`,
   },
+  pathPrefix: "/IT-Gatsby",
   plugins: [
     `gatsby-plugin-netlify`,
     {

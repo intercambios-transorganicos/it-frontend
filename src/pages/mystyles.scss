@@ -4,10 +4,15 @@ $lila:#7c428c;
 $acua: #4ca899;
 $bgGreen:#DEFCF0;
 $negro:#242424;
+$blanco : #fafafa;
 @import "~bulma/bulma.sass";
 
 
-//Header
+//NAVBAR
+
+.navbar{
+    background-color:$blanco;
+}
 
 h1{
    
@@ -28,17 +33,20 @@ header{
     height: 1vh;
     padding: 2em  2em 2em 2em;
     z-index: 200;
-    border-bottom: solid purple;
-    background-color: #242424;
+    //background-color: #242424;
+}
+
+main{
+    background-color:$blanco;
 }
 
 .itTitulo h1{
     font-size:1em;
-    color:$bgGreen;
+    color: $acua;
 }
 
 .main_wrapper{
-    background-color:#242424;
+    //background-color:#242424;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -163,19 +171,18 @@ header{
 
 
 .logosvg{
-    width:40px;
+    width:60px;
     cursor:pointer;    
 }
 
 .module{
     stroke: transparent;
     fill:#242424;
-    stroke: $lila;
     stroke-width: 4px;
 }
 
 .module:hover{
-    fill:$lila;
+    fill:$acua;
 }
 
 
@@ -200,23 +207,6 @@ main{
     height:100%;
 }
 
-//HEROTITLE
-
-.hero_container{
-    width:100vw;
-    height:30vh;
-    background-color:rgb(0, 0, 0);
-    display:flex;
-    place-content:center;
-    place-items:flex-end;
-    position: -webkit-sticky;
-    position: sticky;
-}
-
-.hero_title{
-    font-family: 'B612', sans-serif;
-    font-size:5em;
-}
 
 //modalVideos
 
@@ -236,14 +226,26 @@ main{
     bottom: 10%;
     right:48.5%;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.459);
     padding:0.2em;
     border-radius:100px;
-    border:solid 1px;
+    animation: arrow 1s infinite;
 }
 
 .downIcon:hover{
     color: $acua;
+    animation-play-state: paused;
+}
+
+@keyframes arrow{
+    0%{
+        transform:translate(0px, 8px);
+    }
+    50%{
+        transform:translate(0px, 0px);
+    }
+    100%{
+        transform:translate(0px, 8px);
+    }
 }
 
 .vControls{
@@ -314,12 +316,14 @@ main{
 .about1{
   // background-color:rgb(233, 233, 233);
    width:100vw;
-   height:100vh; 
+   min-height:100vh; 
    display :grid;
-   grid-template-rows: 5fr 3fr ;
-   grid-template-columns:6fr 4fr 1fr; 
-   grid-template-areas: "a1 a2 a5"
-                        "a3 a4 a5";
+   padding:1em;
+   grid-template-rows: 1fr 1fr ;
+   grid-template-columns:1fr 3fr 1fr; 
+   grid-gap:1em;
+   grid-template-areas: "a1 a2 a3"
+                        "a4 a5 a6";
 
 }
 
@@ -338,12 +342,12 @@ main{
 .a1{
     grid-area : a1;
     
-    background-color:$negro;
+    //background-color:$negro;
 }
 
 .a2{
     grid-area : a2;
-    background-color:#1b1b1b;
+   // background-color:#1b1b1b;
     
 }
 
@@ -361,7 +365,7 @@ main{
 
 .a5{
     grid-area : a5;
-    background-color:$acua;
+   // background-color:$acua;
     
 }
 
@@ -387,11 +391,13 @@ main{
 .about2{
     //background-color:rgb(200, 255, 0);
     width:100vw;
-    height:100vh; 
+    min-height:100vh; 
+    background-color: #242424;
     display :grid;
     grid-template-rows: 6fr 3fr ;
     grid-template-columns: 4fr 6fr 1fr;
-    //grid-gap:2em;
+    grid-gap: 1em;
+    padding: 1em;
     grid-template-areas: "b2 b2 b3"
                          "b4 b5 b6";
  
@@ -412,10 +418,10 @@ main{
  
  .b2{
      grid-area : b2;
-     //background-color:rgb(23, 23, 202)
+     background-color: #242424;
      
      display:grid;
-     background-color:rgb(39, 39, 39);
+    // background-color:rgb(39, 39, 39);
      padding-bottom: 60px;
 
  }
@@ -429,7 +435,7 @@ main{
  
  .b4{
      grid-area : b4;
-     background-color:#1a1a1a;
+   // background-color:#1a1a1a;
      
  }
  
@@ -466,14 +472,15 @@ main{
  
  .svg_caption{
    
-     width:100%;
+     width:100% ;
      font-family: 'B612', sans-serif;
     font-weight: 600;
+    height: 8vh;
 
  }
 
- .caption{
-    height:0.2em;
+ .caption:hover{
+     background-color:$lila;
  }
 
  
@@ -496,7 +503,7 @@ main{
 .publicaciones{
     width:100vw;
     height:auto;
-    background-color:$bgGreen;
+    background-color:$blanco;
     padding:2em;
 }
 
@@ -589,23 +596,23 @@ main{
     //background-color:rgb(200, 255, 0);
     width:100vw;
     height:100vh; 
+    padding:1em;
     display :grid;
-    grid-template-rows: 8fr 4fr ;
-    grid-template-columns: 1fr 4fr 4fr;
-    grid-template-areas: "c1 c2 c3"
-                         "c4 c5 c6";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "c1 c2 c3" "c4 c5 c6";
  
  }
  
  .c1{
      grid-area : c1;
-     background-color:#000;
+    // background-color:#000;
      
  }
  
  .c2{
      grid-area : c2;
-     background-color:#0e0e0e;
+    // background-color:#0e0e0e;
      display:flex;
      justify-content: center;
      align-items:center;
@@ -613,23 +620,21 @@ main{
  
  .c3{
      grid-area : c3;
-     background: rgb(31,31,31);
-     background: radial-gradient(circle, rgba(31,31,31,1) 32%, rgba(255,255,255,1) 48%);
-     display:grid;
-     align-content: flex-end;
-     padding:1em;
+    //  background: rgb(31,31,31);
+    //  background: radial-gradient(circle, rgba(31,31,31,1) 32%, rgba(255,255,255,1) 48%);
+     
  }
  
  .c4{
      grid-area : c4;
-     background-color:rgb(255, 255, 255);
+    // background-color:rgb(255, 255, 255);
  }
  
  .c5{
      grid-area : c5;
      display:flex;
      justify-content:center;
-     background-color: black;
+    // background-color: black;
      }
  
  .c6{
@@ -642,7 +647,22 @@ main{
      padding: 2em;
      width:100%;
      height:100%;
+     transition:all 0.1s ease-out;
+     cursor:pointer;
     
+ }
+
+ .info_:hover{
+    -webkit-box-shadow: 8px 8px 4px -3px $acua; 
+    box-shadow: 8px 8px 4px -3px $acua;
+    transform: translate(-2px, -2px);
+
+    .expandIcon{
+        color:#eeeeee;
+        background-color:$negro;
+       transform:scale(1.2);
+       padding:3px;
+    }
  }
 
  .info_ h1{
@@ -653,7 +673,7 @@ main{
  }
 
  .info_ p{
-    font-size: 1.2em;
+    font-size: 2.5vh;
      line-height: 1em;
  }
 
@@ -666,16 +686,9 @@ main{
 
  .info_ .expandIcon{
      cursor:pointer;
-     transition:all 0.5s ease-in-out;
+     transition:all 0.1s ease-out;
      
  }
-
- .info_ .expandIcon:hover{
-     color:#eeeeee;
-     background-color:$negro;
-    transform:scale(1.2);
-    padding:3px;
-}
 
  .infoExpandedContent{
      background-color:rgb(36, 36, 36);
@@ -695,6 +708,7 @@ main{
  #svgA1{
      width:100%;
      height:100%;
+     cursor:pointer;
  }
 
  .svgA1_rect{
@@ -773,64 +787,36 @@ main{
 .cls-1{fill:#54b2a1;}.cls-2{fill:#3a8476;}.cls-3{fill:#4ba899;}
 
 .it_iso{
-    max-width:400px;
+    max-width:300px;
 }
 
 //NOSOTRSES
 
 .nosotres{
-    background-color:$negro;
+    background-color:$blanco;
     height:100vh;
     padding: 2em;
-    padding-top:10em;
     
 }
-
-.member-cards{
-    height:100%;
-    margin-top:1em;
-    overflow-x:scroll;
-    padding:4em;
+//slider
+.carouselContainer{
+    cursor: grab;
 }
 
-.member-card{
-    width: 20vw;
-    min-width: 20vw;
+.member_container{
+    background-color:$negro;
+    margin: 1em;
 }
 
-.member-content{
-    background-color:$acua;
-    padding:0.5em;
-    height:100%;
-    transform-origin:center;
-    display: grid;
-    align-items: flex-end;
-    transition:all 0.3s ease-in-out;
-    text-align:center;
+.member_container:hover{
+    transform:skewY(-4deg);
+    box-shadow: 3px  3px  3px #2424, -6px -6px 6px #666666;
 
 }
 
-.member-content:hover{
-    transform:skewY(-8deg);
-    background-color:$lila;
-    background: #defcf0;
-    box-shadow: 3px  3px  3px #2424, -6px -6px 6px #4ca899;
-
-}
-
-.member-content h1{
-    font-size: 1em;
-    margin-bottom: 1em;
-}
-
-.member-content h2{
-    font-size: 0.7em;
-    margin-bottom: 0.5em;
-}
-
-.teamText{
-    position:absolute;
-    left:42%;
+.member_info{
+    padding:1em;
+    color:$blanco;
 }
 
  // circlepath
@@ -838,7 +824,7 @@ main{
  .circlePathContainer{
      display:flex;
      justify-content:center;
-     background-color: $bgGreen;
+     background-color: $blanco;
  }
 
  .circlePath{
@@ -849,10 +835,8 @@ main{
 
 
  .footer{
-     background-color:$negro;
-     border: solid #7c428c 2px;
      margin-top:0px;
-     padding-top: 25em;
+     padding-top: 20em;
  }
 
  .footer .footer-image-content{
@@ -863,7 +847,7 @@ main{
 
  .footer .icons-column h1{
     padding-top: 2em;
-    color: #eee;
+    color: #242424;
  }
 
  .footerImgWrapper{

@@ -33,11 +33,13 @@ const InfoExpandedx2 = (props) => {
             <button onClick={handleClose} className="modal-close is-large" aria-label="close"></button>
         </div>
         
-        <div className="info_" style={{backgroundColor: props.bgColor}}>
+        <div className="info_" style={{backgroundColor: props.bgColor, color: props.txColor}}>
             <div onClick={handleclick}  className="expandIconContainer">
             <FontAwesomeIcon className="expandIcon" icon={faExpandArrowsAlt} size="2x"  />
             </div>
+            <h1 className="title" >{props.titulo}</h1>
            <div className="content columns">
+                
                 <div className="column">
                     <p>{props.desc}</p>
                 </div>

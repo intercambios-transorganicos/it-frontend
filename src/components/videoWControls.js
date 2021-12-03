@@ -9,7 +9,6 @@ const Videowcontrols = (props) => {
 
     const[play, setPlay] = useState(null);
     var[timer, setTimer] = useState(0);
-    var[stop, setStop] = useState(null);
     var[urlNum, defineUrlNum ] = useState(null);
     var[urlObj, defineUrlobj] = useState(props.url);
     const {playlist} = useVideoquery();
@@ -39,12 +38,12 @@ const Videowcontrols = (props) => {
     },[play]);
 
     useEffect(() =>{
-      if(stop === true){
-        videoRef.current.pause();
+      if(props._stop === true){
         videoRef.current.currentTime = 0;
+        videoRef.current.pause();
       }
 
-    },[stop])
+    },[props._stop])
 
     //TIMER
     useEffect(()=>{ 
@@ -61,11 +60,7 @@ const Videowcontrols = (props) => {
       setPlay(props._play);
     },[props._play]);
     
-    useEffect(()=> {
-      setStop(props._stop);
-      console.log(props._stop);
-
-    }, [props._stop]);
+  
 
     useEffect(() =>{
 

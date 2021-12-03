@@ -4,6 +4,7 @@ import ItIso from './it_iso'
 
 const About3 = () => {
 
+    var titulo = "Nuestro Aporte"
     var descripcion ="La aspiración máxima de los proyectos que se realizan en Intercambios Transorgánicos no se trata del arte por el arte en sí mismo, sino de la circulación de obras, ideas, productos, procesos y el diseño de estrategias que buscan encontrar suelo en problemáticas sociales específicas" ;
     var descripcion2 ="Todo esto lo hacemos vinculando al MUNTreF con instituciones interesadas en integrar diversos medios y tecnologías a sus estrategias de trabajo."
     var modalT = "Porque queremos que el diálogo entre arte y ciencia sea realmente tangible.";
@@ -26,16 +27,16 @@ const About3 = () => {
                 <ItIso action={icohovered} />
             </div>
             <div className="c_boxes c3">
-                <div className="about3_content">
+                {/* <div className="about3_content">
                     <h1>Nuestro Aporte:</h1>
-                </div>
+                </div> */}
             </div>
             <div className="c_boxes c4"></div>
             <div className="c_boxes c5">
-                
+            <InfoExpandedx2 titulo={titulo} desc={descripcion} desc2={descripcion2} bgColor="#7c428c" txColor={"#eeeeee"} modalT={modalT} modalP={modalP} modalP2={modalP2} modalP3={modalP3}/>
             </div>
             <div className="c_boxes c6">
-                <InfoExpandedx2 desc={descripcion} desc2={descripcion2} bgColor="#4ca899" modalT={modalT} modalP={modalP} modalP2={modalP2} modalP3={modalP3}/>
+                
             </div>
             
         </div>

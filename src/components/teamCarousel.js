@@ -18,7 +18,7 @@ const Teamcarousel = () => {
             localFile {
                 childImageSharp {
                 gatsbyImageData(
-                    layout: CONSTRAINED, 
+                    layout: CONSTRAINED , 
                     placeholder: DOMINANT_COLOR
                     width : 500
                     height : 500
@@ -74,7 +74,7 @@ const settings = {
                      console.log(currentImg);
 
                       return(
-                            <div className = "member_container">
+                            <div key={currentId}  className = "member_container">
                                 
                                 <GatsbyImage 
                                 

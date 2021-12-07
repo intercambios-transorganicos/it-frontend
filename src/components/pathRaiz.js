@@ -1,27 +1,50 @@
 import React , {useState, useEffect, useRef} from 'react';
 import JSONdata from '../../content/JSONpaths.json';
 
-const Pathraiz = (props) => {
-var actors = useRef([]);
+const Pathraiz = ({ setActive, setUrl, url }) => {
 
-function handleClick(e){
-  props.modal(true);
-  props.seturl(e.target.id);
-  console.log(e.target.id);
-  console.log(typeof e.target.id);
-}
+  var actors = useRef([]);
 
-    return (
-        <svg className="pathRaiz" xmlns="http://www.w3.org/2000/svg" viewBox="-200 -200 1500 900">
+  function handleClick(e){
 
-          {JSONdata.content.map((e, i) =>{
-            var current = e;
-            return <path onClick={handleClick} ref={elem => {actors.current[i] = elem} } id={i} key={i} className="module" d={current.d} />
-          })}
+    setActive(true);
+    setUrl(Number(e.target.id));
 
-            
-            </svg>
-    );
+    console.log(e.target.id);
+  }
+
+  // Retorna un número entero aleatorio entre min (incluido) y max (excluido)
+  function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+  useEffect(() => {
+    
+    console.log(url);
+
+  }, [url])
+
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-200 -50 1500 900">
+
+      {JSONdata.content.map((e, i) =>{
+        var current = e;
+
+        return(
+          <path 
+            onClick={handleClick}
+            ref={elem => {actors.current[i] = elem}}
+            id={getRandom(6,9)}
+            key={i}
+            className="module"
+            d={current.d}
+          />
+        );
+
+      })}
+
+    </svg>
+  );
 }
 
 export default Pathraiz;

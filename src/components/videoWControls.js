@@ -1,110 +1,113 @@
 import React, {useState, useEffect, useRef} from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlayCircle } from '@fortawesome/free-solid-svg-icons'
-import { faPauseCircle } from '@fortawesome/free-solid-svg-icons'
-import useVideoquery from '../hooks/useVideoQuery'
-//import ReactPlayer from 'react-player'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import { faPauseCircle } from '@fortawesome/free-solid-svg-icons';
 
-const Videowcontrols = (props) => {
+import useVideoquery from '../hooks/useVideoQuery';
 
-    const[play, setPlay] = useState(null);
-    var[timer, setTimer] = useState(0);
-    var[urlNum, defineUrlNum ] = useState(null);
-    var[urlObj, defineUrlobj] = useState(props.url);
-    const {playlist} = useVideoquery();
+const VideoWControls = ({ stop, setStop, url }) => {
+
+  // VARIABLES Y HOOKS
+    // QUERY DEL VIDEO, TRAIGO PLAYLIST
+    const { playlist } = useVideoquery();
+
+    //  VIDEOS
+    let video_src = "https://res.cloudinary.com/intercambios-transorganicos/video/upload/v1635455684/portada_it_2021_5d6d2493d2.mp4";
+    let videoRef = useRef();
+
+  	// TIMER
+    const [timer, setTimer] = useState(0);
+
+    // DEFINIR URL
+    const [videoSelect, setvideoSelect] = useState('');
 
 
-    var video_src = "https://res.cloudinary.com/intercambios-transorganicos/video/upload/v1635455684/portada_it_2021_5d6d2493d2.mp4";
-    var videoRef = useRef(null);
-
-    function handlePause(){
-      setPlay(false);
-      console.log('pause');
+  // FUNCIONES
+    //PLAY
+    const handlePlay = () =>{
+      videoRef.current.play();
     }
 
-    function handlePlay(){
-      setPlay(true)
-      console.log('play');
+    // PAUSA
+    const handlePause = () =>{
+      videoRef.current.pause();
     }
 
-    useEffect(()=>{
-      if(play === true){
-        videoRef.current.play();
-        
-      }else{
-        videoRef.current.pause();
+    // STOP
+    const handleStop = () =>{
+      if(stop === true){
+        videoRef.current.currentTime = 0.4;
+        setStop(false);
       }
-      
-    },[play]);
+    }
 
-    useEffect(() =>{
-      if(props._stop === true){
-        videoRef.current.currentTime = 0;
-        videoRef.current.pause();
-      }
+    // VIDEO ELEGIDO
+    const selectingVideo = () =>{
+      let newVideoSelect = playlist.find(v => v.id === url);
+      setvideoSelect(newVideoSelect.url);
+    }
 
-    },[props._stop])
+  //EFECTOS
+  // useEffect(() => {
+  //   videoRef.current.currentTime = 0.4;
+  //   videoRef.current.play();
+  // },[]); // Pone play desde el principio al renderizarse el componente y en cada cambio de active (modal)
 
-    //TIMER
-    useEffect(()=>{ 
-      var timerx = setInterval(() =>setTimer(videoRef.current.currentTime), 10)
-      return function cleanup(){
-        clearInterval(timerx);
-        //console.log(timer);
-      }
-    })
+  useEffect(() =>{
+    selectingVideo();
+  },[url]); // Define URL al renderizarse el componente y por cada cambio de URL
 
-    //PROPRS
+  useEffect(() =>{ 
+    console.log(url)
+  },[url]);
 
-    useEffect(()=>{
-      setPlay(props._play);
-    },[props._play]);
-    
-  
+  useEffect(() =>{ 
+    console.log(videoSelect);
+  },[videoSelect]);
 
-    useEffect(() =>{
+  // useEffect(()=>{ 
+  //   var timerx = setInterval(() =>setTimer(videoRef.current.currentTime), 10)
+  //   return function cleanup(){
+  //     clearInterval(timerx);
+  //   }
+  // },[]);
 
-      defineUrlNum(props.url);
-      console.log(urlNum);
-      console.log(typeof urlNum);
-     
-    },[props.url]);
-
-    
-    //URL
-
-    useEffect(() =>{ 
-      defineUrlobj(playlist[urlNum]);
-      console.log(playlist);
-      console.log(urlObj)
-    },[urlNum])
-
+  handleStop();
                       
-    return (
+  return (
+    <>
+    {
+      videoSelect?
         <div>
-            <div className="vControls">
+          <div className="vControls">
             <FontAwesomeIcon onClick={handlePause} className="controlIcon" icon={faPauseCircle} size="2x"  />
             <FontAwesomeIcon onClick={handlePlay} className="controlIcon" icon={faPlayCircle} size="2x"  />
-            </div>
-            <div className="timecode">
-              <h1>{timer}</h1>
-            </div>
-             <video
-                  ref={elem =>{videoRef.current = elem}}
-                  className="videoReel"
-                  height="100%"
-                  width="100%"
-                  loop
-                  muted
-                  autoPlay
-                >
-                  <source
-                    src={video_src}
-                    type="video/mp4"
-                  />
-                </video> 
+          </div>
+
+          <div className="timecode">
+            <h1>{timer}</h1>
+          </div>
+
+          <video
+            ref={videoRef}
+            className="videoReel"
+            height="100%"
+            width="100%"
+            loop
+            muted
+            autoPlay
+            >
+              <source
+                src={videoSelect}
+                type="video/mp4"
+              />
+          </video> 
         </div>
-    );
+        :
+        <h4>Upss! Algo salió mal...</h4>
+    }
+    </>
+  );
 }
 
-export default Videowcontrols;
+export default VideoWControls;

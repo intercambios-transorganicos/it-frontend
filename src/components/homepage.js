@@ -6,28 +6,25 @@ import PathRaiz from './pathRaiz'
 import ModalVideos from './modalVideos'
 
 export default function Homepage() {
-  var[movie, setMovie] = useState(null);
-  var [active, setActive] = useState(false);
-  function setModal(ac){
-    setActive(ac);
-    //console.log(active)
-  }
 
-  function setUrl(num){
-    setMovie(num)
-  }
-  
+  let [url, setUrl] = useState(null);
+  let [active, setActive] = useState(false);
 
-    return (
-        <div className="homepage" >
-          <PathRaiz modal={setModal} seturl={setUrl} /> 
-          <ModalVideos modal={setModal} isActive={active} url={movie} /> 
-          <AnchorLink href="#about-1">
-            
-            <FontAwesomeIcon className="downIcon" icon={faArrowDown} size="3x"  />
-           
-          </AnchorLink>
-       
-        </div>
-    )
+  return (
+      <div className="homepage" >
+        <PathRaiz setActive={setActive} setUrl={setUrl} url={url} />
+        {
+          active?
+            <ModalVideos setActive={setActive} active={active} url={url} />
+            :
+            <></>
+        }
+        <AnchorLink href="#about-1">
+          
+          <FontAwesomeIcon className="downIcon" icon={faArrowDown} size="3x"  />
+          
+        </AnchorLink>
+      
+      </div>
+  )
 }

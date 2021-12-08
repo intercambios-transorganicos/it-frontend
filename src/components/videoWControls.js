@@ -44,7 +44,7 @@ const VideoWControls = ({ stop, setStop, url }) => {
     // VIDEO ELEGIDO
     const selectingVideo = () =>{
       let newVideoSelect = playlist.find(v => v.id === url);
-      setvideoSelect(newVideoSelect.url);
+      setvideoSelect(`http://localhost:1337${newVideoSelect.url}`);
     }
 
   //EFECTOS

@@ -5,6 +5,9 @@ import MediaArticles from "../components/mediaArticles"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faVideo, faImages} from '@fortawesome/free-solid-svg-icons'
 import Layout from "../components/layout"
+import loadable from "@loadable/component"
+
+const MyLoadable2 = loadable(() => import("../components/mediaArticles"))
 
 const Articuloa = ({ data }) => {
 
@@ -31,7 +34,7 @@ const Articuloa = ({ data }) => {
 
             
             <div className="b_section" >
-                <MediaArticles images={images} />
+                <MyLoadable2 images={images} />
             </div>
             
 
@@ -70,12 +73,6 @@ export const query = graphql`
         Titulo
         Subtitulo
         Contenido
-        videos {
-          localFile {
-            id
-            url
-          }
-        }
         imagenes {
           localFile {
             childImageSharp {

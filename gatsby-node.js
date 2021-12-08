@@ -38,12 +38,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             Titulo
             Subtitulo
             Contenido
-            videos {
-              localFile {
-                id
-                url
-              }
-            }
             imagenes {
               localFile {
                 childImageSharp {

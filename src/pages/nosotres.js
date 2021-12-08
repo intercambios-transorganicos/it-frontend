@@ -1,11 +1,11 @@
 import React from 'react';
 import {Link} from "gatsby"
 import Layout from "../components/layout"
-//import TeamCarousel from "../components/teamCarousel"
+import TeamCarousel from "../components/teamCarousel"
 import CirclePath from "../components/circlePath"
 import loadable from "@loadable/component"
 
-const MyLoadable = loadable(() => import("../components/teamCarousel"))
+//const MyLoadable = loadable(() => import("../components/teamCarousel"))
 
 const Publicaciones = () => {
     return (
@@ -16,7 +16,7 @@ const Publicaciones = () => {
                  </div>
             </div>
             <div className="nosotres">
-              <MyLoadable/>
+              <TeamCarousel/>
             </div>
                
         </Layout>

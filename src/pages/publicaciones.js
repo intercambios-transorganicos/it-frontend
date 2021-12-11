@@ -1,4 +1,5 @@
 import React from 'react';
+import "./publicaciones.scss"
 import Layout from "../components/layout"
 import ChildBox from "../components/childBox"
 import CirclePath from "../components/circlePath"
@@ -11,25 +12,21 @@ const Publicaciones = ({
     console.log(articulos);
     return (
         <Layout>
-            <div className="circlePathContainer" >
-                <CirclePath text="Publicaciones•" textColor="#000000" />
-            </div>
+            
+            <CirclePath text="Publicaciones•" textColor="#000000" />
+  
             <div className="publicaciones">
-                <div className="publicaciones_content">
-                    
-                  
-                     <div className="tile is-ancestor" >
+
+                <div className="publicacionesContent">
+
+                     <div className="grillaPublicaciones" >
                         
                             {
                                 articulos.map((e, i) => {
                                     var current = e.node;
                                     console.log(articulos.length);
                                     return(
-                                        <div className="tile is-parent" >
-                                        <div key={current.id} className="tile is-child" >
-                                            <ChildBox autor={current.Autor} titulo={current.Titulo} id={current.id} />
-                                        </div>
-                                        </div>
+                                        <ChildBox key={current.id} autor={current.Autor} titulo={current.Titulo} id={current.id} />
                                     )
                                 })
                             } 

@@ -1,31 +1,36 @@
 import React , {useState, useEffect, useRef} from 'react';
 import JSONdata from '../../content/JSONpaths.json';
+import "./pathRaiz.scss"
+import useVideoquery from '../hooks/useVideoQuery';
 
 const Pathraiz = ({ setActive, setUrl, url }) => {
+
+  // QUERY DEL VIDEO, TRAIGO PLAYLIST
+  const { playlist } = useVideoquery();
 
   var actors = useRef([]);
 
   function handleClick(e){
 
     setActive(true);
-    setUrl(Number(e.target.id));
 
-    console.log(e.target.id);
+    if(url < Number(playlist.length - 1)){
+      let newUrl = url + 1;
+      setUrl(newUrl);
+
+    } else{
+      setUrl(0);
+    }
   }
 
-  // Retorna un número entero aleatorio entre min (incluido) y max (excluido)
-  function getRandom(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-  }
-
-  useEffect(() => {
+  // useEffect(() => {
     
-    console.log(url);
+  //   console.log(url);
 
-  }, [url])
+  // }, [url])
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-200 -50 1500 900">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-450 -200 2000 900">
 
       {JSONdata.content.map((e, i) =>{
         var current = e;
@@ -34,7 +39,7 @@ const Pathraiz = ({ setActive, setUrl, url }) => {
           <path 
             onClick={handleClick}
             ref={elem => {actors.current[i] = elem}}
-            id={getRandom(6,9)}
+            id={i}
             key={i}
             className="module"
             d={current.d}

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import "./infoExpanded.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExpandArrowsAlt } from '@fortawesome/free-solid-svg-icons'
 

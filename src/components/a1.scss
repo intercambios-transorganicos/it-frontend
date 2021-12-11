@@ -1,0 +1,50 @@
+
+ #svgA1{
+    width:100%;
+    height:100%;
+    cursor:pointer;
+}
+
+.svgA1_rect{
+    opacity: 70%;
+    mix-blend-mode: multiply;
+}
+
+.svgA1_cuad{
+   opacity: 50%;
+   mix-blend-mode: difference;
+}
+
+.svgA3_circle{
+   opacity: 70%;
+   mix-blend-mode:multiply;
+}
+
+#top{
+   filter:hue-rotate(330deg);
+   stroke: rgb(255, 190, 201);
+   stroke-width: 10px;
+   transition:filter 0.5s ease-in-out;
+}
+
+#top:hover{
+   filter:hue-rotate(0deg);
+}
+
+#gal{
+   width:800px;
+   height:800px
+}
+
+#gal_g{
+   font-size:12em;
+   font-family: 'B612', sans-serif;
+   mix-blend-mode:exclusion;
+}
+#gal_nombre{
+   font-size:2em;
+   font-family: 'B612', sans-serif;
+   mix-blend-mode:exclusion;
+   letter-spacing: -1px;
+   
+}

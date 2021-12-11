@@ -1,20 +1,19 @@
 import React , {useState, useEffect} from 'react';
-import "../pages/mystyles.scss"
+import "./articuloA.scss";
 import {graphql} from "gatsby"
 import MediaArticles from "../components/mediaArticles"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faVideo, faImages} from '@fortawesome/free-solid-svg-icons'
 import Layout from "../components/layout"
-import loadable from "@loadable/component"
+//import loadable from "@loadable/component"
 
-const MyLoadable2 = loadable(() => import("../components/mediaArticles"))
+//const MyLoadable2 = loadable(() => import("../components/mediaArticles"))
 
 const Articuloa = ({ data }) => {
 
     const {id,Autor,Titulo,Subtitulo,Contenido,imagenes} = data.strapiArticulos;
     console.log(imagenes);
     var images = imagenes
-    //const imgPortada = portada[0].localFile;
     
     var[hasImages, setImages] = useState(false);
   
@@ -32,12 +31,6 @@ const Articuloa = ({ data }) => {
         <Layout>
             <div className="articuloA contenedor"> 
 
-            
-            <div className="b_section" >
-                <MyLoadable2 images={images} />
-            </div>
-            
-
             <div className="a_section" >
                 <div className="a_section_textContent">
                     <h1 className="titulo">{Titulo}</h1>
@@ -51,7 +44,7 @@ const Articuloa = ({ data }) => {
                         className={hasImages ? "articuloAIcons" : "aButtonsDisable"} 
                         icon={faImages} />
                     </div>
-                    <div className="level-item has-text-centered articleButton"> 
+                    <div className="level-item has-text-centered articleButton aButtonsDisable"> 
                         <FontAwesomeIcon 
                         size="2x" 
                         className="articuloAIcons" 
@@ -60,14 +53,22 @@ const Articuloa = ({ data }) => {
                 </div>
             </div>
 
+            
+            
+            <div className="b_section" >
+                <MediaArticles images={images} />
+            </div>
+            
+
+
         </div>
         </Layout>
     );
 }
 
 export const query = graphql`
-    query MyQuery($pageId: String) {
-    strapiArticulos(id: {eq: $pageId}) {
+    query Articulo($articuloId: String) {
+    strapiArticulos(id: {eq: $articuloId}) {
         id
         Autor
         Titulo
@@ -76,7 +77,11 @@ export const query = graphql`
         imagenes {
           localFile {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, placeholder: DOMINANT_COLOR)
+              gatsbyImageData(
+                  placeholder: DOMINANT_COLOR
+                  height:600
+                  )
+
             }
           }
         }

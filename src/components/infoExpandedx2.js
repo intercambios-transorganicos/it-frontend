@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import "./infoExpanded.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExpandArrowsAlt } from '@fortawesome/free-solid-svg-icons'
 
@@ -33,8 +34,8 @@ const InfoExpandedx2 = (props) => {
             <button onClick={handleClose} className="modal-close is-large" aria-label="close"></button>
         </div>
         
-        <div className="info_" style={{backgroundColor: props.bgColor, color: props.txColor}}>
-            <div onClick={handleclick}  className="expandIconContainer">
+        <div  onClick={handleclick} className="info_" style={{backgroundColor: props.bgColor, color: props.txColor}}>
+            <div className="expandIconContainer">
             <FontAwesomeIcon className="expandIcon" icon={faExpandArrowsAlt} size="2x"  />
             </div>
             <h1 className="title" >{props.titulo}</h1>

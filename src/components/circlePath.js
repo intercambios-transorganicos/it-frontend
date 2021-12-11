@@ -1,8 +1,10 @@
 import React from 'react';
+import "./circlePath.scss"
 
 const Circlepath = (props) => {
     return (
-       <svg viewBox="0 0 500 500" className="circlePath" >
+       <div className="circlePathContainer">
+           <svg viewBox="0 0 500 500" className="circlePath" >
            <defs>
                <path 
                d="M50,250c0-110.5,89.5-200,200-200s200,89.5,200,200s-89.5,200-200,200S50,360.5,50,250" 
@@ -24,6 +26,7 @@ const Circlepath = (props) => {
                </textPath>
            </text>
        </svg>
+       </div>
     );
 }
 

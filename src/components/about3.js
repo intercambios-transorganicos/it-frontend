@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import "./about3.scss"
 import InfoExpandedx2 from './infoExpandedx2'
 import ItIso from './it_iso'
 

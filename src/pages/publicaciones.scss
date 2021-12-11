@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+$lila:#7c428c;
+$acua: #4ca899;
+$bgGreen:#DEFCF0;
+$negro:#242424;
+$blanco : #fafafa;
+
+.publicaciones{
+    width:100vw;
+    height:auto;
+    background-color:$blanco;
+    padding:2em;
+}
+
+.publicacionesContent{
+    padding:2em;
+
+}
+
+.grillaPublicaciones{
+    display:grid;
+    grid-gap: 5vh;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+}

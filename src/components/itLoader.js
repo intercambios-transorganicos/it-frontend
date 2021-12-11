@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react';
+import "./itLoader.scss"
 import gsap from 'gsap';
 
 const Itloader = () => {

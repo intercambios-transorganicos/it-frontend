@@ -2,10 +2,10 @@ import React, {useState, useEffect, useRef} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import { faPauseCircle } from '@fortawesome/free-solid-svg-icons';
-
+import "./videoWControls.scss"
 import useVideoquery from '../hooks/useVideoQuery';
 
-const VideoWControls = ({ stop, setStop, url }) => {
+const VideoWControls = ({ stop, setStop, setUrl, url }) => {
 
   // VARIABLES Y HOOKS
     // QUERY DEL VIDEO, TRAIGO PLAYLIST
@@ -15,8 +15,8 @@ const VideoWControls = ({ stop, setStop, url }) => {
     let video_src = "https://res.cloudinary.com/intercambios-transorganicos/video/upload/v1635455684/portada_it_2021_5d6d2493d2.mp4";
     let videoRef = useRef();
 
-  	// TIMER
-    const [timer, setTimer] = useState(0);
+  	// // TIMER
+    // const [timer, setTimer] = useState(0);
 
     // DEFINIR URL
     const [videoSelect, setvideoSelect] = useState('');
@@ -36,22 +36,22 @@ const VideoWControls = ({ stop, setStop, url }) => {
     // STOP
     const handleStop = () =>{
       if(stop === true){
-        videoRef.current.currentTime = 0.4;
+        videoRef.current.currentTime = 0.2;
         setStop(false);
       }
     }
 
     // VIDEO ELEGIDO
     const selectingVideo = () =>{
-      let newVideoSelect = playlist.find(v => v.id === url);
+      // console.log(playlist);
+      // console.log(playlist.length);
+      // console.log(url);
+      // console.log(playlist[url]);
+      let newVideoSelect = playlist[url];
       setvideoSelect(`http://localhost:1337${newVideoSelect.url}`);
     }
 
   //EFECTOS
-  // useEffect(() => {
-  //   videoRef.current.currentTime = 0.4;
-  //   videoRef.current.play();
-  // },[]); // Pone play desde el principio al renderizarse el componente y en cada cambio de active (modal)
 
   useEffect(() =>{
     selectingVideo();
@@ -84,9 +84,9 @@ const VideoWControls = ({ stop, setStop, url }) => {
             <FontAwesomeIcon onClick={handlePlay} className="controlIcon" icon={faPlayCircle} size="2x"  />
           </div>
 
-          <div className="timecode">
+          {/* <div className="timecode">
             <h1>{timer}</h1>
-          </div>
+          </div> */}
 
           <video
             ref={videoRef}

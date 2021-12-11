@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useRef} from 'react';
 import gsap from 'gsap';
+import "./it_iso.scss"
 
 const ItIso = (props) => {
     var[active, isActive] = useState(null);

@@ -1,0 +1,51 @@
+
+ //About3
+
+ .about3{
+    //background-color:rgb(200, 255, 0);
+    width:100vw;
+    height:100vh; 
+    padding:1em;
+    display :grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "c1 c2 c3" "c4 c5 c6";
+ 
+ }
+ 
+ .c1{
+     grid-area : c1;
+    // background-color:#000;
+     
+ }
+ 
+ .c2{
+     grid-area : c2;
+    // background-color:#0e0e0e;
+     display:flex;
+     justify-content: center;
+     align-items:center;
+ }
+ 
+ .c3{
+     grid-area : c3;
+    //  background: rgb(31,31,31);
+    //  background: radial-gradient(circle, rgba(31,31,31,1) 32%, rgba(255,255,255,1) 48%);
+     
+ }
+ 
+ .c4{
+     grid-area : c4;
+    // background-color:rgb(255, 255, 255);
+ }
+ 
+ .c5{
+     grid-area : c5;
+     display:flex;
+     justify-content:center;
+    // background-color: black;
+     }
+ 
+ .c6{
+     grid-area : c6;
+ }

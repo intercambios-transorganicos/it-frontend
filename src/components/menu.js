@@ -1,4 +1,5 @@
 import React, { useEffect,useRef} from "react"
+import "./menu.scss"
 import {Link} from "gatsby"
 import {gsap} from 'gsap'
 
@@ -26,13 +27,13 @@ const Menu = ({click}) => {
     return (
     <div ref={elem => {cont.current = elem}} className="menu_container">
             <div ref={elem => {tabs.current[0] = elem}} className="tab">
-            <Link to="/" > <h1>Proyectos</h1> </Link>
+            <Link to="/proyectos" > <h1>Proyectos</h1> </Link>
             </div>
             <div ref={elem => {tabs.current[1] = elem}}  className="tab">
             <Link to="/publicaciones" > <h1>Publicaciones</h1> </Link>
             </div>
             <div ref={elem => {tabs.current[2] = elem}} className="tab">
-                <Link to="/" > <h1>Contacto</h1> </Link>
+                <Link to="/actividades" > <h1>Actividades</h1> </Link>
             </div>
             <div ref={elem => {tabs.current[3] = elem}} className="tab">
                 <Link to="/nosotres" ><h1>Nosotres</h1></Link>

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import "./teamCarousel.scss"
 import TinySlider from "tiny-slider-react"
 import {useStaticQuery, graphql} from "gatsby"
 import {GatsbyImage, getImage} from 'gatsby-plugin-image'

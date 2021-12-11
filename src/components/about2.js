@@ -1,5 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react';
 import InfoExpanded from './infoExpanded'
+import "./about2.scss"
 import Preguntas from './preguntas'
 import PatternSvg from './patternSvg'
 

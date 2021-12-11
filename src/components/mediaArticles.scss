@@ -1,0 +1,32 @@
+$lila:#7c428c;
+$acua: #4ca899;
+$bgGreen:#DEFCF0;
+$negro:#242424;
+$blanco : #fafafa;
+
+.articleSliderContainer{
+    text-align:center;
+}
+
+.articleSliderContainer .tns-controls{
+    margin-bottom: 4vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.articleSliderContainer .tns-controls button{
+    background: $lila;
+    border-style: outset;
+    height: 35px;
+    border-radius: 50%;
+    color: $blanco;
+    border-color: $lila;
+}
+
+.articleSliderContainer .tns-controls button:hover{
+    
+    border-style: inset;
+    height: 35px;
+    color: $lila;
+    border-color: $acua;
+}

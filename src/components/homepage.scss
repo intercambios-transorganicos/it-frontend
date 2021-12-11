@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+$lila:#7c428c;
+$acua: #4ca899;
+$bgGreen:#DEFCF0;
+$negro:#242424;
+$blanco : #fafafa;
+
+//Homepage
+
+.homepage{
+    width:100vw;
+    height:100vh;
+    //background-color:blue;
+}
+
+
+.downIcon{
+    color: $lila;
+    position:absolute;
+    bottom: 10%;
+    right:48.5%;
+    cursor: pointer;
+    padding:0.2em;
+    border-radius:100px;
+    animation: arrow 1s infinite;
+}
+
+.downIcon:hover{
+    color: $acua;
+    animation-play-state: paused;
+}
+
+@keyframes arrow{
+    0%{
+        transform:translate(0px, 8px);
+    }
+    50%{
+        transform:translate(0px, 0px);
+    }
+    100%{
+        transform:translate(0px, 8px);
+    }
+}

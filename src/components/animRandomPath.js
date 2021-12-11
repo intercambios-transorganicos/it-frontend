@@ -1,4 +1,5 @@
 import React from 'react';
+import "./animRandomPath.scss"
 
 const Animrandompath = () => {
     

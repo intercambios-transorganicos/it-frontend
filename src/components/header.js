@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react"
+import "./header.scss"
 import PropTypes from "prop-types"
 import {Link} from "gatsby"
 import Menu from "./menu"
@@ -31,7 +32,7 @@ const Header = () => {
     <div className={miClase}>
       <div className="modal-background"></div>
       <div className="modal-content menuModalContent">
-        <div className="">
+        <div>
           <Menu click={click} /> 
         </div>
       </div>

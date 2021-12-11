@@ -1,0 +1,24 @@
+$lila:#7c428c;
+$acua: #4ca899;
+$bgGreen:#DEFCF0;
+$negro:#242424;
+$blanco : #fafafa;
+
+
+
+// .proyectoSliderContainer{
+//     background-color:pink;
+// }
+
+.proyectoSliderContainer .tns-nav{
+    text-align: center;
+}
+
+.proyectoSliderContainer .tns-nav button{
+    height: 10px;
+    border-radius: 50%;
+    background-color: $lila;
+    border-color: $acua;
+    margin: 4px;
+}
+

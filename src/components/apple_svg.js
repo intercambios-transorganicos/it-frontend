@@ -1,5 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react';
 import gsap from "gsap"
+import "./apple.scss"
 
 const Apple_svg = (props) => {
 

@@ -1,0 +1,20 @@
+
+@charset "utf-8";
+
+$lila:#7c428c;
+$acua: #4ca899;
+$bgGreen:#DEFCF0;
+$negro:#242424;
+$blanco : #fafafa;
+
+.module{
+    stroke: transparent;
+    fill:#242424;
+    stroke-width: 4px;
+}
+
+.module:hover{
+    fill:$acua;
+}
+
+

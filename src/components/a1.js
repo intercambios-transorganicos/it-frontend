@@ -1,4 +1,5 @@
 import React, {useEffect, useState, useRef} from 'react';
+import "./a1.scss"
 import gsap from "gsap"
 import gal from '../images/gal.jpg'
 

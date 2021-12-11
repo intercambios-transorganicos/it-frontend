@@ -1,13 +1,15 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
+import "./modalVideos.scss"
 import VideoWControls from './videoWControls'
 
-const ModalVideos = ({ url, active, setActive }) => {
+const ModalVideos = ({ setUrl, url, active, setActive }) => {
 
   let [stop, setStop] = useState(false);
   let clase = active ? "modalVideos modal is-active" : "modalVideos modal";
 
   function handleClose(){
     setActive(false);
+    console.log(active)
     setStop(true);
   }
 
@@ -16,7 +18,7 @@ const ModalVideos = ({ url, active, setActive }) => {
       <div className="modal-background"></div>
 
       <div className="videoModalContent modal-content">
-        <VideoWControls stop={stop} setStop={setStop} url={url} active={active} />
+        <VideoWControls stop={stop} setStop={setStop} setUrl={setUrl} url={url} active={active} />
       </div>
 
       <button onClick={handleClose} className="modal-close is-large" aria-label="close"></button>

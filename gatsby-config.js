@@ -16,6 +16,14 @@ module.exports = {
         collectionTypes: [`articulos`, `playlists`, `members`, `proyectos`],
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-loadable-components-ssr`,
+    //   options: {
+    //     // Whether replaceHydrateFunction should call ReactDOM.hydrate or ReactDOM.render
+    //     // Defaults to ReactDOM.render on develop and ReactDOM.hydrate on build
+    //     useHydrate: true,
+    //   },
+    // },
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,

@@ -1,0 +1,53 @@
+$lila:#7c428c;
+$acua: #4ca899;
+$bgGreen:#DEFCF0;
+$negro:#242424;
+$blanco : #fafafa;
+
+.proyectoContainer{
+    padding-top:10vh;
+}
+
+.proyectoPortada{
+    position:relative;
+
+}
+
+.portadaTitulo{
+    position: absolute;
+    bottom: 50px;
+    margin: 0vh -1vh;
+    background-color: #7c428cb0;
+    padding: 2vh;
+    border-radius: 5px;
+    min-width: 20vw;
+}
+
+.portadaTitulo h1{
+    font-size:4vh;
+    color:$blanco;
+    margin-left: 4vh;
+    
+}
+
+.portadaTitulo h2{
+    font-size: 3vh;
+    color:$blanco;
+    margin-left: 4vh;
+}
+
+.proyectoContent{
+    margin: auto 10vh;
+}
+
+
+@media (max-width: 600px){
+    .portadaTitulo{
+        position:revert;
+    }
+
+    .proyectoContent{
+        margin: 1vh 4vh;
+    }
+    
+}

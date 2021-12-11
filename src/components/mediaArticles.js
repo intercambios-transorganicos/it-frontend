@@ -1,32 +1,34 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
+import "./mediaArticles.scss";
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
+import loadable from "@loadable/component"
 import TinySlider from "tiny-slider-react"
+
+const MyLoadable2 = loadable(() => import(TinySlider));
 
 const Mediaarticles = ({images}) => {
 
     var localImages = images
     const settings = {
-        //container : ".cambionombrecontainer",
-        
-        axis:"vertical",
+      
         items : 1,
         slideBy : 1,
+        autoplay: true,
         lazyload : true,
         nav: false,
+        controlsPosition : "bottom",
+        autoplayButtonOutput: false,
         mouseDrag: true,
         rewind : true, 
-        controls: false,
-        responsive : {
-            640:{
-                items : 1,
-                slideBy : 1,
-            }
-        }
+        
     };
+
 
     return (
         // <GatsbyImage image={localImg} />
-        <TinySlider settings={settings} >
+        <div className="articleSliderContainer" >
+            <MyLoadable2 settings={settings} >
+            
             {
                 localImages.map((e, i) => {
                     var currentImage = getImage(e.localFile);
@@ -38,7 +40,8 @@ const Mediaarticles = ({images}) => {
                     )
                 })
             }
-        </TinySlider>
+        </MyLoadable2>
+        </div>
     );
 }
 

@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+$lila:#7c428c;
+$acua: #4ca899;
+$bgGreen:#DEFCF0;
+$negro:#242424;
+$blanco : #fafafa;
+
+//slider members
+.carouselContainer{
+    cursor: grab;
+}
+
+.member_container{
+    background-color:$negro;
+    margin: 1em;
+}
+
+.member_container:hover{
+    transform:skewY(-4deg);
+    box-shadow: 3px  3px  3px #2424, -6px -6px 6px #666666;
+
+}
+
+.member_info{
+    padding:1em;
+    color:$blanco;
+}

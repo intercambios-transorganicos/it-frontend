@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import InfoExpanded from './infoExpanded'
-import AppleSvg from './apple_svg'
+import "./about1.scss";
 import A1 from './a1'
 //import Modal from './modal'
 

@@ -4,7 +4,6 @@
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
 // exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
 //     if (stage === 'build-javascript') {
 //       const config = getConfig()
@@ -20,17 +19,17 @@
     
 //   }
 
-
 const path = require("path")
-// Implement the Gatsby API “createPages”. This is called once the
-// data layer is bootstrapped to let plugins create pages from data.
+// Implementar la API de Gatsby "createPages". Esto se llama una vez que el
+// La capa de datos se inicia para permitir que los complementos creen páginas a partir de datos.
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  const { createPage } = actions
-  // Query for markdown nodes to use in creating pages.
+  const { createPage } = actions;
+  // Consulta de nodos  para usar en la creación de páginas.
+  //ARTICULOS
   const result = await graphql(
     `
     {
-      allStrapiArticulos {
+      articulos : allStrapiArticulos {
         edges {
           node {
             id
@@ -41,7 +40,26 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             imagenes {
               localFile {
                 childImageSharp {
-                  gatsbyImageData(layout: CONSTRAINED, placeholder: DOMINANT_COLOR)
+                  gatsbyImageData(placeholder: DOMINANT_COLOR)
+                }
+              }
+            }
+          }
+        }
+      }
+
+      proyectos : allStrapiProyectos {
+        edges {
+          node {
+            id
+            titulo
+            subtitulo
+            strapiId
+            contenido
+            imagenes {
+              localFile {
+                childrenImageSharp {
+                  gatsbyImageData(placeholder: DOMINANT_COLOR)
                 }
               }
             }
@@ -51,23 +69,37 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     }
     `
   )
-  // Handle errors
-  if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
-  }
-  // Create pages for each markdown file.
-  const articuloTemplate = path.resolve(`src/templates/articuloA.js`)
-  result.data.allStrapiArticulos.edges.forEach(({ node }) => {
-    const path = node.id
-    createPage({
-      path,
-      component: articuloTemplate,
-      // In your blog post template's graphql query, you can use pagePath
-      // as a GraphQL variable to query for data from the markdown file.
-      context: {
-        pageId: path,
-      },
-    })
+// Handle errors
+if (result.errors) {
+  reporter.panicOnBuild(`Error while running GraphQL query.`)
+  return
+}
+// Creamos las paginas por cada articulo.
+const articuloTemplate = path.resolve(`src/templates/articuloA.js`)
+result.data.articulos.edges.forEach(({ node }) => {
+  const path = node.id
+  createPage({
+    path,
+    component: articuloTemplate,
+    
+    context: {
+      articuloId: path,
+    },
   })
+})
+
+// Creamos las paginas por cada proyecto.
+const proyectoTemplate = path.resolve(`src/templates/proyectoA.js`)
+result.data.proyectos.edges.forEach(({ node }) => {
+  const path = node.id
+  createPage({
+    path,
+    component: proyectoTemplate,
+    
+    context: {
+      proyectoId: path,
+    },
+  })
+})
+  
 }

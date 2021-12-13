@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from "react"
-import "./header.scss"
 import PropTypes from "prop-types"
 import {Link} from "gatsby"
 import Menu from "./menu"
 import { StaticImage } from "gatsby-plugin-image"
+import "./header.scss"
+
 const Header = () => {
 
   const [click, isClick] = useState(false);
@@ -31,7 +32,7 @@ const Header = () => {
     <div>
     <div className={miClase}>
       <div className="modal-background"></div>
-      <div className="modal-content menuModalContent">
+      <div className="menuModalContent">
         <div>
           <Menu click={click} /> 
         </div>
@@ -39,7 +40,7 @@ const Header = () => {
       <button onClick={handleClose} className="modal-close is-large menuClose" aria-label="close" ></button>
     </div>
 
-    <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation" >
+    <nav className="navbar myNav is-fixed-top" role="navigation" aria-label="main navigation" >
       <div className="navbar-brand">
         <Link to="/">
           <a className="navbar-item">

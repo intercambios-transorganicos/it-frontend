@@ -19,6 +19,21 @@
     
 //   }
 
+// exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+//     if (stage === 'build-html') {
+//         actions.setWebpackConfig({
+//             module: {
+//                 rules: [
+//                     {
+//                         test: /tiny-slider-react/,
+//                         use: loaders.null(),
+//                     },
+//                 ],
+//             },
+//         });
+//     }
+// };
+
 const path = require("path")
 // Implementar la API de Gatsby "createPages". Esto se llama una vez que el
 // La capa de datos se inicia para permitir que los complementos creen páginas a partir de datos.

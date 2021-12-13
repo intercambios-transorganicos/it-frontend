@@ -1,7 +1,7 @@
 import React, { useEffect,useRef} from "react"
-import "./menu.scss"
 import {Link} from "gatsby"
 import {gsap} from 'gsap'
+import "./menu.scss"
 
 const Menu = ({click}) => {
     var tabs = useRef([]);

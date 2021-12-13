@@ -1,11 +1,9 @@
 import React from 'react';
 import Layout from "../components/layout"
 import CirclePath from "../components/circlePath"
-import "./proyectos.scss"
 import {Link} from "gatsby"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlayCircle ,  faPauseCircle } from '@fortawesome/free-solid-svg-icons'
 import {graphql} from "gatsby"
+import "./proyectos.scss"
 
 const Proyectos = ({
     data:{allStrapiProyectos: {edges:proyectos} }

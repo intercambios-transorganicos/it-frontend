@@ -17,7 +17,7 @@ const ModalVideos = ({ setUrl, url, active, setActive }) => {
     <div className={clase}>
       <div className="modal-background"></div>
 
-      <div className="videoModalContent modal-content">
+      <div className="videoModalContent ">
         <VideoWControls stop={stop} setStop={setStop} setUrl={setUrl} url={url} active={active} />
       </div>
 

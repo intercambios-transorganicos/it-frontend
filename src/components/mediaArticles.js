@@ -1,33 +1,34 @@
 import React from 'react';
-import "./mediaArticles.scss";
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
 import loadable from "@loadable/component"
-import TinySlider from "tiny-slider-react"
+//import TinySlider from "tiny-slider-react"
 
-const MyLoadable2 = loadable(() => import(TinySlider));
+import {Carousel} from "react-bootstrap"
+import "./mediaArticles.scss";
+//const MyLoadable2 = loadable(() => import("tiny-slider-react"));
 
 const Mediaarticles = ({images}) => {
 
     var localImages = images
-    const settings = {
-      
-        items : 1,
-        slideBy : 1,
-        autoplay: true,
-        lazyload : true,
-        nav: false,
-        controlsPosition : "bottom",
-        autoplayButtonOutput: false,
-        mouseDrag: true,
-        rewind : true, 
-        
-    };
-
 
     return (
         // <GatsbyImage image={localImg} />
         <div className="articleSliderContainer" >
-            <MyLoadable2 settings={settings} >
+            <Carousel>
+            {
+                localImages.map((e, i) => {
+                    var currentImage = getImage(e.localFile);
+                    console.log(e);
+                    return (
+                        <Carousel.Item key = {i}>
+                            <GatsbyImage image={currentImage} alt="image" />
+                        </Carousel.Item>
+                    )
+                })
+            }
+            </Carousel>
+       
+            {/* <MyLoadable2 settings={settings} >
             
             {
                 localImages.map((e, i) => {
@@ -40,7 +41,7 @@ const Mediaarticles = ({images}) => {
                     )
                 })
             }
-        </MyLoadable2>
+        </MyLoadable2> */}
         </div>
     );
 }

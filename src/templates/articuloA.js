@@ -1,13 +1,10 @@
 import React , {useState, useEffect} from 'react';
-import "./articuloA.scss";
 import {graphql} from "gatsby"
 import MediaArticles from "../components/mediaArticles"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faVideo, faImages} from '@fortawesome/free-solid-svg-icons'
 import Layout from "../components/layout"
-//import loadable from "@loadable/component"
-
-//const MyLoadable2 = loadable(() => import("../components/mediaArticles"))
+import "./articuloA.scss";
 
 const Articuloa = ({ data }) => {
 

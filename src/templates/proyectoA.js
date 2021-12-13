@@ -1,10 +1,10 @@
 import React from 'react';
-import "./proyectoA.scss"
 import {graphql} from "gatsby"
 import MediaProyectos from "../components/mediaProyectos"
 //import loadable from "@loadable/component"
 import Layout from "../components/layout"
 import InfoExpanded from "../components/infoExpandedx2"
+import "./proyectoA.scss"
 
 //const MyLoadable3 = loadable(() => import("../components/mediaProyectos"));
 

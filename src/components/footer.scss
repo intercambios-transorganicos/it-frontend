@@ -72,17 +72,17 @@ $blanco : #fafafa;
 
 .subscripcion h1{
    font-size:4vh;
-   color:$blanco;
+   color:$blanco !important;
 }
 
 .subscripcion h2{
    font-size:3vh;
-   color:$blanco;
+   color:$blanco !important;
 }
 
 .enviarSub{
-   background-color:$lila;
-   color:$blanco;
+   background-color:$lila !important; 
+   color:$blanco !important; 
 }
 
 .foot-list{

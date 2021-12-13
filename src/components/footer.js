@@ -1,10 +1,10 @@
 import React from 'react';
-import "./footer.scss"
 import {Link} from "gatsby"
 import {StaticImage} from 'gatsby-plugin-image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faMap, faEnvelopeSquare,faEnvelope, faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import "./footer.scss"
 
 const Footer = () => {
     return (

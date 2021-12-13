@@ -1,9 +1,9 @@
 import React from 'react';
-import "./publicaciones.scss"
 import Layout from "../components/layout"
 import ChildBox from "../components/childBox"
 import CirclePath from "../components/circlePath"
 import {graphql} from "gatsby"
+import "./publicaciones.scss"
 
 const Publicaciones = ({
     data:{ allStrapiArticulos:{edges:articulos} }

@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkintercambios_transorganicos=self.webpackChunkintercambios_transorganicos||[]).push([[80],{1328:function(a,n,e){e.r(n);var i=e(7294),t=e(5866);n.default=function(a){var n=a.data.strapiActividades,e=n.id,r=n.fecha,c=n.lugar;n.titulo,n.link,n.descripcion;return console.log(e,r,c),i.createElement(t.Z,null)}}}]);
+//# sourceMappingURL=component---src-templates-actividad-a-js-fa81ed3b786ecda41ab0.js.map

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-actividad-a-js",
+    "path": "/Actividades_2",
+    "result": {"data":{"strapiActividades":{"id":"Actividades_2","fecha":"17, Dec, 2021","lugar":"buenos aires","titulo":"Ya esta online el conversatorio realizado junto con la DEA!","link":"/intercambios","descripcion":"\nNos juntamos a conversar sobre esto con los amigos de @deanexactos\n\nLa tecnología de la Internet es un conjunto de mecanismos y procesos que configuran interacciones, habilitan comportamientos, automatizan hábitos, crean mercados y mercancías. ¿Qué se esconde detrás de la pantalla? ¿Cómo podemos hablar con eso que no vemos? En la virtualidad nada está dado, hay todo por hacer.\n"}},"pageContext":{"actividadId":"Actividades_2"}},
+    "staticQueryHashes": ["3649515864"]}

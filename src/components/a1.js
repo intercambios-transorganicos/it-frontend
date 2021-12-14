@@ -3,6 +3,8 @@ import "./a1.scss"
 import gsap from "gsap"
 import gal from '../images/gal.jpg'
 
+// Hola Cami como estas aca tratando de hacer un push
+
 const A1 = (props) => {
     var[active, isActive] = useState(null);
     var actors = useRef([]);

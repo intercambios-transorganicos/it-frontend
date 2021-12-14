@@ -1,7 +1,7 @@
 import React , {useState, useEffect, useRef} from 'react';
 import JSONdata from '../../content/JSONpaths.json';
-import "./pathRaiz.scss"
 import useVideoquery from '../hooks/useVideoQuery';
+import "./pathRaiz.scss"
 
 const Pathraiz = ({ setActive, setUrl, url }) => {
 
@@ -30,7 +30,7 @@ const Pathraiz = ({ setActive, setUrl, url }) => {
   // }, [url])
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-450 -200 2000 900">
+    <svg className="pathRaiz" xmlns="http://www.w3.org/2000/svg" viewBox="-450 -200 2000 900">
 
       {JSONdata.content.map((e, i) =>{
         var current = e;

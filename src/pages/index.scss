@@ -27,6 +27,11 @@ p{
     z-index:500;
 }
 
+.modal-close{
+    background-color:$acua;
+    cursor:pointer;
+}
+
 @media (max-width: 600px){
    
     .about1{

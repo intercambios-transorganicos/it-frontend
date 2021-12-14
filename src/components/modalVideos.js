@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import "./modalVideos.scss"
 import VideoWControls from './videoWControls'
+import "./modalVideos.scss"
 
 const ModalVideos = ({ setUrl, url, active, setActive }) => {
 
@@ -15,13 +15,13 @@ const ModalVideos = ({ setUrl, url, active, setActive }) => {
 
   return (
     <div className={clase}>
-      <div className="modal-background"></div>
+      <div className="modal-background">
 
-      <div className="videoModalContent ">
-        <VideoWControls stop={stop} setStop={setStop} setUrl={setUrl} url={url} active={active} />
+        <div className="videoModalContent ">
+          <VideoWControls stop={stop} setStop={setStop} setUrl={setUrl} url={url} active={active} />
+        </div>
       </div>
-
-      <button onClick={handleClose} className="modal-close is-large" aria-label="close"></button>
+      <button id="playlistClose" onClick={handleClose} className="modal-close is-large" aria-label="close"></button>
     </div>
   );
 }

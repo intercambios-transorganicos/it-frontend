@@ -1,10 +1,10 @@
 import React, {useEffect, useState, useRef} from 'react'
-import "./homepage.scss"
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import PathRaiz from './pathRaiz'
 import ModalVideos from './modalVideos'
+import "./homepage.scss"
 
 export default function Homepage() {
 

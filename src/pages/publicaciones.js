@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "gatsby"
 import Layout from "../components/layout"
 import ChildBox from "../components/childBox"
 import CirclePath from "../components/circlePath"
@@ -26,7 +27,9 @@ const Publicaciones = ({
                                     var current = e.node;
                                     console.log(articulos.length);
                                     return(
-                                        <ChildBox key={current.id} autor={current.Autor} titulo={current.Titulo} id={current.id} />
+                                        <Link  key={current.id} to={`../${current.id}`} >
+                                        <ChildBox autor={current.Autor} titulo={current.Titulo} id={current.id} />
+                                        </Link>
                                     )
                                 })
                             } 

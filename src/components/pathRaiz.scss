@@ -8,7 +8,8 @@ $negro:#242424;
 $blanco : #fafafa;
 
 .module{
-    stroke: transparent;
+    cursor:pointer;
+    stroke: #24242400;
     fill:#242424;
     stroke-width: 4px;
 }
@@ -18,3 +19,8 @@ $blanco : #fafafa;
 }
 
 
+@media (max-width:600px){
+    .pathRaiz{
+        margin-top:32vh
+    }
+}

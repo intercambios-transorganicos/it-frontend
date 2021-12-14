@@ -36,11 +36,20 @@ $blanco : #fafafa;
 
 .menuit{
     cursor:pointer;
-    width:50px
+    width:50px;
+    padding: 8px;
+    margin: 10px;
 }
 
 
 .myNav{
     background-color:$blanco !important;
     padding-top: 0 !important;
+}
+
+
+@media (max-width:600px){
+    .itTitulo{
+        display:none;
+    }
 }

@@ -53,3 +53,12 @@ $blanco : #fafafa;
     margin-bottom: 0;;
 
 }
+
+
+@media (max-width: 600px){
+    .vControls{
+        display:flex;
+        bottom: 20%;
+        left: 28%;
+    }
+}

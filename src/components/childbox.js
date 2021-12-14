@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {Link} from "gatsby"
+//import {Link} from "gatsby"
 import "./childbox.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserEdit} from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +10,7 @@ const Childbox = (props) => {
     
 
     return (
-        <Link className="aArticle" to={`../../${id}`} >
+        // <Link className="aArticle" to={`../../${id}`} >
             <div className="tile is-parent">
                 <article className="article_box tile is-child box">
                     <div className="textcontent">
@@ -22,7 +22,7 @@ const Childbox = (props) => {
                     </div>
                 </article>
             </div>
-        </Link> 
+        // </Link> 
     );
 }
 

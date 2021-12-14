@@ -4,35 +4,30 @@
  * See: https://www.gatsbyjs.com/docs/node-apis/
  */
 
-// exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
-//     if (stage === 'build-javascript') {
-//       const config = getConfig()
-//       const miniCssExtractPlugin = config.plugins.find(
-//         plugin => plugin.constructor.name === 'MiniCssExtractPlugin'
-//       )
-//       if (miniCssExtractPlugin) {
-//         miniCssExtractPlugin.options.ignoreOrder = true
-//       }
-//       actions.replaceWebpackConfig(config)
-//     }
+ exports.onCreateWebpackConfig = ({
+  actions,
+  plugins,
+  stage
+}) => {
+  actions.setWebpackConfig({
+    resolve: {
+      alias: {
+        path: require.resolve("path-browserify")
+      },
+      fallback: {
+        fs: false,
+      }
+    }
+  })
+  if (stage === 'build-javascript' || stage === 'develop') {
+    actions.setWebpackConfig({
+      plugins: [
+        plugins.provide({ process: 'process/browser' })
+      ]
+    })
+  }
+}
 
-    
-//   }
-
-// exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-//     if (stage === 'build-html') {
-//         actions.setWebpackConfig({
-//             module: {
-//                 rules: [
-//                     {
-//                         test: /tiny-slider-react/,
-//                         use: loaders.null(),
-//                     },
-//                 ],
-//             },
-//         });
-//     }
-// };
 
 const path = require("path")
 // Implementar la API de Gatsby "createPages". Esto se llama una vez que el
@@ -81,6 +76,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
       }
+
+     
+      
     }
     `
   )
@@ -117,4 +115,7 @@ result.data.proyectos.edges.forEach(({ node }) => {
   })
 })
   
+
 }
+
+

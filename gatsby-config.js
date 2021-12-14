@@ -13,17 +13,17 @@ module.exports = {
       options: {
         apiURL: process.env.DEPLOY_URL ? "https://intercambios-transorganicos.herokuapp.com" : "http://localhost:1337",
         queryLimit: 1000, // Defaults to 100
-        collectionTypes: [`articulos`, `playlists`, `members`, `proyectos`],
+        collectionTypes: [`articulos`, `playlists`, `members`, `proyectos`, `actividades`],
       },
     },
-     {
-       resolve: `gatsby-plugin-loadable-components-ssr`,
+    // {
+      // resolve: `gatsby-plugin-loadable-components-ssr`,
       //  options: {
       //    // Whether replaceHydrateFunction should call ReactDOM.hydrate or ReactDOM.render
       //    // Defaults to ReactDOM.render on develop and ReactDOM.hydrate on build
       //    useHydrate: true,
       //  },
-     },
+     //},
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,

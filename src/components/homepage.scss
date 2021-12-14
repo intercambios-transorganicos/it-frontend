@@ -42,3 +42,10 @@ $blanco : #fafafa;
         transform:translate(0px, 8px);
     }
 }
+
+
+@media (max-width:600px){
+    .downIcon{
+        right: 45%;
+    }
+}

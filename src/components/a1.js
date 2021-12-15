@@ -4,6 +4,7 @@ import gsap from "gsap"
 import gal from '../images/gal.jpg'
 
 // Hola Cami como estas aca tratando de hacer un push
+//hola palo , estamos a bordo!
 
 const A1 = (props) => {
     var[active, isActive] = useState(null);

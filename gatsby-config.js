@@ -8,14 +8,14 @@ module.exports = {
   pathPrefix: "/IT-Gatsby",
   plugins: [
     `gatsby-plugin-netlify`,
-    {
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: process.env.DEPLOY_URL ? "https://intercambios-transorganicos.herokuapp.com" : "http://localhost:1337",
-        queryLimit: 1000, // Defaults to 100
-        collectionTypes: [`articulos`, `playlists`, `members`, `proyectos`, `actividades`],
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-strapi`,
+    //   options: {
+    //     apiURL: process.env.DEPLOY_URL ? "https://intercambios-transorganicos.herokuapp.com" : "http://localhost:1337",
+    //     queryLimit: 1000, // Defaults to 100
+    //     collectionTypes: [`articulos`, `playlists`, `members`, `proyectos`, `actividades`],
+    //   },
+    // },
     // {
       // resolve: `gatsby-plugin-loadable-components-ssr`,
       //  options: {

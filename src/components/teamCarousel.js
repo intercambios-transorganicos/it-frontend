@@ -4,6 +4,9 @@ import {useStaticQuery, graphql} from "gatsby"
 import {GatsbyImage, getImage} from 'gatsby-plugin-image'
 import loadable from "@loadable/component"
 import "./teamCarousel.scss"
+
+
+
 let DynamicModule = null;
 const windowGlobal = typeof window !== 'undefined' && window;
   if (windowGlobal){
@@ -14,6 +17,34 @@ const MyLoadable2 = loadable(() => import("tiny-slider-react"),{ssr:true});
 
 
 const Teamcarousel = () => {
+  const data = useStaticQuery(graphql`
+  {
+    allStrapiMembers {
+      edges {
+        node {
+          id
+          nombre
+          titulo
+          descripcion
+          foto {
+          localFile {
+              childImageSharp {
+              gatsbyImageData(
+                  layout: CONSTRAINED , 
+                  placeholder: DOMINANT_COLOR
+                  width : 500
+                  height : 500
+                  )
+              }
+          }
+          }
+        }
+      }
+    }
+  }
+`);
+
+var nodes = data.allStrapiMembers.edges;
 
     var[isBrowser, setBrowser] = useState(false);
 
@@ -24,36 +55,7 @@ const Teamcarousel = () => {
         }
     },[])    
 
-    const data = useStaticQuery(graphql`
-    {
-      allStrapiMembers {
-        edges {
-          node {
-            id
-            nombre
-            titulo
-            descripcion
-            foto {
-            localFile {
-                childImageSharp {
-                gatsbyImageData(
-                    layout: CONSTRAINED , 
-                    placeholder: DOMINANT_COLOR
-                    width : 500
-                    height : 500
-                    )
-                }
-            }
-            }
-          }
-        }
-      }
-    }
-  `);
-
-    var nodes = data.allStrapiMembers.edges;
-
-
+  
 const settings = {
     //container : ".cambionombrecontainer",
     items : 1,

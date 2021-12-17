@@ -14,7 +14,9 @@ const Proyectos = ({
             <CirclePath text=" Proyectos •" textColor="#000000" />
             <div className="proyectosContainer">
                 <div className="galeria">
-                    {proyectos.map((e, i) => {
+                    {
+                      proyectos?
+                      proyectos.map((e, i) => {
                         var current = e.node;
                         console.log(current.id)
                         return(
@@ -27,7 +29,10 @@ const Proyectos = ({
                                     
                             </Link>
                         )
-                    })}
+                    })
+                    :
+                    <div>no data</div>
+                    }
                 </div>
             </div>
         </Layout>

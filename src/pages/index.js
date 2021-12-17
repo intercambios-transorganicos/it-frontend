@@ -14,10 +14,10 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     {/* <Loader/> */}
-    <Homepage/>
+    {/* <Homepage/>
     <About1/>
     <About2/>
-    <About3/>
+    <About3/> */}
   </Layout>
 )
 

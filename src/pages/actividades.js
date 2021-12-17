@@ -42,7 +42,7 @@ const Actividades = ({
             <div className="actividadesContainer">
               <CirclePath  text=" Actividades •" textColor="#000000"/>
               <div className="actividadesWrapper">
-                {
+                { actividades?
                   actividades.map((e, i) => {
                     var current = e.node;
                     //console.log(current)
@@ -85,6 +85,12 @@ const Actividades = ({
                      </div>
                     )
                   })
+
+                  :
+
+                  <div>Not found</div>
+
+
                 }
               </div>
             </div>

@@ -25,9 +25,16 @@ const Usevideoquery = () => {
   });
   //console.log(playlist);
 
+ if(playlist){
   return{
     playlist
   }
+ }else{
+   console.log("no data en videoQuery")
+  return{
+    
+  }
+ }
   
 }
 

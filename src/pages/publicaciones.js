@@ -23,15 +23,18 @@ const Publicaciones = ({
                      <div className="grillaPublicaciones" >
                         
                             {
+                                articulos?
                                 articulos.map((e, i) => {
-                                    var current = e.node;
-                                    console.log(articulos.length);
-                                    return(
-                                        <Link  key={current.id} to={`../${current.id}`} >
-                                        <ChildBox autor={current.Autor} titulo={current.Titulo} id={current.id} />
-                                        </Link>
-                                    )
-                                })
+                                  var current = e.node;
+                                  console.log(articulos.length);
+                                  return(
+                                      <Link  key={current.id} to={`../${current.id}`} >
+                                      <ChildBox autor={current.Autor} titulo={current.Titulo} id={current.id} />
+                                      </Link>
+                                  )
+                              })
+                              :
+                              <div>no data</div>
                             } 
                        
                     </div> 

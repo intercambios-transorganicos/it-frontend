@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.lab{
+    color: #FFFFFF;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    text-align: start;
+}
+
+.inp{
+    height: 35px;
+    border-color: #FFFFFF;
+    border-radius: 10px;
+    color: #000000;
+    font-family: 'Rubik', sans-serif;
+    font-size: 13px;
+}
+.inp:focus, .inp:hover{
+    border-color: #0DB39B;
+}
+.inpMSJ{
+    height: 100px;
+    resize: none;
+}
+
+.enviar{
+    width: 80px;
+    height: 35px;
+    background-color: #0DB39B;
+    border: 1px solid #0DB39B;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+.enviar:hover, .enviar:focus{
+    background-color: #FFFFFF;
+    color: #0DB39B;
+}

@@ -16,8 +16,8 @@ const Childbox = (props) => {
                     <div className="textcontent">
                         <h1>{titulo}</h1>          
                         <div className="autor">
-                        <FontAwesomeIcon   size="1x" icon={faUserEdit} />
-                        <h12 className="autorTitle" >{autor}</h12>
+                            <FontAwesomeIcon   size="1x" icon={faUserEdit} />
+                            <h2 className="autorTitle" >{autor}</h2>
                         </div>
                     </div>
                 </article>

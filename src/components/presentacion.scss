@@ -1,0 +1,84 @@
+$lila:#7c428c;
+$acua: #4ca899;
+$bgGreen:#DEFCF0;
+$negro:#242424;
+$blanco : #fafafa;
+
+.presentacion{
+    background-color: #242424e7 !important ;
+    width:80%;
+    margin: 0 4vh 0vh 2vh;
+    position: absolute;
+    bottom: 5%;
+    //left: 10%;
+}
+
+.presentacion .content h1{
+    color:$blanco !important;
+    font-size:3vh;
+}
+
+.presentacion .content p{
+    color:#d3d3d3 !important;
+}
+
+.presentacion .content{
+    padding: 5vh 5vh 1vh 1vh;
+}
+
+
+.separador{
+    height: 2px;
+    background-color: #cacaca;
+    margin-bottom: 4vh;
+    width: 80%;
+}
+
+.presButtons{
+    display:flex;
+}
+
+
+.links_press{
+    color:$lila;
+    display:flex;
+    padding: 1vh;
+    cursor:pointer;
+    border: solid 1px;
+    border-radius: 50px;
+    margin-top: 2vh;
+    margin-left: 2vh;
+}
+.links_press:hover{
+    background-color: #131313;
+
+}
+
+.links_press h2{
+    color:$blanco !important;
+    font-size:2.5vh !important;
+    margin:0!important ; 
+    padding-left:2vh;
+    
+}
+
+.icon-centered{
+  
+    display: flex;
+    place-items: center;
+}
+
+@media (max-width: 600px){
+    .presentacion{
+        width:auto;
+        position: revert;
+    }
+
+    .presButtons{
+        display: block;
+        margin-bottom: 10vh;
+    }
+    .links_press{
+        padding: 2vh;
+    }
+}

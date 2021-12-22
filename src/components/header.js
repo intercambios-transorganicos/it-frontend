@@ -41,10 +41,10 @@ const Header = () => {
     </div>
 
 
-    <nav className="level is-mobile">
+    <nav className="level is-mobile myNav">
       <div className="level-left">
         <div className="level-item">
-          <Link to="/" className="navbar-item">
+          <Link to="/" >
               <svg className="logosvg" xmlns="http://www.w3.org/2000/svg" viewBox="-200 -200 1400 900">
                   <circle  cx="232.48" cy="232.48" r="232.48" fill="#4ca899"/>
                   <rect x="464.96" width="464.96" height="464.96" fill="#4ca899"/>

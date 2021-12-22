@@ -8,6 +8,13 @@ $blanco : #fafafa;
 
 //MENU MODAL  
 
+.myNav{
+    position: fixed;
+    min-width: 99vw;
+    z-index:100;
+}
+
+
 .menuModalContent{
     width:100%;
     height:100%;
@@ -41,11 +48,6 @@ $blanco : #fafafa;
     margin: 10px;
 }
 
-
-.myNav{
-    background-color:$blanco !important;
-    padding-top: 0 !important;
-}
 
 
 @media (max-width:600px){

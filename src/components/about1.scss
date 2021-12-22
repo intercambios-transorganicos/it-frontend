@@ -1,6 +1,37 @@
 //About-layout
+$lila:#7c428c;
+$acua: #4ca899;
+$bgGreen:#DEFCF0;
+$negro:#242424;
+$blanco : #fafafa;
 
 .about1{
+    position: relative;
+    background-color: $negro;
+    border:solid $blanco 5vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    place-items: flex-end;
+    overflow: hidden;
+}
+
+
+.about_columns{
+    z-index:2;
+    padding: 5vh 5vh 10vh 5vh;
+}
+
+.aboutCarousel{
+    position:absolute;
+}
+
+ 
+
+  //1_
+
+  
+.about1_{
     // background-color:rgb(233, 233, 233);
      width:100vw;
      min-height:100vh; 
@@ -43,4 +74,28 @@
      // background-color:$acua;
       
   }
-  
+
+
+@media (max-width: 600px){
+
+    .about1{
+        position:revert;
+        padding-bottom: 10vh;
+        border:solid $blanco 1vh;
+    }
+    .aboutCarousel{
+        position:revert;
+    }
+
+     //1_
+
+    .about1_{
+        display:flex;
+        flex-direction:column; 
+    }
+
+   
+    
+ 
+   
+}

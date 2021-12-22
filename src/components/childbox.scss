@@ -7,7 +7,7 @@ $negro:#242424;
 $blanco : #fafafa;
 
 .article_box{
-    background-color:$acua;
+    background-color:$negro;
     position:relative;
     overflow:hidden;
     min-height: 300px;
@@ -50,8 +50,13 @@ $blanco : #fafafa;
     
 }
 
-.article_box h2{
-    color:$blanco;
+.autor{
+    color:$lila;
+    mix-blend-mode:color-dodge;
+}
+
+.autorTitle{
+    color:$blanco ;
     font-size: 1.8vh;
     margin:0;
     margin-left:5px;

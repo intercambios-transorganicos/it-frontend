@@ -1,40 +1,49 @@
 import React, {useEffect, useState, useRef} from 'react';
+import { useStaticQuery, graphql } from "gatsby"
 import InfoExpanded from './infoExpanded'
 import "./about2.scss"
 import Preguntas from './preguntas'
-import PatternSvg from './patternSvg'
 
 const About2 = () => {
+    const data = useStaticQuery(graphql`
+    {
+      allStrapiPreguntas {
+        edges {
+          node {
+            pregunta
+          }
+        }
+      }
+    }
+  `)
 
-    var titulo = "Nuestras preguntas de investigacion...";
-    var sub = "Dedicamos un proceso de investigación transdisciplinaria a la comprensión del problema. Sobre la dimensión adquirida, imaginamos y a veces realizamos estrategias tecno-culturales para descubrir nuevas soluciones."
+  console.log(data.allStrapiPreguntas.edges);
+  var preguntas = data.allStrapiPreguntas.edges;
 
-    var pregunta1 = "¿Cómo potenciar y expandir la transferencia de conocimientos a la población?";
-    var pregunta2 = "¿¿Qué futuros imaginamos??";
-    var pregunta3 = "¿Cómo imaginar otros modelos políticos, sociales, productivos?";
-    var pregunta4 = "¿Cómo trascender la obra, el museo, el sistema del arte?";
-    var pregunta5 = "¿Por qué es importante el arte para el futuro de la humanidad?";
-    var pregunta6 = "¿Existen otras topologías que doten a las disciplinas artísticas de nuevas posibilidades de acción y producción?";
+    // var titulo = "Nuestras preguntas de investigacion...";
+    // var sub = "Dedicamos un proceso de investigación transdisciplinaria a la comprensión del problema. Sobre la dimensión adquirida, imaginamos y a veces realizamos estrategias tecno-culturales para descubrir nuevas soluciones."
 
-    var modalT = "Métodología";
-    var modalP = "Nuestro enfoque crítico sobre los avances y las limitaciones de la tecnología funcional nos llevó a plantear la necesidad de producir dispositivos/interfaces que estimulen, por medio del lenguaje simbólico del arte electrónico, aspectos creativos, sensoriales, adaptativos y exploratorios de quienes son parte de las experiencias que llevamos adelante.  Trabajamos con las comunidades que viven diferentes problemáticas o con problemas específicos que identificamos o que plantea una institución, colega, cliente. ";
+    // var modalT = "Métodología";
+    // var modalP = "Nuestro enfoque crítico sobre los avances y las limitaciones de la tecnología funcional nos llevó a plantear la necesidad de producir dispositivos/interfaces que estimulen, por medio del lenguaje simbólico del arte electrónico, aspectos creativos, sensoriales, adaptativos y exploratorios de quienes son parte de las experiencias que llevamos adelante.  Trabajamos con las comunidades que viven diferentes problemáticas o con problemas específicos que identificamos o que plantea una institución, colega, cliente. ";
+
     return (
         <div className="about2">
-            <div className="b_boxes b2">
-                <Preguntas dur={"40s"} fSize={"7vh"} cCaption={pregunta1} bgColor={""} txColor={"#ADADAD"}/>
-                <Preguntas dur={"20s"} fSize={"4vh"} cCaption={pregunta2} bgColor={""} txColor={"#3B3B3B"}/>
-                <Preguntas dur={"30s"} fSize={"6vh"} cCaption={pregunta3} bgColor={""} txColor={"#EDEDED"}/>
-                <Preguntas dur={"20s"} fSize={"3vh"} cCaption={pregunta4} bgColor={""} txColor={"#FAFAFA"}/>
-                <Preguntas dur={"15s"} fSize={"4vh"} cCaption={pregunta5} bgColor={""} txColor={"#D4D4D4"}/>
-                <Preguntas dur={"30s"} fSize={"5vh"} cCaption={pregunta6} bgColor={""} txColor={"#ADADAD"}/>
-               
+            <div className=" b2">
+                {
+                    preguntas.map((e,i) => {
+                        var colores = ["#ADADAD", "#3B3B3B", "#EDEDED","#FAFAFA","#D4D4D4",];
+                        var numColor = Math.round(Math.random() * 5);
+
+                        var currentP = e.node.pregunta
+                        var currentD = Math.floor(Math.random() * (40 - 15) + 15);
+                        var currentC = colores[numColor];
+                        var currentS = Math.floor(Math.random() * (7 - 3) + 3);
+                        return(
+                            <Preguntas dur={`${currentD}s`} fSize={`${currentS}vh`} cCaption={currentP} bgColor={""} txColor={currentC}/>
+                        )
+                    })
+                }
             </div>
-            <div className="b_boxes b3"></div>
-            <div className="b_boxes b4"></div>
-            <div className="b_boxes b5">
-                <InfoExpanded titulo={titulo} descripcion={sub} bgColor="#eeeeee" modalT={modalT} modalP={modalP}  />
-            </div>
-            <div className="b_boxes b6"></div>
             
         </div>
     );

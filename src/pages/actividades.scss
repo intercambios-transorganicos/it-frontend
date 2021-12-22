@@ -12,40 +12,12 @@ $blanco : #fafafa;
 }
 
 .actividadesWrapper{
-    background-color:$bgGreen;
+    background-color:$negro;
     padding:4vh 8vh;
     margin: 0 10vh;
-}
-
-.actividadElement{
-    margin-top: 10vh;
-    min-height:20vh;
-    background-color:$acua;
-    
-    
-}
-
-.actividadElement div{
-    display: flex;
-    place-items: center;
-    justify-content: center;
-}
-
-.fecha{
-    font-size:5vh;
-}
-
-.actividadExpand{
-    cursor: pointer;
-    transition:all 0.2s ease-in-out;
-}
-
-
-.actividadExpand:hover{
-    color:$blanco;
-    padding:3px;
-    background-color:$negro;
-    transform:scale(1.2);
+    //max-height: 80vh;
+    //overflow-y: scroll;
+    border: #7c428c solid 10px;
 }
 
 @media (max-width: 600px){

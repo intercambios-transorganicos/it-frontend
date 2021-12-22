@@ -23,8 +23,16 @@ $blanco : #fafafa;
     display: flex;
     place-items: flex-end;
     cursor:pointer;
-    background-color:$acua;
+    background-color:$negro;
+    color:$blanco;
     overflow:hidden;
+    transition: all 0.3s ease-out;
+}
+
+.proyectsBox:hover{
+    color:$blanco;
+    transform: scale(1.02);
+    
 }
 
 .proyectsBox:before{

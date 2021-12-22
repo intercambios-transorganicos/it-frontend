@@ -49,3 +49,11 @@
  .c6{
      grid-area : c6;
  }
+
+ @media (max-width: 600px){
+    .about3{
+        display:flex;
+        flex-direction:column; 
+        height:auto; 
+    }
+}

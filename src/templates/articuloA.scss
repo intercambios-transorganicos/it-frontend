@@ -9,7 +9,7 @@ $blanco : #fafafa;
 //ARTICULO A
 
 .articuloA{
-   // background-color:$blaco;
+    background-color:$negro;
     min-height:100vh;
     display:grid;
     grid-template-columns : repeat(auto-fit, minmax(200px, 2fr));
@@ -53,6 +53,7 @@ $blanco : #fafafa;
 .articuloA p{
     margin-top:3vh;
     font-size:2.5vh;
+    color:$blanco;
 }
 
 .articleButtons{

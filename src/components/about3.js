@@ -22,24 +22,15 @@ const About3 = () => {
     }
     
     return (
-        <div className="about3">
-            <div className="c_boxes c1"></div>
-            <div className="c_boxes c2"  onMouseEnter={handleHover} onMouseLeave={handleLeave}>
+        <div className="about3 columns">
+            <div className="c_boxes  column"  onMouseEnter={handleHover} onMouseLeave={handleLeave}>
                 <ItIso action={icohovered} />
             </div>
-            <div className="c_boxes c3">
-                {/* <div className="about3_content">
-                    <h1>Nuestro Aporte:</h1>
-                </div> */}
-            </div>
-            <div className="c_boxes c4"></div>
-            <div className="c_boxes c5">
+            
+            <div className="c_boxes column">
             <InfoExpandedx2 titulo={titulo} desc={descripcion} desc2={descripcion2} bgColor="#7c428c" txColor={"#eeeeee"} modalT={modalT} modalP={modalP} modalP2={modalP2} modalP3={modalP3}/>
             </div>
-            <div className="c_boxes c6">
-                
-            </div>
-            
+         
         </div>
     );
 }

@@ -5,9 +5,9 @@ $negro:#242424;
 $blanco : #fafafa;
 
 .presentacion{
-    background-color: #242424e7 !important ;
-    width:80%;
-    margin: 0 4vh 0vh 2vh;
+    background-color: #242424b6 !important ;
+    width:40%;
+    margin: 0 0vh 5vh 10vh;
     position: absolute;
     bottom: 5%;
     //left: 10%;
@@ -15,7 +15,7 @@ $blanco : #fafafa;
 
 .presentacion .content h1{
     color:$blanco !important;
-    font-size:3vh;
+    font-size:2.5vh;
 }
 
 .presentacion .content p{
@@ -56,7 +56,7 @@ $blanco : #fafafa;
 
 .links_press h2{
     color:$blanco !important;
-    font-size:2.5vh !important;
+    font-size: 2vh !important;
     margin:0!important ; 
     padding-left:2vh;
     
@@ -72,6 +72,7 @@ $blanco : #fafafa;
     .presentacion{
         width:auto;
         position: revert;
+        
     }
 
     .presButtons{
@@ -81,4 +82,6 @@ $blanco : #fafafa;
     .links_press{
         padding: 2vh;
     }
+
+    
 }

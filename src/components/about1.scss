@@ -8,7 +8,7 @@ $blanco : #fafafa;
 .about1{
     position: relative;
     background-color: $negro;
-    border:solid $blanco 5vh;
+    //border:solid $blanco 5vh;
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -24,6 +24,13 @@ $blanco : #fafafa;
 
 .aboutCarousel{
     position:absolute;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    top: unset !important;
+    bottom: -4vh !important;
+    width: 6% !important;
+    height: 20vh !important;
 }
 
  
@@ -86,7 +93,7 @@ $blanco : #fafafa;
     .aboutCarousel{
         position:revert;
     }
-
+   
      //1_
 
     .about1_{
@@ -94,7 +101,7 @@ $blanco : #fafafa;
         flex-direction:column; 
     }
 
-   
+
     
  
    

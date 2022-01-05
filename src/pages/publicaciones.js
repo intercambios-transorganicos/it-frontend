@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "gatsby"
 import Layout from "../components/layout"
-import ChildBox from "../components/childBox"
+import ChildBox from "../components/childbox"
 import CirclePath from "../components/circlePath"
 import {graphql} from "gatsby"
 import "./publicaciones.scss"

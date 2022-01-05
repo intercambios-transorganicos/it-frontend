@@ -48,7 +48,9 @@ const VideoWControls = ({ stop, setStop, setUrl, url }) => {
       // console.log(url);
       // console.log(playlist[url]);
       let newVideoSelect = playlist[url];
-      //console.log(process.env.API_URL + newVideoSelect.url);
+      console.log(process.env.API_URL + newVideoSelect.url);
+      var nueva = process.env.API_URL;
+      console.log(nueva);
       setvideoSelect(process.env.API_URL + newVideoSelect.url);
     }
 

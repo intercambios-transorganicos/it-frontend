@@ -28,7 +28,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
-    
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

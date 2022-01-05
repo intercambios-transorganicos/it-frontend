@@ -18,8 +18,8 @@ const Mediaproyectos = ({imagenes}) => {
                         var currentImg = getImage(e.localFile);
                         //console.log(e.localFile);
                         return(
-                            <Carousel.Item className="mediaProyectoSlide">
-                                <GatsbyImage image={currentImg} key={i} alt={i} />
+                            <Carousel.Item key={i} className="mediaProyectoSlide">
+                                <GatsbyImage image={currentImg}  alt={`mediaProy${i}`} />
                             </Carousel.Item>
                         )
                         

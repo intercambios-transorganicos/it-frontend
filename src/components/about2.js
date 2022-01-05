@@ -39,7 +39,7 @@ const About2 = () => {
                         var currentC = colores[numColor];
                         var currentS = Math.floor(Math.random() * (7 - 3) + 3);
                         return(
-                            <Preguntas dur={`${currentD}s`} fSize={`${currentS}vh`} cCaption={currentP} bgColor={""} txColor={currentC}/>
+                            <Preguntas key={`pregunta${i}`} dur={`${currentD}s`} fSize={`${currentS}vh`} cCaption={currentP} bgColor={""} txColor={currentC}/>
                         )
                     })
                 }

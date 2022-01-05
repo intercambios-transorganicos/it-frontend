@@ -45,8 +45,8 @@ const About1 = () => {
                         var currentImg = getImage(e.node.imagen[0].localFile);
                         console.log(e.node)
                         return(
-                            <Carousel.Item className="aboutSlide">
-                                <GatsbyImage image={currentImg} key={e.id} alt={`img${e.id}`} />
+                            <Carousel.Item key={e.node.id}  className="aboutSlide">
+                                <GatsbyImage image={currentImg} alt={`img${e.node.id}`} />
                                 <Presentacion titulo={e.node.titulo} desc={e.node.descripcion} />
                             </Carousel.Item>
                         )

@@ -15,6 +15,7 @@ module.exports = {
          queryLimit: 1000, // Defaults to 100
          collectionTypes: [`articulos`, `playlists`, `members`, `proyectos`, `actividades`, `preguntas`, `infos`],
        },
+       
      },
     // {
       // resolve: `gatsby-plugin-loadable-components-ssr`,

@@ -69,14 +69,6 @@ const VideoWControls = ({ stop, setStop, setUrl, url }) => {
   useEffect(() =>{ 
     console.log(videoSelect);
   },[videoSelect]);
-
-  // useEffect(()=>{ 
-  //   var timerx = setInterval(() =>setTimer(videoRef.current.currentTime), 10)
-  //   return function cleanup(){
-  //     clearInterval(timerx);
-  //   }
-  // },[]);
-
   handleStop();
                       
   return (

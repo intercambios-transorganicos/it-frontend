@@ -14,7 +14,6 @@ const Usevideoquery = () => {
       }
     }
   `);
-  
   const playlist = data.strapiPlaylists.videos.map(node =>{
     const {id, name, url} = node;
     return {

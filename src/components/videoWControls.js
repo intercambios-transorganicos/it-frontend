@@ -70,7 +70,8 @@ const VideoWControls = ({ stop, setStop, setUrl, url }) => {
     console.log(videoSelect);
   },[videoSelect]);
   handleStop();
-                      
+         
+  
   return (
     <>
     {

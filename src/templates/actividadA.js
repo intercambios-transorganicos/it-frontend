@@ -6,7 +6,6 @@ import "./actividadA.scss"
 const Actividada = ({
   //data
 }) => {
-
     // const{id, fecha, lugar, titulo, link, descripcion} = data.strapiActividades;
     // console.log(id, fecha, lugar);
     return (

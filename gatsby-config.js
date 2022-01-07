@@ -1,6 +1,7 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
+console.log(process.env.NODE_ENV);
 module.exports = {
   siteMetadata: {
     title: `Intercambios Transorganicos`,
@@ -15,7 +16,8 @@ module.exports = {
        resolve: `gatsby-source-strapi`,
        options: {
          //"https://it-strapi-heroku.herokuapp.com"
-         apiURL: process.env.DEPLOY_URL ? "http://185.53.129.158:1337" : "http://localhost:1337",
+         //apiURL: process.env.NODE_ENV ? "http://185.53.129.158:1337" : "http://localhost:1337",
+         apiURL: process.env.API_URL,
          queryLimit: 1000, // Defaults to 100
          collectionTypes: [`articulos`, `playlists`, `members`, `proyectos`, `actividades`, `preguntas`, `infos`],
        },
@@ -31,7 +33,12 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("node-sass"),
+      },
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

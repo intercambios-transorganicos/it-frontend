@@ -49,13 +49,15 @@ const VideoWControls = ({ stop, setStop, setUrl, url }) => {
       // console.log(playlist[url]);
       let newVideoSelect = playlist[url];
       var api_url = "";
-      if(process.env.API_URL !== undefined){
-        api_url = process.env.API_URL;
+      if(process.env.NODE_ENV == production){
+        api_url = "http://185.53.129.158:1337";
         
+      }else if(process.env.NODE_ENV == development){
+        api_url = "http://localhost:1337";
       }
 
       console.log(process.env.NODE_ENV);
-      console.log(process.env.API_URL);
+      console.log(process.env.api_url);
       console.log(api_url + newVideoSelect.url);
       setvideoSelect(api_url + newVideoSelect.url);
     }

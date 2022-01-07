@@ -52,6 +52,7 @@ const VideoWControls = ({ stop, setStop, setUrl, url }) => {
       if(process.env.API_URL !== undefined){
         api_url = process.env.API_URL;
       }
+      
       console.log(process.env.NODE_ENV);
       setvideoSelect(api_url + newVideoSelect.url);
     }

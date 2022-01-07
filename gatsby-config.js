@@ -14,7 +14,8 @@ module.exports = {
      {
        resolve: `gatsby-source-strapi`,
        options: {
-         apiURL: process.env.DEPLOY_URL ? "https://it-strapi-heroku.herokuapp.com" : "http://localhost:1337",
+         //"https://it-strapi-heroku.herokuapp.com"
+         apiURL: process.env.DEPLOY_URL ? "http://185.53.129.158:1337" : "http://localhost:1337",
          queryLimit: 1000, // Defaults to 100
          collectionTypes: [`articulos`, `playlists`, `members`, `proyectos`, `actividades`, `preguntas`, `infos`],
        },

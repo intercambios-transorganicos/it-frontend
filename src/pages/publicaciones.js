@@ -58,17 +58,7 @@ export const query = graphql`
           Titulo
           Subtitulo
           Contenido
-          portada {
-            id
-            localFile {
-              childImageSharp {
-                gatsbyImageData(
-                  layout: CONSTRAINED
-                  height:600
-                  )
-              }
-            }
-          }
+          
         }
       }
     }

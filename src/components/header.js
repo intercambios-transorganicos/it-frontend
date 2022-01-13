@@ -22,12 +22,6 @@ const Header = () => {
   }
 
 
-  useEffect(() => {
-      console.log(click);
-  },[click])
-
-  
- 
   return(
     <div>
     <div className={miClase}>

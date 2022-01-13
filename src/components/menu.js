@@ -16,7 +16,7 @@ const Menu = ({click}) => {
         .from(tabs.current[1], {top: "35%", right: "44%", duration: 0.5}, "-=0.3")
         .from(tabs.current[2], {top: "35%", left: "44%", duration: 0.5}, "-=0.3")
         .from(tabs.current[3], {top: "35%", right: "44%", duration: 0.5}, "-=0.3")
-        console.log("clickfrommenuuu")
+        //console.log("clickfrommenuuu")
         
     },[]);
 

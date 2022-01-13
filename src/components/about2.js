@@ -17,7 +17,7 @@ const About2 = () => {
     }
   `)
 
-  console.log(data.allStrapiPreguntas.edges);
+  //console.log(data.allStrapiPreguntas.edges);
   var preguntas = data.allStrapiPreguntas.edges;
 
     // var titulo = "Nuestras preguntas de investigacion...";

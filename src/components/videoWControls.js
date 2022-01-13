@@ -56,9 +56,9 @@ const VideoWControls = ({ stop, setStop, setUrl, url }) => {
         api_url = "http://localhost:1337";
       }
 
-      console.log(process.env.NODE_ENV);
-      console.log(process.env.api_url);
-      console.log(api_url + newVideoSelect.url);
+      // console.log(process.env.NODE_ENV);
+      // console.log(process.env.api_url);
+      // console.log(api_url + newVideoSelect.url);
       setvideoSelect(api_url + newVideoSelect.url);
     }
 

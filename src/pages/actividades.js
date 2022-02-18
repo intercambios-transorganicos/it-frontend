@@ -30,12 +30,12 @@ const Actividades = ({
                 { actividades?
                   actividades.map((e, i) => {
                     var current = e.node;
-                    var oe = JSON.parse(current.oembed);
+                    /*var oe = JSON.parse(current.oembed);
                     var currentData = "";
                     
                     if(oe){
                       currentData = oe.rawData.html;
-                    }
+                    }*/
 
                     return(
                       <div>
@@ -47,7 +47,7 @@ const Actividades = ({
                         link_={current.link}
                         lugar={current.lugar}
                         desc={current.descripcion}
-                        mainData={currentData}
+                        /*mainData={currentData}*/
                         />
                       </div>
                     )
@@ -79,7 +79,7 @@ export const query = graphql`
           titulo
           link
           descripcion
-          oembed
+          # oembed
         }
       }
     }

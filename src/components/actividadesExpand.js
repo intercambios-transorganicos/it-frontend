@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import OembedIframe from './oembedIframe'
 import "./actividadesExpand.scss";
 
-const Actividadesexpand = ({fecha, titulo, id, link_, desc, lugar, mainData}) => {
+const Actividadesexpand = ({fecha, titulo, id, link_, desc, lugar}) => {
 
     var[isActive, setActive] = useState(false);
     function handleClick(){
@@ -87,9 +87,9 @@ const Actividadesexpand = ({fecha, titulo, id, link_, desc, lugar, mainData}) =>
                                     <div >
                                          <p>{ desc }</p>
                                     </div>
-                                    <div>
+                                    {/* <div>
                                         {mainData.length > 0 && <OembedIframe videoData={mainData}/> }
-                                    </div>
+                                    </div> */}
                               </div>
                           </div>
                         </div>

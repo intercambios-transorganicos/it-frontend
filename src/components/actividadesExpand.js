@@ -2,14 +2,16 @@ import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExpand, faLink, faMapMarked} from '@fortawesome/free-solid-svg-icons'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import OembedIframe from './oembedIframe'
 import "./actividadesExpand.scss";
 
-const Actividadesexpand = ({fecha, titulo, id, link_, desc, lugar}) => {
+const Actividadesexpand = ({fecha, titulo, id, link_, desc, lugar, mainData}) => {
 
     var[isActive, setActive] = useState(false);
     function handleClick(){
         setActive(!isActive);
     }
+ 
     return (
         <div key={id} className="">
                        {/* TOP */}
@@ -41,7 +43,7 @@ const Actividadesexpand = ({fecha, titulo, id, link_, desc, lugar}) => {
                         {/* BOTTOM */}
                         {
                             isActive?
-                            <div className="columns">
+                        <div className="columns">
                           <div className="column">
                               <div className="content  box">
                                     <div className="level">
@@ -85,9 +87,9 @@ const Actividadesexpand = ({fecha, titulo, id, link_, desc, lugar}) => {
                                     <div >
                                          <p>{ desc }</p>
                                     </div>
-                                
-
-                                
+                                    <div>
+                                        {mainData.length > 0 && <OembedIframe videoData={mainData}/> }
+                                    </div>
                               </div>
                           </div>
                         </div>

@@ -30,18 +30,29 @@ const Actividades = ({
                 { actividades?
                   actividades.map((e, i) => {
                     var current = e.node;
-                    console.log(current)
+                    var oe = JSON.parse(current.oembed);
+                    var currentData = "";
+                    
+                    if(oe){
+                      currentData = oe.rawData.html;
+                    }
+
                     return(
-                     <ActividadesExpand 
-                     key={current.id}
-                     fecha={current.fecha}
-                     titulo={current.titulo}
-                     id={current.id}
-                     link_={current.link}
-                     lugar={current.lugar}
-                     desc={current.descripcion}
-                     />
+                      <div>
+                        <ActividadesExpand 
+                        key={current.id}
+                        fecha={current.fecha}
+                        titulo={current.titulo}
+                        id={current.id}
+                        link_={current.link}
+                        lugar={current.lugar}
+                        desc={current.descripcion}
+                        mainData={currentData}
+                        />
+                      </div>
                     )
+
+                   
                   })
 
                   :
@@ -68,6 +79,7 @@ export const query = graphql`
           titulo
           link
           descripcion
+          oembed
         }
       }
     }

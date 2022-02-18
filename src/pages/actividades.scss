@@ -20,6 +20,17 @@ $blanco : #fafafa;
     border: #7c428c solid 10px;
 }
 
+.videoArticleContainer{
+    width: 100%;
+    height: 100vh;
+  }
+
+.videoArticleContainer > iframe{
+    width:100%;
+    height:100%;
+
+}
+
 @media (max-width: 600px){
     .actividadesWrapper{
         padding: 0;

@@ -1,9 +1,9 @@
 import React, {useState, useEffect, useRef} from 'react';
 import "./itLoader.scss"
-import gsap from 'gsap';
+//import gsap from 'gsap';
 
 const Itloader = () => {
-    var tl = useRef();
+    //var tl = useRef();
     var actor = useRef();
 
     useEffect(()=>{
@@ -11,7 +11,7 @@ const Itloader = () => {
         document.querySelector('html').style.overflow = 'hidden'
     },[]);
 
-    var[press, setPress] = useState(false);
+   /* var[press, setPress] = useState(false);
      useEffect(()=>{
         if(press){
             console.log('start');
@@ -35,7 +35,7 @@ const Itloader = () => {
             console.log(` ${e.code}`);
           }
       
-    },[])
+    },[])*/
 
   
 

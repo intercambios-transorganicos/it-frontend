@@ -23,28 +23,40 @@ const Pathraiz = ({ setActive, setUrl, url }) => {
     }
   }
 
-  // useEffect(() => {
-    
-  //   console.log(url);
-
-  // }, [url])
-
+  
+  var currentFx = 0;
   return (
     <svg className="pathRaiz" xmlns="http://www.w3.org/2000/svg" viewBox="-450 -200 2000 900">
 
       {JSONdata.content.map((e, i) =>{
         var current = e;
-
-        return(
-          <path 
-            onClick={handleClick}
-            ref={elem => {actors.current[i] = elem}}
-            id={i}
-            key={i}
-            className="module"
-            d={current.d}
-          />
-        );
+        currentFx += 1;
+        if(currentFx > playlist.length){
+          console.log(currentFx);
+          return(
+            <path 
+              onClick={handleClick}
+              ref={elem => {actors.current[i] = elem}}
+              id={i}
+              key={i}
+              className="module"
+              d={current.d}
+            />
+          );
+        }else{
+          console.log(currentFx);
+          return(
+              <path 
+              onClick={handleClick}
+              ref={elem => {actors.current[i] = elem}}
+              id={i}
+              key={i}
+              className="module"
+              d={current.d}
+            />
+          );
+        }
+        
 
       })}
 

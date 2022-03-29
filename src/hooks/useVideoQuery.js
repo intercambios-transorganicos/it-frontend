@@ -30,9 +30,6 @@ const Usevideoquery = () => {
   }
  }else{
    console.log("no data en videoQuery")
-  return{
-    
-  }
  }
   
 }

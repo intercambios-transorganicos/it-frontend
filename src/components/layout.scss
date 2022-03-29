@@ -8,16 +8,8 @@ $negro:#242424;
 $blanco : #fafafa;
 
 main{
-    height:auto;
+    height:auto;//scrollpage = 100vh
     width:100vw;
     background-color:$blanco;
     margin-bottom: 10vh;
-}
-
-.main_wrapper{
-    //background-color:#242424;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }

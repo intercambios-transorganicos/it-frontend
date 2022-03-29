@@ -1,4 +1,5 @@
 import React from "react"
+//import ReactPageScroller from 'react-page-scroller';
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Homepage from "../components/homepage"
@@ -13,11 +14,10 @@ const IndexPage = () => (
   
   <Layout>
     <Seo title="Home" />
-    {/* <Loader/> */}
-    <Homepage/>
-    <About1/>
-    <About2/>
-    <About3/> 
+      <Homepage/>
+      <About1/>
+      <About2/>
+      <About3/> 
   </Layout>
 )
 

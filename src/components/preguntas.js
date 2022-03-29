@@ -32,7 +32,7 @@ const Preguntas = (props) => {
             y="-40"
             style={{fill : txColor, fontSize: fSize }}
             >
-                {cCaption.map(elem => elem)}
+                {cCaption.map((elem,index) => elem)}
                 <animateMotion 
                 dur={dur}
                 repeatCount="indefinite" 

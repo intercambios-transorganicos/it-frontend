@@ -28,12 +28,10 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       
-      <div className="main_wrapper has-navbar-fixed-top">
         <main>
           {children}
         </main>
         <FooterV2/>
-      </div>
     </>
   )
 }

@@ -1,7 +1,5 @@
 import React, {useState, useRef} from 'react';
 import {graphql} from "gatsby";
-
-//import {Link} from "gatsby"
 import Layout from "../components/layout";
 import CirclePath from "../components/circlePath"
 import ActividadesExpand from "../components/actividadesExpand"

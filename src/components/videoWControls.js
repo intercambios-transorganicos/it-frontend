@@ -46,13 +46,13 @@ const VideoWControls = ({ stop, setStop, setUrl, url }) => {
      // console.log(process.env.API_URL);
    
       let newVideoSelect = playlist[url];
-      var api_url = "";
-      if(process.env.NODE_ENV == "production"){
+      var api_url = process.env.API_URL;
+      /*if(process.env.NODE_ENV == "production"){
         api_url = "https://185.53.129.158:1337";
         
       }else if(process.env.NODE_ENV == "development"){
         api_url = "http://localhost:1337";
-      }
+      }*/
       setvideoSelect(api_url + newVideoSelect.url);
     }
 

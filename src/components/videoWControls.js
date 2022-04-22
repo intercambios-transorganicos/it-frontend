@@ -48,7 +48,7 @@ const VideoWControls = ({ stop, setStop, setUrl, url }) => {
       let newVideoSelect = playlist[url];
       var api_url = "";
       if(process.env.NODE_ENV == "production"){
-        api_url = "https://185.53.129.158:1337";
+        api_url = "https://admin.intercambiostransorganicos.org";
         
       }else if(process.env.NODE_ENV == "development"){
         api_url = "http://localhost:1337";

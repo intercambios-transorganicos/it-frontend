@@ -1,19 +1,25 @@
 @charset "utf-8";
 
 $lila:#7c428c;
-$acua: #4ca899;
+$acua: #03BF9E;
 $bgGreen:#DEFCF0;
-$negro:#242424;
+$negro:#141414;
 $blanco : #fafafa;
 
-//MENU MODAL  
-
 .myNav{
+    background-color: $negro;
     position: fixed;
+    width: 100%;
     min-width: 99vw;
+    padding: 2px 7px;
     z-index:100;
-}
 
+    .logoNav{
+        a{
+            display: inline-block;
+        }
+    }
+}
 
 .menuModalContent{
     width:100%;
@@ -30,15 +36,19 @@ $blanco : #fafafa;
     z-index:500;
 }
 
-
 .logosvg{
     width:60px;
     cursor:pointer;    
 }
 
-.itTitulo h1{
-    font-size:1em;
-    color: $acua;
+.itTitulo{
+    display: inline-block;
+    padding: 5px;
+
+    h1{
+        font-size:1em;
+        color: $acua;
+    }
 }
 
 .menuit{
@@ -49,8 +59,7 @@ $blanco : #fafafa;
 }
 
 
-
-@media (max-width:600px){
+@media (max-width:768px){
     .itTitulo{
         display:none;
     }

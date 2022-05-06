@@ -38,7 +38,7 @@ const FooterV2 = () => {
     return (
         <div className='footerV2 row p-0 justify-content-center'>
 
-            <ul className='col-12 col-sm-11 col-md-10 px-5 secciones d-flex flex-row justify-content-between'>
+            <ul className='col-12 col-sm-11 col-md-10 col-xxl-11 px-5 secciones d-flex flex-row justify-content-between'>
                 <li><Link to="/nosotres">Nuestro equipo</Link></li>
                 <li><Link to="/proyectos">Proyectos</Link></li>
                 <li><Link to="/publicaciones">Publicaciones</Link></li>
@@ -53,7 +53,7 @@ const FooterV2 = () => {
                 />
             </div>
 
-            <ul className='col-10 redes d-flex flex-row justify-content-center'>
+            <ul className='col-10 col-xxl-11 redes d-flex flex-row justify-content-center'>
                 <li className='m-3'><Link to="https://www.instagram.com/intercambios_transorganicos/"> <FontAwesomeIcon icon={faInstagram}/> </Link></li>
                 <li onClick={showingMail} className='m-3'><FontAwesomeIcon icon={faEnvelope}/></li>
                 <li onClick={showingMap} className='m-3'><FontAwesomeIcon icon={faMap}/></li>

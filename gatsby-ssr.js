@@ -68,6 +68,8 @@ export const onRenderBody = ({
         </svg>
         </div>
     ])
+
+    
     setBodyAttributes({
         className:"preloader_active"
     })

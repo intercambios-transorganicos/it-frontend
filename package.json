@@ -47,6 +47,7 @@
     "react-mailto": "^0.4.0",
     "react-page-scroller": "^2.2.1",
     "react-player": "^2.9.0",
+    "react-responsive": "^9.0.0-beta.6",
     "react-scrollmagic": "^2.3.0",
     "sass": "^1.39.2",
     "tiny-slider-react": "^0.5.3"

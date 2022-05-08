@@ -5,17 +5,16 @@ $negro:#242424;
 $blanco : #fafafa;
 
 .presentacion{
-    background-color: #242424b6 !important ;
-    width:40%;
-    margin: 0 0vh 5vh 10vh;
+    background-color: #242424b6 !important;
+    width: 40%;
+    margin: 0 10vh 0vh 10vh;
     position: absolute;
     bottom: 5%;
-    //left: 10%;
+    right: 0;
 }
 
 .presentacion .content h1{
     color:$blanco !important;
-    font-size:2.5vh;
 }
 
 .presentacion .content p{

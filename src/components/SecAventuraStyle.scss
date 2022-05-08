@@ -1,0 +1,60 @@
+.st0{
+    fill:#141414;
+    stroke:#141414;
+    stroke-width:5;
+}
+.st0:hover, .st0:focus{
+    fill:#7C428C;
+    stroke:#7C428C;
+}
+
+.st1{
+    fill:#FFFFFF;
+}
+
+.tituloAventura{
+    width: 260px;
+
+    color: #141414;
+    font-family: B612;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+@media (min-width: 576px){
+    .tituloAventura{
+        width: 350px;
+        font-size: 34px;
+        line-height: 37px;
+    }
+}
+
+@media (min-width: 768px){
+    .tituloAventura{
+        width: 100%;
+        font-size: 31px;
+    }
+
+    .sobre{
+        padding: 0px 60px;
+    }
+}
+
+@media (min-width: 992px){
+    .tituloAventura{
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1200px){
+    .tituloAventura{
+        font-size: 45px;
+    }
+
+    .sobre{
+        padding: 0px 80px;
+    }
+}

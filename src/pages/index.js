@@ -5,12 +5,14 @@ import Seo from "../components/seo"
 import About1 from "../components/about1"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./index.scss"
+import SecAventura from "../components/SecAventura"
 
 const IndexPage = () => (
   
   <Layout>
     <Seo title="Home" />
       <About1/>
+      <SecAventura/>
   </Layout>
 )
 

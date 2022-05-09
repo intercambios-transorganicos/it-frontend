@@ -1,6 +1,4 @@
-.secOut{
-    padding: 50px 200px;
-}
+
 
 .contenedor-proyecto{
     margin-bottom: 5em!important;
@@ -80,5 +78,11 @@
     }
     .column .content{
         padding: 1em;
+    }
+ }
+
+ @media (min-width: 1200px){
+    .secOut{
+        padding: 50px 200px;
     }
  }

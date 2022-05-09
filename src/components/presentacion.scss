@@ -2,9 +2,8 @@ $lila:#7c428c;
 $acua: #4ca899;
 $bgGreen:#DEFCF0;
 $negro:#242424;
-$blanco : #fafafa;
-
-.presentacion{
+$blanco: #fafafa;
+.presentacion {
     background-color: #242424b6 !important;
     width: 40%;
     margin: 0 10vh 0vh 10vh;
@@ -13,74 +12,70 @@ $blanco : #fafafa;
     right: 0;
 }
 
-.presentacion .content h1{
-    color:$blanco !important;
+.presentacion .content h1 {
+    color: $blanco !important;
 }
 
-.presentacion .content p{
-    color:#d3d3d3 !important;
+.presentacion .content p {
+    color: #d3d3d3 !important;
 }
 
-.presentacion .content{
+.presentacion .content {
     padding: 5vh 5vh 1vh 1vh;
 }
 
-
-.separador{
+.separador {
     height: 2px;
     background-color: #cacaca;
     margin-bottom: 4vh;
     width: 80%;
 }
 
-.presButtons{
-    display:flex;
+.presButtons {
+    display: flex;
 }
 
-
-.links_press{
-    color:$lila;
-    display:flex;
+.links_press {
+    color: $lila;
+    display: flex;
     padding: 1vh;
-    cursor:pointer;
+    cursor: pointer;
     border: solid 1px;
     border-radius: 50px;
     margin-top: 2vh;
     margin-left: 2vh;
 }
-.links_press:hover{
+
+.links_press:hover {
     background-color: #131313;
-
 }
 
-.links_press h2{
-    color:$blanco !important;
+.links_press h2 {
+    color: $blanco !important;
     font-size: 2vh !important;
-    margin:0!important ; 
-    padding-left:2vh;
-    
+    margin: 0!important;
+    padding-left: 2vh;
 }
 
-.icon-centered{
-  
+.icon-centered {
     display: flex;
     place-items: center;
 }
 
-@media (max-width: 600px){
-    .presentacion{
-        width:auto;
+@media (max-width: 600px) {
+    .presentacion {
+        width: auto;
         position: revert;
-        
+        margin: 0;
+        .content {
+            margin-bottom: 5em;
+        }
     }
-
-    .presButtons{
+    .presButtons {
         display: block;
         margin-bottom: 10vh;
     }
-    .links_press{
+    .links_press {
         padding: 2vh;
     }
-
-    
 }

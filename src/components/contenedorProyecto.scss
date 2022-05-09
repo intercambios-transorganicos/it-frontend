@@ -45,7 +45,7 @@
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 768px){
     .secOut{
         padding: 5px 40px;
     }
@@ -64,3 +64,21 @@
         padding: 1em;
     }
 }
+
+ @media (min-width: 768px){
+    .secOut{
+        padding: 5px 40px;
+    }
+    .imgColumn{
+        width: 80vw;    
+        height: 80vw;
+    }
+
+    .textColumn{
+        width: 80vw;    
+        height: auto;
+    }
+    .column .content{
+        padding: 1em;
+    }
+ }

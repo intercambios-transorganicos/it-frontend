@@ -1,6 +1,7 @@
 import React from 'react'
 import "./secProyectos.scss"
 import Contenedor from "./contenedorProyecto"
+import ContenedorGif from "./contenedorProyectoGif"
 import {Link} from "gatsby"
 import {getImage} from 'gatsby-plugin-image'
 import { useStaticQuery, graphql } from "gatsby"
@@ -18,7 +19,9 @@ function SecProyectos() {
             contenido
             portada {
               id
+              name
               localFile {
+                publicURL
                 childImageSharp {
                   id
                   gatsbyImageData(
@@ -46,20 +49,50 @@ function SecProyectos() {
                     var currTitle = elem.node.titulo;
                     var currSubTitle = elem.node.subtitulo
                     var rev = false;
-                    console.log(elem.node.id)
+                    var gifName = elem.node.portada[0].name
+                    var imageType = gifName.split(".")[1];
+                    var gifUrl = elem.node.portada[0].localFile.publicURL;
+                    var isGif = false;
+
+                    if(imageType === "gif"){
+                      isGif = true
+                    }else{
+                      isGif = false
+                    }
+
                     if(index%2 === 0){
                         rev = true
                     }
+
+                   if(isGif){
+                      console.log(elem.node.portada[0].localFile.publicURL)
+                     return(
+                      <Link >
+                        <ContenedorGif
+                        gifUrl={gifUrl}
+                        currentImage={currentImage} 
+                        currTitle={currTitle} 
+                        currSubTitle={currSubTitle} 
+                        reversed={rev}
+                        />
+                      </Link>
+                      
+                     )
+
+                   }else{
                     return (
-                        <Link key={elem.node.id} to={`../${elem.node.id}`} >
-                            <Contenedor 
-                            currentImage={currentImage} 
-                            currTitle={currTitle} 
-                            currSubTitle={currSubTitle} 
-                            reversed={rev}
-                            /> 
-                        </Link>
-                    )
+                      
+                      <Link key={elem.node.id} to={`../${elem.node.id}`} >
+                          <Contenedor 
+                          gifUrl={gifUrl}
+                          currentImage={currentImage} 
+                          currTitle={currTitle} 
+                          currSubTitle={currSubTitle} 
+                          reversed={rev}
+                          /> 
+                      </Link>
+                  )
+                   }
 
                     })
                 }

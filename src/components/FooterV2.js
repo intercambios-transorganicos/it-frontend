@@ -4,7 +4,7 @@ import {StaticImage} from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMap, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
-
+import { FormOpenContextUse } from '../Contexts/FormOpenContext';
 import AnimatedVisibility from './AnimatedVisibility';
 import MailForm from './MailForm';
 import Map from './Map';
@@ -12,15 +12,16 @@ import './footerV2Style.scss';
 
 const FooterV2 = () => {
 
-    const [showMail, setShowMail] = useState(false);
+    const { formOpen, setFormOpen } = FormOpenContextUse();
+
     const [showMap, setShowMap] = useState(false);
 
     const showingMail = () => {
-        if(showMail){
-            setShowMail(false);
+        if(formOpen){
+            setFormOpen(false);
 
         } else{
-            setShowMail(true);
+            setFormOpen(true);
             setShowMap(false);
         }
     }
@@ -31,7 +32,7 @@ const FooterV2 = () => {
 
         } else{
             setShowMap(true);
-            setShowMail(false);
+            setFormOpen(false);
         }
     }
 
@@ -60,8 +61,8 @@ const FooterV2 = () => {
                 <li className='m-3'><Link to="https://www.youtube.com/channel/UC2ifoKIRdmPADvml5T212gA"> <FontAwesomeIcon icon={faYoutube}/> </Link></li>
             </ul>
 
-            <div className='col-8 col-md-7 col-xl-6 my-3 linea-cuadro row p-0 justify-content-center'>
-                <AnimatedVisibility visible={showMail}>
+            <div id='mailForm' className='col-8 col-md-7 col-xl-6 my-3 linea-cuadro row p-0 justify-content-center'>
+                <AnimatedVisibility visible={formOpen}>
                     <MailForm/>
                 </AnimatedVisibility>
 

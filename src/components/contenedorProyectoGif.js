@@ -1,15 +1,14 @@
 import React from 'react'
 import "./contenedorProyecto.scss"
-import {GatsbyImage} from 'gatsby-plugin-image'
+import {Link} from "gatsby"
 
-
-function ContenedorProyectoGif({gifUrl , currentImage, currTitle, currSubTitle, reversed}) {
+function ContenedorProyectoGif({linkUrl, gifUrl , currentImage, currTitle, currSubTitle, reversed}) {
 
 console.log(gifUrl)
    if(reversed === true){
     return (
         <div className="secOut" >
-          
+          <Link to={`../${linkUrl}`} >
               <div key="index" className='columns contenedor-proyecto' >
                   <div className="column imgColumn" >
                   <img className="imgGif"  src={gifUrl} alt={currTitle + "gif"} />
@@ -26,13 +25,13 @@ console.log(gifUrl)
                       </div>
                   </div>
               </div>
-              
+              </Link>  
         </div>
     )
    }else{
     return (
         <div className="secOut" >
-          
+           <Link to={`../${linkUrl}`} >
               <div key="index" className='columns contenedor-proyecto' >
 
               <div 
@@ -48,11 +47,11 @@ console.log(gifUrl)
                   </div>
 
                   <div className="column imgColumn" >
-                      <img  src={gifUrl} alt={currTitle + "gif"} />
+                      <img className="imgGif" src={gifUrl} alt={currTitle + "gif"} />
                   </div>
                   
               </div>
-              
+            </Link>   
         </div>
     )
    }

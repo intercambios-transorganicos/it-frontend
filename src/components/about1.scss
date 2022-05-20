@@ -7,7 +7,7 @@ $blanco : #fafafa;
 
 .about1{
     position: relative;
-    background-color: $negro;
+    background-color: $blanco;
     //border:solid $blanco 5vh;
     width: 100vw;
     height: 100vh;
@@ -83,7 +83,7 @@ $blanco : #fafafa;
   }
 
 
-@media (max-width: 600px){
+@media (max-width: 768px){
 
     .about1{
         position:revert;
@@ -102,9 +102,24 @@ $blanco : #fafafa;
         display:flex;
         flex-direction:column; 
     }
-
-
-    
- 
-   
 }
+
+@media (min-width: 768px){
+
+    .about1{
+        position:revert;
+        height:100vh;
+        padding-top: 4em;
+    }
+    .aboutCarousel{
+        position:revert;
+    }
+   
+     //1_
+
+    .about1_{
+        display:flex;
+        flex-direction:column; 
+    }
+}
+

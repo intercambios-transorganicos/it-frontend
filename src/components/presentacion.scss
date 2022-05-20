@@ -62,7 +62,25 @@ $blanco: #fafafa;
     place-items: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .presentacion {
+        width: auto;
+        position: revert;
+        margin: 0;
+        .content {
+            margin-bottom: 5em;
+        }
+    }
+    .presButtons {
+        display: block;
+        margin-bottom: 10vh;
+    }
+    .links_press {
+        padding: 2vh;
+    }
+}
+
+@media (max-width: 992px){
     .presentacion {
         width: auto;
         position: revert;

@@ -1,15 +1,15 @@
 import React from 'react'
 import "./contenedorProyecto.scss"
 import {GatsbyImage} from 'gatsby-plugin-image'
+import {Link} from "gatsby"
 
+function ContenedorProyecto({linkUrl, currentImage, currTitle, currSubTitle, reversed}) {
 
-function ContenedorProyecto({currentImage, currTitle, currSubTitle, reversed}) {
-
-
+console.log(linkUrl)
    if(reversed === true){
     return (
         <div className="secOut" >
-          
+           <Link to={`../${linkUrl}`} >
               <div key="index" className='columns contenedor-proyecto' >
                   <div className="column imgColumn" >
                      <GatsbyImage className="imgWrapper" image={currentImage} alt={currTitle} />
@@ -26,13 +26,14 @@ function ContenedorProyecto({currentImage, currTitle, currSubTitle, reversed}) {
                       </div>
                   </div>
               </div>
+            </Link>
               
         </div>
     )
    }else{
     return (
         <div className="secOut" >
-          
+          <Link  to={`../${linkUrl}`} >
               <div key="index" className='columns contenedor-proyecto' >
 
               <div 
@@ -52,7 +53,7 @@ function ContenedorProyecto({currentImage, currTitle, currSubTitle, reversed}) {
                   </div>
                   
               </div>
-              
+           </Link>   
         </div>
     )
    }

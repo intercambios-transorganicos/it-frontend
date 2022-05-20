@@ -2,9 +2,10 @@ import React from 'react'
 import "./secProyectos.scss"
 import Contenedor from "./contenedorProyecto"
 import ContenedorGif from "./contenedorProyectoGif"
-import {Link} from "gatsby"
+
 import {getImage} from 'gatsby-plugin-image'
 import { useStaticQuery, graphql } from "gatsby"
+
 function SecProyectos() {
 
     
@@ -67,30 +68,30 @@ function SecProyectos() {
                    if(isGif){
                       console.log(elem.node.portada[0].localFile.publicURL)
                      return(
-                      <Link >
                         <ContenedorGif
+                        key={elem.node.id}
+                        linkUrl={elem.node.id}
                         gifUrl={gifUrl}
                         currentImage={currentImage} 
                         currTitle={currTitle} 
                         currSubTitle={currSubTitle} 
                         reversed={rev}
                         />
-                      </Link>
                       
                      )
 
                    }else{
                     return (
                       
-                      <Link key={elem.node.id} to={`../${elem.node.id}`} >
                           <Contenedor 
+                          key={elem.node.id}
+                          linkUrl={elem.node.id}
                           gifUrl={gifUrl}
                           currentImage={currentImage} 
                           currTitle={currTitle} 
                           currSubTitle={currSubTitle} 
                           reversed={rev}
-                          /> 
-                      </Link>
+                          />
                   )
                    }
 

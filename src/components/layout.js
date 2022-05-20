@@ -1,17 +1,10 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
-import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-import Header from "./header"
-// import Footer from "./footer"
+import * as React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
+import Header from "./header";
 import FooterV2 from "./FooterV2";
-import "./layout.scss"
+import { FormOpenContextProvider } from "../Contexts/FormOpenContext.js";
+import "./layout.scss";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,12 +19,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      
+      <FormOpenContextProvider>
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
         <main>
           {children}
         </main>
         <FooterV2/>
+      </FormOpenContextProvider>
     </>
   )
 }

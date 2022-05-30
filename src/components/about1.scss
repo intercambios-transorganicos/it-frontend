@@ -24,6 +24,7 @@ $blanco : #fafafa;
 
 .aboutCarousel{
     position:absolute;
+  
 }
 
 .carousel-control-next, .carousel-control-prev{
@@ -31,56 +32,22 @@ $blanco : #fafafa;
     bottom: -4vh !important;
     width: 6% !important;
     height: 20vh !important;
+    color:$lila
+   
 }
 
- 
+.carousel .carousel-indicators button{
+    background-color:$acua
+}
 
-  //1_
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300ffd5' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+   
+   .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300ffd5' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+   }
 
-  
-.about1_{
-    // background-color:rgb(233, 233, 233);
-     width:100vw;
-     min-height:100vh; 
-     display :grid;
-     padding:1em;
-     grid-template-rows: 1fr 1fr ;
-     grid-template-columns:1fr 3fr 1fr; 
-     grid-gap:1em;
-     grid-template-areas: "a1 a2 a3"
-                          "a4 a5 a6";
-  
-  }
-  
-  .a1{
-      grid-area : a1;
-      
-      //background-color:$negro;
-  }
-  
-  .a2{
-      grid-area : a2;
-     // background-color:#1b1b1b;
-      
-  }
-  
-  .a3{
-      grid-area : a3;
-      //background-color:rgb(127, 127, 228)
-      
-  }
-  
-  .a4{
-      grid-area : a4;
-      //background-color:rgb(55, 55, 112)
-      
-  }
-  
-  .a5{
-      grid-area : a5;
-     // background-color:$acua;
-      
-  }
 
 
 @media (max-width: 768px){
@@ -108,7 +75,7 @@ $blanco : #fafafa;
 
     .about1{
         position:revert;
-        height:100vh;
+        height:auto;
         padding-top: 4em;
     }
     .aboutCarousel{
@@ -120,6 +87,12 @@ $blanco : #fafafa;
     .about1_{
         display:flex;
         flex-direction:column; 
+    }
+}
+
+@media (min-width: 992px){
+    .about1{
+        max-height:100vh;
     }
 }
 

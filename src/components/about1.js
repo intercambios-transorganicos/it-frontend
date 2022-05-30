@@ -33,7 +33,7 @@ const About1 = () => {
         <div className="about1"  id="about-1">
             <div className="aboutCarousel">
             <Carousel 
-            interval={5000}
+            interval={55000}
             controls={true}
             indicators={true}
             fade={true}

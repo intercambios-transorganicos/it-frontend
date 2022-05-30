@@ -7,15 +7,23 @@ import SecProyectos from "../components/secProyectos"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./index.scss"
 import SecAventura from "../components/SecAventura"
+import useSecProQuery from '../hooks/secProyectQuery'
 
-const IndexPage = () => (
 
-    <Layout >
-        <Seo title = "Home" / >
-        <About1 / >
-        <SecAventura / >
-        <SecProyectos / >
-    </Layout>
-)
+
+const IndexPage = () => {
+
+    // const {secProyect} = useSecProQuery();
+    // console.log(secProyect);
+
+    return(
+        <Layout >
+            <Seo title = "Home" / >
+            <About1 / >
+            <SecAventura / >
+            <SecProyectos / >
+        </Layout>
+    )
+}
 
 export default IndexPage

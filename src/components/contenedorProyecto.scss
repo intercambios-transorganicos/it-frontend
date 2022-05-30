@@ -31,7 +31,7 @@
 }
 
 .imgColumn{
-    max-height: 400px;
+   
     overflow: hidden;
     padding:0% !important;
     border-radius: 10px;
@@ -51,7 +51,7 @@
 
 @media (max-width: 768px){
     .secOut{
-        padding: 5px 40px;
+        padding: 1em 1.8em;
     }
 
     .imgColumn{
@@ -71,19 +71,18 @@
 
  @media (min-width: 768px){
     .secOut{
-        padding: 5px 40px;
+        padding: 1em 1.8em;
     }
-    .imgColumn{
-        width: 80vw;    
-        height: 80vw;
-    }
-
+   
     .textColumn{
         width: 80vw;    
         height: auto;
     }
     .column .content{
         padding: 1em;
+    }
+    .contenedor-proyecto{
+        padding-left:0%;
     }
  }
 

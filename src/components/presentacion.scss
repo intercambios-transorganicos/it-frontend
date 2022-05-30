@@ -4,7 +4,7 @@ $bgGreen:#DEFCF0;
 $negro:#242424;
 $blanco: #fafafa;
 .presentacion {
-    background-color: #242424b6 !important;
+    background-color: #131313da !important;
     width: 40%;
     margin: 0 10vh 0vh 10vh;
     position: absolute;
@@ -17,7 +17,7 @@ $blanco: #fafafa;
 }
 
 .presentacion .content p {
-    color: #d3d3d3 !important;
+    color: #ececec !important;
 }
 
 .presentacion .content {
@@ -26,7 +26,7 @@ $blanco: #fafafa;
 
 .separador {
     height: 2px;
-    background-color: #cacaca;
+    background-color: #ececec;
     margin-bottom: 4vh;
     width: 80%;
 }
@@ -64,6 +64,7 @@ $blanco: #fafafa;
 
 @media (max-width: 768px) {
     .presentacion {
+        background-color: #131313 !important;
         width: auto;
         position: revert;
         margin: 0;
@@ -82,6 +83,7 @@ $blanco: #fafafa;
 
 @media (max-width: 992px){
     .presentacion {
+        background-color: #131313 !important;
         width: auto;
         position: revert;
         margin: 0;

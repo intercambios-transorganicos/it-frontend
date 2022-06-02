@@ -18,10 +18,12 @@ const IndexPage = () => {
 
     return(
         <Layout >
+           <div className="landing-wrapper">
             <Seo title = "Home" / >
             <About1 / >
             <SecAventura / >
             <SecProyectos / >
+           </div>
         </Layout>
     )
 }

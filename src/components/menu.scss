@@ -26,7 +26,7 @@ $blanco : #fafafa;
 /*44/35*/
 .tab:nth-of-type(1){
     left:52%;
-    top: 10%;
+    top: 20%;
     border-radius:50%;
 }
 
@@ -46,7 +46,7 @@ $blanco : #fafafa;
 
 .tab:nth-of-type(4){
     right:52%;
-    top: 10%;
+    top: 20%;
     
 }
 
@@ -75,4 +75,32 @@ $blanco : #fafafa;
 .menuicon{
     font-size: 2em;
     cursor: pointer;
+}
+
+
+@media (max-width: 576px){
+    .tab{
+        width: 150px;
+        height: 150px;
+    }
+
+    .tab:nth-of-type(4){
+        right:52%;
+        top: 10%;
+    }
+
+    .tab:nth-of-type(1){
+        right:52%;
+        top: 10%;
+    }
+
+    .tab:nth-of-type(3){
+        left: 2%;
+        top: 52%;
+    }
+
+    .tab:nth-of-type(2){
+        left: 52%;
+        top: 52%;
+    }
 }

@@ -7,7 +7,7 @@ $blanco : #fafafa;
 
 .about1{
     position: relative;
-    background-color: $blanco;
+    //background-color: $blanco;
     //border:solid $blanco 5vh;
     width: 100vw;
     height: 100vh;
@@ -55,7 +55,7 @@ $blanco : #fafafa;
     .about1{
         position:revert;
         padding-bottom: 10vh;
-        border:solid $blanco 1vh;
+        //border:solid $blanco 1vh;
         height:auto;
         padding-top: 4em;
     }

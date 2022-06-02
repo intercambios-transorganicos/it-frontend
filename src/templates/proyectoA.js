@@ -46,8 +46,6 @@ query Proyecto($proyectoId: String){
             gatsbyImageData(
               placeholder: DOMINANT_COLOR
               layout: CONSTRAINED
-                  width: 1800
-                  height: 800
               )
           }
         }

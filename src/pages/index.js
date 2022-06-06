@@ -8,7 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import "./index.scss"
 import SecAventura from "../components/SecAventura"
 import useSecProQuery from '../hooks/secProyectQuery'
-import { FormOpenContextProvider } from "../Contexts/FormOpenContext.js";
 
 
 
@@ -18,18 +17,14 @@ const IndexPage = () => {
     // console.log(secProyect);
 
     return(
-        <FormOpenContextProvider>
-        <Layout >
-           <div className="landing-wrapper" >
-            <Seo title = "Home" / >
-            <About1 / >
-            <SecAventura / >
-            <SecProyectos / >
-           </div>
-        </Layout>
-        
-       
-      </FormOpenContextProvider>
+      <Layout >
+        <div className="landing-wrapper">
+        <Seo title = "Home" / >
+        <About1 / >
+        <SecAventura / >
+        <SecProyectos / >
+        </div>
+      </Layout>
     )
 }
 

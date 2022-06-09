@@ -1,12 +1,7 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
-
-// You can delete this file if you're not using it
-
 import "./src/components/itLoader.scss"
+import React from "react"
+import { FormOpenContextProvider } from "./src/Contexts/FormOpenContext";
+
 export const onClientEntry = () => {
     console.log("from browser-out")
   }
@@ -22,4 +17,7 @@ export const onClientEntry = () => {
       document.getElementsByTagName("body")[0].classList.remove("preloader_active");
     }, 1000)
 }
-  
+
+export const wrapRootElement = ({ element }) => (
+  <FormOpenContextProvider>{element}</FormOpenContextProvider>
+)

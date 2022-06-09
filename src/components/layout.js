@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Header from "./header";
 import FooterV2 from "./FooterV2";
-import { FormOpenContextProvider } from "../Contexts/FormOpenContext.js";
 import "./layout.scss";
 
 const Layout = ({ children }) => {
@@ -18,14 +17,13 @@ const Layout = ({ children }) => {
   `)
 
   return (
-      
-    <FormOpenContextProvider>
-    <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-    <main>
-      {children}
-    </main>
-    <FooterV2/>
-  </FormOpenContextProvider>
+    <>
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <main>
+        {children}
+      </main>
+      <FooterV2/>
+    </>
   )
 }
 

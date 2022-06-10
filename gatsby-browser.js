@@ -1,6 +1,6 @@
 import "./src/components/itLoader.scss"
 import React from "react"
-import { FormOpenContextProvider } from "./src/Contexts/FormOpenContext";
+import "./styles.css"
 
 export const onClientEntry = () => {
     console.log("from browser-out")
@@ -17,7 +17,3 @@ export const onClientEntry = () => {
       document.getElementsByTagName("body")[0].classList.remove("preloader_active");
     }, 1000)
 }
-
-export const wrapRootElement = ({ element }) => (
-  <FormOpenContextProvider>{element}</FormOpenContextProvider>
-)

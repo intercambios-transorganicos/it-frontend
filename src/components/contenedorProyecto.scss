@@ -52,6 +52,7 @@
 @media (max-width: 768px){
     .secOut{
         padding: 1em 1.8em;
+        height:100vh
     }
 
     .imgColumn{
@@ -72,6 +73,7 @@
  @media (min-width: 768px){
     .secOut{
         padding: 1em 1.8em;
+        height:100vh
     }
    
     .textColumn{
@@ -88,6 +90,7 @@
 
  @media (min-width: 1200px){
     .secOut{
-        padding: 50px 200px;
+        padding: 150px 200px;
+        height:100vh
     }
  }

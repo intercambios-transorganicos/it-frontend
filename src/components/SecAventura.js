@@ -10,7 +10,7 @@ const SecAventura = () => {
   const { setFormOpen } = FormOpenContextUse();
 
   return(
-    <div className="row px-sm-3 pt-md-5 justify-content-center">
+    <div className="row px-sm-3 pt-md-5 justify-content-center secAventura">
 
       <h2 className="tituloAventura my-5 py-2">ELEGÍ TU PROPIA AVENTURA TRANSORGÁNICA</h2>
       

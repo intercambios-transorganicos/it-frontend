@@ -10,7 +10,6 @@ const VideoWControls = ({ stop, setStop, setUrl, url }) => {
   // VARIABLES Y HOOKS
     // QUERY DEL VIDEO, TRAIGO PLAYLIST
     const { playlist } = useVideoquery();
-
     //  VIDEOS
     let video_src = "https://res.cloudinary.com/intercambios-transorganicos/video/upload/v1635455684/portada_it_2021_5d6d2493d2.mp4";
     let videoRef = useRef();

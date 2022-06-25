@@ -1,4 +1,8 @@
 
+#Capa_2{
+    width: 88%;
+}
+
 .st0{
     fill:#141414;
     stroke:#141414;
@@ -11,6 +15,9 @@
 
 .st1{
     fill:#FFFFFF;
+}
+.secAventura{
+    height:auto;
 }
 
 .tituloAventura{
@@ -26,6 +33,7 @@
 }
 
 @media (min-width: 576px){
+    
     .tituloAventura{
         width: 350px;
         font-size: 34px;
@@ -34,6 +42,7 @@
 }
 
 @media (min-width: 768px){
+   
     .tituloAventura{
         width: 100%;
         font-size: 31px;
@@ -45,6 +54,8 @@
 }
 
 @media (min-width: 992px){
+    
+    
     .tituloAventura{
         font-size: 40px;
     }
@@ -59,7 +70,5 @@
         font-size: 45px;
     }
 
-    .sobre{
-        padding: 0px 80px;
-    }
+    
 }

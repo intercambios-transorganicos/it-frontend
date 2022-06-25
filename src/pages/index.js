@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 //import ReactPageScroller from 'react-page-scroller';
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -16,8 +16,11 @@ import { graphql } from "gatsby"
 
 const IndexPage = ({data}) => {
 
-  //console.log(data.allStrapiProyectos.edges)
-
+  const [goToForm, setGoToForm] = useState(null)
+  useEffect(()=>{
+    console.log(goToForm)
+  },[goToForm])
+  
     return(
       <Layout >
         <div className="landing-wrapper">
@@ -26,7 +29,7 @@ const IndexPage = ({data}) => {
 
         <MediaQuery maxWidth={767}>
             <About1 / >
-            <SecAventura / >
+            <SecAventura setGoToForm={setGoToForm} / >
 
               {/* PROYECTOS */}
               
@@ -88,9 +91,11 @@ const IndexPage = ({data}) => {
         </MediaQuery>
 
         <MediaQuery minWidth={767}>
-        <ReactPageScroller>
+        <ReactPageScroller
+         customPageNumber={goToForm}
+        >
             <About1 / >
-            <SecAventura / >
+            <SecAventura setGoToForm={setGoToForm} / >
 
               {/* PROYECTOS */}
               

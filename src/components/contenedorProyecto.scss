@@ -1,7 +1,11 @@
-
+.secOut{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
 
 .contenedor-proyecto{
-    margin-bottom: 5em!important;
+    //margin-bottom: 5em!important;
     cursor:pointer;
     padding-left: 5vw;
 }

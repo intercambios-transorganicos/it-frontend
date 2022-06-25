@@ -37,7 +37,7 @@ const Header = () => {
 
       <nav className="level is-mobile myNav">
         <div className="logoNav level-left">
-          <Link to="/" >
+          <a href="/" >
             <svg className="logosvg" xmlns="http://www.w3.org/2000/svg" viewBox="-200 -200 1400 900">
               <circle  cx="232.48" cy="232.48" r="232.48" fill="#03BF9E"/>
               <rect x="464.96" width="464.96" height="464.96" fill="#03BF9E"/>
@@ -46,7 +46,7 @@ const Header = () => {
             <div className="itTitulo">
               <h1 className="title">Intercambios Transorgánicos</h1>
             </div>
-          </Link>
+          </a>
         </div>
 
         <div className="level-right">

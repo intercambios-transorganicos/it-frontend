@@ -16,7 +16,7 @@ console.log(gifUrl)
                   <div 
                   className="column textColumn"
                   style={{
-                      backgroundColor: "#0DB39B"
+                      backgroundColor: "#7C428C"
                   }}
                    >
                       <div className="content" >
@@ -37,7 +37,7 @@ console.log(gifUrl)
               <div 
               className="column textColumn "
               style={{
-                backgroundColor: "#7C428C"
+                backgroundColor: "#0DB39B"
               }}
                >
                       <div className="content" >

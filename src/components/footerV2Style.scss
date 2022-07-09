@@ -3,11 +3,27 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
 
 .footerV2{
-    height:100vh;
+   // height:100vh;
     background-color: #141414;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5vh;
+    z-index:100;
+    
+    .comunicacionIcon{
+        display:flex;
+        justify-content:center;
+        margin:1em;
+        color: #A666B7;
+        cursor:pointer;
+        position: absolute;
+        width:4vh;
+    }
 
     .secciones{
-        margin-top: 70px;
+        margin-top: 15px;
         margin-bottom: 40px;
         font-family: 'Rubik', sans-serif;
         font-size: 13px;
@@ -65,7 +81,33 @@
 }
 
 @media (max-width: 360px){
+    .footerV2{
     .secciones a{
-        font-size: 11px;
+        font-size: 7px;
+    }
+    .secciones{
+        margin-top: 3px;
+    }
+    .comunicacionIcon{
+        margin:0.5em;
+    }
+
+}
+}
+
+@media (max-width: 992px){
+    .footerV2{
+        .secciones a{
+            font-size: 9px;
+        }
+        .secciones{
+            margin-top: 3px;
+        }
+       
+        .comunicacionIcon{
+            margin:0.5em;
+        }
+        
+
     }
 }

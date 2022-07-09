@@ -10,15 +10,26 @@ $blanco : #fafafa;
 //     background-color:pink;
 // }
 
-.proyectoSliderContainer .tns-nav{
-    text-align: center;
+.proyectoContainer{
+    .proyectoSliderContainer .tns-nav{
+        text-align: center;
+    }
+    
+    .proyectoSliderContainer .tns-nav button{
+        height: 10px;
+        border-radius: 50%;
+        background-color: $lila;
+        border-color: $acua;
+        margin: 4px;
+    }
+    
+    .slide {
+        max-height: 94vh;
+      }
+    
+      .carousel-inner {
+        max-height: 94vh;
+      }
+    
+    
 }
-
-.proyectoSliderContainer .tns-nav button{
-    height: 10px;
-    border-radius: 50%;
-    background-color: $lila;
-    border-color: $acua;
-    margin: 4px;
-}
-

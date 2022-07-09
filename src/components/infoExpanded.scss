@@ -39,18 +39,6 @@ $blanco : #fafafa;
    font-size: 2.5vh;
 }
 
-.info_ .expandIconContainer{
-   display:grid;
-   justify-items: flex-end;
-   right:4%;
-   margin:0.5em;
-}
-
-.info_ .expandIcon{
-    cursor:pointer;
-    transition:all 0.1s ease-out;
-    
-}
 
 .infoExpandedContent{
     background-color:rgb(36, 36, 36);

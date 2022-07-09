@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Link} from "gatsby";
 import {StaticImage} from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMap, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faMap, faEnvelope,faCaretDown,faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+
 import { FormOpenContextUse } from '../Contexts/FormOpenContext';
 import AnimatedVisibility from './AnimatedVisibility';
 import MailForm from './MailForm';
 import Map from './Map';
 import './footerV2Style.scss';
 
-const FooterV2 = () => {
+const FooterV2 = ({setForm,setGoToForm}) => {
 
     const { formOpen, setFormOpen } = FormOpenContextUse();
 
@@ -36,9 +37,47 @@ const FooterV2 = () => {
         }
     }
 
-    return (
-        <div className='footerV2 row p-0 justify-content-center'>
+    const[click, setClick] = useState(false);
+    function handleClick(){
+        setClick(!click)
+        setGoToForm(false)
+        console.log(click)
+    }
 
+    const[enter, setEnter] = useState(false)
+
+    function handleEnter(){
+        setEnter(true)
+        console.log("enter")
+    }
+
+    function handleLeave(){
+        setEnter(false)
+        console.log("leave")
+    }
+
+    useEffect(()=>{
+        console.log(setForm)
+        setClick(setForm)
+    },[setForm])
+
+
+    return (
+        <div 
+        style={{
+            height:click?"auto":"5vh"
+        }}
+        className='footerV2 row p-0 justify-content-center'
+        >
+
+            <div 
+            onMouseEnter={handleEnter}
+            onMouseLeave={handleLeave}
+            onClick={handleClick} 
+            className="comunicacionIcon" >
+                <FontAwesomeIcon spin={enter?true:false}  icon={click?faCaretDown:faCommentDots} />
+            </div>
+            
             <ul className='col-12 col-sm-11 col-md-10 col-xxl-11 px-5 secciones d-flex flex-row justify-content-between'>
                 <li><Link to="/nosotres">Nuestro equipo</Link></li>
                 <li><Link to="/proyectos">Proyectos</Link></li>

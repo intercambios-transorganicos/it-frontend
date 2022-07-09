@@ -16,13 +16,13 @@ import { graphql } from "gatsby"
 
 const IndexPage = ({data}) => {
 
-  const [goToForm, setGoToForm] = useState(null)
+  const [goToForm, setGoToForm] = useState(false)
   useEffect(()=>{
     console.log(goToForm)
   },[goToForm])
   
     return(
-      <Layout >
+      <Layout setForm={goToForm} setGoToForm={setGoToForm}>
         <div className="landing-wrapper">
         <Seo title = "Home" / >
 
@@ -87,7 +87,7 @@ const IndexPage = ({data}) => {
                   })
               }
 
-              <FooterV2/>
+              {/* <FooterV2/> */}
         </MediaQuery>
 
         <MediaQuery minWidth={767}>
@@ -153,7 +153,7 @@ const IndexPage = ({data}) => {
                   })
               }
 
-              <FooterV2/>
+              {/* <FooterV2/> */}
 
           </ReactPageScroller>
         </MediaQuery>

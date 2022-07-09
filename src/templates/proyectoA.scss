@@ -6,17 +6,19 @@ $blanco : #fafafa;
 
 .proyectoContainer {
     padding-top: 4em;
+    padding-bottom: 4em;
   }
 
 
 .proyectoPortada{
     position:relative;
+    max-height: 94vh;
 
 }
 
 .portadaTitulo{
     position: absolute;
-    bottom: 50px;
+    bottom: 130px;
     margin: 0vh -1vh;
     background-color: #7c428cb0;
     padding: 2vh;
@@ -38,7 +40,7 @@ $blanco : #fafafa;
 }
 
 .proyectoContent{
-    margin: auto 10vh;
+    margin: 5vh 10vh;
 }
 
 

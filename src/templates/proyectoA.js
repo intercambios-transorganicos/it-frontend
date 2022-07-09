@@ -11,7 +11,7 @@ import "./proyectoA.scss"
 const Proyectoa = ({data}) => {
 
     const{id, nombre, titulo, subtitulo, contenido, imagenes} = data.strapiProyectos;
-    console.log(id, nombre, titulo, subtitulo, contenido);
+  
     return (
         <Layout>
             <div className="proyectoContainer">
@@ -24,7 +24,7 @@ const Proyectoa = ({data}) => {
                  </div>
 
                   <div className="proyectoContent">
-                    <InfoExpanded titulo={subtitulo} desc={contenido} desc2={contenido} bgColor="#eeeeee" txColor={"#242424"} modalT={nombre} modalP={contenido} />
+                    <InfoExpanded titulo={subtitulo} desc={contenido} bgColor="#eeeeee" txColor={"#242424"} />
                  
                   </div>
             </div>

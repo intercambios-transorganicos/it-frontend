@@ -26,9 +26,9 @@ const Publicaciones = ({
                                 articulos?
                                 articulos.map((e, i) => {
                                   var current = e.node;
-                                  console.log(articulos.length);
+                                  var url = current.Titulo.split(' ').join('_').toLowerCase()
                                   return(
-                                      <Link  key={current.id} to={`../${current.id}`} >
+                                      <Link  key={current.id} to={`../${url}`} >
                                       <ChildBox autor={current.Autor} titulo={current.Titulo} id={current.id} />
                                       </Link>
                                   )

@@ -8,8 +8,8 @@ const SecAventura = ({setGoToForm}) => {
 
   const { setFormOpen } = FormOpenContextUse();
   function handleFormClick(){
-    setGoToForm(7)
     setFormOpen(true)
+    setGoToForm(true)
     console.log("goToForm")
   }
 
@@ -277,8 +277,8 @@ const SecAventura = ({setGoToForm}) => {
             c0,0.1,0,0.1-0.1,0.2c0,0-0.1,0.1-0.2,0.1H279.1z"/>
           </Link>
 
-          <g>
-            <path onClick={handleFormClick } className="st0" d="M167,167.6c75.6-29.4,109.5,49.8,172.4,70.1c-26,26-39.4,40-70.9,35.7c-53.4-7.1-89.2,25.7-159.8-4.2
+          <g  onClick={handleFormClick } >
+            <path className="st0" d="M167,167.6c75.6-29.4,109.5,49.8,172.4,70.1c-26,26-39.4,40-70.9,35.7c-53.4-7.1-89.2,25.7-159.8-4.2
             c-21.7-7.6-42.8-17-60.8-24.9c-11.4-6-28-8-29.2-21.3c-0.8-11.2,7.4-22.9,2.1-34.4C65.4,203.2,123.5,179.8,167,167.6z"/>
             <path className="st1" d="M82.1,227.5c0.1,0,0.2,0,0.2,0.1c0.1,0.1,0.1,0.1,0.1,0.2c0,0.1,0,0.2,0,0.3c0,0.1,0,0.2,0,0.3
             c0,0.4-0.1,0.7-0.2,1c-0.1,0.3-0.3,0.6-0.5,0.8c-0.2,0.2-0.4,0.5-0.6,0.7c-0.2,0.2-0.4,0.4-0.5,0.6c-0.2,0.2-0.2,0.4-0.3,0.7

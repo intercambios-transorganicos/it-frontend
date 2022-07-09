@@ -6,15 +6,15 @@ $blanco : #fafafa;
 
 .articleSliderContainer{
     text-align:center;
-}
 
-.articleSliderContainer .tns-controls{
+
+ .tns-controls{
     margin-bottom: 4vh;
     display: flex;
     justify-content: space-around;
 }
 
-.articleSliderContainer .tns-controls button{
+.tns-controls button{
     background: $lila;
     border-style: outset;
     height: 35px;
@@ -23,10 +23,12 @@ $blanco : #fafafa;
     border-color: $lila;
 }
 
-.articleSliderContainer .tns-controls button:hover{
+.tns-controls button:hover{
     
     border-style: inset;
     height: 35px;
     color: $lila;
     border-color: $acua;
+}
+
 }

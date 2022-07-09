@@ -18,9 +18,10 @@ const Proyectos = ({
                       proyectos?
                       proyectos.map((e, i) => {
                         var current = e.node;
+                        var url = current.titulo.split(' ').join('_').toLowerCase()
                         console.log(current.id)
                         return(
-                            <Link  key={current.id} className="box proyectsBox" to={`../${current.id}`} >
+                            <Link  key={current.id} className="box proyectsBox" to={`../${url}`} >
                     
                                     <div className="contentProyectos">
                                         <h1>{current.titulo}</h1>
@@ -55,8 +56,7 @@ export const query = graphql`
               childImageSharp {
                 gatsbyImageData(
                   layout: CONSTRAINED
-                  width: 1200
-                  height: 600
+                  width: 800
                   )
               }
             }

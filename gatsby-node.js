@@ -91,8 +91,9 @@ if (result.errors) {
 const articuloTemplate = path.resolve(`src/templates/articuloA.js`)
 result.data.articulos.edges.forEach(({ node }) => {
   const path = node.id
+  const pathh = `/${node.Titulo.split(' ').join('_').toLowerCase()}/`
   createPage({
-    path,
+    path:pathh,
     component: articuloTemplate,
     
     context: {
@@ -105,8 +106,9 @@ result.data.articulos.edges.forEach(({ node }) => {
 const proyectoTemplate = path.resolve(`src/templates/proyectoA.js`)
 result.data.proyectos.edges.forEach(({ node }) => {
   const path = node.id
+  const pathh = `/${node.titulo.split(' ').join('_').toLowerCase()}/`
   createPage({
-    path,
+    path:pathh,
     component: proyectoTemplate,
     
     context: {

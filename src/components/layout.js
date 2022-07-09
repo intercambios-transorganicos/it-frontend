@@ -7,7 +7,7 @@ import "./layout.scss";
 import { FormOpenContextProvider } from "../Contexts/FormOpenContext";
 
 
-const Layout = ({ children }) => {
+const Layout = ({ children, setForm, setGoToForm }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -18,14 +18,15 @@ const Layout = ({ children }) => {
     }
   `)
 
-
+  console.log(setForm)
   return (
+    
     <FormOpenContextProvider>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <main>
         {children}
       </main>
-      {/* <FooterV2/> */}
+      <FooterV2 setForm={setForm} setGoToForm={setGoToForm}/>
     </FormOpenContextProvider>
   )
 }

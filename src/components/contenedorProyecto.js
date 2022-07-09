@@ -6,10 +6,11 @@ import {Link} from "gatsby"
 function ContenedorProyecto({linkUrl, currentImage, currTitle, currSubTitle, reversed}) {
 
 console.log(linkUrl)
+var url = currTitle.split(' ').join('_').toLowerCase()
    if(reversed === true){
     return (
         <div className="secOut" >
-           <Link to={`../${linkUrl}`} >
+           <Link to={`../${url}`} >
               <div key="index" className='columns contenedor-proyecto' >
                   <div className="column imgColumn" >
                      <GatsbyImage className="imgWrapper" image={currentImage} alt={currTitle} />
@@ -33,7 +34,7 @@ console.log(linkUrl)
    }else{
     return (
         <div className="secOut" >
-          <Link  to={`../${linkUrl}`} >
+          <Link  to={`../${url}`} >
               <div key="index" className='columns contenedor-proyecto' >
 
               <div 

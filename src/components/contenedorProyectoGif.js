@@ -5,10 +5,11 @@ import {Link} from "gatsby"
 function ContenedorProyectoGif({linkUrl, gifUrl , currentImage, currTitle, currSubTitle, reversed}) {
 
 console.log(gifUrl)
+var url = currTitle.split(' ').join('_').toLowerCase()
    if(reversed === true){
     return (
         <div className="secOut" >
-          <Link to={`../${linkUrl}`} >
+          <Link to={`../${url}`} >
               <div key="index" className='columns contenedor-proyecto' >
                   <div className="column imgColumn" >
                   <img className="imgGif"  src={gifUrl} alt={currTitle + "gif"} />
@@ -31,7 +32,7 @@ console.log(gifUrl)
    }else{
     return (
         <div className="secOut" >
-           <Link to={`../${linkUrl}`} >
+           <Link to={`../${url}`} >
               <div key="index" className='columns contenedor-proyecto' >
 
               <div 

@@ -3,7 +3,7 @@
 >Intercambios transorgánicos es un programa de investigaciones que comenzó en 2015 con la intención de estudiar la inclusión de dispositivos desarrollados desde las artes electrónicas como campo disciplinar amplio e híbrido, en el campo de la salud. Su objetivo es posibilitar, mediante el trabajo con arte y tecnología, el desarrollo de tecnologías protésicas o de relación humano-máquina que colaboren en los procesos de restitución y reintegración de la identidad de personas con diversidad funcional, discapacidad permanente o transitoria y neuropatologías. 
 
 
-[Go to →](https://intercambiostransorganicos.org/)
+[Go to Page →](https://intercambiostransorganicos.org/)
 
 **Tecnologias:**
 - Gatsby

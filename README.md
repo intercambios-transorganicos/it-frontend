@@ -12,11 +12,11 @@
 - ScrollMagic
 
 
-[REPOSITORIO:](https://github.com/milasantacruz/IT-Gatsby)
+[REPOSITORIO](https://github.com/milasantacruz/IT-Gatsby)
 
-[FIGMA:](https://www.figma.com/file/mO4pfFWkCTD74L3EhstkXc/ITWEB?node-id=0%3A1)
+[FIGMA](https://www.figma.com/file/mO4pfFWkCTD74L3EhstkXc/ITWEB?node-id=0%3A1)
 
-[GANT:](https://miro.com/app/board/uXjVO2GdKgI=/)
+[GANT](https://miro.com/app/board/uXjVO2GdKgI=/)
 
 
 

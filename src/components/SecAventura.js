@@ -7,6 +7,7 @@ import './SecAventuraStyle.scss';
 const SecAventura = ({setGoToForm}) => {
 
   const { setFormOpen } = FormOpenContextUse();
+  
   function handleFormClick(){
     setFormOpen(true)
     setGoToForm(true)

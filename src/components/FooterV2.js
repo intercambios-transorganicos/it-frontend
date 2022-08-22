@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {Link} from "gatsby";
 import {StaticImage} from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCircleXmark} from "@fortawesome/free-regular-svg-icons"
 import { faMap, faEnvelope,faCaretDown,faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
@@ -10,6 +11,7 @@ import AnimatedVisibility from './AnimatedVisibility';
 import MailForm from './MailForm';
 import Map from './Map';
 import './footerV2Style.scss';
+
 
 const FooterV2 = ({setForm,setGoToForm}) => {
 
@@ -75,7 +77,7 @@ const FooterV2 = ({setForm,setGoToForm}) => {
             onMouseLeave={handleLeave}
             onClick={handleClick} 
             className="comunicacionIcon" >
-                <FontAwesomeIcon spin={enter?true:false}  icon={click?faCaretDown:faCommentDots} />
+                <FontAwesomeIcon size={enter?"lg":"sm"}  icon={click?faCircleXmark:faCommentDots} />
             </div>
             
             <ul className='col-12 col-sm-11 col-md-10 col-xxl-11 px-5 secciones d-flex flex-row justify-content-between'>

@@ -67,7 +67,7 @@ const FooterV2 = ({setForm,setGoToForm}) => {
     return (
         <div 
         style={{
-            height:click?"auto":"5vh"
+            height:click?"100vh":"5vh"
         }}
         className='footerV2 row p-0 justify-content-center'
         >

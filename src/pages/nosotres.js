@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 //import TeamCarousel from "../components/teamCarousel"
 import CirclePath from "../components/circlePath"
 import Layout from "../components/layout"
@@ -9,8 +9,7 @@ import {GatsbyImage, getImage} from "gatsby-plugin-image"
 //const MyLoadable2 = loadable(() => import("../components/teamCarousel"),{ssr:true});
 
 
-const Publicaciones = ({data:{allStrapiMembers:{edges:members}}}) => {
-
+const Nosotres = ({data:{allStrapiMembers:{edges:members}}}) => {
 
   var directora = [];
   var alumnx = [];
@@ -154,7 +153,7 @@ const Publicaciones = ({data:{allStrapiMembers:{edges:members}}}) => {
     );
 }
 
-export default Publicaciones;
+export default Nosotres;
 
 export const query = graphql`
   {

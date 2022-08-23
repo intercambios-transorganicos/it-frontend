@@ -13,23 +13,17 @@ import ContenedorGif from "../components/contenedorProyectoGif"
 import {getImage} from 'gatsby-plugin-image'
 import MediaQuery from 'react-responsive';
 import { graphql } from "gatsby"
-
 const IndexPage = ({data}) => {
 
-  const [goToForm, setGoToForm] = useState(false)
-  useEffect(()=>{
-    console.log(goToForm)
-  },[goToForm])
-  
     return(
-      <Layout setForm={goToForm} setGoToForm={setGoToForm}>
+      <Layout >
         <div className="landing-wrapper">
         <Seo title = "Home" / >
 
-
+      
         <MediaQuery maxWidth={767}>
             <About1 / >
-            <SecAventura setGoToForm={setGoToForm} / >
+            <SecAventura / >
 
               {/* PROYECTOS */}
               
@@ -92,10 +86,9 @@ const IndexPage = ({data}) => {
 
         <MediaQuery minWidth={767}>
         <ReactPageScroller
-         customPageNumber={goToForm}
         >
             <About1 / >
-            <SecAventura setGoToForm={setGoToForm} / >
+            <SecAventura  / >
 
               {/* PROYECTOS */}
               

@@ -4,14 +4,13 @@ import { FormOpenContextUse } from '../Contexts/FormOpenContext';
 import MediaQuery from 'react-responsive';
 import './SecAventuraStyle.scss';
 
-const SecAventura = ({setGoToForm}) => {
+const SecAventura = () => {
 
-  const { setFormOpen } = FormOpenContextUse();
+  const { formOpen,setFormOpen } = FormOpenContextUse();
   
   function handleFormClick(){
     setFormOpen(true)
-    setGoToForm(true)
-    console.log("goToForm")
+    console.log(formOpen)
   }
 
   return(

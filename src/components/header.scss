@@ -26,12 +26,18 @@ $blanco : #fafafa;
     height:100%;
 }
 
-.simulador{
-    background-color:blue;
-    width:100vw;
-    height:100vh;
+.level-right .level-item{
+    padding: 15px;
+    margin-right: 1.2rem!important;
+    color:$acua;
+    cursor:pointer;
 }
-
+.level-right .level-item a:hover{
+    color:$lila!important;
+}
+.level-right .level-item a{
+    color:$acua!important;
+}
 .menuClose{
     z-index:500;
 }

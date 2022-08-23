@@ -1,16 +1,21 @@
 import React, {useState, useEffect} from "react"
 import PropTypes from "prop-types"
 import {Link} from "gatsby"
+import MediaQuery from 'react-responsive';
 import Menu from "./menu"
 import { StaticImage } from "gatsby-plugin-image"
 import "./header.scss"
 
+import { FormOpenContextUse } from '../Contexts/FormOpenContext';
 const Header = () => {
 
   const [click, isClick] = useState(false);
   const[burger, setBurger] = useState(false);
   const miClase = click? "modal is-active" : "modal"; 
   
+
+  const {setFormOpen } = FormOpenContextUse();
+
   function handleclick(){
     isClick(true)
   }
@@ -19,6 +24,10 @@ const Header = () => {
   function handleClose(){
     isClick(false);
     setBurger(!burger);
+  }
+
+  function handleContacto(){
+    setFormOpen(true)
   }
 
 
@@ -49,21 +58,32 @@ const Header = () => {
           </a>
         </div>
 
-        <div className="level-right">
-          <div className="level-item">
-          <div className="menuit" onClick={handleclick}>
-                
-                <StaticImage
-                src="../images/menuit.svg"
-                placeholder="tracedSVG"
-                layout = "CONSTRAINED"
-                className="menuImgWrapper"
-                
-                
-              />
-              </div>
+        <MediaQuery minWidth={767}>
+          <div className="level-right">
+            <div className="level-item"><Link to="/proyectos" > Proyectos </Link></div>
+            <div className="level-item"><Link to="/publicaciones" > Publicaciones </Link></div>
+            <div className="level-item"><Link to="/actividades" > Actividades </Link></div>
+            <div className="level-item"><Link to="/nosotres" >Nosotres</Link></div>
+            <div onClick={handleContacto} className="level-item"><a>Contacto</a></div>
           </div>
-        </div>
+        </MediaQuery>
+
+        <MediaQuery maxWidth={767}>
+            <div className="level-right">
+            <div className="menuit" onClick={handleclick}>
+                  
+                  <StaticImage
+                  src="../images/menuit.svg"
+                  placeholder="tracedSVG"
+                  layout = "CONSTRAINED"
+                  className="menuImgWrapper"
+                  
+                  
+                />
+                </div>
+            </div> 
+        </MediaQuery>
+
       </nav>
     </div>
   );

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Header from "./header";
@@ -6,8 +6,7 @@ import FooterV2 from "./FooterV2";
 import "./layout.scss";
 import { FormOpenContextProvider } from "../Contexts/FormOpenContext";
 
-
-const Layout = ({ children, setForm, setGoToForm }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -18,7 +17,6 @@ const Layout = ({ children, setForm, setGoToForm }) => {
     }
   `)
 
-  console.log(setForm)
   return (
     
     <FormOpenContextProvider>
@@ -26,7 +24,7 @@ const Layout = ({ children, setForm, setGoToForm }) => {
       <main>
         {children}
       </main>
-      <FooterV2 setForm={setForm} setGoToForm={setGoToForm}/>
+      <FooterV2 />
     </FormOpenContextProvider>
   )
 }

@@ -13,10 +13,9 @@ import Map from './Map';
 import './footerV2Style.scss';
 
 
-const FooterV2 = ({setForm,setGoToForm}) => {
-
+const FooterV2 = () => {
     const { formOpen, setFormOpen } = FormOpenContextUse();
-
+    console.log(formOpen)
     const [showMap, setShowMap] = useState(false);
 
     const showingMail = () => {
@@ -41,8 +40,8 @@ const FooterV2 = ({setForm,setGoToForm}) => {
 
     const[click, setClick] = useState(false);
     function handleClick(){
+        setFormOpen(false)
         setClick(!click)
-        setGoToForm(false)
         console.log(click)
     }
 
@@ -59,15 +58,15 @@ const FooterV2 = ({setForm,setGoToForm}) => {
     }
 
     useEffect(()=>{
-        console.log(setForm)
-        setClick(setForm)
-    },[setForm])
+        console.log(formOpen)
+        setClick(formOpen)
+    },[formOpen])
 
 
     return (
         <div 
         style={{
-            height:click?"100vh":"5vh"
+            height:click?"100vh":"0vh"
         }}
         className='footerV2 row p-0 justify-content-center'
         >
@@ -87,7 +86,7 @@ const FooterV2 = ({setForm,setGoToForm}) => {
                 <li><Link to="/actividades">Actividades</Link></li>
             </ul>
 
-            <div className='logo my-5'>
+            <div className='logo my-2'>
                 <StaticImage 
                    src= "../images/logoit_it.png" 
                    alt="Logo Intercambios Transorganicos"
@@ -102,7 +101,7 @@ const FooterV2 = ({setForm,setGoToForm}) => {
                 <li className='m-3'><Link to="https://www.youtube.com/channel/UC2ifoKIRdmPADvml5T212gA"> <FontAwesomeIcon icon={faYoutube}/> </Link></li>
             </ul>
 
-            <div id='mailForm' className='col-8 col-md-7 col-xl-6 my-3 linea-cuadro row p-0 justify-content-center'>
+            <div id='mailForm' className='col-md-7 col-xl-6 linea-cuadro row p-0 justify-content-center'>
                 <AnimatedVisibility visible={formOpen}>
                     <MailForm/>
                 </AnimatedVisibility>

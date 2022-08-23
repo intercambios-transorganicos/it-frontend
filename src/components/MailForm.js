@@ -29,16 +29,16 @@ const MailForm = () => {
 
             <h3 className='tituloForm mt-4 mb-2'>¿Querés decirnos algo?</h3>
 
-            <label className='col-9 lab mt-5 mb-1 p-0'>Tu nombre:</label>
-            <input className='col-9 inp' onChange={e => setNombre(e.target.value)} type="text"></input>
+            <label className='col-12 lab mt-5 mb-1 p-0'>Tu nombre:</label>
+            <input className='col-12 inp' onChange={e => setNombre(e.target.value)} type="text"></input>
 
-            <label className='col-9 lab mt-5 mb-1 p-0'>Tu email:</label>
-            <input className='col-9 inp' onChange={e => setEmail(e.target.value)} type="email"></input>
+            <label className='col-12 lab mt-5 mb-1 p-0'>Tu email:</label>
+            <input className='col-12 inp' onChange={e => setEmail(e.target.value)} type="email"></input>
 
-            <label className='col-9 lab mt-5 mb-1 p-0'>Tu mensaje:</label>
-            <textarea className="col-9 inp inpMSJ" onChange={e => setMsj(e.target.value)}></textarea>
+            <label className='col-12 lab mt-5 mb-1 p-0'>Tu mensaje:</label>
+            <textarea className="col-12 inp inpMSJ" onChange={e => setMsj(e.target.value)}></textarea>
 
-            <div className='col-9 my-4 p-0 d-flex justify-content-end'>
+            <div className='col-12 my-4 p-0 d-flex justify-content-end'>
                 {
                 goodForm?
                     <button type="submit" className="enviar">Enviar</button>

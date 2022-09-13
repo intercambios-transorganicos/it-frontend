@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCircleXmark} from "@fortawesome/free-regular-svg-icons"
 import { faMap, faEnvelope,faCaretDown,faCommentDots } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
-
 import { FormOpenContextUse } from '../Contexts/FormOpenContext';
 import AnimatedVisibility from './AnimatedVisibility';
 import MailForm from './MailForm';

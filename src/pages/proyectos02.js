@@ -28,7 +28,7 @@ const Proyectos = ({
                                 var url = current.titulo.split(' ').join('_').toLowerCase()
                                 return(
                                     <Link  key={current.id} to={`../${url}`} >
-                                        <ChildBox portada={current.imagenes} titulo={current.titulo} subtitulo={current.subtitulo} />
+                                        <ChildBox imagen={current.imagenes[0].localFile} titulo={current.titulo} subtitulo={current.subtitulo} />
                                     </Link>
                                 )
                             })

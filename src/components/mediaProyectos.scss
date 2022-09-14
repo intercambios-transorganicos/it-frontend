@@ -5,16 +5,6 @@ $negro:#242424;
 $blanco : #fafafa;
 
 
-
-// .proyectoSliderContainer{
-//     background-color:pink;
-// }
-
-.proyectoContainer{
-    .proyectoSliderContainer .tns-nav{
-        text-align: center;
-    }
-    
     .proyectoSliderContainer .tns-nav button{
         height: 10px;
         border-radius: 50%;
@@ -23,13 +13,8 @@ $blanco : #fafafa;
         margin: 4px;
     }
     
-    .slide {
-        max-height: 94vh;
-      }
-    
       .carousel-inner {
-        max-height: 94vh;
+        max-height: 95vh;
       }
     
     
-}

@@ -9,13 +9,6 @@ $blanco : #fafafa;
     padding-bottom: 4em;
   }
 
-
-.proyectoPortada{
-    position:relative;
-    max-height: 94vh;
-
-}
-
 .portadaTitulo{
     position: absolute;
     bottom: 130px;
@@ -39,18 +32,26 @@ $blanco : #fafafa;
     margin-left: 4vh;
 }
 
-.proyectoContent{
-    margin: 5vh 10vh;
+.iFrame {
+    position: relative;
+    padding-bottom: 56.25%; 
+    iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
+.bLinks{
+    background-color:$lila;
+}
 
 @media (max-width: 600px){
     .portadaTitulo{
         position:revert;
     }
 
-    .proyectoContent{
-        margin: 1vh 4vh;
-    }
     
 }

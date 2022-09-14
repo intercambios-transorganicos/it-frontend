@@ -4,6 +4,11 @@ $bgGreen:#DEFCF0;
 $negro:#242424;
 $blanco : #fafafa;
 
+.proyectoContainer{
+  .proyectoSliderContainer .tns-nav{
+      text-align: center;
+  }
+
 
     .proyectoSliderContainer .tns-nav button{
         height: 10px;
@@ -12,9 +17,14 @@ $blanco : #fafafa;
         border-color: $acua;
         margin: 4px;
     }
+
+    .slide {
+      max-height: 94vh;
+    }
     
       .carousel-inner {
         max-height: 95vh;
       }
     
     
+  }

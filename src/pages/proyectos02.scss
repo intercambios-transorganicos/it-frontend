@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+$lila:#7c428c;
+$acua: #4ca899;
+$bgGreen:#DEFCF0;
+$negro:#242424;
+$blanco : #fafafa;
+
+.containerWrapper {
+    min-height: 100vh;
+  }
+
+.proyectos02{
+    width:100vw;
+    height:auto;
+    padding:2em;
+    padding-bottom: 5em;
+}
+
+.proyectos02Content{
+    padding:2em;
+
+}
+
+.grillaProyectos02{
+    display:grid;
+    grid-gap: 4vh;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    grid-auto-rows: 500px;
+}
+
+.box {
+    padding:0!important;
+}
+
+@media (max-width: 576px){
+    .proyectos02{
+        padding: 0 ;
+        padding-bottom: 2em;
+    }
+
+    .proyectos02Content{
+        padding:0;
+        padding-bottom: 2em;
+    }
+}

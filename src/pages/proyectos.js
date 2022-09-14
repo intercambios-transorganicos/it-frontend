@@ -11,7 +11,7 @@ const Proyectos = ({
     console.log(proyectos);
     return (
         <Layout>
-            <CirclePath text=" Proyectos •" textColor="#000000" />
+            <CirclePath text=" Proyectos •" textColor="#ffffff" />
             <div className="proyectosContainer">
                 <div className="galeria">
                     {

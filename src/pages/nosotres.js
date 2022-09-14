@@ -40,44 +40,20 @@ const Nosotres = ({data:{allStrapiMembers:{edges:members}}}) => {
     
     return (
         <Layout>
+            <div className="nosotresWrapper">
             <div className="teamText" >
                  
-                     <CirclePath text="Nuestro • Equipo • " textColor="#242424" />
-               
-            </div>
-            <div className="nosotres">
-               <div className="direccionWrapper " >
-                <div className="tituloDireccion" >
-                  <h1  className="title">Directora:</h1>
-                </div>
-                {
-                  directora.map((e,i) =>{
-                    
-                    var img = getImage(e.foto[0].localFile)
-                    return(
-                      <div key={i} className="columns memberWrapper" >
-                        <div className="column memberImageContainer" >
-                            <GatsbyImage className="roundPicture" image={img} alt={e.nombre} />
-                        </div>
-                        <div className="column is-four-fifths memberInfoContent" >
-                          <div className="contentTop" >
-                              <h1 className="title">{e.nombre}</h1>
-                              <h1 className="subtitle">{e.titulo}</h1>
-                          </div>
-                          <p className="" >{e.descripcion}</p>
-                        </div>
-                      </div>
-                    )
-                  })
-                }
-               </div>
-
-               <div className="alumnxsWrapper " >
-                <div className="tituloAlumnxs" >
-                  <h1 className="title">Alumnxs De Investigacion</h1>
-                </div>
+                 <CirclePath text="Nuestro • Equipo • " textColor="#242424" />
+           
+              </div>
+              <div className="nosotres">
+                <div className="direccionWrapper " >
+                  <div className="tituloDireccion" >
+                    <h1  className="title">Directora:</h1>
+                  </div>
                   {
-                    alumnx.map((e,i)=>{
+                    directora.map((e,i) =>{
+                      
                       var img = getImage(e.foto[0].localFile)
                       return(
                         <div key={i} className="columns memberWrapper" >
@@ -95,58 +71,84 @@ const Nosotres = ({data:{allStrapiMembers:{edges:members}}}) => {
                       )
                     })
                   }
-                
-               </div>
-
-               <div className="colaboradorxsWrapper" >
-               <div className="tituloColaboradorxs" >
-                  <h1 className="title">Colaboradorxs</h1>
                 </div>
-                  {
-                    colaboradorx.map((e,i)=>{
-                      var img = getImage(e.foto[0].localFile)
-                      return(
-                        <div key={i} className="columns memberWrapper" >
-                          <div className="column memberImageContainer" >
-                              <GatsbyImage className="roundPicture" image={img} alt={e.nombre} />
-                          </div>
-                          <div className="column is-four-fifths memberInfoContent" >
-                            <div className="contentTop" >
-                                <h1 className="title">{e.nombre}</h1>
-                                <h1 className="subtitle">{e.titulo}</h1>
-                            </div>
-                            <p className="" >{e.descripcion}</p>
-                          </div>
-                        </div>
-                      )
-                    })
-                  }
-               </div>
 
-               <div className="exalumnxsWrapper" >
-               <div className="tituloExalumnxs" >
-                  <h1 className="title">Exalumnxs</h1>
-                </div>
-                  {
-                    exalumnxs.map((e,i)=>{
-                      var img = getImage(e.foto[0].localFile)
-                      return(
-                        <div key={i} className="columns memberWrapper" >
-                          <div className="column memberImageContainer" >
-                              <GatsbyImage className="roundPicture" image={img} alt={e.nombre} />
-                          </div>
-                          <div className="column is-four-fifths memberInfoContent" >
-                            <div className="contentTop" >
-                                <h1 className="title">{e.nombre}</h1>
-                                <h1 className="subtitle">{e.titulo}</h1>
+                <div className="alumnxsWrapper " >
+                  <div className="tituloAlumnxs" >
+                    <h1 className="title">Alumnxs De Investigacion</h1>
+                  </div>
+                    {
+                      alumnx.map((e,i)=>{
+                        var img = getImage(e.foto[0].localFile)
+                        return(
+                          <div key={i} className="columns memberWrapper" >
+                            <div className="column memberImageContainer" >
+                                <GatsbyImage className="roundPicture" image={img} alt={e.nombre} />
                             </div>
-                            <p className="" >{e.descripcion}</p>
+                            <div className="column is-four-fifths memberInfoContent" >
+                              <div className="contentTop" >
+                                  <h1 className="title">{e.nombre}</h1>
+                                  <h1 className="subtitle">{e.titulo}</h1>
+                              </div>
+                              <p className="" >{e.descripcion}</p>
+                            </div>
                           </div>
-                        </div>
-                      )
-                    })
-                  }
-               </div>
+                        )
+                      })
+                    }
+                  
+                </div>
+
+                <div className="colaboradorxsWrapper" >
+                <div className="tituloColaboradorxs" >
+                    <h1 className="title">Colaboradorxs</h1>
+                  </div>
+                    {
+                      colaboradorx.map((e,i)=>{
+                        var img = getImage(e.foto[0].localFile)
+                        return(
+                          <div key={i} className="columns memberWrapper" >
+                            <div className="column memberImageContainer" >
+                                <GatsbyImage className="roundPicture" image={img} alt={e.nombre} />
+                            </div>
+                            <div className="column is-four-fifths memberInfoContent" >
+                              <div className="contentTop" >
+                                  <h1 className="title">{e.nombre}</h1>
+                                  <h1 className="subtitle">{e.titulo}</h1>
+                              </div>
+                              <p className="" >{e.descripcion}</p>
+                            </div>
+                          </div>
+                        )
+                      })
+                    }
+                </div>
+
+                <div className="exalumnxsWrapper" >
+                <div className="tituloExalumnxs" >
+                    <h1 className="title">Exalumnxs</h1>
+                  </div>
+                    {
+                      exalumnxs.map((e,i)=>{
+                        var img = getImage(e.foto[0].localFile)
+                        return(
+                          <div key={i} className="columns memberWrapper" >
+                            <div className="column memberImageContainer" >
+                                <GatsbyImage className="roundPicture" image={img} alt={e.nombre} />
+                            </div>
+                            <div className="column is-four-fifths memberInfoContent" >
+                              <div className="contentTop" >
+                                  <h1 className="title">{e.nombre}</h1>
+                                  <h1 className="subtitle">{e.titulo}</h1>
+                              </div>
+                              <p className="" >{e.descripcion}</p>
+                            </div>
+                          </div>
+                        )
+                      })
+                    }
+                </div>
+              </div>
             </div>
                
         </Layout>

@@ -14,7 +14,7 @@ const Publicaciones = ({
     return (
         <Layout>
             
-            <CirclePath text="Publicaciones•" textColor="#000000" />
+            <CirclePath text="Publicaciones•" textColor="#ffffff" />
   
             <div className="publicaciones">
 

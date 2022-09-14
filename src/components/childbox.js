@@ -1,28 +1,24 @@
-import React, {useState, useEffect} from 'react'
-//import {Link} from "gatsby"
+import React from 'react'
 import "./childbox.scss"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUserEdit} from '@fortawesome/free-solid-svg-icons'
+import {GatsbyImage, getImage} from "gatsby-plugin-image"
 
 const Childbox = (props) => {
 
-    var {autor, titulo, subtitulo, id} = props;
+    var {portada, titulo, subtitulo} = props;
     
-
+    console.log(portada[0].localFile);
+    var currentImg = getImage(portada[0].localFile);
     return (
-        // <Link className="aArticle" to={`../../${id}`} >
-            <div className="tile is-parent">
-                <article className="article_box tile is-child box">
-                    <div className="textcontent">
-                        <h1>{titulo}</h1>          
-                        <div className="autor">
-                            <FontAwesomeIcon   size="1x" icon={faUserEdit} />
-                            <h2 className="autorTitle" >{autor}</h2>
-                        </div>
-                    </div>
+            <div className="">
+                <article className="article_box box">
+                <GatsbyImage image={currentImg}  alt={"unalt"} />
                 </article>
+                    <div className="">
+                        <h1 className="proTitle">{titulo}</h1>   
+                        <h2 className="proSub">{subtitulo}</h2>       
+                        
+                    </div>
             </div>
-        // </Link> 
     );
 }
 

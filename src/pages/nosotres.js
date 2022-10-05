@@ -43,7 +43,7 @@ const Nosotres = ({data:{allStrapiMembers:{edges:members}}}) => {
             <div className="nosotresWrapper">
             <div className="teamText" >
                  
-                 <CirclePath text="Nuestro • Equipo • " textColor="#242424" />
+                 <CirclePath text=" Nuestro • Equipo • " textColor="#242424" />
            
               </div>
               <div className="nosotres">

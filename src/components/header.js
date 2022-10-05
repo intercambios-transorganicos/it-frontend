@@ -37,7 +37,7 @@ const Header = () => {
         <div className="modal-background"></div>
         <div className="menuModalContent">
           <div>
-            <Menu click={click} /> 
+            <Menu click={click} handler={isClick}/> 
           </div>
         </div>
         <button onClick={handleClose} className="modal-close is-large menuClose" aria-label="close" ></button>
@@ -62,7 +62,7 @@ const Header = () => {
           <div className="level-right">
             <div className="level-item"><Link to="/proyectos02" > Proyectos </Link></div>
             <div className="level-item"><Link to="/publicaciones02" > Publicaciones </Link></div>
-            {/* <div className="level-item"><Link to="/actividades" > Actividades </Link></div> */}
+            <div className="level-item"><Link to="/actividades02" > Actividades </Link></div>
             <div className="level-item"><Link to="/nosotres" >Nosotres</Link></div>
             <div onClick={handleContacto} className="level-item"><a>Contacto</a></div>
           </div>

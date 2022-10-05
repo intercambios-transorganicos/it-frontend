@@ -1,9 +1,12 @@
 import React, { useEffect,useRef} from "react"
 import {Link} from "gatsby"
 import {gsap} from 'gsap'
+import { FormOpenContextUse } from "../Contexts/FormOpenContext"
 import "./menu.scss"
 
-const Menu = ({click}) => {
+const Menu = ({click, handler}) => {
+    const {setFormOpen } = FormOpenContextUse();
+
     var tabs = useRef([]);
     var cont = useRef();
     var tl = useRef();
@@ -16,7 +19,8 @@ const Menu = ({click}) => {
         .from(tabs.current[1], {top: "35%", right: "44%", duration: 0.5}, "-=0.3")
         .from(tabs.current[2], {top: "35%", left: "44%", duration: 0.5}, "-=0.3")
         .from(tabs.current[3], {top: "35%", right: "44%", duration: 0.5}, "-=0.3")
-        //console.log("clickfrommenuuu")
+        .from(tabs.current[4], {top: "35%", right: "44%", duration: 0.5}, "-=0.3")
+      
         
     },[]);
 
@@ -24,19 +28,28 @@ const Menu = ({click}) => {
         tl.current.reversed(!click);
     },[click])
 
+    function handleClick(){
+        console.log("handleContacto");
+        handler(false)
+        setFormOpen(true)
+    }
+
     return (
     <div ref={elem => {cont.current = elem}} className="menu_container">
             <div ref={elem => {tabs.current[0] = elem}} className="tab">
-            <Link to="/proyectos" > <h1>Proyectos</h1> </Link>
+            <Link to="/proyectos02" > <h1>Proyectos</h1> </Link>
             </div>
             <div ref={elem => {tabs.current[1] = elem}}  className="tab">
-            <Link to="/publicaciones" > <h1>Publicaciones</h1> </Link>
+            <Link to="/publicaciones02" > <h1>Publicaciones</h1> </Link>
             </div>
             <div ref={elem => {tabs.current[2] = elem}} className="tab">
-                <Link to="/actividades" > <h1>Actividades</h1> </Link>
+                <Link to="/actividades02" > <h1>Actividades</h1> </Link>
             </div>
             <div ref={elem => {tabs.current[3] = elem}} className="tab">
                 <Link to="/nosotres" ><h1>Nosotres</h1></Link>
+            </div>
+            <div onClick={handleClick} ref={elem => {tabs.current[4] = elem}} className="tab">
+                <h1>Contacto</h1>
             </div>
 
         <svg>

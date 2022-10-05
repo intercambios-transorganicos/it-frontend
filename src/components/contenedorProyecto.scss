@@ -54,10 +54,15 @@
 
 
 @media (max-width: 768px){
+  
     .secOut{
         padding: 1em 1.8em;
         height: auto;
         margin: 4em 0em;
+
+        h1{
+            font-size: 1em;
+        }
         
     }
 

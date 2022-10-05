@@ -4,7 +4,6 @@ import MediaProyectos from "../components/mediaProyectos"
 import {Link} from "gatsby"
 //import loadable from "@loadable/component"
 import Layout from "../components/layout"
-import InfoExpanded from "../components/infoExpandedx2"
 import "./proyectoA.scss"
 
 //const MyLoadable3 = loadable(() => import("../components/mediaProyectos"));

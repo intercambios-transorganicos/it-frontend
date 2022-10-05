@@ -27,7 +27,8 @@ const IndexPage = ({data}) => {
 
               {/* PROYECTOS */}
               
-              {
+            <div className="pW">
+            {
                 data.allStrapiProyectos.edges.map((elem, index) =>{
                   var currentImage = getImage(elem.node.portada[0].localFile)
                   var currTitle = elem.node.titulo;
@@ -80,6 +81,7 @@ const IndexPage = ({data}) => {
 
                   })
               }
+            </div>
 
               {/* <FooterV2/> */}
         </MediaQuery>

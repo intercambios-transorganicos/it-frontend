@@ -44,13 +44,13 @@ documentos.map((e,i)=>{
     return (
         <Layout>
             
-            <CirclePath text="Publicaciones•" textColor="#ffffff" />
+            <CirclePath text=" Publicaciones •" textColor="#ffffff" />
 
             <div className="publicaciones">
 
                 <div className="proyectosWrapper section ">
                     <div className="proyectosTitulo">
-                        <h1 className="title has-text-white">Proyectos</h1>
+                        <h1 className="title has-text-white">Proyectos:</h1>
                     </div>
                     {
                         proyecto.map((e,i)=>{
@@ -63,7 +63,7 @@ documentos.map((e,i)=>{
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
-                                                    <h2>Autor</h2>
+                                                    
                                                 </div>
                                             </div>
                                             <div className="level-right">
@@ -85,7 +85,7 @@ documentos.map((e,i)=>{
 
                 <div className="ensayosWrapper section">
                     <div className="ensayosTitulo">
-                        <h1 className="title has-text-white">Ensayos y Papers</h1>
+                        <h1 className="title has-text-white">Ensayos y Papers:</h1>
                     </div>
                     {
                         ensayo.map((e,i)=>{
@@ -120,7 +120,7 @@ documentos.map((e,i)=>{
 
                 <div className="colaboracionesWrapper section">
                     <div className="colaboracionesTitulo">
-                        <h1 className="title has-text-white">Colaboraciones</h1>
+                        <h1 className="title has-text-white">Colaboraciones:</h1>
                     </div>
                     {
                         colaboracion.map((e,i)=>{
@@ -155,7 +155,7 @@ documentos.map((e,i)=>{
 
                 <div className="entrevistasWrapper section">
                     <div className="entrevistasTitulo">
-                        <h1 className="title has-text-white">Entrevistas y Prensa</h1>
+                        <h1 className="title has-text-white">Entrevistas y Prensa:</h1>
                     </div>
                     {
                         entrevista.map((e,i)=>{

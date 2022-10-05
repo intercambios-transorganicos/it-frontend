@@ -64,9 +64,17 @@ $blanco : #fafafa;
         //height:100vh;
         padding-top: 4em;
     }
+
+    .carousel-indicators{
+        top:0!important;
+    }
     .aboutCarousel{
         position:revert;
         height: auto;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        top: 0 !important;
     }
    
      //1_

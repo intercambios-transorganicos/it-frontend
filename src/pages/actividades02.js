@@ -37,7 +37,7 @@ const Actividades02 = ({
                                                 <Accordion.Header>
                                                     <div className="level">
                                                         <div className="level-left">
-                                                            <div className="level-item"><h2>{e.node.fecha}</h2></div>
+                                                            <div className="level-item has-text-primary"><h2>{e.node.fecha}</h2></div>
                                                             <div className="level-item">-</div>
                                                             <div className="level-item"><h1>{e.node.titulo}</h1></div>
                                                         </div>

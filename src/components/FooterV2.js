@@ -80,9 +80,9 @@ const FooterV2 = () => {
             
             <ul className='col-12 col-sm-11 col-md-10 col-xxl-11 px-5 secciones d-flex flex-row justify-content-between'>
                 <li><Link to="/nosotres">Nuestro equipo</Link></li>
-                <li><Link to="/proyectos">Proyectos</Link></li>
-                <li><Link to="/publicaciones">Publicaciones</Link></li>
-                <li><Link to="/actividades">Actividades</Link></li>
+                <li><Link to="/proyectos02">Proyectos</Link></li>
+                <li><Link to="/publicaciones02">Publicaciones</Link></li>
+                <li><Link to="/actividades02">Actividades</Link></li>
             </ul>
 
             <div className='logo my-2'>

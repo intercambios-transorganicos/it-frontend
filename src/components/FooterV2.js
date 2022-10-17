@@ -80,7 +80,7 @@ const FooterV2 = () => {
             
             
 
-            <div className='logo mx-2 my-2'>
+            <div className='logo my-2'>
                 <StaticImage 
                    src= "../images/logoit_it.png" 
                    alt="Logo Intercambios Transorganicos"

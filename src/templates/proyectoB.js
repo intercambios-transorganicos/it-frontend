@@ -25,6 +25,15 @@ const Proyectob = ({data}) => {
     return (
        <Layout>
          {/* <div className="proyectoB_container container">
+
+             <div className="hero is-primary hero-tit">
+              <div className="hero-body">
+                  <p className="title projectTitle">
+                      {nombre}
+                  </p>
+              </div>
+            </div>
+
             <div className="columns">
                 <div className="column">
                     <div className="section mt-6">
@@ -90,18 +99,18 @@ const Proyectob = ({data}) => {
          <div className="proyectoB_container container">
 
             <div className="hero is-primary hero-tit">
-            <div className="hero-body">
-                <p className="title projectTitle">
-                    {nombre}
-                </p>
-            </div>
+              <div className="hero-body">
+                  <p className="title projectTitle">
+                      {nombre}
+                  </p>
+              </div>
             </div>
 
             <div className="pt-6">
             <div className="section">
                        <div className="content">
                        <h1 className="title has-text-white">{titulo}</h1>
-                        <h3 className="title">{subtitulo}</h3>
+                        <h3 className="title has-text-white">{subtitulo}</h3>
                         <p>{contenido}</p>
                        </div>
                         {oembed?
@@ -115,7 +124,7 @@ const Proyectob = ({data}) => {
 
                     <div className="section links">
                         <div className="content pl-0">
-                        <h3 className="sibtitle">Links:</h3>
+                        <h3 className="sibtitle has-text-white">Links:</h3>
                         </div>
                           {
                             documents.map((e,i)=>{

@@ -11,6 +11,9 @@ $blanco: #fafafa;
     bottom: 5%;
     right: 0;
 }
+.content{
+    font-size: 0.8em;
+}
 
 .presentacion .content h1 {
     color: $blanco !important;
@@ -99,3 +102,15 @@ $blanco: #fafafa;
         padding: 2vh;
     }
 }
+
+@media (min-width: 1928px){
+
+    .presentacion{
+        .content{
+            font-size: 2em;
+        }
+    }
+    
+  }
+  
+  

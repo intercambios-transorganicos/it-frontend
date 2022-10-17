@@ -1,0 +1,43 @@
+$lila:#7c428c;
+$acua: #4ca899;
+$bgGreen:#DEFCF0;
+$negro:#242424;
+$blanco : #fafafa;
+
+.proyectoB_container{
+    min-height: 100vh;
+    .hero-tit{
+        padding-top:20vw;
+    }
+
+    .projectTitle{
+        font-size:4em;
+    }
+
+    .iFrame {
+        position: relative;
+        padding-bottom: 56.25%; 
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .bLinks{
+        background-color:$lila;
+    }
+
+
+
+    @media (min-width: 600px){
+
+        .hero-tit{
+            padding-top:8vw;
+        }
+    }
+    
+}   
+

@@ -46,7 +46,7 @@ const About1 = () => {
                         //console.log(e.node)
                         return(
                             <Carousel.Item key={e.node.id}  className="aboutSlide">
-                                <GatsbyImage image={currentImg} alt={`img${e.node.id}`} />
+                                <GatsbyImage className="currentSlide" image={currentImg} alt={`img${e.node.id}`} />
                                 <Presentacion titulo={e.node.titulo} desc={e.node.descripcion} />
                             </Carousel.Item>
                         )

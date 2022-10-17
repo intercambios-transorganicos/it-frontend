@@ -6,6 +6,7 @@ import {graphql} from "gatsby"
 import {GatsbyImage, getImage} from "gatsby-plugin-image"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCircleDown} from "@fortawesome/free-regular-svg-icons"
+import { FaMapMarkerAlt } from "react-icons/fa";
 import "./actividades02.scss"
 import { Accordion } from 'react-bootstrap';
 
@@ -35,37 +36,36 @@ const Actividades02 = ({
                                         <Accordion defaultActiveKey="0">
                                             <Accordion.Item eventKey="1" >
                                                 <Accordion.Header>
-                                                    <div className="level">
-                                                        <div className="level-left">
-                                                            <div className="level-item has-text-primary"><h2>{e.node.fecha}</h2></div>
-                                                            <div className="level-item">-</div>
-                                                            <div className="level-item"><h1>{e.node.titulo}</h1></div>
-                                                        </div>
-                                                        
+                                                    <div className="wrapHead">
+                                                       <div className="subtitle has-text-white"><h1>{e.node.titulo}</h1></div>
+                                                       <div className="fe"><h4>{e.node.fecha}</h4></div>
                                                     </div>
                                                 </Accordion.Header>
                                                 <Accordion.Body>
                                                     <div>
                                                         <div className="content">
-                                                        <h1 className="title  has-text-white">{e.node.lugar}</h1 >
-                                                        <p>{e.node.descripcion}</p>
+                                                        <p className=" has-text-white"><FaMapMarkerAlt className="mr-4"/>{e.node.lugar}</p >
                                                             {e.node.link?
-                                                                <div className="level "> <div className="level-left"><h3 className="level-item  has-text-white" >Link:</h3> <h6 className="level-item"><a className="level-item" >{e.node.link}</a></h6></div> </div>
+                                                                <div className="level "> <div className="level-left"><p className="level-item  has-text-white" >Link:</p> <h6 className="level-item"><a href={e.node.link} className="level-item" >{e.node.link}</a></h6></div> </div>
                                                                 :
                                                                 <div></div>
                                                             }
-                                                            {e.node.imagenes?
-                                                                <GatsbyImage className="image" image={currentImg} alt={e.node.titulo+e.node.fecha} />
+                                                           <p className="des">{e.node.descripcion}</p>
+                                                           <div className="">
+                                                           {e.node.imagenes?
+                                                                <GatsbyImage className=" image" image={currentImg} alt={e.node.titulo+e.node.fecha} />
                                                                 :
                                                                 <div></div>
                                                             }
                                                             {e.node.oembed?
-                                                                <div className="video">
-                                                                    <div className="iFrame" dangerouslySetInnerHTML={{ __html: iFrame}} /> 
+                                                                <div className="video columns">
+                                                                    <div className="Frame column" dangerouslySetInnerHTML={{ __html: iFrame}} /> 
+                                                                    
                                                                 </div>
                                                                 :
                                                                 <div></div>
                                                             }
+                                                           </div>
                                                         </div>
                                                     </div>
                                                 </Accordion.Body>
@@ -104,7 +104,7 @@ export const query = graphql`
           imagenes {
             localFile {
               childImageSharp {
-                gatsbyImageData(layout: FIXED, height: 300, width: 300)
+                gatsbyImageData(layout: FIXED, width: 600)
               }
             }
           }

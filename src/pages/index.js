@@ -21,7 +21,7 @@ const IndexPage = ({data}) => {
         <Seo title = "Home" / >
 
       
-        <MediaQuery maxWidth={767}>
+        <MediaQuery maxWidth={992}>
             <About1 / >
             <SecAventura / >
 
@@ -86,7 +86,7 @@ const IndexPage = ({data}) => {
               {/* <FooterV2/> */}
         </MediaQuery>
 
-        <MediaQuery minWidth={767}>
+        <MediaQuery minWidth={992}>
         <ReactPageScroller
         >
             <About1 / >
@@ -175,7 +175,7 @@ export const query = graphql`
             localFile {
               publicURL
               childImageSharp {
-                gatsbyImageData(placeholder: DOMINANT_COLOR, layout: FIXED)
+                gatsbyImageData(placeholder: DOMINANT_COLOR, layout: FULL_WIDTH)
               }
             }
           }

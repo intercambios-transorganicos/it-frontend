@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import {graphql} from "gatsby"
 import MediaProyectos from "../components/mediaProyectos"
 import {Link} from "gatsby"
@@ -70,11 +70,6 @@ const Proyectoa = ({data}) => {
                               <Link className="has-text-white" to="/proyectos02" > + Proyectos </Link>
                               </button>
                           </div>
-                          {/* <div className="buttons">
-                              <button  className="button bLinks has-text-white ">
-                                Contactanos para adquirir este juego
-                              </button>
-                          </div> */}
                         </div>
                     </div>
                  </div>
@@ -82,9 +77,9 @@ const Proyectoa = ({data}) => {
             </div>
         </Layout>
     );
-}
+}*/
 
-export const query = graphql`
+/*export const query = graphql`
 query Proyecto($proyectoId: String){
     strapiProyectos(id: {eq: $proyectoId}) {
       id
@@ -120,4 +115,4 @@ query Proyecto($proyectoId: String){
 `
 
 
-export default Proyectoa;
+export default Proyectoa;*/

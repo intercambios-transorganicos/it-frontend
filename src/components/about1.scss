@@ -62,7 +62,7 @@ $blanco : #fafafa;
         padding-bottom: 10vh;
         //border:solid $blanco 1vh;
         //height:100vh;
-        padding-top: 4em;
+        //padding-top: 4em;
     }
 
     .carousel-indicators{
@@ -71,6 +71,11 @@ $blanco : #fafafa;
     .aboutCarousel{
         position:revert;
         height: auto;
+        .aboutSlide{
+            .currentSlide{
+                margin-top: 3em;
+            }
+        }
     }
 
     .carousel-control-next, .carousel-control-prev{
@@ -90,18 +95,11 @@ $blanco : #fafafa;
     .about1{
         position:revert;
        // height:100vh;
-        padding-top: 4em;
     }
     .aboutCarousel{
         position:revert;
         height: 100vh;
-    }
-   
-     //1_
 
-    .about1_{
-        display:flex;
-        flex-direction:column; 
     }
 }
 
@@ -113,5 +111,19 @@ $blanco : #fafafa;
         position:revert;
         height: auto;
     }
+}
+
+@media (min-width: 1280px){
+  .about1{
+    background-color:blue;
+    .aboutCarousel{
+        height: 100vh;
+        .aboutSlide{
+            .currentSlide{
+                height: 100vh;
+            }
+        }
+    }
+  }
 }
 

@@ -103,7 +103,7 @@ result.data.articulos.edges.forEach(({ node }) => {
 })
 
 // Creamos las paginas por cada proyecto.
-const proyectoTemplate = path.resolve(`src/templates/proyectoA.js`)
+const proyectoTemplate = path.resolve(`src/templates/proyectoB.js`)
 result.data.proyectos.edges.forEach(({ node }) => {
   const path = node.id
   const pathh = `/${node.titulo.split(' ').join('_').toLowerCase()}/`

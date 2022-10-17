@@ -7,6 +7,12 @@ $negro:#242424;
 $blanco : #fafafa;
 @import "~bulma/bulma.sass";
 
+*{
+    a{
+        color:#4ca899
+    }
+}
+
 body{
     background-color: $blanco;
 }

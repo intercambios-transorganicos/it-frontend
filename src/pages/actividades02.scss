@@ -55,5 +55,32 @@ $blanco : #fafafa;
         }
     }
 
+    @media (min-width: 320px){
+
+        
+            .actSection{
+                    .actividadImagen{
+                        max-width: 80vw;
+                    }
+                    .video{
+                        width: 80vw;
+                    }   
+        }
+    }
+
+
+    @media (min-width: 1280px){
+
+        .actSection{
+            .actividadImagen{
+                max-width: 30vw;
+            } 
+            .video{
+                width: 40vw;
+            }  
+        }  
+    }
+
+
     
-}
+  }

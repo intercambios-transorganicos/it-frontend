@@ -51,14 +51,14 @@ const Actividades02 = ({
                                                                 <div></div>
                                                             }
                                                            <p className="des">{e.node.descripcion}</p>
-                                                           <div className="">
+                                                           <div className="content">
                                                            {e.node.imagenes?
-                                                                <GatsbyImage className=" image" image={currentImg} alt={e.node.titulo+e.node.fecha} />
+                                                                <GatsbyImage className=" actividadImagen image" image={currentImg} alt={e.node.titulo+e.node.fecha} />
                                                                 :
                                                                 <div></div>
                                                             }
                                                             {e.node.oembed?
-                                                                <div className="video columns">
+                                                                <div className="video ">
                                                                     <div className="Frame column" dangerouslySetInnerHTML={{ __html: iFrame}} /> 
                                                                     
                                                                 </div>
@@ -104,7 +104,7 @@ export const query = graphql`
           imagenes {
             localFile {
               childImageSharp {
-                gatsbyImageData(layout: FIXED, width: 600)
+                gatsbyImageData(layout: CONSTRAINED)
               }
             }
           }

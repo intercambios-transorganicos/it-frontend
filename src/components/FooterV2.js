@@ -14,6 +14,7 @@ import './footerV2Style.scss';
 
 const FooterV2 = () => {
     const { formOpen, setFormOpen } = FormOpenContextUse();
+    
     console.log(formOpen)
     const [showMap, setShowMap] = useState(false);
 

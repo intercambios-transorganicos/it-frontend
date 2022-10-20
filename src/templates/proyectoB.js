@@ -24,7 +24,7 @@ const Proyectob = ({data}) => {
 
     return (
        <Layout>
-         {/* <div className="proyectoB_container container">
+         <div className="proyectoB_container container">
 
              <div className="hero is-primary hero-tit">
               <div className="hero-body">
@@ -95,8 +95,8 @@ const Proyectob = ({data}) => {
                 </div>
             </div>
             
-        </div> */}
-         <div className="proyectoB_container container">
+        </div> 
+         {/* <div className="proyectoB_container container">
 
             <div className="hero is-primary hero-tit">
               <div className="hero-body">
@@ -162,7 +162,7 @@ const Proyectob = ({data}) => {
                     </div>
             
             </div>
-        </div> 
+        </div>  */}
        </Layout>
     );
 }

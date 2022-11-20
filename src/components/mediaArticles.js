@@ -1,6 +1,6 @@
 import React from 'react';
 import {GatsbyImage, getImage} from "gatsby-plugin-image";
-import loadable from "@loadable/component"
+//import loadable from "@loadable/component"
 //import TinySlider from "tiny-slider-react"
 
 import {Carousel} from "react-bootstrap"

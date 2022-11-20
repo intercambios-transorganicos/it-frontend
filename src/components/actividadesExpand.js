@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faExpand, faLink, faMapMarked} from '@fortawesome/free-solid-svg-icons'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import OembedIframe from './oembedIframe'
 import "./actividadesExpand.scss";
 
 const Actividadesexpand = ({fecha, titulo, id, link_, desc, lugar}) => {

@@ -1,11 +1,8 @@
 import React from 'react';
-import {Link} from "gatsby"
 import Layout from "../components/layout"
 import CirclePath from "../components/circlePath"
 import {graphql} from "gatsby"
 import {GatsbyImage, getImage} from "gatsby-plugin-image"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCircleDown} from "@fortawesome/free-regular-svg-icons"
 import { FaMapMarkerAlt } from "react-icons/fa";
 import "./actividades02.scss"
 import { Accordion } from 'react-bootstrap';

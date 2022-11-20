@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React from "react"
 //import ReactPageScroller from 'react-page-scroller';
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -7,7 +7,6 @@ import ReactPageScroller from 'react-page-scroller';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./index.scss"
 import SecAventura from "../components/SecAventura"
-import FooterV2 from "../components/FooterV2";
 import Contenedor from "../components/contenedorProyecto"
 import ContenedorGif from "../components/contenedorProyectoGif"
 import {getImage} from 'gatsby-plugin-image'

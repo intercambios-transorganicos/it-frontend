@@ -1,7 +1,4 @@
 import React from 'react';
-import {Link} from "gatsby"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons'
 import "./presentacion.scss"
 
 const Presentacion = ({titulo, desc}) => {

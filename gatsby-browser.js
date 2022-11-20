@@ -1,5 +1,4 @@
 import "./src/components/itLoader.scss"
-import React from "react"
 import "./styles.css"
 
 export const onClientEntry = () => {

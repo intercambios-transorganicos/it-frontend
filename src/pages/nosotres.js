@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 //import TeamCarousel from "../components/teamCarousel"
 import CirclePath from "../components/circlePath"
 import Layout from "../components/layout"

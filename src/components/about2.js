@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react';
+/*import React, {useEffect, useState, useRef} from 'react';
 import { useStaticQuery, graphql } from "gatsby"
 import InfoExpanded from './infoExpanded'
 import "./about2.scss"
@@ -49,4 +49,4 @@ const About2 = () => {
     );
 }
 
-export default About2;
+export default About2;*/

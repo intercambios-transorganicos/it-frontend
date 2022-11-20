@@ -1,5 +1,5 @@
 
-import { useStaticQuery, graphql } from "gatsby"
+/*import { useStaticQuery, graphql } from "gatsby"
 
 const Usevideoquery = () => {
   const data = useStaticQuery(graphql`
@@ -34,5 +34,5 @@ const Usevideoquery = () => {
   
 }
 
-export default Usevideoquery
+export default Usevideoquery*/
 

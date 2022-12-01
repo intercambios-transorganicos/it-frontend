@@ -1,7 +1,7 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
-console.log(process.env.NODE_ENV);
+
 module.exports = {
   siteMetadata: {
     title: `Intercambios Transorganicos`,
@@ -24,12 +24,7 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        implementation: require("node-sass"),
-      },
-    },
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

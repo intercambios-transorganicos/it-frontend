@@ -19,13 +19,6 @@
       }
     }
   })
-  if (stage === 'build-javascript' || stage === 'develop') {
-    actions.setWebpackConfig({
-      plugins: [
-        plugins.provide({ process: 'process/browser' })
-      ]
-    })
-  }
 }
 
 
@@ -56,8 +49,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
           }
         }
-      }
-
+      } 
       proyectos : allStrapiProyectos {
         edges {
           node {
@@ -76,8 +68,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
       }
-
-     
       
     }
     `
@@ -102,7 +92,8 @@ result.data.articulos.edges.forEach(({ node }) => {
   })
 })
 
-// Creamos las paginas por cada proyecto.
+// Creamos las paginas por cada proyecto
+console.log(result.data)
 const proyectoTemplate = path.resolve(`src/templates/proyectoB.js`)
 result.data.proyectos.edges.forEach(({ node }) => {
   const path = node.id

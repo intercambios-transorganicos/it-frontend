@@ -1,14 +1,14 @@
 //import React from "react"
-//import "./src/components/itLoader.scss"
-//import "./styles.css"
+import "./src/components/itLoader.scss"
+import "./styles.css"
 //import { FormOpenContextProvider } from "./src/Contexts/FormOpenContext"
-// export const onClientEntry = () => {
-//     console.log("from browser-out")
-//   }
+export const onClientEntry = () => {
+    console.log("from browser-out")
+  }
 
-//   export const onInitialClientRender = () => {
-//     console.log("from render-out")
-//   }
+  export const onInitialClientRender = () => {
+    console.log("from render-out")
+  }
 
   /*export const onPreRouteUpdate = () => {
     document.getElementById("preloader").classList.add('fadeOutDownX');

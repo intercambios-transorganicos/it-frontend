@@ -5,8 +5,8 @@
  */
 
 // You can delete this file if you're not using it
-//import React from 'react'
-/*export const onRenderBody = ({
+import React from 'react'
+export const onRenderBody = ({
     setPreBodyComponents,
     setBodyAttributes,
 }) => {
@@ -73,5 +73,5 @@
     setBodyAttributes({
         className:"preloader_active"
     })
-  }*/
+  }
   

@@ -71,4 +71,4 @@ package-lock.json
 # Local Netlify folder
 .netlify
 old/
-yarn-lock.json
+package-lock.json

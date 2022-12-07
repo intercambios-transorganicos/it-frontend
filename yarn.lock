@@ -6259,12 +6259,7 @@ dotenv-expand@^5.1.0:
   resolved "https://registry.npmjs.org/dotenv-expand/-/dotenv-expand-5.1.0.tgz"
   integrity sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==
 
-dotenv@^16.0.0, dotenv@^16.0.2:
-  version "16.0.3"
-  resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.0.3.tgz"
-  integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
-
-dotenv@^16.0.3:
+dotenv@^16.0.0, dotenv@^16.0.2, dotenv@^16.0.3:
   version "16.0.3"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
   integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
@@ -8089,9 +8084,9 @@ gatsby-worker@^1.25.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^4.13.1:
+gatsby@^4.4.0:
   version "4.25.0"
-  resolved "https://registry.npmjs.org/gatsby/-/gatsby-4.25.0.tgz"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.25.0.tgz#1eca4b94709aad1a3232e704645ae36ee148ebba"
   integrity sha512-zR/u0X60Ww250XqHGytAVFDfFJUpDzMnbPHQ7uAqr6zLgU03DBKyjqKiRpFsGx7L7ENj61hdorjz12IiNj6DIw==
   dependencies:
     "@babel/code-frame" "^7.14.0"

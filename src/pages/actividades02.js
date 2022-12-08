@@ -21,10 +21,10 @@ const Actividades02 = ({
                     {
                         actividades.map((e,i)=>{
                             var currentImg= getImage(e.node.imagenes[0].localFile)
-                            var oembed = e.node.oembed
+                            //var oembed = e.node.oembed
                             var iFrame;
-                            if(oembed){
-                                iFrame = JSON.parse(oembed).rawData.html
+                            if( e.node.oembed){
+                                iFrame = JSON.parse(e.node.oembed).rawData.html
                             }
                             return(
                                 <div key={e+i}>

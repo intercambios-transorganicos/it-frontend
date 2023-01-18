@@ -19,13 +19,6 @@
       }
     }
   })
-  // if (stage === 'build-javascript' || stage === 'develop') {
-  //   actions.setWebpackConfig({
-  //     plugins: [
-  //       plugins.provide({ process: 'process/browser' })
-  //     ]
-  //   })
-  // }
   
 }
 

@@ -1,0 +1,918 @@
+12:03:11 PM: build-image version: a2d22d22e4555d1ef0a972ed14a0a4b366ad20c4 (focal)
+12:03:11 PM: build-image tag: v4.16.3
+12:03:11 PM: buildbot version: e2f63efe7f752311197ae3394a83cb4531d1cbd2
+12:03:11 PM: Building without cache
+12:03:11 PM: Starting to prepare the repo for build
+12:03:11 PM: No cached dependencies found. Cloning fresh repo
+12:03:11 PM: git clone --filter=blob:none --no-checkout https://github.com/intercambios-transorganicos/it-frontend
+12:03:11 PM: Preparing Git Reference refs/heads/main
+12:03:12 PM: Parsing package.json dependencies
+12:03:13 PM: Starting build script
+12:03:13 PM: Installing dependencies
+12:03:13 PM: Python version set to 2.7
+12:03:14 PM: v16.19.0 is already installed.
+12:03:14 PM: Now using node v16.19.0 (npm v8.19.3)
+12:03:14 PM: Enabling Node.js Corepack
+12:03:14 PM: Started restoring cached build plugins
+12:03:14 PM: Finished restoring cached build plugins
+12:03:14 PM: Attempting Ruby version 2.7.2, read from environment
+12:03:15 PM: Using Ruby version 2.7.2
+12:03:15 PM: Using PHP version 8.0
+12:03:15 PM: WARNING: The environment variable 'NODE_ENV' is set to 'production'. Any 'devDependencies' in package.json will not be installed
+12:03:15 PM: Started restoring cached corepack dependencies
+12:03:15 PM: mv: cannot move '/opt/build/cache/.node/corepack' to '/opt/buildhome/.node/corepack': No such file or directory
+12:03:15 PM: Finished restoring cached corepack dependencies
+12:03:15 PM: No npm workspaces detected
+12:03:15 PM: Started restoring cached node modules
+12:03:15 PM: Finished restoring cached node modules
+12:03:15 PM: Bypassing sha validation. Running pre & post install scripts
+12:03:15 PM: Installing npm packages using npm version 8.19.3
+12:03:18 PM: npm WARN ERESOLVE overriding peer dependency
+12:03:18 PM: npm WARN While resolving: react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825
+12:03:18 PM: npm WARN Found: react@17.0.2
+12:03:18 PM: npm WARN node_modules/react
+12:03:18 PM: npm WARN   react@"^17.0.1" from the root project
+12:03:18 PM: npm WARN   31 more (@fortawesome/react-fontawesome, ...)
+12:03:18 PM: npm WARN
+12:03:18 PM: npm WARN Could not resolve dependency:
+12:03:18 PM: npm WARN peer react@"0.0.0-experimental-c8b778b7f-20220825" from react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825
+12:03:18 PM: npm WARN node_modules/gatsby/node_modules/react-server-dom-webpack
+12:03:18 PM: npm WARN   react-server-dom-webpack@"0.0.0-experimental-c8b778b7f-20220825" from gatsby@4.25.0
+12:03:18 PM: npm WARN   node_modules/gatsby
+12:03:18 PM: npm WARN
+12:03:18 PM: npm WARN Conflicting peer dependency: react@0.0.0-experimental-c8b778b7f-20220825
+12:03:18 PM: npm WARN node_modules/react
+12:03:18 PM: npm WARN   peer react@"0.0.0-experimental-c8b778b7f-20220825" from react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825
+12:03:18 PM: npm WARN   node_modules/gatsby/node_modules/react-server-dom-webpack
+12:03:18 PM: npm WARN     react-server-dom-webpack@"0.0.0-experimental-c8b778b7f-20220825" from gatsby@4.25.0
+12:03:18 PM: npm WARN     node_modules/gatsby
+12:03:18 PM: npm WARN EBADENGINE Unsupported engine {
+12:03:18 PM: npm WARN EBADENGINE   package: 'gatsby-core-utils@4.2.0',
+12:03:18 PM: npm WARN EBADENGINE   required: { node: '>=18.0.0' },
+12:03:18 PM: npm WARN EBADENGINE   current: { node: 'v16.19.0', npm: '8.19.3' }
+12:03:18 PM: npm WARN EBADENGINE }
+12:03:21 PM: npm WARN deprecated source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+12:03:21 PM: npm WARN deprecated source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+12:03:22 PM: npm WARN deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+12:03:23 PM: npm WARN deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+12:03:23 PM: npm WARN deprecated subscriptions-transport-ws@0.9.19: The `subscriptions-transport-ws` package is no longer maintained. We recommend you use `graphql-ws` instead. For help migrating Apollo software to `graphql-ws`, see https://www.apollographql.com/docs/apollo-server/data/subscriptions/#switching-from-subscriptions-transport-ws    For general help using `graphql-ws`, see https://github.com/enisdenjo/graphql-ws/blob/master/README.md
+12:03:25 PM: npm WARN deprecated async-cache@1.1.0: No longer maintained. Use [lru-cache](http://npm.im/lru-cache) version 7.6 or higher, and provide an asynchronous `fetchMethod` option.
+12:03:25 PM: npm WARN deprecated babel-eslint@10.1.0: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
+12:03:26 PM: npm WARN deprecated @hapi/bourne@1.3.2: This version has been deprecated and is no longer supported or maintained
+12:03:26 PM: npm WARN deprecated @hapi/address@2.1.4: Moved to 'npm install @sideway/address'
+12:03:27 PM: npm WARN deprecated @fortawesome/fontawesome-common-types@0.3.0: Please upgrade to 6.1.0. https://fontawesome.com/docs/changelog/
+12:03:27 PM: npm WARN deprecated @fortawesome/fontawesome-svg-core@1.3.0: Please upgrade to 6.1.0. https://fontawesome.com/docs/changelog/
+12:03:27 PM: npm WARN deprecated @hapi/joi@15.1.1: Switch to 'npm install joi'
+12:03:28 PM: npm WARN deprecated multer@1.4.4: Multer 1.x is affected by CVE-2022-24434. This is fixed in v1.4.4-lts.1 which drops support for versions of Node.js before 6. Please upgrade to at least Node.js 6 and version 1.4.4-lts.1 of Multer. If you need support for older versions of Node.js, we are open to accepting patches that would fix the CVE on the main 1.x release line, whilst maintaining compatibility with Node.js 0.10.
+12:03:28 PM: npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+12:03:29 PM: npm WARN deprecated uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+12:03:29 PM: npm WARN deprecated @hapi/topo@3.1.6: This version has been deprecated and is no longer supported or maintained
+12:03:29 PM: npm WARN deprecated @hapi/hoek@8.5.1: This version has been deprecated and is no longer supported or maintained
+12:03:29 PM: npm WARN deprecated urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+12:03:30 PM: npm WARN deprecated resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+12:03:30 PM: npm WARN deprecated @hapi/hoek@8.5.1: This version has been deprecated and is no longer supported or maintained
+12:03:32 PM: npm WARN deprecated core-js@1.2.7: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+12:03:34 PM: npm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+12:03:34 PM: npm WARN deprecated core-js@2.6.12: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
+12:03:50 PM: added 2181 packages, and audited 2182 packages in 34s
+12:03:50 PM: 334 packages are looking for funding
+12:03:50 PM:   run `npm fund` for details
+12:03:50 PM: 47 vulnerabilities (11 moderate, 31 high, 5 critical)
+12:03:50 PM: To address issues that do not require attention, run:
+12:03:50 PM:   npm audit fix
+12:03:50 PM: To address all issues possible (including breaking changes), run:
+12:03:50 PM:   npm audit fix --force
+12:03:50 PM: Some issues need review, and may require choosing
+12:03:50 PM: a different dependency.
+12:03:50 PM: Run `npm audit` for details.
+12:03:50 PM: npm packages installed
+12:03:51 PM: Started restoring cached go cache
+12:03:51 PM: Finished restoring cached go cache
+12:03:51 PM: Installing Go version 1.17 (requested 1.17)
+12:03:56 PM: unset GOOS;
+12:03:56 PM: unset GOARCH;
+12:03:56 PM: export GOROOT='/opt/buildhome/.gimme/versions/go1.17.linux.amd64';
+12:03:56 PM: export PATH="/opt/buildhome/.gimme/versions/go1.17.linux.amd64/bin:${PATH}";
+12:03:56 PM: go version >&2;
+12:03:56 PM: export GIMME_ENV="/opt/buildhome/.gimme/env/go1.17.linux.amd64.env"
+12:03:56 PM: go version go1.17 linux/amd64
+12:03:56 PM: Detected 1 framework(s)
+12:03:56 PM: "gatsby" at version "4.25.0"
+12:03:56 PM: Installing missing commands
+12:03:56 PM: Verify run directory
+12:03:56 PM: Section completed: initializing
+12:03:58 PM: ​
+12:03:58 PM:   Netlify Build                                                 
+12:03:58 PM: ────────────────────────────────────────────────────────────────
+12:03:58 PM: ​
+12:03:58 PM: ❯ Version
+12:03:58 PM:   @netlify/build 29.5.1
+12:03:58 PM: ​
+12:03:58 PM: ❯ Flags
+12:03:58 PM:   baseRelDir: true
+12:03:58 PM:   buildId: 63caad2de6201b4dbb956593
+12:03:58 PM:   deployId: 63caad2de6201b4dbb956595
+12:03:58 PM: ​
+12:03:58 PM: ❯ Current directory
+12:03:58 PM:   /opt/build/repo
+12:03:58 PM: ​
+12:03:58 PM: ❯ Config file
+12:03:58 PM:   No config file was defined: using default values.
+12:03:58 PM: ​
+12:03:58 PM: ❯ Context
+12:03:58 PM:   production
+12:03:58 PM: ​
+12:03:58 PM:   1. Build command from Netlify app                             
+12:03:58 PM: ────────────────────────────────────────────────────────────────
+12:03:58 PM: ​
+12:03:58 PM: $ gatsby build
+12:04:00 PM: success compile gatsby files - 0.989s
+12:04:00 PM: success load gatsby config - 0.038s
+12:04:00 PM: success load plugins - 0.508s
+12:04:00 PM: warning gatsby-plugin-react-helmet: Gatsby now has built-in support for modifying the document head. Learn more at https://gatsby.dev/gatsby-head
+12:04:00 PM: success onPreInit - 0.004s
+12:04:01 PM: success initialize cache - 0.053s
+12:04:01 PM: success copy gatsby files - 0.089s
+12:04:01 PM: success Compiling Gatsby Functions - 0.147s
+12:04:01 PM: success onPreBootstrap - 0.157s
+12:04:01 PM: success createSchemaCustomization - 0.078s
+12:04:01 PM: info Starting to fetch data from Strapi - https://admin.intercambiostransorganicos.org/articulos with params {"_limit":1000}
+12:04:01 PM: info Starting to fetch data from Strapi - https://admin.intercambiostransorganicos.org/members with params {"_limit":1000}
+12:04:01 PM: info Starting to fetch data from Strapi - https://admin.intercambiostransorganicos.org/proyectos with params {"_limit":1000}
+12:04:01 PM: info Starting to fetch data from Strapi - https://admin.intercambiostransorganicos.org/actividades with params {"_limit":1000}
+12:04:01 PM: info Starting to fetch data from Strapi - https://admin.intercambiostransorganicos.org/infos with params {"_limit":1000}
+12:04:01 PM: info Starting to fetch data from Strapi - https://admin.intercambiostransorganicos.org/documents with params {"_limit":1000}
+12:04:15 PM: success Fetched Strapi Data - 13.666s
+12:04:15 PM: success Checking for changed pages - 0.000s
+12:04:15 PM: success source and transform nodes - 13.910s
+12:04:15 PM: info Writing GraphQL type definitions to /opt/build/repo/.cache/schema.gql
+12:04:15 PM: success building schema - 0.493s
+12:04:18 PM: success createPages - 2.337s
+12:04:21 PM: success createPagesStatefully - 2.705s
+12:04:21 PM: info Total nodes: 289, SitePage nodes: 23 (use --verbose for breakdown)
+12:04:21 PM: success Checking for changed pages - 0.000s
+12:04:21 PM: success onPreExtractQueries - 0.000s
+12:04:24 PM: warning "TRACED_SVG" placeholder argument value is no longer supported (used in gatsbyImageData processing), falling back to "DOMINANT_COLOR". See https://gatsby.dev/tracesvg-removal/
+12:04:25 PM: success extract queries from components - 4.054s
+12:04:25 PM: success write out redirect data - 0.001s
+12:04:25 PM: warning The icon(src/images/icono_it.png) you provided to 'gatsby-plugin-manifest' is not square.
+12:04:25 PM: The icons we generate will be square and for the best results we recommend you provide a square icon.
+12:04:25 PM: success Build manifest and related icons - 0.335s
+12:04:25 PM: success onPostBootstrap - 0.337s
+12:04:25 PM: info bootstrap finished - 27.334s
+12:04:25 PM: success write out requires - 0.003s
+12:04:47 PM: warning chunk styles [mini-css-extract-plugin]
+12:04:47 PM: Conflicting order. Following module has been added:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/menu.scss
+12:04:47 PM: despite it was not able to fulfill desired ordering with these modules:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/circlePath.scss
+12:04:47 PM:    - couldn't fulfill desired order of chunk group(s) component---src-pages-nosotres-js   - while fulfilling desired order of chunk group(s) component---src-pages-actividades-02-js, component---src-pages-actividades-js, component---src-pages-proyectos-02-js, component---src-pages-proyectos-js, component---src-pages-publicaciones-02-js, component---src-pages-publicaciones-js
+12:04:47 PM: warning chunk styles [mini-css-extract-plugin]
+12:04:47 PM: Conflicting order. Following module has been added:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/header.scss
+12:04:47 PM: despite it was not able to fulfill desired ordering with these modules:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/circlePath.scss
+12:04:47 PM:    - couldn't fulfill desired order of chunk group(s) component---src-pages-nosotres-js   - while fulfilling desired order of chunk group(s) component---src-pages-actividades-02-js, component---src-pages-actividades-js, component---src-pages-proyectos-02-js, component---src-pages-proyectos-js, component---src-pages-publicaciones-02-js, component---src-pages-publicaciones-js
+12:04:47 PM: warning chunk styles [mini-css-extract-plugin]
+12:04:47 PM: Conflicting order. Following module has been added:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/MailFormStyle.scss
+12:04:47 PM: despite it was not able to fulfill desired ordering with these modules:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/circlePath.scss
+12:04:47 PM:    - couldn't fulfill desired order of chunk group(s) component---src-pages-nosotres-js   - while fulfilling desired order of chunk group(s) component---src-pages-actividades-02-js, component---src-pages-actividades-js, component---src-pages-proyectos-02-js, component---src-pages-proyectos-js, component---src-pages-publicaciones-02-js, component---src-pages-publicaciones-js
+12:04:47 PM: warning chunk styles [mini-css-extract-plugin]
+12:04:47 PM: Conflicting order. Following module has been added:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/MailFormStyle.scss (1)
+12:04:47 PM: despite it was not able to fulfill desired ordering with these modules:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/circlePath.scss
+12:04:47 PM:    - couldn't fulfill desired order of chunk group(s) component---src-pages-nosotres-js   - while fulfilling desired order of chunk group(s) component---src-pages-actividades-02-js, component---src-pages-actividades-js, component---src-pages-proyectos-02-js, component---src-pages-proyectos-js, component---src-pages-publicaciones-02-js, component---src-pages-publicaciones-js
+12:04:47 PM: warning chunk styles [mini-css-extract-plugin]
+12:04:47 PM: Conflicting order. Following module has been added:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/footerV2Style.scss
+12:04:47 PM: despite it was not able to fulfill desired ordering with these modules:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/circlePath.scss
+12:04:47 PM:    - couldn't fulfill desired order of chunk group(s) component---src-pages-nosotres-js   - while fulfilling desired order of chunk group(s) component---src-pages-actividades-02-js, component---src-pages-actividades-js, component---src-pages-proyectos-02-js, component---src-pages-proyectos-js, component---src-pages-publicaciones-02-js, component---src-pages-publicaciones-js
+12:04:47 PM: warning chunk styles [mini-css-extract-plugin]
+12:04:47 PM: Conflicting order. Following module has been added:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/footerV2Style.scss (1)
+12:04:47 PM: despite it was not able to fulfill desired ordering with these modules:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/circlePath.scss
+12:04:47 PM:    - couldn't fulfill desired order of chunk group(s) component---src-pages-nosotres-js   - while fulfilling desired order of chunk group(s) component---src-pages-actividades-02-js, component---src-pages-actividades-js, component---src-pages-proyectos-02-js, component---src-pages-proyectos-js, component---src-pages-publicaciones-02-js, component---src-pages-publicaciones-js
+12:04:47 PM: warning chunk styles [mini-css-extract-plugin]
+12:04:47 PM: Conflicting order. Following module has been added:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/footerV2Style.scss (2)
+12:04:47 PM: despite it was not able to fulfill desired ordering with these modules:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/circlePath.scss
+12:04:47 PM:    - couldn't fulfill desired order of chunk group(s) component---src-pages-nosotres-js   - while fulfilling desired order of chunk group(s) component---src-pages-actividades-02-js, component---src-pages-actividades-js, component---src-pages-proyectos-02-js, component---src-pages-proyectos-js, component---src-pages-publicaciones-02-js, component---src-pages-publicaciones-js
+12:04:47 PM: warning chunk styles [mini-css-extract-plugin]
+12:04:47 PM: Conflicting order. Following module has been added:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/footerV2Style.scss (3)
+12:04:47 PM: despite it was not able to fulfill desired ordering with these modules:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/circlePath.scss
+12:04:47 PM:    - couldn't fulfill desired order of chunk group(s) component---src-pages-nosotres-js   - while fulfilling desired order of chunk group(s) component---src-pages-actividades-02-js, component---src-pages-actividades-js, component---src-pages-proyectos-02-js, component---src-pages-proyectos-js, component---src-pages-publicaciones-02-js, component---src-pages-publicaciones-js
+12:04:47 PM: warning chunk styles [mini-css-extract-plugin]
+12:04:47 PM: Conflicting order. Following module has been added:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/layout.scss
+12:04:47 PM: despite it was not able to fulfill desired ordering with these modules:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/circlePath.scss
+12:04:47 PM:    - couldn't fulfill desired order of chunk group(s) component---src-pages-nosotres-js   - while fulfilling desired order of chunk group(s) component---src-pages-actividades-02-js, component---src-pages-actividades-js, component---src-pages-proyectos-02-js, component---src-pages-proyectos-js, component---src-pages-publicaciones-02-js, component---src-pages-publicaciones-js
+12:04:47 PM: warning chunk styles [mini-css-extract-plugin]
+12:04:47 PM: Conflicting order. Following module has been added:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/circlePath.scss
+12:04:47 PM: despite it was not able to fulfill desired ordering with these modules:
+12:04:47 PM:  * css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[12].oneOf[1].use[3]!./src/components/childbox.scss
+12:04:47 PM:    - couldn't fulfill desired order of chunk group(s) component---src-pages-publicaciones-js   - while fulfilling desired order of chunk group(s) component---src-pages-proyectos-02-js
+12:04:47 PM: success Building production JavaScript and CSS bundles - 21.836s
+12:05:00 PM: success Building HTML renderer - 13.637s
+12:05:00 PM: success Execute page configs - 0.041s
+12:05:00 PM: success Caching Webpack compilations - 0.000s
+12:05:00 PM: warning You can't use childImageSharp together with archivoz2_1200_68a0feeda4.gif — use publicURL instead. The childImageSharp portion of the query in this file will return null:undefined
+12:05:00 PM: warning You can't use childImageSharp together with c3d_1200_0d219d6aa3.gif — use publicURL instead. The childImageSharp portion of the query in this file will return null:undefined
+12:05:00 PM: warning You can't use childImageSharp together with eterofono_1200_d1121ad8c7.gif — use publicURL instead. The childImageSharp portion of the query in this file will return null:undefined
+12:05:00 PM: warning You can't use childImageSharp together with ingenio_1200_c40a295162.gif — use publicURL instead. The childImageSharp portion of the query in this file will return null:undefined
+12:05:00 PM: warning You can't use childImageSharp together with FONOCO_5468612566.gif — use publicURL instead. The childImageSharp portion of the query in this file will return null:undefined
+12:05:01 PM: warning You can't use childImageSharp together with archivoz2_1200_68a0feeda4.gif — use publicURL instead. The childImageSharp portion of the query in this file will return null:/opt/build/repo/src/pages/index.js
+12:05:01 PM: warning You can't use childImageSharp together with c3d_1200_0d219d6aa3.gif — use publicURL instead. The childImageSharp portion of the query in this file will return null:/opt/build/repo/src/pages/index.js
+12:05:01 PM: warning You can't use childImageSharp together with eterofono_1200_d1121ad8c7.gif — use publicURL instead. The childImageSharp portion of the query in this file will return null:/opt/build/repo/src/pages/index.js
+12:05:01 PM: warning You can't use childImageSharp together with ingenio_1200_c40a295162.gif — use publicURL instead. The childImageSharp portion of the query in this file will return null:/opt/build/repo/src/pages/index.js
+12:05:01 PM: warning You can't use childImageSharp together with FONOCO_5468612566.gif — use publicURL instead. The childImageSharp portion of the query in this file will return null:/opt/build/repo/src/pages/index.js
+12:05:02 PM: success run queries in workers - 2.054s - 27/27 13.14/s
+12:05:22 PM: success Running gatsby-plugin-sharp.IMAGE_PROCESSING jobs - 66.650s - 326/326 4.89/s
+12:05:22 PM: success Merge worker state - 0.003s
+12:05:22 PM: success Rewriting compilation hashes - 0.000s
+12:05:22 PM: success Writing page-data.json files to public directory - 0.012s - 23/23 1971.87/s
+12:05:29 PM: [ { localFile: { childImageSharp: [Object] } } ]
+12:05:29 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:29 PM: false
+12:05:29 PM: [
+12:05:29 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:29 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:29 PM:   { localFile: { childImageSharp: [Object] } }
+12:05:29 PM: ]
+12:05:29 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:29 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:29 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:29 PM: false
+12:05:29 PM: {
+12:05:29 PM:   titulo: 'Eterofono - Manual de uso',
+12:05:29 PM:   descripcion: 'Manual de uso',
+12:05:29 PM:   categoria: 'proyecto',
+12:05:29 PM:   documento: [ { localFile: [Object] } ]
+12:05:29 PM: }
+12:05:29 PM: {
+12:05:29 PM:   titulo: 'Eterofono-Apendice técnico',
+12:05:29 PM:   descripcion: 'Apendice técnico',
+12:05:29 PM:   categoria: 'proyecto',
+12:05:29 PM:   documento: [ { localFile: [Object] } ]
+12:05:29 PM: }
+12:05:29 PM: {
+12:05:29 PM:   titulo: 'Juego De Ingenio - Manual de uso',
+12:05:29 PM:   descripcion: 'Manual de uso',
+12:05:29 PM:   categoria: 'proyecto',
+12:05:29 PM:   documento: [ { localFile: [Object] } ]
+12:05:29 PM: }
+12:05:29 PM: {
+12:05:29 PM:   titulo: 'Transdisciplina en IT',
+12:05:29 PM:   descripcion: 'Transdisciplina en IT',
+12:05:29 PM:   categoria: 'ensayo',
+12:05:29 PM:   documento: [ { localFile: [Object] } ]
+12:05:29 PM: }
+12:05:29 PM: {
+12:05:29 PM:   titulo: 'La funcion del arte en un modelo de neurorehabilitacion transdisciplinario',
+12:05:29 PM:   descripcion: 'La funcion del arte en un modelo de neurorehabilitacion transdisciplinario',
+12:05:29 PM:   categoria: 'ensayo',
+12:05:29 PM:   documento: [ { localFile: [Object] } ]
+12:05:29 PM: }
+12:05:29 PM: {
+12:05:29 PM:   titulo: 'La función de la mirada y los modos de observar ',
+12:05:29 PM:   descripcion: 'La propuesta de este escrito es exponer, sintetizar y puntualizar ciertos aspectos de la\n' +
+12:05:29 PM:     'observación desde la perspectiva de la Psicomotricidad,',
+12:05:29 PM:   categoria: 'colaboracion',
+12:05:29 PM:   documento: [ { localFile: [Object] } ]
+12:05:29 PM: }
+12:05:29 PM: false
+12:05:29 PM: false
+12:05:29 PM: [
+12:05:29 PM:   {
+12:05:29 PM:     node: {
+12:05:29 PM:       id: 'Articulos_4',
+12:05:29 PM:       Autor: 'Gala Lucía Gonzalez Barrios',
+12:05:29 PM:       Titulo: 'Transdisciplina en Intercambios Transorgánicos',
+12:05:29 PM:       Subtitulo: 'Transdisciplina en Intercambios Transorgánicos',
+12:05:29 PM:       Contenido: 'Muchas veces nos preguntamos cómo simplificar las descripciones de los saltos paradigmáticos en torno a los enfoques disciplinares en el desarrollo de conocimiento. Solemos ver confusiones en relación a las diferencias entre inter y transdisciplina. \n' +
+12:05:29 PM:         'Para que sea sencillo de ordenar y de transmitir, Gala, nuestra directora, usa la técnica del “anillo de las disciplinas”. Este es un pequeño documento dedicado a mostrar esta sencilla forma de presentar las diferencias entre Uni, Inter y Transdisciplina. \n' +
+12:05:29 PM:         '\n' +
+12:05:29 PM:         '"La atención en la acción transdisciplinaria \n' +
+12:05:29 PM:         'está tanto más ubicada sobre acoples \n' +
+12:05:29 PM:         'que produzcan nuevos resultados, \n' +
+12:05:29 PM:         'que a la desintegración de las herramientas, \n' +
+12:05:29 PM:         'ideas y técnicas propias de cada disciplina.” \n'
+12:05:29 PM:     }
+12:05:29 PM:   },
+12:05:29 PM:   {
+12:05:29 PM:     node: {
+12:05:29 PM:       id: 'Articulos_6',
+12:05:29 PM:       Autor: 'Camila Godoy',
+12:05:29 PM:       Titulo: 'La función de la mirada y los modos de observar ',
+12:05:29 PM:       Subtitulo: 'Abordar la salud desde el arte y las nuevas tecnologías.',
+12:05:29 PM:       Contenido: ' Intercambios transorgánicos. La función de la mirada y los modos de observar en un equipo transdisciplinario que aborda la salud desde el arte y las nuevas tecnologías. Un\n' +
+12:05:29 PM:         'aporte desde la psicomotricidad como disciplina que estudia el cuerpo en movimiento.\n'
+12:05:29 PM:     }
+12:05:29 PM:   },
+12:05:29 PM:   {
+12:05:29 PM:     node: {
+12:05:29 PM:       id: 'Articulos_7',
+12:05:29 PM:       Autor: 'Interfaces',
+12:05:29 PM:       Titulo: 'Interfaces',
+12:05:29 PM:       Subtitulo: 'Interfaces',
+12:05:29 PM:       Contenido: 'Interfaces'
+12:05:29 PM:     }
+12:05:29 PM:   },
+12:05:29 PM:   {
+12:05:29 PM:     node: {
+12:05:29 PM:       id: 'Articulos_8',
+12:05:29 PM:       Autor: 'Gala Lucia Gonzalez Barrios',
+12:05:29 PM:       Titulo: ' Estudios Posthumanistas',
+12:05:29 PM:       Subtitulo: 'Tecnologías del Control, Bioarte, performance y arte de nuevos medios',
+12:05:29 PM:       Contenido: 'La  Organización  Mundial  de  la  Salud  sostiene  que  "​ la  salud  es  un  estado  de  completo ". bienestar  físico,  mental  y  social,  y  no  solamente  la  ausencia  de  afecciones  o enfermedades​ Esta  definición  no  ha  sido  modificada  desde  el  año  1948.   La  misma  organización  afirma  que  la  “​ discapacidad  es  un  término  general  que  abarca  las deficiencias,  las  limitaciones  de  la  actividad  y  las  restricciones  de  la  participación.  Las deficiencias  son  problemas  que  afectan  a  una  estructura  o  función  corporal;  las  limitaciones de  la  actividad  son  dificultades  para  ejecutar  acciones  o  tareas,  y  las  restricciones  de  la participación  son  problemas  para  participar  en  situaciones  vitales. ”.   Por  consiguiente,  la  discapacidad  es  un  fenómeno  complejo  que  refleja  una  interacción entre  las  características  del  organismo  humano  y  las  características  de  la  sociedad  en  la que  vive​'
+12:05:29 PM:     }
+12:05:29 PM:   },
+12:05:29 PM:   {
+12:05:29 PM:     node: {
+12:05:29 PM:       id: 'Articulos_9',
+12:05:29 PM:       Autor: 'Gala Lucía Gonzalez Barrios',
+12:05:29 PM:       Titulo: 'Estrategias de reinvención tecnológica ',
+12:05:29 PM:       Subtitulo: 'Estrategias de reinvención tecnológica ',
+12:05:29 PM:       Contenido: 'Desde Intercambios Transorgánicos pensamos a la reinvención tecnológica frente al poder\n' +
+12:05:29 PM:         'cibernético e informacional como un terreno de vanguardia en la resistencia frente al discurso\n' +
+12:05:29 PM:         '\n' +
+12:05:29 PM:         'unívoco de las corporaciones que desarrollan juegos, video-juegos, entretenimiento y merchan-\n' +
+12:05:29 PM:         'dising en general, etc.\n' +
+12:05:29 PM:         '\n' +
+12:05:29 PM:         'En el ámbito de la salud mental, la puja por utilizar y adoptar las invenciones tecnológicas sin\n' +
+12:05:29 PM:         'repetir los patrones de alienación preexistentes se coloca en el foco de atención. Es un ejercicio\n' +
+12:05:29 PM:         'necesario a la hora de pensar un abordaje artístico en salud, particularmente con psicopatologías\n' +
+12:05:29 PM:         'de la niñez.\n' +
+12:05:29 PM:         'La niñez y la adolescencia de las nuevas generaciones locales están marcadas por la cibernética\n' +
+12:05:29 PM:         'en el contexto del neocolonialismo. En el terreno de las psicopatologías abordadas en el ámbito\n' +
+12:05:29 PM:         'clínico, esta realidad entra en juego y se vuelve necesario integrar al abordaje terapéutico una\n' +
+12:05:29 PM:         '\n' +
+12:05:29 PM:         'estrategia que contemple el rol de las nuevas tecnologías en el desarrollo identitario de los pa-\n' +
+12:05:29 PM:         'cientes.\n'
+12:05:29 PM:     }
+12:05:29 PM:   },
+12:05:29 PM:   {
+12:05:29 PM:     node: {
+12:05:29 PM:       id: 'Articulos_10',
+12:05:29 PM:       Autor: 'Audiostellar IT',
+12:05:29 PM:       Titulo: 'Audiostellar IT',
+12:05:29 PM:       Subtitulo: 'Audiostellar IT',
+12:05:29 PM:       Contenido: 'Audiostellar IT'
+12:05:29 PM:     }
+12:05:29 PM:   }
+12:05:29 PM: ]
+12:05:29 PM: ⠀
+12:05:29 PM: warning [gatsby-plugin-image] Missing image prop
+12:05:29 PM: ⠀
+12:05:29 PM: warning [gatsby-plugin-image] Missing image prop
+12:05:29 PM: ⠀
+12:05:29 PM: warning [gatsby-plugin-image] Missing image prop
+12:05:29 PM: ⠀
+12:05:29 PM: warning [gatsby-plugin-image] Missing image prop
+12:05:29 PM: ⠀
+12:05:29 PM: warning [gatsby-plugin-image] Missing image prop
+12:05:29 PM: ⠀
+12:05:29 PM: warning [gatsby-plugin-image] Missing image prop
+12:05:29 PM: false
+12:05:29 PM: {
+12:05:29 PM:   childImageSharp: {
+12:05:29 PM:     gatsbyImageData: {
+12:05:29 PM:       layout: 'constrained',
+12:05:29 PM:       backgroundColor: '#886898',
+12:05:29 PM:       images: [Object],
+12:05:29 PM:       width: 400,
+12:05:29 PM:       height: 400
+12:05:29 PM:     }
+12:05:29 PM:   }
+12:05:29 PM: }
+12:05:29 PM: {
+12:05:29 PM:   childImageSharp: {
+12:05:29 PM:     gatsbyImageData: {
+12:05:29 PM:       layout: 'constrained',
+12:05:29 PM:       backgroundColor: '#284848',
+12:05:29 PM:       images: [Object],
+12:05:29 PM:       width: 400,
+12:05:29 PM:       height: 400
+12:05:29 PM:     }
+12:05:29 PM:   }
+12:05:29 PM: }
+12:05:29 PM: {
+12:05:29 PM:   childImageSharp: {
+12:05:29 PM:     gatsbyImageData: {
+12:05:29 PM:       layout: 'constrained',
+12:05:29 PM:       backgroundColor: '#f8f8f8',
+12:05:29 PM:       images: [Object],
+12:05:29 PM:       width: 400,
+12:05:29 PM:       height: 400
+12:05:29 PM:     }
+12:05:29 PM:   }
+12:05:29 PM: }
+12:05:29 PM: {
+12:05:29 PM:   childImageSharp: {
+12:05:29 PM:     gatsbyImageData: {
+12:05:29 PM:       layout: 'constrained',
+12:05:29 PM:       backgroundColor: '#080818',
+12:05:29 PM:       images: [Object],
+12:05:29 PM:       width: 400,
+12:05:29 PM:       height: 400
+12:05:29 PM:     }
+12:05:29 PM:   }
+12:05:29 PM: }
+12:05:29 PM: {
+12:05:29 PM:   childImageSharp: {
+12:05:29 PM:     gatsbyImageData: {
+12:05:29 PM:       layout: 'constrained',
+12:05:29 PM:       backgroundColor: '#f8f8f8',
+12:05:29 PM:       images: [Object],
+12:05:29 PM:       width: 400,
+12:05:29 PM:       height: 400
+12:05:29 PM:     }
+12:05:29 PM:   }
+12:05:29 PM: }
+12:05:29 PM: false
+12:05:29 PM: [
+12:05:29 PM:   {
+12:05:29 PM:     node: {
+12:05:29 PM:       id: 'Proyectos_1',
+12:05:29 PM:       titulo: 'Archivoz',
+12:05:29 PM:       subtitulo: ' Archivo virtual de voces diversas',
+12:05:29 PM:       strapiId: 1,
+12:05:29 PM:       contenido: 'Archivoz es un archivo virtual de voces diversas y locales modeladas con inteligencia artificial, cuyo formato es una aplicación “text to speech”. Es un experimento que se diseñó en el marco del proyecto Fonocosa, a raíz de la comprensión de que, antes de proponer soluciones técnicas, es necesario revisar profundamente la problemática que se intenta abordar.\n',
+12:05:29 PM:       imagenes: [Array]
+12:05:29 PM:     }
+12:05:29 PM:   },
+12:05:29 PM:   {
+12:05:29 PM:     node: {
+12:05:29 PM:       id: 'Proyectos_3',
+12:05:29 PM:       titulo: '',
+12:05:29 PM:       subtitulo: 'Controlador inalámbrico + imagen y sonido espacializado',
+12:05:29 PM:       strapiId: 3,
+12:05:29 PM:       contenido: 'El controlador 3D es una interfaz desarrollada en su totalidad por el equipo de investigación Intercambios Transorgánicos. El C3D funciona como una herramienta de asistencia terapéutica en tratamientos de pacientes con diagnósticos que abarcan desde neuropatologías con secuelas motoras hasta patologías genéticas. Asociado a otros dispositivos permite proyectar imágenes en cualquier superficie y generar sonidos a partir de movimientos realizados por el usuario/paciente.\n' +
+12:05:29 PM:         '\n' +
+12:05:29 PM:         'Esto permite construir la interfaz interactiva C3D que integra un enfoque lúdico creativo con la medición cuantitativa en tiempo real de múltiples variables a través de un software asociado. Al propiciar el diálogo entre la expresión artística y la salud introduce dos factores centrales en la sustentabilidad de todo tratamiento: motivación y retroalimentación.\n',
+12:05:29 PM:       imagenes: [Array]
+12:05:29 PM:     }
+12:05:29 PM:   },
+12:05:29 PM:   {
+12:05:29 PM:     node: {
+12:05:29 PM:       id: 'Proyectos_4',
+12:05:29 PM:       titulo: 'ETERÓFONO',
+12:05:29 PM:       subtitulo: '  Instrumento de ondas heterodinas',
+12:05:29 PM:       strapiId: 4,
+12:05:29 PM:       contenido: 'El eterófono es un instrumento musical que se ejecuta sin tener contacto físico con el mismo. La ejecución consiste en acercar y alejar la mano a una antena y el sonido varía en ese espacio de aire por el que se mueve la mano sin llegar a tocar la antena y hasta alcanzar una distancia que supere su alcance. \n' +
+12:05:29 PM:         'Es el primer instrumento de este tipo y fue creado en 1919 por Léon Theremin, de hecho se conoce comúnmente como “Theremin”. \n' +
+12:05:29 PM:         'La versión original del instrumento tiene dos antenas, una para controlar la frecuencia y otra para el control de la amplitud. En el marco del Intercambios Transorgánicos desarrollamos una versión simplificada del dispositivo llamada Minimum Theremin, con el que se puede controlar la frecuencia con una antena de radio y la amplitud con un potenciómetro. \n' +
+12:05:29 PM:         'Este instrumento es utilizado en el campo de la composición e interpretación sonora y musical. Desde este programa de investigación fue pensado para ser usado por profesionales de la salud y, en particular, en el área de Terapia Ocupacional en el marco de tratamientos de rehabilitación física y neurorrehabilitación, ya que permitiría armar estratégias clínicas en las que se incluya el desarrollo del potencial creativo de los pacientes al cumplimiento de objetivos clínicos. Nos interesa facilitar dispositivos que permitan incorporar una dimensión creativa y de aumento de la motivación a las tareas de rehabilitación.\n',
+12:05:29 PM:       imagenes: [Array]
+12:05:29 PM:     }
+12:05:29 PM:   },
+12:05:29 PM:   {
+12:05:29 PM:     node: {
+12:05:29 PM:       id: 'Proyectos_5',
+12:05:29 PM:       titulo: 'Desafío espacial, un puzzle electrónico adaptable a diferentes edades',
+12:05:29 PM:       subtitulo: '',
+12:05:29 PM:       strapiId: 5,
+12:05:29 PM:       contenido: 'El dispositivo es juego de lógica y operaciones, apodado “Desafío Espacial”. Fue creado por alumnos de la Universidad de Tres de Febrero, de la Licenciatura en Artes Electrónicas. Utilizando principios básicos de electrónica propusimos tres problemas de dificultad creciente. Para resolverlos, se requiere una combinación específica de los interruptores. El modo en que se resuelve cada nivel y la dificultad global se pueden adaptar a diversos escenarios, y para eso utilizamos láminas temáticas intercambiables.  Pudiendo abarcar diferentes grupos etáreos y de interés.\n' +
+12:05:29 PM:         '\n' +
+12:05:29 PM:         'El dispositivo fue propuesto como herramienta para el área de estimulación cognitiva en el marco de tratamientos de neurorrehabilitación. \n' +
+12:05:29 PM:         '\n' +
+12:05:29 PM:         'Allí los profesionales podrían usarlo para actualizar las herramientas de trabajo y aumentar la motivación de sus pacientes. Este juego permite trabajar distintos objetivos del área de forma integral y permite armar estrategias para ser resuelto de forma gradual. Las y los profesionales de la psicología cognitiva que lo utilizaron con sus pacientes reportaron muy buenos resultados en torno a la motivación de los pacientes, un aumento notorio en su interés por resolver problemas matemáticos y mayor rendimiento cognitivo respecto de ejercicios que se toman usando fotocopias. \n' +
+12:05:29 PM:         '\n' +
+12:05:29 PM:         'Descripción del juego\n' +
+12:05:29 PM:         '\n' +
+12:05:29 PM:         'El juego Desafío Espacial se compone de tres etapas de dificultad creciente, cuya resolución requiere una combinación específica de las llaves (conmutadores) para cada nivel. La lógica de resolución de los desafíos es diferente para cada lámina de juego. A continuación se presentan las plantillas (láminas) existentes a la fecha:\n',
+12:05:29 PM:       imagenes: [Array]
+12:05:29 PM:     }
+12:05:29 PM:   },
+12:05:29 PM:   {
+12:05:29 PM:     node: {
+12:05:29 PM:       id: 'Proyectos_6',
+12:05:29 PM:       titulo: 'FONOCOSA',
+12:05:29 PM:       subtitulo: 'Interfaz de asistencia para el habla de personas laringectomizadas ',
+12:05:29 PM:       strapiId: 6,
+12:05:29 PM:       contenido: 'El proyecto “fonocosa” comenzó con la intención de aportar propuestas técnicas alternativas al laringófono. Nuestros dos objetivos son: mejorar la sonoridad de esa nueva voz, dándole un rango de características diversas y eliminar el uso de la mano de la actividad de fonar, a través del desarrollo de un dispositivo protésico.\n' +
+12:05:29 PM:         '\n' +
+12:05:29 PM:         'Existen un conjunto de limitaciones tecnológicas que nos han movido a un punto anterior al del dispositivo: La voz, como rasgo identitario y las transformaciones que puede vivir a lo largo de la vida . \n',
+12:05:29 PM:       imagenes: [Array]
+12:05:29 PM:     }
+12:05:29 PM:   }
+12:05:29 PM: ]
+12:05:29 PM: Proyectos_1
+12:05:29 PM: Proyectos_3
+12:05:29 PM: Proyectos_4
+12:05:29 PM: Proyectos_5
+12:05:29 PM: Proyectos_6
+12:05:29 PM: false
+12:05:29 PM: false
+12:05:30 PM: false
+12:05:30 PM: [
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_11',
+12:05:30 PM:       titulo: 'El espectro de la voz',
+12:05:40 PM: Starting post processing
+12:05:30 PM:       fecha: 'Oct-21-2021',
+12:05:30 PM:       lugar: 'Tecnópolis',
+12:05:30 PM:       descripcion: '“El Espectro de la Voz” es una instalación interactiva que surge de la fusión de las búsquedas de dos equipos de investigación de la UNTREF: AudioStellar e Intercambios Transorgánicos. Recolectamos las voces del público de Tecnópolis porque nos interesa la voz como material sonoro, como materia prima y como problema. Nuestro foco está en los rasgos identitarios que aparecen en nuestras voces: nuestra voz enojada no es igual a nuestra voz desinteresada, preocupada, entusiasmada o relajada, y a la vez, la voz de cada persona tiene características complejas y variables.\n',
+12:05:40 PM: Post processing - HTML
+12:05:30 PM:       link: null,
+12:05:30 PM:       oembed: null,
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   },
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_17',
+12:05:30 PM:       titulo: ' Retomamos las actividades presenciales en nuestro nuevo laboratorio y con nuevo equipo ',
+12:05:40 PM: Post processing - header rules
+12:05:30 PM:       fecha: 'May-13-2021',
+12:05:30 PM:       lugar: 'Tecnopolis',
+12:05:30 PM:       descripcion: ' Luego de años de pandemia y virtualidad, pudimos retomar las actividades presenciales en nuestro nuevo laboratorio y con nuevo equipo de alumnxs de investigación. \n' +
+12:05:41 PM: Post processing - redirect rules
+12:05:30 PM:         ' \n',
+12:05:30 PM:       link: null,
+12:05:30 PM:       oembed: null,
+12:05:41 PM: Post processing done
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   },
+12:05:41 PM: Section completed: postprocessing
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_13',
+12:05:30 PM:       titulo: 'Cuerpos, máquinas, datos, cosas',
+12:05:30 PM:       fecha: 'May-19-2020',
+12:05:30 PM:       lugar: 'Online',
+12:05:30 PM:       descripcion: 'Realizamos un conversatorio online moderado por IT y Dario Sandrone, en el cual participaron estudiantes de la Lic. en Artes Electronicas y Psicomotricidad, entre otrxs estudiantes de todo el país. Conversamos sobre las relaciones entre los cuerpos, los objetos y las tecnologías. Fue un éxito, en youtube pueden encontrar el stream completo!\n',
+12:05:30 PM:       link: 'https://youtu.be/ZqJQ45h5iRU',
+12:05:30 PM:       oembed: '{"url":"https://youtu.be/ZqJQ45h5iRU","title":"Cuerpos, Datos Maquinas, Cosas. Intercambios Transorganicos, Dario Sandrone","thumbnail":"https://i.ytimg.com/vi/ZqJQ45h5iRU/hqdefault.jpg","mime":"video/youtube","rawData":{"title":"Cuerpos, Datos Maquinas, Cosas. Intercambios Transorganicos, Dario Sandrone","author_name":"Intercambios Transorgánicos","author_url":"https://www.youtube.com/channel/UC2ifoKIRdmPADvml5T212gA","type":"video","height":113,"width":200,"version":"1.0","provider_name":"YouTube","provider_url":"https://www.youtube.com/","thumbnail_height":360,"thumbnail_width":480,"thumbnail_url":"https://i.ytimg.com/vi/ZqJQ45h5iRU/hqdefault.jpg","html":"<iframe width=\\"200\\" height=\\"113\\" src=\\"https://www.youtube.com/embed/ZqJQ45h5iRU?feature=oembed\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\\" allowfullscreen title=\\"Cuerpos, Datos Maquinas, Cosas. Intercambios Transorganicos, Dario Sandrone\\"></iframe>"}}',
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   },
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_9',
+12:05:30 PM:       titulo: 'La directora de IT se presentó en la facultad de Filosofía de la Universidad Complutense de Madrid. Representando a nuestro país y al MUNTREF, Gala González Barrios realizó una ponencia de nuestro proyecto en el marco del encuentro Estudios Posthumanistas y Tecnologías del Control, Desde Nietzsche al Trans- Post- y Metahumanismo.',
+12:05:30 PM:       fecha: 'May-29-2017',
+12:05:30 PM:       lugar: 'Fundación Argentina de Nanotecnología',
+12:05:30 PM:       descripcion: 'El 16 de mayo estuvimos en el campus de la Universidad de San Martín conociendo los laboratorios y equipos de la FAN. Trabajamos en la planificación de sinergias entre la institución y nuestro proyecto.',
+12:05:30 PM:       link: null,
+12:05:30 PM:       oembed: null,
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   },
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_10',
+12:05:30 PM:       titulo: 'Ronda de Innovación y Tecnología',
+12:05:30 PM:       fecha: 'Apr-24-2017',
+12:05:30 PM:       lugar: 'Buenos Aires',
+12:05:30 PM:       descripcion: 'El día 24 nos estuvimos vinculando en mesas de intercambio con diversas instituciones y empresas en un encuentro organizado por los Ministerios de Ciencia, Tecnología e Innovación de Nacion y Provincia de Buenos Aires, la Municipalidad y la Unión Industrial de Tres de Febrero. \n',
+12:05:30 PM:       link: null,
+12:05:30 PM:       oembed: null,
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:42 PM: Site is live ✨
+12:05:30 PM:   },
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_6',
+12:05:30 PM:       titulo: 'Foro Internacional Metabody en Buenos Aires y Montevideo',
+12:05:30 PM:       fecha: 'Oct-03-2016',
+12:05:30 PM:       lugar: ' Buenos Aires y Montevideo',
+12:05:30 PM:       descripcion: ' IT realizó una serie de trabajos colaborativos en laboratorio con el filósofo, artista e investigador español Jaime del Val, representante del proyecto Metabody. Los mismos formaron parte de las jornadas Metaterapias: cuerpos expandidos, espacios dinámicos y ecologías plurales y se tradujeron en conferencias, workshops y otras actividades abiertas al público en ambas orillas del Río de la Plata. Las mismas que contaron con el apoyo de Cooperación Española, Embajada de España, AECID y Untref.\n' +
+12:05:30 PM:         'Durante la realización del foro exploramos distintas aplicaciones de entornos interactivos y propuestas prácticas y teóricas de Metabody a contextos de aprendizaje de adolescentes con diversidad funcional, proponiendo utilizar el movimiento, el contacto físico y el entorno dinámico como lenguaje transversal e inclusivo.\n' +
+12:05:30 PM:         '\n' +
+12:05:30 PM:         'MUNTREF - BUENOS AIRES\n' +
+12:05:30 PM:         '08 Octubre:\n' +
+12:05:30 PM:         '09:00 a 12:00 hs Trabajo colaborativo en Laboratorio con IT\n' +
+12:05:30 PM:         '14:00 a 18 hs Workshop\n' +
+12:05:30 PM:         '09 Octubre:\n' +
+12:05:30 PM:         '09:00 a 12:00 hs Trabajo colaborativo en Laboratorio con IT\n' +
+12:05:30 PM:         '14:00 a 18 hs Workshop\n' +
+12:05:30 PM:         '10 Octubre:\n' +
+12:05:30 PM:         '09:00 a 12:00 hs Trabajo colaborativo en Laboratorio con IT\n' +
+12:05:30 PM:         '14:00 a 18 hs Workshop\n' +
+12:05:30 PM:         'CCE - MONTEVIDEO\n' +
+12:05:30 PM:         '11 Octubre:\n' +
+12:05:30 PM:         '15:30 a 17:00 hs Conferencia presentación investigaciones METABODY+IT\n' +
+12:05:30 PM:         '18:00 a 19:00 hs Performance METABODY+IT\n' +
+12:05:30 PM:         'CCE - BUENOS AIRES\n' +
+12:05:30 PM:         '13 Octubre:\n' +
+12:05:30 PM:         '15:30 a 17:00 hs Conferencia Y CIERRE FORMAL\n' +
+12:05:30 PM:         '18:00 a 19:00 hs Performance METABODY+IT\n' +
+12:05:30 PM:         ' \n' +
+12:05:30 PM:         '\n',
+12:05:30 PM:       link: null,
+12:05:30 PM:       oembed: null,
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   },
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_5',
+12:05:30 PM:       titulo: 'Taller día del niño',
+12:05:30 PM:       fecha: 'Jul-14-2016',
+12:05:30 PM:       lugar: 'TECNOPOLIS',
+12:05:30 PM:       descripcion: 'El día del niño y en el marco de la muestra del Muntref Arte y Ciencia abrimos las puertas de nuestro laboratorio a l@s más chic@s. Compartimos una charla introductoria sobre electrónica básica y diseñamos juntos varios accesorios wearables. ',
+12:05:30 PM:       link: 'https://www.youtube.com/watch?v=uoRhVZeDktc',
+12:05:30 PM:       oembed: null,
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   },
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_7',
+12:05:30 PM:       titulo: 'Muestra en Muntref Tecnópolis',
+12:05:30 PM:       fecha: 'Jul-13-2016',
+12:05:30 PM:       lugar: 'TECNOPOLIS',
+12:05:30 PM:       descripcion: 'El público conoció nuestros dispositivos, pudo ser parte de las actividades que llevamos a cabo en el laboratorio y dejaron su testimonio en la pizarra gigante de Intercambios.\n' +
+12:05:30 PM:         '\n' +
+12:05:30 PM:         'El Museo de la Universidad Nacional de Tres de Febrero – MUNTREF – reabre las puertas de su sede Arte y Ciencia y presenta “Intercambios Transorgánicos”, una muestra sobre interfaces y dispositivos electrónicos aplicados en el ámbito de la salud y la educación. Con entrada gratuita, permanecerá abierta hasta el 10 de octubre, en el predio de Tecnópolis ubicado en Parque Villa Martelli. Accesos por Gral. Paz, Zufriategui y Av. Constituyentes. La muestra expone los dispositivos creados por el grupo de investigación también llamado “Intercambios Transorgánicos” dedicado a desarrollar interfaces y dispositivos electrónicos junto con estrategias para la inclusión de nuevos medios y tecnologías en el ámbito de la salud y la educación. Quienes visiten el espacio podrán conocer y experimentar las actividades que se llevan a cabo puertas adentro del laboratorio, es decir todo aquello que se esconde detrás de los objetos finalizados, las interfaces digitales y cómo se piensa su uso. Durante las vacaciones de invierno la muestra podrá visitarse de lunes a domingo, de 12.00 a 20.00 horas y luego del receso escolar, los jueves y viernes de 10.00 a 18.00 y sábados, domingos y feriados de 12.00 a 20.00 horas. El proyecto de este equipo de investigación busca vincularse con instituciones de salud y educación de todo el país, para generar espacios de uso y prueba de los dispositivos que se desarrollan. El propósito es poner a disposición las creaciones e ideas desarrolladas para crear estrategias en conjunto con médicos, psicólogos, docentes, terapeutas de distintas especialidades, neurocientíficos, biólogos y otros, con distintos fines asociados a la mejora de la atención en salud, mejora en la calidad de vida de las personas y mejoras en los modelos educativos. Forman el equipo de Intercambios Transorgánicos Gala González, Martín Aranda, Nicolás Stavorengo, Juan Martín Sesali, Agustina Las Peñas y Leandro Escortell.\n' +
+12:05:30 PM:         '\n',
+12:05:30 PM:       link: 'https://www.youtube.com/watch?v=wIiX5inPCd4',
+12:05:30 PM:       oembed: null,
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   },
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_8',
+12:05:30 PM:       titulo: 'Presentación en Madrid',
+12:05:30 PM:       fecha: 'May-07-2016',
+12:05:30 PM:       lugar: 'Madrid, España',
+12:05:30 PM:       descripcion: 'La directora de IT se presentó en la facultad de Filosofía de la Universidad Complutense de Madrid. Representando a nuestro país y al MUNTREF, Gala González Barrios realizó una ponencia de nuestro proyecto en el marco del encuentro Estudios Posthumanistas y Tecnologías del Control, Desde Nietzsche al Trans- Post- y Metahumanismo.\n' +
+12:05:30 PM:         '\n',
+12:05:30 PM:       link: null,
+12:05:30 PM:       oembed: null,
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   },
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_12',
+12:05:30 PM:       titulo: 'Ciclo Delectro en Casa Tenemos Arte',
+12:05:30 PM:       fecha: 'Apr-20-2016',
+12:05:30 PM:       lugar: 'Buenos Aires',
+12:05:30 PM:       descripcion: ' IT llevó adelante una instalación en el Ciclo Delectro en Casa Tenemos Arte. Allí anticipamos el lanzamiento del controlador 3D con una performance abierta a la participación intuitiva del público .\n' +
+12:05:30 PM:         ' \n',
+12:05:30 PM:       link: null,
+12:05:30 PM:       oembed: null,
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   },
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_4',
+12:05:30 PM:       titulo: 'PRESENTACIÓN EN EL CCK',
+12:05:30 PM:       fecha: 'Dec-16-2015',
+12:05:30 PM:       lugar: 'CCK',
+12:05:30 PM:       descripcion: 'Participamos en el Centro Cultural Kirchner de una mesa redonda junto a otros artistas y científicos en el marco Ars Electrónica Ciclo Híbrido. Presentamos el marco teórico y conceptual que identifica nuestro proyecto.',
+12:05:30 PM:       link: 'https://youtu.be/I1c4pDZTaAI',
+12:05:30 PM:       oembed: null,
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   },
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_3',
+12:05:30 PM:       titulo: 'Presentación en Santiago de Chile',
+12:05:30 PM:       fecha: 'Dec-01-2015',
+12:05:30 PM:       lugar: 'Santiago de Chile',
+12:05:30 PM:       descripcion: 'Gala González Barrios expuso las bases de nuestro proyecto en el simposio ¿Descolonizando cuerpos? Cuerpo común y tecnologías plurales: Creación y crítica transcultural transdisciplinar en la era neocolonial, realizado en el Centro Cultural de España de la capital trasandina.\n',
+12:05:30 PM:       link: 'https://youtu.be/uOvvCekDXcE',
+12:05:30 PM:       oembed: null,
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   },
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_15',
+12:05:30 PM:       titulo: 'Encuentro con alumnos del IES Juan Ramón Fernández (Lenguas Vivas)',
+12:05:30 PM:       fecha: 'Nov-15-2015',
+12:05:30 PM:       lugar: 'MUNTREF Arte y Ciencia',
+12:05:30 PM:       descripcion: ' En MUNTREF Arte y Ciencia ofrecimos un recorrido interactivo con alumnos de sexto grado de la escuela Lenguas Vivas. Los visitantes participaron en diferentes grupos de investigación, entraron en contacto con nuestras interfaces y pusieron en juego su iniciativa y creatividad.\n',
+12:05:30 PM:       link: 'https://vimeo.com/164581080 ',
+12:05:30 PM:       oembed: null,
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   },
+12:05:30 PM:   {
+12:05:30 PM:     node: {
+12:05:30 PM:       id: 'Actividades_14',
+12:05:30 PM:       titulo: 'Conversatorio la voz del cuerpo2020',
+12:05:30 PM:       fecha: 'Oct-03-0202',
+12:05:30 PM:       lugar: 'OnLine',
+12:05:30 PM:       descripcion: 'Conversatorio en el cual nos preguntamos acerca de las posibles relaciones entre las voces, las identidades y las tecnologías. Nos proponemos a encontrar nuevas formas de abordar viejas problemáticas, a través del diálogo transdisciplinario.',
+12:05:30 PM:       link: 'https://www.youtube.com/watch?v=V3JXbAA8JLQ ',
+12:05:30 PM:       oembed: '{"url":"https://www.youtube.com/watch?v=V3JXbAA8JLQ ","title":"La voz del cuerpo - Intercambios Transorganicos","thumbnail":"https://i.ytimg.com/vi/V3JXbAA8JLQ/hqdefault.jpg","mime":"video/youtube","rawData":{"title":"La voz del cuerpo - Intercambios Transorganicos","author_name":"Intercambios Transorgánicos","author_url":"https://www.youtube.com/channel/UC2ifoKIRdmPADvml5T212gA","type":"video","height":113,"width":200,"version":"1.0","provider_name":"YouTube","provider_url":"https://www.youtube.com/","thumbnail_height":360,"thumbnail_width":480,"thumbnail_url":"https://i.ytimg.com/vi/V3JXbAA8JLQ/hqdefault.jpg","html":"<iframe width=\\"200\\" height=\\"113\\" src=\\"https://www.youtube.com/embed/V3JXbAA8JLQ?feature=oembed\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\\" allowfullscreen title=\\"La voz del cuerpo - Intercambios Transorganicos\\"></iframe>"}}',
+12:05:30 PM:       imagenes: [Array]
+12:05:30 PM:     }
+12:05:30 PM:   }
+12:05:30 PM: ]
+12:05:30 PM: false
+12:05:30 PM: false
+12:05:30 PM: false
+12:05:30 PM: false
+12:05:30 PM: [
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } }
+12:05:30 PM: ]
+12:05:30 PM: ⠀
+12:05:30 PM: no oembed
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: false
+12:05:30 PM: [
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } }
+12:05:30 PM: ]
+12:05:30 PM: {
+12:05:30 PM:   documento: [ { name: 'JuegoDeIngenio-Manual de uso.pdf', localFile: [Object] } ]
+12:05:30 PM: }
+12:05:30 PM: <iframe width="200" height="113" src="https://www.youtube.com/embed/I1c4pDZTaAI?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="HÍBRIDO #5 - Mesa Redonda: Intercambios Transorganicos"></iframe>
+12:05:30 PM: /static/a22076935164a0057b1499ac5ba740da/Juego_De_Ingenio_Manual_de_uso_6f5f42ffba.pdf
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: false
+12:05:30 PM: [
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } }
+12:05:30 PM: ]
+12:05:30 PM: {
+12:05:30 PM:   documento: [ { name: 'Eterofono-Manual de uso.pdf', localFile: [Object] } ]
+12:05:30 PM: }
+12:05:30 PM: <iframe width="200" height="113" src="https://www.youtube.com/embed/p4tzIqZKGrU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Encuentro Muntref - IES Juan Ramón Fernández"></iframe>
+12:05:30 PM: /static/73cd9a3f9e2707b4c31fe094b52be93b/Eterofono_Manual_de_uso_3f41573539.pdf
+12:05:30 PM: /static/50385ac32b1ee1b1b07fbbb9af08f0f5/Eterofono_Apendice_tecnico_45342ae466.pdf
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: false
+12:05:30 PM: [
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } }
+12:05:30 PM: ]
+12:05:30 PM: ⠀
+12:05:30 PM: <iframe width="200" height="113" src="https://www.youtube.com/embed/s8OdWUvlXhc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Emprendé ConCiencia 2018  &quot;C3D&quot;"></iframe>
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: false
+12:05:30 PM: [ { localFile: { childImageSharp: [Object] } } ]
+12:05:30 PM: ⠀
+12:05:30 PM: no oembed
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: false
+12:05:30 PM: [
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } }
+12:05:30 PM: ]
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: false
+12:05:30 PM: [
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } },
+12:05:30 PM:   { localFile: { childImageSharp: [Object] } }
+12:05:30 PM: ]
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: false
+12:05:30 PM: [ { localFile: { childImageSharp: [Object] } } ]
+12:05:30 PM: { localFile: { childImageSharp: { gatsbyImageData: [Object] } } }
+12:05:30 PM: false
+12:05:30 PM: []
+12:05:30 PM: false
+12:05:30 PM: success Building static HTML for pages - 5.432s - 22/22 4.05/s
+12:05:30 PM: info [gatsby-plugin-netlify] Creating SSR/DSG redirects...
+12:05:30 PM: info [gatsby-plugin-netlify] Created 0 SSR/DSG redirects...
+12:05:30 PM: success onPostBuild - 0.062s
+12:05:30 PM: 
+12:05:30 PM: Pages
+12:05:30 PM: ┌ src/templates/articuloA.js
+12:05:30 PM: │ ├   /transdisciplina_en_intercambios_transorgánicos/
+12:05:30 PM: │ └   ...5 more pages available
+12:05:30 PM: ├ src/templates/proyectoB.js
+12:05:30 PM: │ ├   /archivoz/
+12:05:30 PM: │ └   ...4 more pages available
+12:05:30 PM: ├ src/pages/404.js
+12:05:30 PM: │ ├   /404/
+12:05:30 PM: │ └   /404.html
+12:05:30 PM: ├ src/pages/actividades.js
+12:05:30 PM: │ └   /actividades/
+12:05:30 PM: ├ src/pages/actividades02.js
+12:05:30 PM: │ └   /actividades02/
+12:05:30 PM: ├ src/pages/index.js
+12:05:30 PM: │ └   /
+12:05:30 PM: ├ src/pages/nosotres.js
+12:05:30 PM: │ └   /nosotres/
+12:05:30 PM: ├ src/pages/page-2.js
+12:05:30 PM: │ └   /page-2/
+12:05:30 PM: ├ src/pages/proyectos.js
+12:05:30 PM: │ └   /proyectos/
+12:05:30 PM: ├ src/pages/proyectos02.js
+12:05:30 PM: │ └   /proyectos02/
+12:05:30 PM: ├ src/pages/publicaciones.js
+12:05:30 PM: │ └   /publicaciones/
+12:05:30 PM: ├ src/pages/publicaciones02.js
+12:05:30 PM: │ └   /publicaciones02/
+12:05:30 PM: └ src/pages/using-typescript.tsx
+12:05:30 PM:   └   /using-typescript/
+12:05:30 PM:   ╭────────────────────────────────────────────────────────────────────╮
+12:05:30 PM:   │                                                                    │
+12:05:30 PM:   │     (SSG) Generated at build time                                  │
+12:05:30 PM:   │   D (DSG) Deferred static generation - page generated at runtime   │
+12:05:30 PM:   │   ∞ (SSR) Server-side renders at runtime (uses getServerData)      │
+12:05:30 PM:   │   λ (Function) Gatsby function                                     │
+12:05:30 PM:   │                                                                    │
+12:05:30 PM:   ╰────────────────────────────────────────────────────────────────────╯
+12:05:30 PM: info Done building in 92.794028528 sec
+12:05:30 PM: ​
+12:05:30 PM: (build.command completed in 1m 32.9s)
+12:05:30 PM: ​
+12:05:30 PM:   2. Functions bundling                                         
+12:05:30 PM: ────────────────────────────────────────────────────────────────
+12:05:30 PM: ​
+12:05:30 PM: The Netlify Functions setting targets a non-existing directory: netlify/functions
+12:05:30 PM: ​
+12:05:30 PM: (Functions bundling completed in 1ms)
+12:05:30 PM: ​
+12:05:30 PM:   3. Deploy site                                                
+12:05:30 PM: ────────────────────────────────────────────────────────────────
+12:05:30 PM: ​
+12:05:30 PM: Starting to deploy site from 'public'
+12:05:31 PM: Creating deploy tree asynchronously
+12:05:33 PM: 2 new files to upload
+12:05:33 PM: 0 new functions to upload
+12:05:33 PM: Section completed: deploying
+12:05:33 PM: Site deploy was successfully initiated
+12:05:33 PM: ​
+12:05:33 PM: (Deploy site completed in 2.4s)
+12:05:33 PM: ​
+12:05:33 PM:   Netlify Build Complete                                        
+12:05:33 PM: ────────────────────────────────────────────────────────────────
+12:05:33 PM: ​
+12:05:33 PM: (Netlify Build completed in 1m 35.4s)
+12:05:33 PM: Caching artifacts
+12:05:33 PM: Started saving node modules
+12:05:33 PM: Finished saving node modules
+12:05:33 PM: Started saving build plugins
+12:05:33 PM: Finished saving build plugins
+12:05:33 PM: Started saving pip cache
+12:05:33 PM: Finished saving pip cache
+12:05:33 PM: Started saving emacs cask dependencies
+12:05:33 PM: Finished saving emacs cask dependencies
+12:05:33 PM: Started saving maven dependencies
+12:05:33 PM: Finished saving maven dependencies
+12:05:33 PM: Started saving boot dependencies
+12:05:33 PM: Finished saving boot dependencies
+12:05:33 PM: Started saving rust rustup cache
+12:05:33 PM: Finished saving rust rustup cache
+12:05:33 PM: Started saving go dependencies
+12:05:33 PM: Finished saving go dependencies
+12:05:34 PM: Build script success
+12:05:34 PM: Section completed: building
+12:05:35 PM: Uploading Cache of size 206.7MB
+12:05:37 PM: Section completed: cleanup
+12:05:37 PM: Finished processing build request in 2m26.355991274s

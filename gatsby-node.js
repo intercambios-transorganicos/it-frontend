@@ -32,24 +32,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
     {
-      articulos : allStrapiArticulos {
-        edges {
-          node {
-            id
-            Autor
-            Titulo
-            Subtitulo
-            Contenido
-            imagenes {
-              localFile {
-                childImageSharp {
-                  gatsbyImageData(placeholder: DOMINANT_COLOR)
-                }
-              }
-            }
-          }
-        }
-      } 
       proyectos : allStrapiProyectos {
         edges {
           node {
@@ -68,6 +50,30 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
       }
+
+      articulos : allStrapiArticulos {
+        edges {
+          node {
+            id
+            Autor
+            Titulo
+            Subtitulo
+            Contenido
+            oembed
+            documents {
+              titulo
+            }
+            imagenes {
+              localFile {
+                childImageSharp {
+                  gatsbyImageData
+                }
+              }
+            }
+          }
+        }
+      }
+
       
     }
     `

@@ -14,7 +14,7 @@ const Actividades02 = ({
     console.log(actividades)
     return (
         <Layout>
-            <CirclePath text=" Actividades •" textColor="#ffffff"/>
+            <CirclePath text="• Actividades ▪ " textColor="#ffffff"/>
 
             <div className="actividades02">
                 <div className="actSection section">

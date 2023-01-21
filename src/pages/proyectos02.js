@@ -13,7 +13,7 @@ const Proyectos = ({
     return (
         <Layout>
             <div className="containerWrapper">
-            <CirclePath text=" Proyectos •" textColor="#ffffff" />
+            <CirclePath text="• Proyectos ▪ " textColor="#ffffff" />
             <div className="container">
 
                 <div className="proyectos02Content">

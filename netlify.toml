@@ -3,8 +3,10 @@
   functions = "functions"
   publish = "public"
   plugins = ["netlify-plugin-gatsby"]
+  environment = { NODE_VERSION = "18.x" }
+
 
 [dev]
   command = "gatsby develop"
   port = 8000
-  
+

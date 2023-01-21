@@ -1,0 +1,9 @@
+[build]
+  command = "gatsby build:full"
+  functions = "functions"
+  publish = "public"
+  plugins = ["netlify-plugin-gatsby"]
+
+[dev]
+  command = "gatsby develop:full"
+  port = 8000

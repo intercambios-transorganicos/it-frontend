@@ -3,7 +3,7 @@
   functions = "functions"
   publish = "public"
   plugins = ["netlify-plugin-gatsby"]
-  environment = { NODE_VERSION = "18.x" }
+  environment = { NODE_VERSION = "18.12.1" }
 
 
 [dev]

@@ -8,6 +8,7 @@ import "./publicaciones02.scss"
 const Articulos = ({
     data:{allStrapiArticulos:{edges:articulos}}
 }) => {
+    
     return (
         <Layout>
             <CirclePath text="• Articulos ▪ " textColor="#ffffff"/>

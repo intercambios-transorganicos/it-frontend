@@ -11,6 +11,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@netlify/plugin-gatsby": "^3.4.8",
     "bootstrap": "^5.2.3",
     "browser-or-node": "^2.1.1",
     "bulma": "^0.9.4",
@@ -42,7 +43,6 @@
     "sass": "^1.39.2"
   },
   "devDependencies": {
-    "gatsby-plugin-netlify": "^5.0.0",
     "plop": "^3.0.5",
     "prettier": "^2.6.2"
   },

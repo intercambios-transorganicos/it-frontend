@@ -11,7 +11,7 @@ export const onRenderBody = ({
     setBodyAttributes,
 }) => {
     setPreBodyComponents([
-        <div key="load123" className="loader_container" id="preloader">
+      /*  <div key="load123" className="loader_container" id="preloader">
             <svg className="itLoader">
             
             <g transform="translate(25, 0) scale(1.5)" >
@@ -66,12 +66,12 @@ export const onRenderBody = ({
                             Cargando!
                         </text>
         </svg>
-        </div>
+        </div>*/
     ])
 
     
-    setBodyAttributes({
-        className:"preloader_active"
-    })
+    // setBodyAttributes({
+    //     className:"preloader_active"
+    // })
   }
   

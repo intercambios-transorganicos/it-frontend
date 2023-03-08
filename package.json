@@ -15,6 +15,8 @@
     "bootstrap": "^5.2.3",
     "browser-or-node": "^2.1.1",
     "bulma": "^0.9.4",
+    "emailjs-com": "^3.2.0",
+    "formik": "^2.2.9",
     "gatsby": "^4.5.4",
     "gatsby-plugin-fontawesome-css": "^1.2.0",
     "gatsby-plugin-gatsby-cloud": "^4.25.0",
@@ -41,7 +43,8 @@
     "react-page-scroller": "^2.3.1",
     "react-responsive": "^9.0.2",
     "react-slick": "^0.29.0",
-    "sass": "^1.39.2"
+    "sass": "^1.39.2",
+    "yup": "^1.0.2"
   },
   "devDependencies": {
     "plop": "^3.0.5",

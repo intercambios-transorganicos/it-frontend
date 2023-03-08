@@ -3,12 +3,10 @@ import {useFormik} from "formik"
 import * as Yup from "yup"
 import './MailFormStyle.scss';
 import { send } from 'emailjs-com';
-
 const MailForm = () => {
-    const [goodForm, setGoodForm] = useState(false);
-
     var iform = useRef();
-
+    var[success,setSuccess] = useState(false);
+    var[error,setError] = useState(false);
     const schema = Yup.object({
         from_name: Yup.string().required("Required"),
         from_email: Yup.string().required("Required").email(),
@@ -30,6 +28,8 @@ const MailForm = () => {
         },
         validationSchema: schema,
         onSubmit:(values)=>{
+            console.log("submit");
+            //setError(true);
             send(
                 'service_dgbwyxt',
                 'template_mw3vi4h',
@@ -37,8 +37,14 @@ const MailForm = () => {
                 'wH6E5Tie9g3rDwM-H'
             ).then((response)=>{
                 console.log(response);
+                setError(false);
+                setSuccess(true);
+                iform.current.reset();
             }).catch((err)=>{
-                console.log(err)
+                console.log(err);
+                setSuccess(false);
+                setError(true);
+                iform.current.reset();
             })
         }
     })
@@ -47,7 +53,24 @@ const MailForm = () => {
         <form 
         ref={elem=>{iform.current = elem}}
         onSubmit={handleSubmit}
-         className='mailForm col-12 row p-0 justify-content-center'>
+        className='mailForm col-12 row p-0 justify-content-center'
+        >
+           
+            <div style={{
+                display:success?"flex":"none"
+            }}
+            className="myAlert alert alert-success" 
+            role="alert">
+                Mensaje Enviado! Pronto nos pondremos en contacto.
+            </div>
+
+            <div style={{
+                display:error?"flex":"none"
+            }}
+            className="myAlert alert alert-danger" 
+            role="alert">
+                Error! Intentelo mas tarde.
+            </div>
 
             <h3 className='tituloForm mt-4 mb-2'>¿Querés decirnos algo?</h3>
 

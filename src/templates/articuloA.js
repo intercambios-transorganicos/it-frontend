@@ -69,13 +69,13 @@ const Articuloa = ({ data }) => {
                             </div>
                             {
                                 documents.map((e,i)=>{
-                                var current = e.documento[0].localFile.publicURL
+                                var current = e.archivo.url
                                 var currentNombre = e.titulo
                                 console.log(current,currentNombre);
                                 return(
                                     <div className="buttons">
                                     <button className="button bLinks ">
-                                        <a className="has-text-white" href={current}>{currentNombre}</a>
+                                        <a className="has-text-white" href={'localhost:8082/proyectos' + current}>{currentNombre}</a>
                                     </button>
                                     </div>
                                 )
@@ -151,19 +151,22 @@ export const query = graphql`
             Titulo
             Subtitulo
             Contenido
-            oembed
             documents {
               titulo
-              documento {
-                localFile {
-                  publicURL
-                }
+              archivo {
+                url
               }
             }
             imagenes {
               localFile {
                 childImageSharp {
-                  gatsbyImageData
+                  gatsbyImageData(
+                    placeholder: DOMINANT_COLOR
+                    layout: CONSTRAINED
+                    transformOptions: {fit: COVER, cropFocus: CENTER}
+                    width: 1364
+                    height: 1300
+                    )
                 }
               }
             }

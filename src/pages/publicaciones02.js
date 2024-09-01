@@ -39,6 +39,8 @@ documentos.map((e,i)=>{
 
 })
 
+function buildURL(url){ return 'http://localhost:8082' + url }
+
 //console.log(proyecto,colaboracion,entrevista,ensayo)
     
     return (
@@ -68,7 +70,7 @@ documentos.map((e,i)=>{
                                             </div>
                                             <div className="level-right">
                                                 <div className="level-item">
-                                                    <a className="has-text-white" href={e.documento[0].localFile.publicURL}>Link al PDF</a>
+                                                    <a className="has-text-white" href={buildURL(e.archivo.url)}>Link al PDF</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -103,7 +105,7 @@ documentos.map((e,i)=>{
                                             </div>
                                             <div className="level-right">
                                                 <div className="level-item">
-                                                    <a className="has-text-white" href={e.documento[0].localFile.publicURL}>Link al PDF</a>
+                                                    <a className="has-text-white" href={buildURL(e.archivo?.url)}>Link al PDF</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -138,7 +140,7 @@ documentos.map((e,i)=>{
                                             </div>
                                             <div className="level-right">
                                                 <div className="level-item">
-                                                    <a className="has-text-white" href={e.documento[0].localFile.publicURL}>Link al PDF</a>
+                                                    <a className="has-text-white" href={buildURL(e.archivo?.url)}>Link al PDF</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -173,7 +175,7 @@ documentos.map((e,i)=>{
                                             </div>
                                             <div className="level-right">
                                                 <div className="level-item">
-                                                    <a className="has-text-white" href={e.documento[0].localFile.publicURL}>Link al PDF</a>
+                                                    <a className="has-text-white" href={buildURL(e.archivo?.url)}>Link al PDF</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -203,11 +205,9 @@ export const query = graphql`
           titulo
           descripcion
           categoria
-          documento {
-            localFile {
-              id
-              publicURL
-            }
+          archivo {
+            id
+            url
           }
         }
       }

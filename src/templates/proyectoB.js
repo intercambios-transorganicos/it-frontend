@@ -57,13 +57,13 @@ const Proyectob = ({data}) => {
                         </div>
                           {
                             documents.map((e,i)=>{
-                              var current = e.documento[0].localFile.publicURL
-                              var currentNombre = e.documento[0].name
+                              var current = e.archivo.url
+                              var currentNombre = e.archivo.name
                               console.log(current);
                               return(
                                 <div className="buttons">
                                   <button className="button bLinks ">
-                                    <a className="has-text-white" href={current}>{currentNombre}</a>
+                                    <a className="has-text-white" href={'localhost:8082/uploads/Eterofono_Manual_de_uso_3f41573539_bd39350e83.pdf'}>{currentNombre}</a>
                                   </button>
                                 </div>
                               )
@@ -112,11 +112,9 @@ query Proyecto($proyectoId: String){
       contenido
       oembed
       documents {
-        documento {
+        archivo {
           name
-          localFile {
-            publicURL
-          }
+          url
         }
       }
       imagenes {

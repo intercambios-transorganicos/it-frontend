@@ -1,6 +1,4 @@
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
@@ -29,7 +27,7 @@ module.exports = {
      {
        resolve: `gatsby-source-strapi`,
        options: {
-         apiURL: process.env.NODE_ENV,
+         apiURL: process.env.API_URL,
          queryLimit: 2000, // Defaults to 100
          collectionTypes: [`articulos`,`members`, `proyectos`, `actividades`, `infos`, `documents`],
        },

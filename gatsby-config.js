@@ -29,7 +29,7 @@ module.exports = {
      {
        resolve: `gatsby-source-strapi`,
        options: {
-         apiURL: "http://localhost:8082",
+         apiURL: process.env.NODE_ENV,
          queryLimit: 2000, // Defaults to 100
          collectionTypes: [`articulos`,`members`, `proyectos`, `actividades`, `infos`, `documents`],
        },

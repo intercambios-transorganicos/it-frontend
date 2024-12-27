@@ -75,7 +75,7 @@ const Articuloa = ({ data }) => {
                                 return(
                                     <div className="buttons">
                                     <button className="button bLinks ">
-                                        <a className="has-text-white" href={'localhost:8082/proyectos' + current}>{currentNombre}</a>
+                                        <a className="has-text-white" href={current}>{currentNombre}</a>
                                     </button>
                                     </div>
                                 )

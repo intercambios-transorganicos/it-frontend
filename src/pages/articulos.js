@@ -18,7 +18,7 @@ const Articulos = ({
                     {
                         articulos.map((e,i) =>{
                             if(e.node.documents[0]){
-                                console.log(e.node.documents[0].documento[0].localFile.publicURL);
+                                console.log(e.node.documents[0].archivo.url);
                             }
 
                             var url = e.node.Titulo.split(' ').join('_').toLowerCase();
@@ -64,13 +64,11 @@ export const query = graphql`
           Titulo
           Subtitulo
           Contenido
-          oembed
+          # oembed
           documents {
               titulo
-              documento {
-                localFile {
-                  publicURL
-                }
+              archivo {
+                url
               }
             }
             imagenes {

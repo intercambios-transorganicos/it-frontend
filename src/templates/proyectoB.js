@@ -57,8 +57,8 @@ const Proyectob = ({data}) => {
                         </div>
                           {
                             documents.map((e,i)=>{
-                              var current = e.documento[0].localFile.publicURL
-                              var currentNombre = e.documento[0].name
+                              var current = e.archivo.url
+                              var currentNombre = e.archivo.name
                               console.log(current);
                               return(
                                 <div className="buttons">
@@ -112,11 +112,9 @@ query Proyecto($proyectoId: String){
       contenido
       oembed
       documents {
-        documento {
+        archivo {
           name
-          localFile {
-            publicURL
-          }
+          url
         }
       }
       imagenes {

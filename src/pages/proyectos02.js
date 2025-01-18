@@ -22,9 +22,8 @@ const Proyectos = ({
                         
                             {
                                 proyectos?
-                                proyectos.map((e, i) => {
+                                proyectos.sort((a,b) => a.node.orden - b.node.orden).map((e, i) => {
                                 var current = e.node;
-                                
                                 var url = current.titulo.split(' ').join('_').toLowerCase()
                                 return(
                                     <Link  key={current.id} to={`../${url}`} >
@@ -56,6 +55,7 @@ export const query = graphql`
           subtitulo
           strapiId
           contenido
+          orden
           imagenes {
             id
             localFile {

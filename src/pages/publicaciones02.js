@@ -13,6 +13,7 @@ var proyecto = [];
 var colaboracion = [];
 var entrevista = [];
 var ensayo = [];
+var clase = [];
 
 //console.log(documentos);
 documentos.map((e,i)=>{
@@ -30,7 +31,10 @@ documentos.map((e,i)=>{
             entrevista.push(current);
         break
         case "ensayo":
-            ensayo.push(current)
+            ensayo.push(current);
+        break
+        case "clase":
+            clase.push(current);
         break
         default:
           console.log("error");
@@ -47,42 +51,8 @@ documentos.map((e,i)=>{
             
             <CirclePath text="• Publicaciones ▪ " textColor="#ffffff" />
 
+            
             <div className="publicaciones">
-
-                <div className="proyectosWrapper section ">
-                    <div className="proyectosTitulo">
-                        <h1 className="title has-text-white">Proyectos:</h1>
-                    </div>
-                    {
-                        proyecto.map((e,i)=>{
-                            console.log(e);
-                            return(
-                                <div>
-                                    <div className="publicacion section has-text-white">
-                                        <h1>{e.titulo}</h1>
-                                        <h2>{e.descripcion}</h2>
-                                        <div className="level">
-                                            <div className="level-left">
-                                                <div className="level-item">
-                                                    
-                                                </div>
-                                            </div>
-                                            <div className="level-right">
-                                                <div className="level-item">
-                                                    <a className="has-text-white" href={e.archivo?.url}>Link al PDF</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="divider"></div>
-                                </div>
-                            )
-                        })
-                    }
-
-                    
-
-                </div>
 
                 <div className="ensayosWrapper section">
                     <div className="ensayosTitulo">
@@ -104,7 +74,77 @@ documentos.map((e,i)=>{
                                             </div>
                                             <div className="level-right">
                                                 <div className="level-item">
-                                                    <a className="has-text-white" href={e.archivo?.url}>Link al PDF</a>
+                                                    <a className="has-text-white" href={e.archivo?.url} target="_blank">Link al PDF</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="divider"></div>
+                                </div>
+                            )
+                        })
+                    }
+
+                    
+
+                </div>
+
+                <div className="proyectosWrapper section ">
+                    <div className="proyectosTitulo">
+                        <h1 className="title has-text-white">Proyectos:</h1>
+                    </div>
+                    {
+                        proyecto.map((e,i)=>{
+                            console.log(e);
+                            return(
+                                <div>
+                                    <div className="publicacion section has-text-white">
+                                        <h1>{e.titulo}</h1>
+                                        <h2>{e.descripcion}</h2>
+                                        <div className="level">
+                                            <div className="level-left">
+                                                <div className="level-item">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div className="level-right">
+                                                <div className="level-item">
+                                                    <a className="has-text-white" href={e.archivo?.url}  target="_blank">Link al PDF</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="divider"></div>
+                                </div>
+                            )
+                        })
+                    }
+
+                    
+
+                </div>
+
+                <div className="clasesWrapper section">
+                    <div className="clasesTitulo">
+                        <h1 className="title has-text-white">Clases:</h1>
+                    </div>
+                    {
+                        clase.map((e,i)=>{
+                            console.log(e);
+                            return(
+                                <div>
+                                    <div className="publicacion section has-text-white">
+                                        <h1>{e.titulo}</h1>
+                                        <h2>{e.descripcion}</h2>
+                                        <div className="level">
+                                            <div className="level-left">
+                                                <div className="level-item">
+                                                    <h2>Autor</h2>
+                                                </div>
+                                            </div>
+                                            <div className="level-right">
+                                                <div className="level-item">
+                                                    <a className="has-text-white" href={e.link} target="_blank">Link al video</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -139,7 +179,7 @@ documentos.map((e,i)=>{
                                             </div>
                                             <div className="level-right">
                                                 <div className="level-item">
-                                                    <a className="has-text-white" href={e.archivo?.url}>Link al PDF</a>
+                                                    <a className="has-text-white" href={e.archivo?.url} target="_blank">Link al PDF</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -174,7 +214,7 @@ documentos.map((e,i)=>{
                                             </div>
                                             <div className="level-right">
                                                 <div className="level-item">
-                                                    <a className="has-text-white" href={e.archivo?.url}>Link al PDF</a>
+                                                    <a className="has-text-white" href={e.archivo?.url} target="_blank">Link al PDF</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -188,6 +228,7 @@ documentos.map((e,i)=>{
                     
 
                 </div>
+
             </div>
   
         </Layout>
@@ -204,6 +245,7 @@ export const query = graphql`
           titulo
           descripcion
           categoria
+          link
           archivo {
             id
             url

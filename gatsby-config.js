@@ -29,7 +29,7 @@ module.exports = {
        options: {
          apiURL: process.env.API_URL,
          queryLimit: 2000, // Defaults to 100
-         collectionTypes: [`articulos`,`members`, `proyectos`, `actividades`, `infos`, `documents`],
+         collectionTypes: [`members`, `proyectos`, `actividades`, `infos`, `documents`],
        },
      },
      

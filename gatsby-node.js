@@ -28,7 +28,6 @@ const path = require("path")
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions;
   // Consulta de nodos  para usar en la creación de páginas.
-  //ARTICULOS
   const result = await graphql(
     `
     {
@@ -50,31 +49,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           }
         }
       }
-
-      articulos : allStrapiArticulos {
-        edges {
-          node {
-            id
-            Autor
-            Titulo
-            Subtitulo
-            Contenido
-            # oembed
-            documents {
-              titulo
-            }
-            imagenes {
-              localFile {
-                childImageSharp {
-                  gatsbyImageData
-                }
-              }
-            }
-          }
-        }
-      }
-
-      
     }
     `
   )
@@ -83,20 +57,6 @@ if (result.errors) {
   reporter.panicOnBuild(`Error while running GraphQL query.`)
   return
 }
-// Creamos las paginas por cada articulo.
-const articuloTemplate = path.resolve(`src/templates/articuloA.js`)
-result.data.articulos.edges.forEach(({ node }) => {
-  const path = node.id
-  const pathh = `/${node.Titulo.split(' ').join('_').toLowerCase()}/`
-  createPage({
-    path:pathh,
-    component: articuloTemplate,
-    
-    context: {
-      articuloId: path,
-    },
-  })
-})
 
 // Creamos las paginas por cada proyecto
 //console.log(result.data)

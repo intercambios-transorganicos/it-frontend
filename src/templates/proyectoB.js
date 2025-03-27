@@ -63,7 +63,7 @@ const Proyectob = ({data}) => {
                               return(
                                 <div className="buttons">
                                   <button className="button bLinks ">
-                                    <a className="has-text-white" href={current}>{currentNombre}</a>
+                                    <a className="has-text-white" href={current} target="_blank">{currentNombre}</a>
                                   </button>
                                 </div>
                               )

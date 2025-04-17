@@ -1,6 +1,10 @@
 require("dotenv").config()
 
 module.exports = {
+  // flags: {
+  //   FAST_DEV: false,
+  //   DEV_SSR: false,
+  // },
   siteMetadata: {
     title: `Intercambios Transorganicos`,
     description: `Investigacion Transdisciplinaria`,

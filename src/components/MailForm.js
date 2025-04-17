@@ -31,10 +31,10 @@ const MailForm = () => {
             console.log("submit");
             //setError(true);
             send(
-                'service_dgbwyxt',
+                'service_0aoyxrp',
                 'template_mw3vi4h',
                 values,
-                'wH6E5Tie9g3rDwM-H'
+                '-4X4w2puMzWmxQ0P3'
             ).then((response)=>{
                 console.log(response);
                 setError(false);

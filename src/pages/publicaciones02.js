@@ -69,7 +69,7 @@ documentos.map((e,i)=>{
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
-                                                    <h2>Autor</h2>
+                                                    <h2>{e.autor}</h2>
                                                 </div>
                                             </div>
                                             <div className="level-right">
@@ -139,7 +139,7 @@ documentos.map((e,i)=>{
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
-                                                    <h2>Autor</h2>
+                                                    <h2>{e.autor}</h2>
                                                 </div>
                                             </div>
                                             <div className="level-right">
@@ -174,7 +174,7 @@ documentos.map((e,i)=>{
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
-                                                    <h2>Autor</h2>
+                                                    <h2>{e.autor}</h2>
                                                 </div>
                                             </div>
                                             <div className="level-right">
@@ -209,7 +209,7 @@ documentos.map((e,i)=>{
                                         <div className="level">
                                             <div className="level-left">
                                                 <div className="level-item">
-                                                    <h2>Autor</h2>
+                                                    <h2>{e.autor}</h2>
                                                 </div>
                                             </div>
                                             <div className="level-right">
@@ -246,6 +246,7 @@ export const query = graphql`
           descripcion
           categoria
           link
+          autor
           archivo {
             id
             url

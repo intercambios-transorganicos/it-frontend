@@ -19,9 +19,9 @@ const Proyectob = ({data}) => {
     }
     
     if(documents){
-        console.log(documents[0])
+        // console.log(documents[0])
       }else{
-        console.log("no docx")
+        // console.log("no docx")
       }
 
   
@@ -47,7 +47,7 @@ const Proyectob = ({data}) => {
                        </div>
                         {
                             oembeds?.oembeds.map((e,i)=>{
-                                console.log(e)
+                                // console.log(e)
                                 return(
                                   <div className=" video">
                                     <div className="iFrame">
@@ -67,7 +67,7 @@ const Proyectob = ({data}) => {
                             documents.map((e,i)=>{
                               var current = e.archivo.url
                               var currentNombre = e.archivo.name
-                              console.log(current);
+                              // console.log(current);
                               return(
                                 <div className="buttons">
                                   <button className="button bLinks ">
@@ -88,7 +88,7 @@ const Proyectob = ({data}) => {
                     <div className="section">
                         {
                             imagenes.map((e,i)=>{
-                                console.log(e)
+                                // console.log(e)
                                 var current = getImage(e.localFile);
                                 return(
                                     <div className="section">

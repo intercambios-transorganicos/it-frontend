@@ -13,17 +13,17 @@ const Proyectoa = ({data}) => {
     const{id, nombre, titulo, subtitulo, contenido, imagenes, oembed, documents} = data.strapiProyectos;
 
     if(documents){
-      console.log(documents[0])
+      // console.log(documents[0])
     }else{
-      console.log("no docx")
+      // console.log("no docx")
     }
 
 
     if(oembed){
       var iFrame = JSON.parse(oembed).rawData.html
-      console.log(iFrame)
+      // console.log(iFrame)
     }else{
-      console.log("no oembed")
+      // console.log("no oembed")
     }
 
     return (
@@ -55,7 +55,7 @@ const Proyectoa = ({data}) => {
                             documents.map((e,i)=>{
                               var current = e.documento[0].localFile.publicURL
                               var currentNombre = e.documento[0].name
-                              console.log(current);
+                              // console.log(current);
                               return(
                                 <div className="buttons">
                                   <button className="button bLinks ">

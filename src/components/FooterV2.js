@@ -15,7 +15,7 @@ import './footerV2Style.scss';
 const FooterV2 = () => {
     const { formOpen, setFormOpen } = FormOpenContextUse();
     
-    console.log(formOpen)
+    // // console.log(formOpen)
     const [showMap, setShowMap] = useState(false);
 
     const showingMail = () => {
@@ -42,23 +42,23 @@ const FooterV2 = () => {
     function handleClick(){
         setFormOpen(false)
         setClick(!click)
-        console.log(click)
+        // // console.log(click)
     }
 
     const[enter, setEnter] = useState(false)
 
     function handleEnter(){
         setEnter(true)
-        console.log("enter")
+        // console.log("enter")
     }
 
     function handleLeave(){
         setEnter(false)
-        console.log("leave")
+        // console.log("leave")
     }
 
     useEffect(()=>{
-        console.log(formOpen)
+        // console.log(formOpen)
         setClick(formOpen)
     },[formOpen])
 

@@ -5,7 +5,7 @@ import {Link} from "gatsby"
 
 function ContenedorProyecto({linkUrl, currentImage, currTitle, currSubTitle, reversed}) {
 
-console.log(linkUrl)
+// // console.log(linkUrl)
 var url = currTitle.split(' ').join('_').toLowerCase()
    if(reversed === true){
     return (

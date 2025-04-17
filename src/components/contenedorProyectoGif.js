@@ -4,7 +4,7 @@ import {Link} from "gatsby"
 
 function ContenedorProyectoGif({linkUrl, gifUrl , currentImage, currTitle, currSubTitle, reversed}) {
 
-console.log(gifUrl)
+// // console.log(gifUrl)
 var url = currTitle.split(' ').join('_').toLowerCase()
    if(reversed === true){
     return (

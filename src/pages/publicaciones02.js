@@ -15,10 +15,10 @@ var entrevista = [];
 var ensayo = [];
 var clase = [];
 
-//console.log(documentos);
+//// console.log(documentos);
 documentos.map((e,i)=>{
     var current = e.node;
-    //console.log(current.categoria)
+    //// console.log(current.categoria)
 
     switch(current.categoria){
         case "proyecto":
@@ -37,14 +37,14 @@ documentos.map((e,i)=>{
             clase.push(current);
         break
         default:
-          console.log("error");
+          // console.log("error");
   
       }
 
 })
 
 
-//console.log(proyecto,colaboracion,entrevista,ensayo)
+//// console.log(proyecto,colaboracion,entrevista,ensayo)
     
     return (
         <Layout>
@@ -60,7 +60,7 @@ documentos.map((e,i)=>{
                     </div>
                     {
                         ensayo.map((e,i)=>{
-                            console.log(e);
+                            // console.log(e);
                             return(
                                 <div>
                                     <div className="publicacion section has-text-white">
@@ -95,7 +95,7 @@ documentos.map((e,i)=>{
                     </div>
                     {
                         proyecto.map((e,i)=>{
-                            console.log(e);
+                            // console.log(e);
                             return(
                                 <div>
                                     <div className="publicacion section has-text-white">
@@ -130,7 +130,7 @@ documentos.map((e,i)=>{
                     </div>
                     {
                         clase.map((e,i)=>{
-                            console.log(e);
+                            // console.log(e);
                             return(
                                 <div>
                                     <div className="publicacion section has-text-white">
@@ -165,7 +165,7 @@ documentos.map((e,i)=>{
                     </div>
                     {
                         colaboracion.map((e,i)=>{
-                            console.log(e);
+                            // console.log(e);
                             return(
                                 <div>
                                     <div className="publicacion section has-text-white">
@@ -200,7 +200,7 @@ documentos.map((e,i)=>{
                     </div>
                     {
                         entrevista.map((e,i)=>{
-                            console.log(e);
+                            // console.log(e);
                             return(
                                 <div>
                                     <div className="publicacion section has-text-white">

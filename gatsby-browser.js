@@ -3,11 +3,11 @@ import "./src/components/itLoader.scss"
 import "./styles.css"
 //import { FormOpenContextProvider } from "./src/Contexts/FormOpenContext"
 export const onClientEntry = () => {
-    console.log("from browser-out")
+    // console.log("from browser-out")
   }
 
   export const onInitialClientRender = () => {
-    console.log("from render-out")
+    // console.log("from render-out")
   }
 
   export const onPreRouteUpdate = () => {

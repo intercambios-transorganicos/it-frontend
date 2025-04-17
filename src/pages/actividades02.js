@@ -11,7 +11,7 @@ const Actividades02 = ({
     data:{allStrapiActividades: {edges:actividades}}
 }) => {
 
-    console.log(actividades)
+    // console.log(actividades)
     return (
         <Layout>
             <CirclePath text="• Actividades ▪ " textColor="#ffffff"/>

@@ -7,14 +7,14 @@ const Itloader = () => {
     var actor = useRef();
 
     useEffect(()=>{
-        console.log("mounted");
+        // console.log("mounted");
         document.querySelector('html').style.overflow = 'hidden'
     },[]);
 
    /* var[press, setPress] = useState(false);
      useEffect(()=>{
         if(press){
-            console.log('start');
+            // console.log('start');
             tl.current = gsap.timeline({});
             tl.current.to(actor.current, {opacity: 0, duration: 1})
                       .to(actor.current, {display:"none", duration: 0.5});
@@ -22,7 +22,7 @@ const Itloader = () => {
         document.querySelector('html').style.overflow = 'visible'
         
         }else{
-            console.log('pause');
+            // console.log('pause');
         }
 
     },[press]);
@@ -32,7 +32,7 @@ const Itloader = () => {
         document.addEventListener('keydown', logKey);
         function logKey(e) {
             setPress(true);
-            console.log(` ${e.code}`);
+            // console.log(` ${e.code}`);
           }
       
     },[])*/

@@ -38,7 +38,7 @@ const Useproyectquery = () => {
    
   });
 
-  console.log(secProyectos)
+  // console.log(secProyectos)
 
      return secProyectos
       

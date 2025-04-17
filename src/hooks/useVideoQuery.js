@@ -22,14 +22,14 @@ const Usevideoquery = () => {
       url
     }
   });
-  //console.log(playlist);
+  //// console.log(playlist);
 
  if(playlist){
   return{
     playlist
   }
  }else{
-   console.log("no data en videoQuery")
+   // console.log("no data en videoQuery")
  }
   
 }

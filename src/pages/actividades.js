@@ -15,11 +15,11 @@ const Actividades = ({
   
   function handleClick(e){
     e.preventDefault();
-    console.log(myRef.current);
+    // console.log(myRef.current);
     setShow(!show);
   }
 
-  // console.log(actividades[1]);
+  // // console.log(actividades[1]);
     return (
         <Layout>
             <div className="actividadesContainer">

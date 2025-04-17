@@ -20,7 +20,7 @@ const Actividades02 = ({
                 <div className="actSection section">
                     {
                         actividades.map((e,i)=>{
-                            var currentImg= getImage(e.node.imagenes[0].localFile)
+                            var currentImg= getImage(e.node.imagenes[0]?.localFile)
                             var oembed = e.node.oembed
                             var iFrame;
                             if(oembed){

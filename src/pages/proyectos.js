@@ -8,7 +8,7 @@ import "./proyectos.scss"
 const Proyectos = ({
     data:{allStrapiProyectos: {edges:proyectos} }
 }) => {
-    console.log(proyectos);
+    // console.log(proyectos);
     return (
         <Layout>
             <CirclePath text=" Proyectos •" textColor="#ffffff" />
@@ -19,7 +19,7 @@ const Proyectos = ({
                       proyectos.map((e, i) => {
                         var current = e.node;
                         var url = current.titulo.split(' ').join('_').toLowerCase()
-                        console.log(current.id)
+                        // console.log(current.id)
                         return(
                             <Link  key={current.id} className="box proyectsBox" to={`../${url}`} >
                     

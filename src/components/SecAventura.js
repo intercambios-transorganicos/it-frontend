@@ -10,7 +10,7 @@ const SecAventura = () => {
   
   function handleFormClick(){
     setFormOpen(true)
-    console.log(formOpen)
+    // console.log(formOpen)
   }
 
   return(

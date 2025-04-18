@@ -43,7 +43,7 @@ const About1 = () => {
                 {
                     infos.map((e, i) => {
                         var currentImg = getImage(e.node.imagen[0].localFile);
-                        //console.log(e.node)
+                        //// console.log(e.node)
                         return(
                             <Carousel.Item key={e.node.id}  className="aboutSlide">
                                 <GatsbyImage className="currentSlide" image={currentImg} alt={`img${e.node.id}`} />

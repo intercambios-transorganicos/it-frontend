@@ -27,7 +27,7 @@ const Proyectos = ({
                                 var url = current.titulo.split(' ').join('_').toLowerCase()
                                 return(
                                     <Link  key={current.id} to={`../${url}`} >
-                                        <ChildBox imagen={current.imagenes[0].localFile} titulo={current.titulo} subtitulo={current.subtitulo} />
+                                        <ChildBox imagen={current.portada[0].localFile} titulo={current.titulo} subtitulo={current.subtitulo} />
                                     </Link>
                                 )
                             })
@@ -56,6 +56,20 @@ export const query = graphql`
           strapiId
           contenido
           orden
+          portada {
+            id
+            name
+            localFile {
+              publicURL
+              childImageSharp {
+                gatsbyImageData(
+                  transformOptions: {fit: COVER, cropFocus: CENTER}
+                  width: 400
+                  height: 400
+                  )
+              }
+            }
+          }
           imagenes {
             id
             localFile {

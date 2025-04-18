@@ -5,8 +5,6 @@ import {GatsbyImage, getImage} from "gatsby-plugin-image"
 const Childbox = (props) => {
 
     var {imagen, titulo, subtitulo} = props;
-    
-    console.log(imagen);
     var currentImg = getImage(imagen);
     return (
             <div className="">

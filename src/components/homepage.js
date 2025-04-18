@@ -11,7 +11,7 @@ export default function Homepage() {
   let [url, setUrl] = useState(-1);
   let [active, setActive] = useState(false);
 
- // console.log(url)
+ // // console.log(url)
 
   return (
       <div className="homepage" >

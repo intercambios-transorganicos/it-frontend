@@ -28,20 +28,20 @@ const MailForm = () => {
         },
         validationSchema: schema,
         onSubmit:(values)=>{
-            console.log("submit");
+            // console.log("submit");
             //setError(true);
             send(
-                'service_dgbwyxt',
+                'service_0aoyxrp',
                 'template_mw3vi4h',
                 values,
-                'wH6E5Tie9g3rDwM-H'
+                '-4X4w2puMzWmxQ0P3'
             ).then((response)=>{
-                console.log(response);
+                // console.log(response);
                 setError(false);
                 setSuccess(true);
                 iform.current.reset();
             }).catch((err)=>{
-                console.log(err);
+                // console.log(err);
                 setSuccess(false);
                 setError(true);
                 iform.current.reset();

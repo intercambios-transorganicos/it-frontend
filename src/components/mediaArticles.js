@@ -18,7 +18,7 @@ const Mediaarticles = ({images}) => {
             {
                 localImages.map((e, i) => {
                     var currentImage = getImage(e.localFile);
-                    console.log(e);
+                    // console.log(e);
                     return (
                         <Carousel.Item key = {i}>
                             <GatsbyImage image={currentImage} alt="image" />
@@ -33,7 +33,7 @@ const Mediaarticles = ({images}) => {
             {
                 localImages.map((e, i) => {
                     var currentImage = getImage(e.localFile);
-                    console.log(e);
+                    // console.log(e);
                     return (
                         <div key = {i}>
                             <GatsbyImage image={currentImage} alt="image" />

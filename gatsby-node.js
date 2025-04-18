@@ -59,7 +59,7 @@ if (result.errors) {
 }
 
 // Creamos las paginas por cada proyecto
-//console.log(result.data)
+//// console.log(result.data)
 const proyectoTemplate = path.resolve(`src/templates/proyectoB.js`)
 result.data.proyectos.edges.forEach(({ node }) => {
   const path = node.id

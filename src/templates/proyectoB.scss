@@ -19,6 +19,16 @@ $blanco : #fafafa;
         //font-size: 1em;
     }
 
+    .video{
+        padding: 3rem 1.5rem;
+    }
+
+    @media (min-width: 1024px){
+        .video{
+            padding: 3rem 3rem
+        }
+    }
+
     .iFrame {
         position: relative;
         padding-bottom: 56.25%; 

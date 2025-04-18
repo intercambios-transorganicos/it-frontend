@@ -49,7 +49,7 @@ const IndexPage = ({data}) => {
                   }
 
                 if(isGif){
-                    console.log(elem.node.portada[0].localFile.publicURL)
+                    // console.log(elem.node.portada[0].localFile.publicURL)
                   return(
                       <ContenedorGif
                       key={elem.node.id}
@@ -115,7 +115,7 @@ const IndexPage = ({data}) => {
                   }
 
                 if(isGif){
-                    console.log(elem.node.portada[0].localFile.publicURL)
+                    // console.log(elem.node.portada[0].localFile.publicURL)
                   return(
                       <ContenedorGif
                       key={elem.node.id}

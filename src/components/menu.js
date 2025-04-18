@@ -29,7 +29,7 @@ const Menu = ({click, handler}) => {
     },[click])
 
     function handleClick(){
-        console.log("handleContacto");
+        // console.log("handleContacto");
         handler(false)
         setFormOpen(true)
     }

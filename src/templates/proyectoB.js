@@ -6,22 +6,25 @@ import {Link} from "gatsby"
 import {graphql} from "gatsby"
 
 const Proyectob = ({data}) => {
-    const{id, nombre, titulo, subtitulo, contenido, imagenes, oembed, documents} = data.strapiProyectos;
-    console.log(imagenes)
+    const{id, nombre, titulo, subtitulo, contenido, imagenes, oembeds, documents} = data.strapiProyectos;
+    
+    function obtenerOembed(oembed){
+      const youtube = oembed.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/)
+      const vimeo = oembed.match(/https?:\/\/(?:www\.)?vimeo\.com\/(?:video\/)?(\d+)(?:\/)?/)
+      const tiktok = oembed.match(/(?:https?:\/\/)?(?:www\.|m\.)?tiktok\.com\/(?:@[\w.-]+\/video\/|v\/)(\d+)/);
+      if(youtube) return `https://www.youtube.com/embed/${youtube[1]}?feature=oembed`;
+      if(vimeo) return `https://player.vimeo.com/video/${vimeo[1]}?app_id=122963}`;
+      if(tiktok) return `https://www.tiktok.com/embed/v3/${tiktok[1]}`
+      return `https://www.youtube.com/embed/aDm5WZ3QiIE?feature=oembed` //Si no encuentra el video
+    }
+    
     if(documents){
-        console.log(documents[0])
+        // console.log(documents[0])
       }else{
-        console.log("no docx")
-      }
-  
-  
-      if(oembed){
-        var iFrame = JSON.parse(oembed).rawData.html
-        console.log(iFrame)
-      }else{
-        console.log("no oembed")
+        // console.log("no docx")
       }
 
+  
     return (
        <Layout>
          <div className="proyectoB_container container">
@@ -40,15 +43,20 @@ const Proyectob = ({data}) => {
                        <div className="content">
                        <h1 className="title has-text-white">{titulo}</h1>
                         <h3 className="title">{subtitulo}</h3>
-                        <p>{contenido}</p>
+                        <p style={{ whiteSpace: 'pre-line' }}>{contenido}</p>
                        </div>
-                        {oembed?
-                        <div className=" video">
-                            <div className="iFrame" dangerouslySetInnerHTML={{ __html: iFrame}} /> 
-                        </div>
-                        :
-                        <div></div>
-                        } 
+                        {
+                            oembeds?.oembeds.map((e,i)=>{
+                                // console.log(e)
+                                return(
+                                  <div className=" video">
+                                    <div className="iFrame">
+                                      <iframe width="200" height="113" src={obtenerOembed(e)} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="Encuentro Muntref - IES Juan Ramón Fernández"></iframe>
+                                    </div> 
+                                  </div>
+                                )
+                            })
+                        }
                     </div>
 
                     <div className="section links">
@@ -59,7 +67,7 @@ const Proyectob = ({data}) => {
                             documents.map((e,i)=>{
                               var current = e.archivo.url
                               var currentNombre = e.archivo.name
-                              console.log(current);
+                              // console.log(current);
                               return(
                                 <div className="buttons">
                                   <button className="button bLinks ">
@@ -80,7 +88,7 @@ const Proyectob = ({data}) => {
                     <div className="section">
                         {
                             imagenes.map((e,i)=>{
-                                console.log(e)
+                                // console.log(e)
                                 var current = getImage(e.localFile);
                                 return(
                                     <div className="section">
@@ -110,7 +118,9 @@ query Proyecto($proyectoId: String){
       titulo
       subtitulo
       contenido
-      oembed
+      oembeds{
+        oembeds
+      }
       documents {
         archivo {
           name

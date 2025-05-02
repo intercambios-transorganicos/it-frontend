@@ -15,6 +15,7 @@ const Nosotres = ({data:{allStrapiMembers:{edges:members}}}) => {
   var alumnx = [];
   var exalumnxs = [];
   var colaboradorx = [];
+  var becarix = [];
 
   members.map((e,i)=>{
     var current = e.node;
@@ -31,6 +32,8 @@ const Nosotres = ({data:{allStrapiMembers:{edges:members}}}) => {
       case "colaboradorx":
         colaboradorx.push(current)
       break
+      case "becarix":
+        becarix.push(current);
       default:
         console.log("error");
 
@@ -79,6 +82,32 @@ const Nosotres = ({data:{allStrapiMembers:{edges:members}}}) => {
                   </div>
                     {
                       alumnx.map((e,i)=>{
+                        var img = getImage(e.foto[0].localFile)
+                        return(
+                          <div key={i} className="columns memberWrapper" >
+                            <div className="column memberImageContainer" >
+                                <GatsbyImage className="roundPicture" image={img} alt={e.nombre} />
+                            </div>
+                            <div className="column is-four-fifths memberInfoContent" >
+                              <div className="contentTop" >
+                                  <h1 className="title">{e.nombre}</h1>
+                                  <h1 className="subtitle">{e.titulo}</h1>
+                              </div>
+                              <p className="" >{e.descripcion}</p>
+                            </div>
+                          </div>
+                        )
+                      })
+                    }
+                  
+                </div>
+
+                <div className="becarixsWrapper " >
+                  <div className="tituloBecarixs" >
+                    <h1 className="title">Becarixs</h1>
+                  </div>
+                    {
+                      becarix.map((e,i)=>{
                         var img = getImage(e.foto[0].localFile)
                         return(
                           <div key={i} className="columns memberWrapper" >

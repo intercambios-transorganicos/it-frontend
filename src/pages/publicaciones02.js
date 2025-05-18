@@ -44,6 +44,13 @@ documentos.map((e,i)=>{
 })
 
 
+function obtenerLink(publicacion){
+    console.log(publicacion)
+    if(publicacion.archivo) return publicacion.archivo.url
+    else return publicacion.link
+}
+
+
 //// console.log(proyecto,colaboracion,entrevista,ensayo)
     
     return (
@@ -74,7 +81,7 @@ documentos.map((e,i)=>{
                                             </div>
                                             <div className="level-right">
                                                 <div className="level-item">
-                                                    <a className="has-text-white" href={e.archivo?.url} target="_blank">Link al PDF</a>
+                                                    <a className="has-text-white" href={obtenerLink(e)} target="_blank">Link al PDF</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -109,7 +116,7 @@ documentos.map((e,i)=>{
                                             </div>
                                             <div className="level-right">
                                                 <div className="level-item">
-                                                    <a className="has-text-white" href={e.archivo?.url}  target="_blank">Link al PDF</a>
+                                                    <a className="has-text-white" href={obtenerLink(e)}  target="_blank">Link al PDF</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -144,7 +151,7 @@ documentos.map((e,i)=>{
                                             </div>
                                             <div className="level-right">
                                                 <div className="level-item">
-                                                    <a className="has-text-white" href={e.link} target="_blank">Link al video</a>
+                                                    <a className="has-text-white" href={obtenerLink(e)} target="_blank">Link al video</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -179,7 +186,7 @@ documentos.map((e,i)=>{
                                             </div>
                                             <div className="level-right">
                                                 <div className="level-item">
-                                                    <a className="has-text-white" href={e.archivo?.url} target="_blank">Link al PDF</a>
+                                                    <a className="has-text-white" href={obtenerLink(e)} target="_blank">Link al PDF</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -214,7 +221,7 @@ documentos.map((e,i)=>{
                                             </div>
                                             <div className="level-right">
                                                 <div className="level-item">
-                                                    <a className="has-text-white" href={e.archivo?.url} target="_blank">Link al PDF</a>
+                                                    <a className="has-text-white" href={obtenerLink(e)} target="_blank">Link</a>
                                                 </div>
                                             </div>
                                         </div>

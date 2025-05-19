@@ -6,7 +6,7 @@ import {Link} from "gatsby"
 import {graphql} from "gatsby"
 
 const Proyectob = ({data}) => {
-    const{id, nombre, titulo, subtitulo, contenido, imagenes, oembeds, documents} = data.strapiProyectos;
+    const{id, nombre, titulo, subtitulo, contenido, imagenes, oembeds, documents, links} = data.strapiProyectos;
     
     function obtenerOembed(oembed){
       const youtube = oembed.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/)
@@ -17,7 +17,7 @@ const Proyectob = ({data}) => {
       if(tiktok) return `https://www.tiktok.com/embed/v3/${tiktok[1]}`
       return `https://www.youtube.com/embed/aDm5WZ3QiIE?feature=oembed` //Si no encuentra el video
     }
-    
+
     if(documents){
         // console.log(documents[0])
       }else{
@@ -77,9 +77,22 @@ const Proyectob = ({data}) => {
                               )
                             })
                           }
+                          {
+                            links.links?.flat().length && links.links?.map((arr, i) => {
+                                let nombre = arr[0]
+                                let url = arr[1]
+                                return (
+                                  <div className="buttons">
+                                  <button className="button bLinks ">
+                                    <Link className="has-text-white" to={url} target="_blank">{nombre}</Link>
+                                  </button>
+                                    </div>
+                                )
+                            })
+                          }
                           <div className="buttons">
                               <button className="button bLinks ">
-                              <Link className="has-text-white" to="/proyectos02" > + Proyectos </Link>
+                                <Link className="has-text-white" to="/proyectos02" > + Proyectos </Link>
                               </button>
                           </div>
                         </div>
@@ -120,6 +133,9 @@ query Proyecto($proyectoId: String){
       contenido
       oembeds{
         oembeds
+      }
+      links{
+        links
       }
       documents {
         archivo {
